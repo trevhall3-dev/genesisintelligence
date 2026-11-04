@@ -1,0 +1,40 @@
+{
+  "updated_at": "2026-11-03",
+  "count": 3,
+  "method": "Curated official-source seed for growing Genesis-only news archive; automated discovery workflow adds subsequent records",
+  "items": [
+    {
+      "id": "doe-genesis-oct-08",
+      "title": "Energy Department Announces New Genesis Mission Awards to Advance Super Intelligence for Science",
+      "summary": "DOE announced 12 Phase II and six Phase I project selections, bringing the reported Genesis portfolio to 297 projects.",
+      "source": "DOE",
+      "url": "https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science",
+      "date": "2026-10-08",
+      "group": "DOE",
+      "category": "AI models",
+      "kind": "discovery"
+    },
+    {
+      "id": "doe-genesis-sep-01",
+      "title": "DOE Office of Electricity Announces $11.5M Genesis Mission GridFM 2.0 Project",
+      "summary": "Brookhaven-led research project to develop foundation models for electric-grid planning and expanding electricity demand.",
+      "source": "DOE",
+      "url": "https://www.energy.gov/oe/articles/does-office-electricity-announces-115m-genesis-mission-project-meet-growing-electricity",
+      "date": "2026-09-01",
+      "group": "DOE",
+      "category": "Infrastructure",
+      "kind": "discovery"
+    },
+    {
+      "id": "doe-genesis-jul-22",
+      "title": "DOE Announces First Genesis Mission Projects Selected to Accelerate AI-Driven Scientific Discovery",
+      "summary": "DOE announced 278 initial Genesis project selections across universities, laboratories, companies and nonprofits.",
+      "source": "DOE",
+      "url": "https://www.energy.gov/articles/secretary-energy-chris-wright-announces-first-genesis-mission-projects-selected-accelerate",
+      "date": "2026-07-22",
+      "group": "DOE",
+      "category": "National challenges",
+      "kind": "discovery"
+    }
+  ]
+}
