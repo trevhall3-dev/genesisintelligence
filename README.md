@@ -16,9 +16,9 @@ These reconcile to DOE's first-year 297-project portfolio. The RFA rosters are *
 
 ## News engine and archive
 
-- `src/worker.js` discovers Genesis-specific DOE, lab and partner news using focused Google News RSS searches, served by `/api/news`.
-- `scripts/collect_genesis_news.py` maintains `dist/news-archive.json`, adding and deduplicating source-linked Genesis discoveries during scheduled GitHub Actions runs. It stores short metadata and excerpts, **not** full articles.
-- The feed shows compact news rows and search. Clicking a headline opens a preview with an original-source link.
+- `src/worker.js` serves the locally archived first-party DOE Genesis announcements through `/api/news` without querying Google News.
+- `scripts/collect_genesis_news.py` monitors DOE’s official Genesis news listing directly and stores publisher URLs in `dist/news-archive.json`. The `SOURCES` configuration supports additional first-party feeds later. It stores short metadata and excerpts, **not** full articles.
+- The feed shows compact news rows and search. Clicking a news headline opens the original publisher article directly in a new browser tab. Project records still open the dossier panel.
 - `/api/projects` serves the registry; the browser searches project titles, investigators, institutions, and locations and displays project dossiers. Clickable research-area bars filter Projects & Awards.
 - Article-project relationships are provisional title/alias matching and should be verified before treating a relationship as confirmed.
 - Both archives are read from GitHub-built static assets even when Cloudflare D1 is not yet provisioned. **An archive file existing does not mean hourly ingestion or all sources are healthy.** Inspect feed monitoring and GitHub Actions.
@@ -67,3 +67,7 @@ After deployment, confirm `/api/projects` returns 297 entries, `/api/news` retur
 **Build 2:** Preserve neon green/dark mission-control dashboard and consistent line icons; complete the public project registry, expandable project dossiers, compact news feed, source monitoring, search, GitHub-generated archive, optional D1 database, and research area filters.
 
 **Build 3:** Ask Genesis AI conversational assistant; not currently implemented.
+
+## Direct-source news policy (November 2026)
+
+The DOE Genesis Mission listing is the first authoritative news collection source. Google News is **not** used by the news collector or Worker. The GitHub Actions workflow refreshes the direct-source archive every two hours, with failure protection. More official DOE, laboratory, and project partner feeds may be added later as separate entries in the collector configuration; prioritize publisher-original links and project-specific relevance. New browser tabs are opened through ordinary HTML `<a target="_blank" rel="noopener noreferrer">` links, rather than JavaScript popups.
