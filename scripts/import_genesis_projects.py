@@ -14,7 +14,11 @@ from pathlib import Path
 import pdfplumber
 import requests
 
-SOURCES = [\n    ("July 2026 RFA","https://www.energy.gov/documents/genesis-mission-rfa-awards-list","2026-07-22",250),\n    ("October 2026 RFA","https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf","2026-10-08",18),\n]\nSOURCE = SOURCES[0][1]
+SOURCES = [
+    ("July 2026 RFA","https://www.energy.gov/documents/genesis-mission-rfa-awards-list","2026-07-22",250),
+    ("October 2026 RFA","https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf","2026-10-08",18),
+]
+SOURCE = SOURCES[0][1]
 OUTPUT = Path("dist/projects.json")
 MIN_PROJECTS = 250
 HEADERS = ["principal_investigator", "title", "institution", "city", "state", "zip"]
