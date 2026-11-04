@@ -23,7 +23,6 @@ const announcements=[
  {title:"ORNL selected for six Phase II Genesis awards",summary:"Laboratory awards span materials, microelectronics, quantum computing, accelerator software and fusion.",date:"2026-10-08",url:"https://www.ornl.gov/news/ornl-selected-for-six-phase-ii-genesis-mission-awards/",source:"ORNL",category:"AI models",tier:"Related",kind:"news"}
 ];
 
-const $=id=>document.getElementById(id);
 const labs=[["DOE","https://www.energy.gov/"],["Genesis Mission","https://genesis.energy.gov/"],["Oak Ridge","https://www.ornl.gov/"],["Argonne","https://www.anl.gov/"],["Brookhaven","https://www.bnl.gov/"],["Berkeley Lab","https://www.lbl.gov/"],["Los Alamos","https://www.lanl.gov/"],["Pacific Northwest","https://www.pnnl.gov/"]];
 const research=["Data","Infrastructure","AI models","National challenges","Partnerships"];
 const icons={Data:"database",Infrastructure:"server","AI models":"cpu","National challenges":"leaf",Partnerships:"handshake"};
