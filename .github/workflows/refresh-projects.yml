@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install requests pdfplumber
+      - run: pip install requests pdfplumber beautifulsoup4
       - run: python scripts/import_genesis_projects.py
       - run: python scripts/collect_genesis_news.py
       - name: Commit updated official project records
