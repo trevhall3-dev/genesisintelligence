@@ -1,5 +1,9 @@
 name: Refresh official Genesis project registry
 on:
+  push:
+    paths:
+      - 'scripts/import_genesis_projects.py'
+      - '.github/workflows/refresh-projects.yml'
   workflow_dispatch:
   schedule:
     - cron: "17 6 * * *"
