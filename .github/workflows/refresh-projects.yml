@@ -1,8 +1,7 @@
-name: Refresh official Genesis project registry
+name: Refresh official Genesis news
 on:
   push:
     paths:
-      - 'scripts/import_genesis_projects.py'
       - 'scripts/collect_genesis_news.py'
       - '.github/workflows/refresh-projects.yml'
   workflow_dispatch:
@@ -10,6 +9,9 @@ on:
     - cron: "17 */2 * * *"
 permissions:
   contents: write
+concurrency:
+  group: genesis-news-refresh
+  cancel-in-progress: false
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -18,16 +20,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install requests pdfplumber beautifulsoup4
-      - run: python scripts/import_genesis_projects.py
+      - run: pip install requests beautifulsoup4
       - run: python scripts/collect_genesis_news.py
-      - name: Commit updated official project records
+      - name: Commit updated Genesis news archive
         run: |
           git config user.name "genesis-intelligence-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add dist/projects.json dist/news-archive.json
+          git add dist/news-archive.json
           if ! git diff --staged --quiet; then
-            git commit -m "Refresh DOE Genesis project registry"
+            git commit -m "Refresh official DOE Genesis news archive"
             git pull --rebase origin main
             git push origin main
           fi
