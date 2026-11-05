@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-05T06:50:14.760402+00:00",
+  "updated_at": "2026-11-05T16:29:24.890185+00:00",
   "count": 20,
-  "method": "Direct official DOE Genesis listings plus editorially verified laboratory announcements; no Google News",
+  "method": "Direct official DOE Genesis news listings; no Google News",
   "sources": [
     {
       "name": "DOE Genesis Mission",
@@ -26,7 +26,7 @@
       "classification": "Related AI & SI Research",
       "kind": "discovery",
       "source_method": "editorially-verified-official-source",
-      "id": "verified-lab-20261105-0"
+      "id": "94453b9e61550de43188"
     },
     {
       "title": "EMSL opens FY 2027 NextGen Molecular Workflows campaign",
@@ -45,7 +45,7 @@
       "classification": "Related AI & SI Research",
       "kind": "discovery",
       "source_method": "editorially-verified-official-source",
-      "id": "verified-lab-20261105-1"
+      "id": "b701c5994025227540a5"
     },
     {
       "title": "EMSL opens FY 2027 Systems Biology Modeling campaign",
@@ -64,7 +64,7 @@
       "classification": "Related AI & SI Research",
       "kind": "discovery",
       "source_method": "editorially-verified-official-source",
-      "id": "verified-lab-20261105-2"
+      "id": "a1c89f3385110400f467"
     },
     {
       "title": "EMSL opens FY 2027 Quantum Computing for Metallophores campaign",
@@ -82,7 +82,7 @@
       "classification": "Related AI & SI Research",
       "kind": "discovery",
       "source_method": "editorially-verified-official-source",
-      "id": "verified-lab-20261105-3"
+      "id": "a4c2d0b9994174084cf7"
     },
     {
       "title": "Argonne expands ALCF Inference Service with Tara and Minerva",
@@ -99,7 +99,7 @@
       "classification": "Confirmed Genesis",
       "kind": "discovery",
       "source_method": "editorially-verified-official-source",
-      "id": "verified-lab-20261105-4"
+      "id": "03c6ff877e4a668487a7"
     },
     {
       "title": "PNNL launches BattMan Accelerator for SI-driven battery manufacturing",
@@ -117,7 +117,7 @@
       "classification": "Related AI & SI Research",
       "kind": "discovery",
       "source_method": "editorially-verified-official-source",
-      "id": "verified-lab-20261105-5"
+      "id": "cb8488f2f24e7f251808"
     },
     {
       "id": "c324109fda3509b52f80",
@@ -286,6 +286,5 @@
       "kind": "discovery",
       "source_method": "direct-official-listing"
     }
-  ],
-  "editorial_updated_at": "2026-11-05T14:53:39.457Z"
+  ]
 }
