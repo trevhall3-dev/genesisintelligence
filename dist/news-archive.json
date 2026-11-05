@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-05T06:50:14.760402+00:00",
-  "count": 14,
-  "method": "Direct official DOE Genesis news listings; no Google News",
+  "count": 20,
+  "method": "Direct official DOE Genesis listings plus editorially verified laboratory announcements; no Google News",
   "sources": [
     {
       "name": "DOE Genesis Mission",
@@ -10,6 +10,115 @@
     }
   ],
   "items": [
+    {
+      "title": "EMSL opens FY 2027 Assured SI for Autonomous Biology campaign",
+      "summary": "EMSL invites research teams to evaluate autonomous biological workflows and develop shared reliability diagnostics and reporting standards. This addresses trust and reproducibility in AI-directed experiments. Proposals due December 1, 2026; work begins December 15. No confirmed Genesis Mission affiliation.",
+      "source": "EMSL / PNNL",
+      "url": "https://www.emsl.pnnl.gov/proposals/call-assured-si-autonomous-biology-campaign-fy-2027",
+      "date": "2026-11-05",
+      "group": "Labs",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "Data",
+        "Partnerships"
+      ],
+      "classification": "Related AI & SI Research",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "id": "verified-lab-20261105-0"
+    },
+    {
+      "title": "EMSL opens FY 2027 NextGen Molecular Workflows campaign",
+      "summary": "EMSL is connecting CoreMS molecular annotation and SIMPLE simulations through SI agents. The campaign will produce interoperable datasets and validated workflows for biodesign and critical-mineral research. Proposals due December 1, 2026; work begins December 15. No confirmed Genesis Mission affiliation.",
+      "source": "EMSL / PNNL",
+      "url": "https://www.emsl.pnnl.gov/proposals/call-nextgen-molecular-workflows-campaign-fy-2027",
+      "date": "2026-11-05",
+      "group": "Labs",
+      "category": "Data",
+      "categories": [
+        "Data",
+        "AI models",
+        "National challenges",
+        "Partnerships"
+      ],
+      "classification": "Related AI & SI Research",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "id": "verified-lab-20261105-1"
+    },
+    {
+      "title": "EMSL opens FY 2027 Systems Biology Modeling campaign",
+      "summary": "EMSL invites teams to combine multiomics data, metabolic modeling and SI analysis. Reusable workflows will help explain microbial pathways and support biotechnology and critical-material recovery. Proposals due December 1, 2026; work begins December 15. No confirmed Genesis Mission affiliation.",
+      "source": "EMSL / PNNL",
+      "url": "https://www.emsl.pnnl.gov/proposals/call-systems-biology-modeling-campaign-fy-2027",
+      "date": "2026-11-05",
+      "group": "Labs",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "Data",
+        "National challenges",
+        "Partnerships"
+      ],
+      "classification": "Related AI & SI Research",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "id": "verified-lab-20261105-2"
+    },
+    {
+      "title": "EMSL opens FY 2027 Quantum Computing for Metallophores campaign",
+      "summary": "EMSL invites researchers to benchmark hybrid classical-quantum methods for microbial metal-binding molecules. Shared reference datasets and validated workflows could support critical-mineral recovery research. Proposals due December 1, 2026; work begins December 15. No confirmed Genesis Mission affiliation.",
+      "source": "EMSL / PNNL",
+      "url": "https://www.emsl.pnnl.gov/proposals/call-quantum-computing-metallophores-campaign-fy-2027",
+      "date": "2026-11-05",
+      "group": "Labs",
+      "category": "National challenges",
+      "categories": [
+        "National challenges",
+        "Data",
+        "Partnerships"
+      ],
+      "classification": "Related AI & SI Research",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "id": "verified-lab-20261105-3"
+    },
+    {
+      "title": "Argonne expands ALCF Inference Service with Tara and Minerva",
+      "summary": "New Tara and Minerva systems expand shared model-serving capacity for Genesis Mission teams and the broader ALCF research community. The service offers more than 50 models and is developing support for agent-assisted scientific workflows.",
+      "source": "Argonne / ALCF",
+      "url": "https://www.alcf.anl.gov/news/new-systems-boost-capabilities-alcf-inference-service",
+      "date": "2026-11-04",
+      "group": "Labs",
+      "category": "Infrastructure",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ],
+      "classification": "Confirmed Genesis",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "id": "verified-lab-20261105-4"
+    },
+    {
+      "title": "PNNL launches BattMan Accelerator for SI-driven battery manufacturing",
+      "summary": "The Battery Manufacturing Accelerator brings laboratories and universities together to advance battery scale-up using SI, manufacturing data and digital tools. Industry partnerships are being formed. The announcement does not establish Genesis Mission affiliation.",
+      "source": "PNNL",
+      "url": "https://www.pnnl.gov/news-media/new-doe-consortium-advances-si-driven-battery-manufacturing-strengthen-us",
+      "date": "2026-10-28",
+      "group": "Labs",
+      "category": "Partnerships",
+      "categories": [
+        "Partnerships",
+        "Infrastructure",
+        "AI models"
+      ],
+      "classification": "Related AI & SI Research",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "id": "verified-lab-20261105-5"
+    },
     {
       "id": "c324109fda3509b52f80",
       "title": "Genesis Mission Hackathon brings research community together to build future of science",
@@ -177,5 +286,6 @@
       "kind": "discovery",
       "source_method": "direct-official-listing"
     }
-  ]
+  ],
+  "editorial_updated_at": "2026-11-05T14:53:39.457Z"
 }
