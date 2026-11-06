@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T01:38:07.954246+00:00",
+  "updated_at": "2026-11-06T01:48:33.529874+00:00",
   "count": 25,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -71,6 +71,32 @@
       "group": "Labs",
       "ok": true,
       "count": 0
+    },
+    {
+      "name": "Caltech News",
+      "group": "Partners",
+      "ok": false,
+      "count": 0,
+      "error": "403 Client Error: Forbidden for url: https://www.caltech.edu/about/news"
+    },
+    {
+      "name": "IBM Newsroom",
+      "group": "Partners",
+      "ok": true,
+      "count": 0
+    },
+    {
+      "name": "MIT News",
+      "group": "Partners",
+      "ok": true,
+      "count": 0
+    },
+    {
+      "name": "Stanford Report",
+      "group": "Partners",
+      "ok": false,
+      "count": 0,
+      "error": "403 Client Error: Forbidden for url: https://news.stanford.edu/"
     }
   ],
   "items": [
