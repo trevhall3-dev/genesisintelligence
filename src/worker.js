@@ -15,6 +15,7 @@ async function classifiedRoster(env){
  return {...doc,metadata:{...doc.metadata,classification_version:policy.version},projects:doc.projects.map(p=>{const categories=tagsFor(p,policy);return {...p,category:categories[0],categories}})};
 }
 const MIGRATIONS=[
+ "CREATE TABLE IF NOT EXISTS national_challenges(id TEXT PRIMARY KEY,title TEXT NOT NULL,challenge_group TEXT NOT NULL,source_url TEXT NOT NULL,verified_at TEXT NOT NULL)",
  "CREATE TABLE IF NOT EXISTS source_versions(source TEXT PRIMARY KEY,content_hash TEXT NOT NULL,imported_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,item_count INTEGER NOT NULL DEFAULT 0)",
  "CREATE TABLE IF NOT EXISTS organizations(id TEXT PRIMARY KEY,name TEXT NOT NULL UNIQUE,organization_type TEXT,website TEXT,first_seen_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP)",
  "CREATE TABLE IF NOT EXISTS project_tags(project_id TEXT NOT NULL,tag TEXT NOT NULL,basis TEXT NOT NULL DEFAULT 'provisional-title-classification',PRIMARY KEY(project_id,tag))",
@@ -147,6 +148,13 @@ async function linkProjectsAndCandidates(env){
 async function synchronize(env){
  if(!env.DB)return {ok:false,reason:"D1 binding missing"};
  const db=env.DB;await migrate(db);
+ const catalog=await asset(env,"challenges.json");
+ if(catalog.challenges.length!==33)throw Error("Official challenge catalog incomplete");
+ const challengeHash=await digest(JSON.stringify(catalog.challenges));
+ if(challengeHash!==await previousHash(db,"national-challenges")){
+  await sendBatches(db,catalog.challenges.map(c=>db.prepare("INSERT INTO national_challenges(id,title,challenge_group,source_url,verified_at) VALUES(?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET title=excluded.title,challenge_group=excluded.challenge_group,source_url=excluded.source_url,verified_at=excluded.verified_at").bind(c.id,c.title,c.group,c.source_url,catalog.metadata.verified_at)));
+  await markVersion(db,"national-challenges",challengeHash,catalog.challenges.length);
+ }
  const projects=await syncProjects(env);
  const news=await syncNews(env);
  const connections=await linkProjectsAndCandidates(env);

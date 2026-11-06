@@ -94,3 +94,8 @@ body{font-size:16px;line-height:1.37}
  .compact-meta{font-size:12px}
  .health-stat{font-size:12px}
 }
+
+
+/* Exact approved raster: retain full composition and top-of-globe breathing room. */
+.hero.approved-hero{height:auto;min-height:0;padding:0;overflow:visible;background:#000}
+.hero.approved-hero .approved-header-art{display:block;width:100%;height:auto;object-fit:contain;object-position:center}

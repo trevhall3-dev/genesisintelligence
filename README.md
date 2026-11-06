@@ -90,3 +90,5 @@ The Build 2.1 GitHub validation workflow checks JS syntax, 297 unique public pro
 `dist/project-classification.json` supplies the same provisional rules to the daily importer and Worker. Project selections receive Data, Infrastructure and/or AI Models tags; AI Models includes applied AI workflows. Broad subject words no longer confer an official challenge label. The Worker replaces old stored tags during sync and recomputes tags on reads so an old D1 classification cannot reintroduce the catch-all before synchronization.
 
 Ask Genesis SI remains a Build 3 placeholder; no AI service has been activated.
+
+The final masthead is the approved generated image `dist/header-final-20261106.png`, with the shortened L foot and SI overhang. It is displayed at its native proportions without cropping or substituting a drawn globe. The hourly D1 synchronization also stores the 33 official challenges in `national_challenges`, separately from project selections.
