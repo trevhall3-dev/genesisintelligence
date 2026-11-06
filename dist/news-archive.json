@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-06T01:58:16.691926+00:00",
-  "count": 25,
+  "updated_at": "2026-11-06T19:31:57.577801+00:00",
+  "count": 26,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -26,7 +26,7 @@
       "name": "Fermilab",
       "group": "Labs",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "name": "Lawrence Berkeley National Laboratory",
@@ -95,6 +95,21 @@
     }
   ],
   "items": [
+    {
+      "id": "38ec666710042c50cc29",
+      "title": "‘Genesis Agent Skills’ release to support innovation across the Genesis Mission",
+      "summary": "or building, evaluating, and improving Super Intelligence (SI) enabled systems Editor’s note: The following press release was originally published by the Department of Energy’s Office of Science. As part of the Genesis Agent Skills release, Fermilab",
+      "source": "Fermilab",
+      "url": "https://news.fnal.gov/2026/11/genesis-agent-skills-release-to-support-innovation-across-the-genesis-mission/",
+      "date": "2026-11-06",
+      "group": "Labs",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": [
+        "genesis-5ee9917971a3bbf82e46"
+      ]
+    },
     {
       "title": "EMSL opens FY 2027 Systems Biology Modeling campaign",
       "summary": "EMSL invites teams to combine multiomics data, metabolic modeling and SI analysis. Reusable workflows will help explain microbial pathways and support biotechnology and critical-material recovery. Proposals due December 1, 2026; work begins December 15. No confirmed Genesis Mission affiliation.",
