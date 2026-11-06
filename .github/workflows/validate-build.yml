@@ -1,0 +1,51 @@
+name: Validate Genesis Intel Build 2.1
+on:
+  push:
+    paths:
+      - 'dist/index.html'
+      - 'dist/app.js'
+      - 'dist/styles.css'
+      - 'dist/header-approved.svg'
+      - 'src/**'
+      - 'database/**'
+      - 'scripts/**'
+      - 'wrangler.jsonc'
+      - '.github/workflows/validate-build.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check dashboard and Worker syntax
+        run: |
+          node --check dist/app.js
+          node --input-type=module --check < src/worker.js
+      - name: Validate registry, direct publisher links, SVG, and additive D1 schema
+        run: |
+          python - <<'PY'
+          import json,sqlite3,xml.etree.ElementTree as ET
+          from urllib.parse import urlparse
+          p=json.load(open('dist/projects.json',encoding='utf-8'))['projects']
+          assert len(p)==297, f'Expected 297 Genesis records, got {len(p)}'
+          assert len({x['id'] for x in p})==297, 'Duplicate project IDs'
+          news=json.load(open('dist/news-archive.json',encoding='utf-8'))['items']
+          assert all(urlparse(x['url']).scheme=='https' and urlparse(x['url']).hostname!='news.google.com' for x in news)
+          ET.parse('dist/header-approved.svg')
+          db=sqlite3.connect(':memory:')
+          db.executescript(open('database/schema.sql',encoding='utf-8').read())
+          assert len(db.execute("SELECT name FROM sqlite_master WHERE type='table'").fetchall())>=8
+          print('Validated 297 unique projects,',len(news),'publisher links, header SVG and D1 schema')
+          PY
+      - name: Compile scheduled collectors
+        run: python -m py_compile scripts/import_genesis_projects.py scripts/collect_genesis_news.py
+      - name: Validate Cloudflare Worker bundle locally (no deployment)
+        run: npx --yes wrangler@4.156.1 deploy --dry-run --outdir=./.wrangler-check
