@@ -50,3 +50,47 @@ body{font-size:16px;line-height:1.37}
 @media(max-width:1100px){.hero{padding:6px 16px;gap:12px}.hero .brand strong{font-size:29px}.hero .brand small{font-size:10px;max-width:560px;white-space:normal}.hero .synergy{font-size:14px;min-width:175px;padding-left:16px}.hero .synergy-s{width:43px;height:43px}}
 @media(max-width:800px){.hero{height:78px;min-height:78px;padding:6px 10px;gap:8px}.hero .mark .lucide{width:38px;height:38px}.hero .brand strong{font-size:clamp(18px,4vw,28px);white-space:nowrap}.hero .brand small{font-size:9px;letter-spacing:.025em;line-height:1.25;white-space:normal}.hero .synergy{min-width:0;font-size:10px;padding-left:8px;gap:5px}.hero .synergy-s{width:30px;height:30px}.hero .hero-globe{right:12%;width:70%;opacity:.55}}
 @media(max-width:420px){.hero .synergy-s{width:24px;height:24px}.hero .synergy{font-size:9px}.hero .mark .lucide{width:30px;height:30px}.hero .brand strong{font-size:18px}}
+
+
+/* Build 2.1: approved compact brand banner and accessible news-first layout. */
+[hidden]{display:none!important}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.approved-hero{height:clamp(82px,6.46vw,124px);padding:0;display:block;border:0;overflow:hidden;background:#000;position:relative}
+.approved-header-art{display:block;width:100%;height:100%;object-fit:cover;object-position:center center}
+.pillars>button.current{border-color:#9eff14;box-shadow:0 0 0 1px #9eff143d,inset 0 1px #b4ff4659}
+.compact-title{font-size:16px;line-height:1.28;font-weight:750;min-height:25px;display:flex;align-items:center}
+.compact-title .headline{flex:1}
+.compact-meta{font-size:13px;line-height:1.35;display:flex;align-items:center;flex-wrap:wrap;gap:3px 13px;margin-top:3px}
+.compact-item{padding:6px 5px 7px;min-height:54px}
+.article-source{color:#A3FF38;font-weight:700}
+.article-date{color:#B0C3D1}
+.record-tag{color:#89B3A0;font-size:12px}
+.research-sub #partnershipInfo{color:#ADD9B2;border-top:1px solid #2A4C4B;margin-top:4px;padding-top:10px}
+.research-sub #partnershipInfo::before{display:none}
+.research-sub #partnershipInfo .lucide{width:15px;height:15px;color:#9AFF14}
+.research-sub #partnershipInfo small{font-size:9px;letter-spacing:.04em;color:#A2BDAF;margin-left:auto}
+.collector-health{padding:3px 0 0}
+.health-stat{display:flex;align-items:center;gap:9px;border-bottom:1px solid #29474B;padding:7px 2px;font-size:13px}
+.health-stat .lucide{width:17px;height:17px;color:#98FF21}
+.health-stat span{flex:1;color:#D5E5E5}
+.health-stat strong{color:#A8F884;text-align:right;font-size:13px;font-weight:750}
+.collector-health .rail-note{margin:9px 0 0;color:#A3B4B3;font-size:12px;line-height:1.42}
+.monitor-row{font-size:13px;line-height:1.28;gap:7px}
+.monitor-row small{color:#AEC7C8;font-size:11px;text-align:right}
+.tracker-row{padding:7px 4px}
+.rail-note{line-height:1.4}
+.feed-heading h2{font-size:18px;white-space:normal}
+.status{font-size:12px;color:#A6BDBC}
+@media(min-width:1400px){
+ .dashboard{grid-template-columns:minmax(230px,18%) minmax(510px,1fr) minmax(320px,29%)}
+ .compact-title{font-size:16px}
+ .compact-meta{font-size:13px}
+}
+@media(max-width:1100px){.approved-hero{height:88px}.approved-header-art{object-fit:cover}}
+@media(max-width:790px){
+ .approved-hero{height:78px}
+ .approved-header-art{object-position:42% center}
+ .compact-title{font-size:15px}
+ .compact-meta{font-size:12px}
+ .health-stat{font-size:12px}
+}
