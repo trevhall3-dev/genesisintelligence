@@ -238,7 +238,7 @@ def merge(channel,found,source_status):
             d["project_ids"]=previous["project_ids"]
         records[key]=d
     rows=sorted(records.values(),key=lambda x:(x.get("date") or "",x.get("title") or ""),reverse=True)[:4000]
-    old_states={x["name"]:x for x in old.get("sources",[])}
+    old_states={(("DOE Genesis Mission News" if x["name"]=="DOE Genesis Mission" else x["name"])):{**x,"name":("DOE Genesis Mission News" if x["name"]=="DOE Genesis Mission" else x["name"])} for x in old.get("sources",[])}
     for x in source_status:old_states[x["name"]]=x
     statuses=sorted(old_states.values(),key=lambda x:(x.get("group") or "",x["name"]))
     change_signature=lambda xs:json.dumps(xs,sort_keys=True,ensure_ascii=False)
