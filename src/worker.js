@@ -91,6 +91,19 @@ function projectAssociation(d,p){
  const aliases=(String(p.title||"").match(/\b[A-Z][A-Z0-9-]{3,}\b/g)||[]).filter(x=>!["GENESIS","MISSION","DATA","SCIENCE","ENERGY","MODEL","PROJECT","PHASE"].includes(x));
  return /\bgenesis\b/i.test(text)&&aliases.some(a=>new RegExp("\\b"+a.replace(/[-/\\^$*+?.()|[\]{}]/g,"\\$&")+"\\b","i").test(text))?"acronym-genesis":null;
 }
+function extractOrganizationNames(text){
+ const names=new Set();
+ const patterns=[
+  /\bUniversity of [A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,4}\b/g,
+  /\b[A-Z][A-Za-z.-]+(?:\s+[A-Z][A-Za-z.-]+){0,4}\s(?:National Laboratory|National Laboratories|University|Research Institute|Institute of Technology|Technologies|Corporation|Systems)\b/g,
+  /\b(?:IBM|NVIDIA|Microsoft|Cadence|Amazon Web Services|Stony Brook University|Stanford University|Commonwealth Fusion Systems|MIT|Oak Ridge National Laboratory|Argonne National Laboratory|Brookhaven National Laboratory|Pacific Northwest National Laboratory)\b/g
+ ];
+ for(const regex of patterns)for(const match of String(text||"").matchAll(regex)){
+  const name=match[0].trim().slice(0,110);
+  if(name.length>=3&&!/^(Genesis Mission|Department of Energy|DOE)$/i.test(name))names.add(name);
+ }
+ return [...names].slice(0,35);
+}
 async function linkProjectsAndCandidates(env){
  const db=env.DB;
  const projects=(await db.prepare("SELECT id,title,institution FROM projects LIMIT 1200").all()).results||[];
@@ -111,15 +124,16 @@ async function linkProjectsAndCandidates(env){
    const method=hintedByNews.get(d.id)?.has(p.id)?"publisher-page-project-match":projectAssociation(d,p);
    linked.push(db.prepare("INSERT OR IGNORE INTO project_news(project_id,news_id,match_method) VALUES(?,?,?)").bind(p.id,d.id,method));
    if(!collab)continue;
-   for(const org of candidatesByOrg){
-    if(org.institution===p.institution||org.institution.length<12)continue;
-    const idx=content.toLowerCase().indexOf(org.institution.toLowerCase());
+   const actorNames=new Set([...candidatesByOrg.map(x=>x.institution),...extractOrganizationNames(content)]);
+   for(const name of actorNames){
+    if(name.toLowerCase()===String(p.institution||"").toLowerCase())continue;
+    const idx=content.toLowerCase().indexOf(name.toLowerCase());
     if(idx<0)continue;
-    const context=content.slice(Math.max(0,idx-130),Math.min(content.length,idx+org.institution.length+130));
+    const context=content.slice(Math.max(0,idx-110),Math.min(content.length,idx+name.length+110));
     if(!/\b(collaborat|partner|jointly|working with)\b/i.test(context))continue;
-    const orgId=(await digest(org.institution.toLowerCase())).slice(0,24);
+    const orgId=(await digest(name.toLowerCase())).slice(0,24);
     const id=(await digest(p.id+"|"+orgId+"|"+d.url)).slice(0,24);
-    organizations.set(orgId,org.institution);
+    organizations.set(orgId,name);
     candidates.push({id,project_id:p.id,org_id:orgId,url:d.url,excerpt:context.slice(0,320)});
     if(candidates.length>=120)break;
    }
