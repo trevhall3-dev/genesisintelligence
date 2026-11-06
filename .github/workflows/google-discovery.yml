@@ -1,0 +1,32 @@
+name: Google discovery (editorial queue only)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '13 9 * * *'
+permissions:
+  contents: write
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Discover leads without publishing
+        env:
+          GOOGLE_SEARCH_API_KEY: ${{ secrets.GOOGLE_SEARCH_API_KEY }}
+          GOOGLE_SEARCH_ENGINE_ID: ${{ secrets.GOOGLE_SEARCH_ENGINE_ID }}
+        run: python scripts/google_discovery.py
+      - name: Commit editorial queue only
+        run: |
+          if [ -f review/google-discoveries.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add review/google-discoveries.json
+            if ! git diff --cached --quiet; then
+              git commit -m "chore: update pending Google discovery leads"
+              git pull --rebase origin main
+              git push origin HEAD:main
+            fi
+          fi
