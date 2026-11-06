@@ -1,0 +1,29 @@
+name: Free scientific discovery
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 10 * * *'
+permissions:
+  contents: write
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Discover arXiv research leads
+        run: python scripts/science_discovery.py
+      - name: Commit unpublished review queue
+        run: |
+          if [ -f review/science-discoveries.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add review/science-discoveries.json
+            if ! git diff --cached --quiet; then
+              git commit -m "chore: refresh pending science discoveries"
+              git pull --rebase origin main
+              git push origin HEAD:main
+            fi
+          fi
