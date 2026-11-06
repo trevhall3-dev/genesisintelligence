@@ -1,52 +1,21 @@
 {
-  "updated_at": "2026-11-05T23:39:38.654121+00:00",
+  "updated_at": "2026-11-06T01:37:26.695609+00:00",
   "count": 20,
-  "method": "Direct official DOE Genesis news listings; no Google News",
+  "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
       "name": "DOE Genesis Mission",
       "ok": true,
       "count": 13
+    },
+    {
+      "name": "DOE Genesis Mission News",
+      "group": "DOE",
+      "ok": true,
+      "count": 13
     }
   ],
   "items": [
-    {
-      "title": "EMSL opens FY 2027 Assured SI for Autonomous Biology campaign",
-      "summary": "EMSL invites research teams to evaluate autonomous biological workflows and develop shared reliability diagnostics and reporting standards. This addresses trust and reproducibility in AI-directed experiments. Proposals due December 1, 2026; work begins December 15. No confirmed Genesis Mission affiliation.",
-      "source": "EMSL / PNNL",
-      "url": "https://www.emsl.pnnl.gov/proposals/call-assured-si-autonomous-biology-campaign-fy-2027",
-      "date": "2026-11-05",
-      "group": "Labs",
-      "category": "AI models",
-      "categories": [
-        "AI models",
-        "Data",
-        "Partnerships"
-      ],
-      "classification": "Related AI & SI Research",
-      "kind": "discovery",
-      "source_method": "editorially-verified-official-source",
-      "id": "94453b9e61550de43188"
-    },
-    {
-      "title": "EMSL opens FY 2027 NextGen Molecular Workflows campaign",
-      "summary": "EMSL is connecting CoreMS molecular annotation and SIMPLE simulations through SI agents. The campaign will produce interoperable datasets and validated workflows for biodesign and critical-mineral research. Proposals due December 1, 2026; work begins December 15. No confirmed Genesis Mission affiliation.",
-      "source": "EMSL / PNNL",
-      "url": "https://www.emsl.pnnl.gov/proposals/call-nextgen-molecular-workflows-campaign-fy-2027",
-      "date": "2026-11-05",
-      "group": "Labs",
-      "category": "Data",
-      "categories": [
-        "Data",
-        "AI models",
-        "National challenges",
-        "Partnerships"
-      ],
-      "classification": "Related AI & SI Research",
-      "kind": "discovery",
-      "source_method": "editorially-verified-official-source",
-      "id": "b701c5994025227540a5"
-    },
     {
       "title": "EMSL opens FY 2027 Systems Biology Modeling campaign",
       "summary": "EMSL invites teams to combine multiomics data, metabolic modeling and SI analysis. Reusable workflows will help explain microbial pathways and support biotechnology and critical-material recovery. Proposals due December 1, 2026; work begins December 15. No confirmed Genesis Mission affiliation.",
@@ -83,6 +52,43 @@
       "kind": "discovery",
       "source_method": "editorially-verified-official-source",
       "id": "a4c2d0b9994174084cf7"
+    },
+    {
+      "title": "EMSL opens FY 2027 NextGen Molecular Workflows campaign",
+      "summary": "EMSL is connecting CoreMS molecular annotation and SIMPLE simulations through SI agents. The campaign will produce interoperable datasets and validated workflows for biodesign and critical-mineral research. Proposals due December 1, 2026; work begins December 15. No confirmed Genesis Mission affiliation.",
+      "source": "EMSL / PNNL",
+      "url": "https://www.emsl.pnnl.gov/proposals/call-nextgen-molecular-workflows-campaign-fy-2027",
+      "date": "2026-11-05",
+      "group": "Labs",
+      "category": "Data",
+      "categories": [
+        "Data",
+        "AI models",
+        "National challenges",
+        "Partnerships"
+      ],
+      "classification": "Related AI & SI Research",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "id": "b701c5994025227540a5"
+    },
+    {
+      "title": "EMSL opens FY 2027 Assured SI for Autonomous Biology campaign",
+      "summary": "EMSL invites research teams to evaluate autonomous biological workflows and develop shared reliability diagnostics and reporting standards. This addresses trust and reproducibility in AI-directed experiments. Proposals due December 1, 2026; work begins December 15. No confirmed Genesis Mission affiliation.",
+      "source": "EMSL / PNNL",
+      "url": "https://www.emsl.pnnl.gov/proposals/call-assured-si-autonomous-biology-campaign-fy-2027",
+      "date": "2026-11-05",
+      "group": "Labs",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "Data",
+        "Partnerships"
+      ],
+      "classification": "Related AI & SI Research",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "id": "94453b9e61550de43188"
     },
     {
       "title": "Argonne expands ALCF Inference Service with Tara and Minerva",
@@ -122,86 +128,93 @@
     {
       "id": "c324109fda3509b52f80",
       "title": "Genesis Mission Hackathon brings research community together to build future of science",
-      "summary": "Over 450 attendees participated in the Genesis Mission Hackathon, developing a strong starting point for integrating their scientific workflows into the Genesis Mission Platform.",
-      "source": "DOE",
+      "summary": "October 21, 2026 Over 450 attendees participated in the Genesis Mission Hackathon, developing a strong starting point for integrating their scientific workflows into the Genesis Mission Platform.",
+      "source": "DOE Genesis Mission News",
       "url": "https://www.energy.gov/undersecretaryforscience/genesis-mission/articles/genesis-mission-hackathon-brings-research",
       "date": "2026-10-21",
       "group": "DOE",
       "category": "National challenges",
       "kind": "discovery",
-      "source_method": "direct-official-listing"
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "id": "25304f730042877d5fb7",
       "title": "‘Genesis Agent Skills’ Release to Support Innovation Across the Genesis Mission",
-      "summary": "New public software release gives researchers plain-language access to reusable guidance and tools for building, evaluating, and improving Super Intelligence (SI) enabled systems",
-      "source": "DOE",
+      "summary": "October 15, 2026 New public software release gives researchers plain-language access to reusable guidance and tools for building, evaluating, and improving Super Intelligence (SI) enabled systems",
+      "source": "DOE Genesis Mission News",
       "url": "https://www.energy.gov/science/articles/genesis-agent-skills-release-support-innovation-across-genesis-mission",
       "date": "2026-10-15",
       "group": "DOE",
       "category": "National challenges",
       "kind": "discovery",
-      "source_method": "direct-official-listing"
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "id": "f5f24a10da6c61e5099d",
       "title": "FACT SHEET: The Energy Department is Ushering in a Golden Age of American Science",
-      "summary": "The Trump Administration is Accelerating Scientific Discovery, Securing American Technological Leadership, and Building the Next Generation of American Scientists",
-      "source": "DOE",
+      "summary": "October 9, 2026 The Trump Administration is Accelerating Scientific Discovery, Securing American Technological Leadership, and Building the Next Generation of American Scientists",
+      "source": "DOE Genesis Mission News",
       "url": "https://www.energy.gov/articles/fact-sheet-energy-department-ushering-golden-age-american-science",
       "date": "2026-10-09",
       "group": "DOE",
       "category": "National challenges",
       "kind": "discovery",
-      "source_method": "direct-official-listing"
-    },
-    {
-      "id": "202605c0623aa2fe5232",
-      "title": "Energy Department Announces New Genesis Mission Awards to Advance Super Intelligence for Science",
-      "summary": "Twelve newly selected Phase II and six Phase I projects to advance the frontiers of Super Intelligence (SI) for science, capping a first-year cohort of 297 projects across the Genesis Mission portfolio.",
-      "source": "DOE",
-      "url": "https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science",
-      "date": "2026-10-08",
-      "group": "DOE",
-      "category": "National challenges",
-      "kind": "discovery",
-      "source_method": "direct-official-listing"
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "id": "010d0f6c5bb84ce4451c",
       "title": "Energy Department Launches Genesis Mission Graduate Fellowship to Advance American Scientific Leadership",
-      "summary": "Inaugural fellowship program aims to build a robust domestic, Super Intelligence (SI)-ready scientific workforce through dual-competency training and research experiences at DOE National Labs and with industry partners.",
-      "source": "DOE",
+      "summary": "October 8, 2026 Inaugural fellowship program aims to build a robust domestic, Super Intelligence (SI)-ready scientific workforce through dual-competency training and research experiences at DOE National Labs and with industry partners.",
+      "source": "DOE Genesis Mission News",
       "url": "https://www.energy.gov/articles/energy-department-launches-genesis-mission-graduate-fellowship-advance-american-scientific",
       "date": "2026-10-08",
       "group": "DOE",
       "category": "National challenges",
       "kind": "discovery",
-      "source_method": "direct-official-listing"
+      "source_method": "publisher-direct",
+      "project_ids": []
+    },
+    {
+      "id": "202605c0623aa2fe5232",
+      "title": "Energy Department Announces New Genesis Mission Awards to Advance Super Intelligence for Science",
+      "summary": "October 8, 2026 Twelve newly selected Phase II and six Phase I projects to advance the frontiers of Super Intelligence (SI) for science, capping a first-year cohort of 297 projects across the Genesis Mission portfolio.",
+      "source": "DOE Genesis Mission News",
+      "url": "https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science",
+      "date": "2026-10-08",
+      "group": "DOE",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "id": "d6c7dea6b0b258abeae8",
       "title": "DOE Announces Science Applications for Quantum Computing",
-      "summary": "Key scientific utility problems will guide Quantum Genesis’s goal of developing fault-tolerant scientifically relevant quantum computers.",
-      "source": "DOE",
+      "summary": "October 8, 2026 Key scientific utility problems will guide Quantum Genesis’s goal of developing fault-tolerant scientifically relevant quantum computers.",
+      "source": "DOE Genesis Mission News",
       "url": "https://www.energy.gov/science/articles/doe-announces-science-applications-quantum-computing",
       "date": "2026-10-08",
       "group": "DOE",
       "category": "National challenges",
       "kind": "discovery",
-      "source_method": "direct-official-listing"
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "id": "5a1200fb4d5982f4158f",
       "title": "DOE Launches Competition to Accelerate Development of World’s First Fault-Tolerant Quantum Computer",
-      "summary": "Applicants are invited to submit proposals for the Quantum Genesis Q competition.",
-      "source": "DOE",
+      "summary": "September 17, 2026 Applicants are invited to submit proposals for the Quantum Genesis Q competition.",
+      "source": "DOE Genesis Mission News",
       "url": "https://www.energy.gov/science/articles/doe-launches-competition-accelerate-development-worlds-first-fault-tolerant",
       "date": "2026-09-17",
       "group": "DOE",
       "category": "National challenges",
       "kind": "discovery",
-      "source_method": "direct-official-listing"
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "id": "f803094f66824c3c83ee",
@@ -217,74 +230,80 @@
     {
       "id": "7689790f6ce9167907bb",
       "title": "U.S. Department of Energy Launches the Genesis Open Models Initiative – Apply Now!",
-      "summary": "By releasing models with open-weights, DOE seeks to galvanize the scientific and AI communities around shared infrastructure for science.",
-      "source": "DOE",
+      "summary": "August 7, 2026 By releasing models with open-weights, DOE seeks to galvanize the scientific and AI communities around shared infrastructure for science.",
+      "source": "DOE Genesis Mission News",
       "url": "https://www.energy.gov/undersecretaryforscience/articles/us-department-energy-launches-genesis-open-models-initiative",
       "date": "2026-08-07",
       "group": "DOE",
       "category": "National challenges",
       "kind": "discovery",
-      "source_method": "direct-official-listing"
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "id": "eb9177a6d33b54dbfde5",
       "title": "Secretary of Energy Chris Wright Announces First Genesis Mission Projects Selected to Accelerate AI-Driven Scientific Discovery",
-      "summary": "Nearly 300 projects selected from historic RFA response spanning all 50 states to accelerate breakthroughs in energy, discovery science, and national security.",
-      "source": "DOE",
+      "summary": "July 22, 2026 Nearly 300 projects selected from historic RFA response spanning all 50 states to accelerate breakthroughs in energy, discovery science, and national security.",
+      "source": "DOE Genesis Mission News",
       "url": "https://www.energy.gov/articles/secretary-energy-chris-wright-announces-first-genesis-mission-projects-selected-accelerate",
       "date": "2026-07-22",
       "group": "DOE",
       "category": "National challenges",
       "kind": "discovery",
-      "source_method": "direct-official-listing"
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "id": "1dfb3064a725804ed09d",
       "title": "United States and Japan Announce Historic $1 Billion Partnership Under President Trump’s Genesis Mission",
-      "summary": "The U.S. Department of Energy and Japan’s Ministry of Education, Culture, Sports, Science and Technology and Ministry of Economy, Trade and Industry, today announced an historic $1 billion strategic partnership making Japan the first international partner in President Trump’s Genesis Mission.",
-      "source": "DOE",
+      "summary": "June 4, 2026 The U.S. Department of Energy and Japan’s Ministry of Education, Culture, Sports, Science and Technology and Ministry of Economy, Trade and Industry, today announced an historic $1 billion strategic partnership making Japan the first international partner in President Trump’s Genesis M",
+      "source": "DOE Genesis Mission News",
       "url": "https://www.energy.gov/articles/united-states-and-japan-announce-historic-1-billion-partnership-under-president-trumps",
       "date": "2026-06-04",
       "group": "DOE",
       "category": "National challenges",
       "kind": "discovery",
-      "source_method": "direct-official-listing"
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "id": "97c00b2d64e082ce0aee",
       "title": "Energy Department Announces $293 Million in Funding to Support Genesis Mission National Science and Technology Challenges",
-      "summary": "The U.S. Department of Energy today announced funding to advance the Genesis Mission’s efforts to tackle the nation’s most complex science and technology challenges.",
-      "source": "DOE",
+      "summary": "March 17, 2026 The U.S. Department of Energy today announced funding to advance the Genesis Mission’s efforts to tackle the nation’s most complex science and technology challenges.",
+      "source": "DOE Genesis Mission News",
       "url": "https://www.energy.gov/articles/energy-department-announces-293-million-funding-support-genesis-mission-national-science",
       "date": "2026-03-17",
       "group": "DOE",
       "category": "National challenges",
       "kind": "discovery",
-      "source_method": "direct-official-listing"
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "id": "ef2fc23ecba442f2d6b8",
       "title": "Energy Department Announces 26 Genesis Mission Science and Technology Challenges to Accelerate AI-Enabled American Innovation and Leadership",
-      "summary": "The U.S. Department of Energy today announced 26 science and technology challenges of national importance to advance the Genesis Mission and accelerate innovation and discovery through artificial intelligence (AI).",
-      "source": "DOE",
+      "summary": "February 12, 2026 The U.S. Department of Energy today announced 26 science and technology challenges of national importance to advance the Genesis Mission and accelerate innovation and discovery through artificial intelligence (AI).",
+      "source": "DOE Genesis Mission News",
       "url": "https://www.energy.gov/undersecretaryforscience/articles/energy-department-announces-26-genesis-mission-science-and",
       "date": "2026-02-12",
       "group": "DOE",
       "category": "National challenges",
       "kind": "discovery",
-      "source_method": "direct-official-listing"
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "id": "cf1037959afe49f85aac",
       "title": "Energy Department Launches ‘Genesis Mission’ to Transform American Science and Innovation Through the AI Computing Revolution",
-      "summary": "President Trump today issued an Executive Order to launch the Genesis Mission, a historic national effort led by the Department of Energy.",
-      "source": "DOE",
+      "summary": "November 24, 2025 President Trump today issued an Executive Order to launch the Genesis Mission, a historic national effort led by the Department of Energy.",
+      "source": "DOE Genesis Mission News",
       "url": "https://www.energy.gov/articles/energy-department-launches-genesis-mission-transform-american-science-and-innovation",
       "date": "2025-11-24",
       "group": "DOE",
       "category": "National challenges",
       "kind": "discovery",
-      "source_method": "direct-official-listing"
+      "source_method": "publisher-direct",
+      "project_ids": []
     }
   ]
 }
