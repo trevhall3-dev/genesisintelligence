@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="124" viewBox="0 0 1920 124" role="img" aria-labelledby="brandTitle">
+<title id="brandTitle">Genesis Intel with SI superscript, glowing global network, and haloed Office of Synergy</title>
+<defs>
+  <linearGradient id="back" x1="0" x2="1"><stop stop-color="#000706"/><stop offset=".55" stop-color="#000b08"/><stop offset="1" stop-color="#000303"/></linearGradient>
+  <radialGradient id="sphere" cx=".5" cy="0" r="1"><stop stop-color="#163b1e"/><stop offset=".8" stop-color="#041309"/><stop offset="1" stop-color="#000"/></radialGradient>
+  <filter id="glow" x="-50%" y="-60%" width="200%" height="240%"><feGaussianBlur stdDeviation="4"/></filter>
+  <clipPath id="clip"><path d="M698 125 C887 -75 1419 -75 1623 125Z"/></clipPath>
+</defs>
+<rect width="1920" height="124" fill="url(#back)"/>
+<g fill="none" stroke="#93ff16" stroke-linecap="round" stroke-width="6.2">
+  <ellipse cx="66" cy="63" rx="22" ry="46"/>
+  <ellipse cx="66" cy="63" rx="22" ry="46" transform="rotate(60 66 63)"/>
+  <ellipse cx="66" cy="63" rx="22" ry="46" transform="rotate(-60 66 63)"/>
+</g>
+<circle cx="66" cy="63" r="6" fill="#a8ff28"/><circle cx="66" cy="63" r="2.4" fill="#030b07"/>
+<text x="154" y="69" fill="#F5F9F9" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="52" letter-spacing="-1.8">GENESIS</text>
+<text x="418" y="69" fill="#9BFF0D" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="52" letter-spacing="-1.8">INTEL</text>
+<text x="578" y="29" fill="#FFFFFF" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="900">SI</text>
+<text x="156" y="101" fill="#E6F1F0" font-family="Arial,Helvetica,sans-serif" font-weight="600" font-size="16.5" letter-spacing=".65">GENESIS MISSION INTELLIGENCE • PROJECT AND NEWS TRACKING</text>
+<!-- Glowing network sphere, centered behind the headline and right logo. -->
+<path d="M698 125 C887 -75 1419 -75 1623 125Z" fill="url(#sphere)"/>
+<path d="M698 125 C887 -75 1419 -75 1623 125" stroke="#A0FF21" stroke-width="13" opacity=".64" fill="none" filter="url(#glow)"/>
+<path d="M698 125 C887 -75 1419 -75 1623 125" stroke="#99FF13" stroke-width="3.3" fill="none"/>
+<g clip-path="url(#clip)" fill="none" stroke="#62B626" stroke-width="1.05" opacity=".78">
+ <path d="M750 125 C922 6 1391 6 1576 125"/>
+ <path d="M825 125 C951 34 1332 34 1470 125"/>
+ <path d="M924 125 C1000 65 1257 65 1339 125"/>
+ <path d="M1054 -6 C1074 34 1082 85 1081 125"/><path d="M1208 -6 C1185 43 1190 85 1196 125"/>
+ <path d="M974 -6 C1029 38 1032 83 1031 125"/><path d="M1337 -6 C1266 37 1284 77 1307 125"/>
+ <path d="M827 0 C948 48 930 81 923 125"/><path d="M1451 0 C1332 45 1386 85 1418 125"/>
+ <path d="M770 67 1535 67"/><path d="M733 91 1572 91"/><path d="M714 112 1591 112"/>
+</g>
+<g clip-path="url(#clip)" fill="none" stroke="#A0FF38" stroke-width="1.6" opacity=".92">
+ <path d="M821 104 854 81 886 87 931 59 985 73 1012 44 1044 48 1080 23 1114 30 1145 11"/>
+ <path d="M1194 35 1235 20 1253 45 1275 39 1302 58 1338 54 1354 80 1384 75 1429 102 1466 86 1515 106 1564 104"/>
+ <path d="M946 118 981 89 1032 95 1074 65 1100 80 1133 62 1167 87 1218 69"/>
+ <path d="M1325 115 1356 102 1381 109 1407 96 1451 112"/>
+</g>
+<g fill="#C4FF76" opacity=".98">
+ <circle cx="854" cy="81" r="2.6"/><circle cx="931" cy="59" r="3"/><circle cx="1012" cy="44" r="2.8"/><circle cx="1080" cy="23" r="3.5"/><circle cx="1145" cy="11" r="2.5"/><circle cx="1235" cy="20" r="3.5"/><circle cx="1302" cy="58" r="3"/><circle cx="1354" cy="80" r="2.5"/><circle cx="1429" cy="102" r="3"/><circle cx="1515" cy="106" r="2.5"/>
+</g>
+<!-- Crisp haloed S logo, no extra glyphs beneath the orbit. -->
+<path d="M1570 18V106" stroke="#8A9E9A" stroke-width="1.5" opacity=".9"/>
+<g transform="translate(1614 16)">
+ <path d="M28 0 61 17 61 34 40 27 22 35 62 49 62 73 30 91 0 74 0 59 30 74 43 67 0 51 0 21Z" fill="#A0FF12"/>
+ <path d="M12 22 28 14 48 24 33 30 12 22Z" fill="#030B05"/>
+ <path d="M12 67 28 75 42 66 29 61 12 67Z" fill="#030B05"/>
+ <ellipse cx="29" cy="48" rx="59" ry="19" transform="rotate(-30 29 48)" fill="none" stroke="#9DFF12" stroke-width="3.8"/>
+ </g>
+<text x="1711" y="58" fill="#F8FAFA" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="34" letter-spacing="1.1">OFFICE OF</text>
+<text x="1711" y="100" fill="#F8FAFA" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="35" letter-spacing="1.1">SYNERGY</text>
+</svg>
