@@ -16,7 +16,7 @@
 <text x="154" y="69" fill="#F5F9F9" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="52" letter-spacing="-1.8">GENESIS</text>
 <text x="418" y="69" fill="#9BFF0D" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="52" letter-spacing="-1.8">INTEL</text>
 <text x="578" y="29" fill="#FFFFFF" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="900">SI</text>
-<text x="156" y="101" fill="#E6F1F0" font-family="Arial,Helvetica,sans-serif" font-weight="600" font-size="16.5" letter-spacing=".65">GENESIS MISSION INTELLIGENCE • PROJECT AND NEWS TRACKING</text>
+<text x="156" y="101" fill="#E6F1F0" font-family="Arial,Helvetica,sans-serif" font-weight="600" font-size="16.5" letter-spacing=".65">GENESIS MISSION · SCIENCE · DISCOVERY</text>
 <!-- Glowing network sphere, centered behind the headline and right logo. -->
 <path d="M698 125 C887 -75 1419 -75 1623 125Z" fill="url(#sphere)"/>
 <path d="M698 125 C887 -75 1419 -75 1623 125" stroke="#A0FF21" stroke-width="13" opacity=".64" fill="none" filter="url(#glow)"/>

@@ -12,7 +12,8 @@
       "October 2026 RFA": 18
     },
     "scope": "July and October 2026 DOE Genesis RFA lists plus separately announced DOE GridFM 2.0. RFA selection is not confirmation of obligated funding.",
-    "category_note": "Research-area categories are GIH provisional title-based classifications"
+    "category_note": "GIH provisional title-based research tags. AI Models includes applied AI methods and workflows; it does not imply a foundation-model deliverable. Official challenges are listed separately.",
+    "classification_version": "official-challenges-v1"
   },
   "projects": [
     {
@@ -28,7 +29,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Agapie, Theodor",
@@ -38,12 +42,15 @@
       "state": "CA",
       "zip": "91125-0001",
       "id": "genesis-aa3dffa80296f14324cd",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Ajo-Franklin, Caroline",
@@ -53,12 +60,15 @@
       "state": "TX",
       "zip": "77005-1892",
       "id": "genesis-367bf0980251ef9e10f7",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Alegria, Loren",
@@ -73,7 +83,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Almgren, Ann",
@@ -83,12 +96,15 @@
       "state": "CA",
       "zip": "94720-8099",
       "id": "genesis-f9703acab733b3f57a0c",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Armstrong, Whitney",
@@ -98,12 +114,15 @@
       "state": "IL",
       "zip": "60439-4803",
       "id": "genesis-0884fc38fc991503bef4",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Arya, Gaurav",
@@ -113,12 +132,15 @@
       "state": "NC",
       "zip": "27705-4010",
       "id": "genesis-3778453fbf81c903afd4",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Asmussen, Matt",
@@ -128,12 +150,15 @@
       "state": "WA",
       "zip": "99352-1793",
       "id": "genesis-c28ff0bce391c129eca0",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Atkinson, Joshua",
@@ -148,7 +173,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Bader, Sven",
@@ -158,12 +186,15 @@
       "state": "CA",
       "zip": "94304-1395",
       "id": "genesis-5989bd0b2a4e1a20aea3",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Badnava, Babak",
@@ -178,7 +209,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure"
+      ]
     },
     {
       "principal_investigator": "Bailey, Sean",
@@ -193,7 +227,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Banerjee, Sourav",
@@ -208,7 +246,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Data",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Bao, Jie",
@@ -218,12 +260,15 @@
       "state": "WA",
       "zip": "99352-1793",
       "id": "genesis-b687657edc892fc5f0cc",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Barabash, Sergey",
@@ -233,12 +278,15 @@
       "state": "CA",
       "zip": "94596-5129",
       "id": "genesis-bf0dc9366731b43f23da",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Bass, Steffen",
@@ -248,12 +296,16 @@
       "state": "NC",
       "zip": "27705-4010",
       "id": "genesis-41cfaa80b27a0f0a529d",
-      "category": "National challenges",
+      "category": "Data",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Data",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Basu Roy, Rohan",
@@ -268,7 +320,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Bathe, Stefan",
@@ -278,12 +334,15 @@
       "state": "NY",
       "zip": "10010-5585",
       "id": "genesis-1dfe5b62d2fa07e82709",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Bazant, Martin",
@@ -293,12 +352,15 @@
       "state": "MA",
       "zip": "02139-4307",
       "id": "genesis-0e9656d8a983a930ef4d",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Becchi, Michela",
@@ -313,7 +375,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Bermejo-Moreno, Ivan",
@@ -323,12 +389,15 @@
       "state": "CA",
       "zip": "90089-4304",
       "id": "genesis-f67630100527e47f3315",
-      "category": "Infrastructure",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Bernauer, Jan",
@@ -343,7 +412,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Biedermann, Grant",
@@ -353,12 +425,15 @@
       "state": "OK",
       "zip": "73019-9705",
       "id": "genesis-5bf5e7870a285006dfa9",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Bishop, Kyle",
@@ -368,12 +443,15 @@
       "state": "NY",
       "zip": "10027-7922",
       "id": "genesis-1e4aeef79b529761e940",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Blackmon, Jeffery",
@@ -383,12 +461,16 @@
       "state": "LA",
       "zip": "70803-0001",
       "id": "genesis-d70d7d43b443735eec8b",
-      "category": "National challenges",
+      "category": "Data",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Data",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Bonesteel, Nicholas",
@@ -398,12 +480,15 @@
       "state": "FL",
       "zip": "32306-4166",
       "id": "genesis-596857dff4d847afe205",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Borowiec, Katarzyna",
@@ -418,7 +503,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Bortz, David",
@@ -433,7 +521,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Boutan, Christian",
@@ -448,7 +539,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Brophy, Jennifer",
@@ -463,7 +557,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Brown, Kevin",
@@ -478,7 +575,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Bucsek, Ashley",
@@ -488,12 +589,15 @@
       "state": "MI",
       "zip": "48108-2744",
       "id": "genesis-1e7ebd473577b4f4c002",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Burton, Justin",
@@ -503,12 +607,15 @@
       "state": "GA",
       "zip": "30322-4250",
       "id": "genesis-f179d9ef55cad5679ef1",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Cao, Charles",
@@ -518,12 +625,15 @@
       "state": "VA",
       "zip": "26061-0001",
       "id": "genesis-95ccf32b70a437a59b1d",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Capolungo, Laurent",
@@ -533,12 +643,15 @@
       "state": "NM",
       "zip": "87544-0600",
       "id": "genesis-1de3974f2d90da4aaa5c",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Carini, Gabriella",
@@ -553,7 +666,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Catanach, Tommie",
@@ -568,7 +684,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Ceder, Gerbrand",
@@ -578,12 +697,15 @@
       "state": "CA",
       "zip": "94720-8099",
       "id": "genesis-836ae98e5797bad0bf08",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Chen, Bailian",
@@ -593,12 +715,15 @@
       "state": "NM",
       "zip": "87544-0600",
       "id": "genesis-bc726d938bf0afee2366",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Chen, Jacqueline",
@@ -613,7 +738,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Chen, Shikui",
@@ -628,7 +756,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Chen, Xingyuan",
@@ -638,12 +770,15 @@
       "state": "WA",
       "zip": "99352-1793",
       "id": "genesis-e1b6594f6eb544198e3e",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Chen, Yiran",
@@ -653,12 +788,16 @@
       "state": "NC",
       "zip": "27705-4010",
       "id": "genesis-c58c7ee1bffbcafb5c3a",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Chiu, Christine",
@@ -668,12 +807,15 @@
       "state": "CO",
       "zip": "80523-2002",
       "id": "genesis-2e79c7ae4d9f6f5b0196",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Christ, Norman",
@@ -683,12 +825,15 @@
       "state": "NY",
       "zip": "10027-7922",
       "id": "genesis-8689442678f0738fc5da",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Chu, Kung-Hui",
@@ -698,12 +843,15 @@
       "state": "TX",
       "zip": "77842-3131",
       "id": "genesis-4ad8c690af41dea13952",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Cohen, Orion Archer",
@@ -713,12 +861,15 @@
       "state": "NY",
       "zip": "10027-2510",
       "id": "genesis-605d05ccf11642f36f77",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Costello, David",
@@ -728,12 +879,15 @@
       "state": "OH",
       "zip": "44242-0001",
       "id": "genesis-a2cd5d7a5bc163df9d01",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Cusentino, Mary Alice",
@@ -743,12 +897,15 @@
       "state": "NM",
       "zip": "87185-0100",
       "id": "genesis-a244db85177399d7df8d",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Danielson, Thomas",
@@ -758,12 +915,15 @@
       "state": "SC",
       "zip": "29808-0001",
       "id": "genesis-1c02ccf68057438f3b0f",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Darve, Eric",
@@ -773,12 +933,15 @@
       "state": "CA",
       "zip": "94063-8445",
       "id": "genesis-67aa77bc4e1c08f04727",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Date, Prasanna",
@@ -788,12 +951,16 @@
       "state": "TN",
       "zip": "37831-6118",
       "id": "genesis-0fdeeee270c22d09423e",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Dean-Kersten, Bethany",
@@ -803,12 +970,16 @@
       "state": "IL",
       "zip": "60439-4803",
       "id": "genesis-851c934dcbf05eec02ad",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Demanet, Laurent",
@@ -818,12 +989,15 @@
       "state": "MA",
       "zip": "02139-4307",
       "id": "genesis-306092d6a6e116f8e771",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Detrick, Kent",
@@ -833,12 +1007,16 @@
       "state": "WA",
       "zip": "99352-1793",
       "id": "genesis-01ae9fabd5099e76e8bc",
-      "category": "AI models",
+      "category": "Infrastructure",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "DeWitt, Stephen",
@@ -853,7 +1031,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Djordjevic, Blagoje",
@@ -863,12 +1044,15 @@
       "state": "CA",
       "zip": "94551-0808",
       "id": "genesis-caef88cbb75606e94234",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Drgona, Ján",
@@ -883,7 +1067,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Dubrawski, Artur",
@@ -893,12 +1081,15 @@
       "state": "PA",
       "zip": "15213-3890",
       "id": "genesis-339b718e91cbc2356116",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Duzgun, Sebnem",
@@ -913,7 +1104,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Elizondo, Marcelo",
@@ -923,12 +1117,15 @@
       "state": "WA",
       "zip": "99352-1793",
       "id": "genesis-3ef153a517e7f335cdb5",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Faiola, Celia",
@@ -943,7 +1140,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Fanelli, Cristiano",
@@ -958,7 +1158,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Feng, Yan",
@@ -973,7 +1176,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Ferracin, Paolo",
@@ -983,12 +1189,15 @@
       "state": "CA",
       "zip": "94720-8099",
       "id": "genesis-08b715248ac48779035c",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Fisher-Vanden, Karen",
@@ -1003,7 +1212,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Fraser, James",
@@ -1013,12 +1226,15 @@
       "state": "CA",
       "zip": "94143-0000",
       "id": "genesis-c917d0a1cb2588df92b4",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Fu, Yucheng",
@@ -1028,12 +1244,15 @@
       "state": "WA",
       "zip": "99352-1793",
       "id": "genesis-b6234b6a9cc9f63d8fa5",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Galvin, Conor",
@@ -1048,7 +1267,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Garcia Ruiz, Ronald Fernando",
@@ -1058,12 +1280,15 @@
       "state": "MA",
       "zip": "02139-4307",
       "id": "genesis-514e8351bd1e97b78740",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Ghassemi, Ahmad",
@@ -1078,7 +1303,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Gleich, David",
@@ -1088,12 +1316,16 @@
       "state": "IN",
       "zip": "47906-1332",
       "id": "genesis-3f36e79854bd06ab3b9a",
-      "category": "AI models",
+      "category": "Data",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Data",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Gopalaswamy, Varchas",
@@ -1108,7 +1340,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Greer, Bruce",
@@ -1118,12 +1353,16 @@
       "state": "CA",
       "zip": "94304-1395",
       "id": "genesis-199e5fadc85649413f1a",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Gruszko, Julieta",
@@ -1133,12 +1372,15 @@
       "state": "NC",
       "zip": "27599-1350",
       "id": "genesis-6e75556a8cff1f473414",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Gu, Xin",
@@ -1148,12 +1390,15 @@
       "state": "TN",
       "zip": "37831-6118",
       "id": "genesis-5d66275ecce8a471a828",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Guo, Yi",
@@ -1163,12 +1408,15 @@
       "state": "SC",
       "zip": "29634-5702",
       "id": "genesis-40c415b8b0e9de4374ed",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Hallar, Anna",
@@ -1178,12 +1426,15 @@
       "state": "UT",
       "zip": "84102-9023",
       "id": "genesis-4e3bca5321203e865a39",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Hammond, Glenn",
@@ -1193,12 +1444,15 @@
       "state": "WA",
       "zip": "99352-1793",
       "id": "genesis-cfc4847e5d100ae61a83",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Hartwig, John",
@@ -1208,12 +1462,15 @@
       "state": "CA",
       "zip": "94710-1749",
       "id": "genesis-f5393497afd4eac4fe45",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "He, Qizhi",
@@ -1223,12 +1480,16 @@
       "state": "MN",
       "zip": "55455-2070",
       "id": "genesis-ba325272e914f36c1af4",
-      "category": "National challenges",
+      "category": "Data",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Data",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Herman, Herman",
@@ -1243,7 +1504,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Hoffman, Calem",
@@ -1253,12 +1517,15 @@
       "state": "IL",
       "zip": "60439-4803",
       "id": "genesis-bc5ff7e12e37f244c357",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Hong, Victoria",
@@ -1268,12 +1535,16 @@
       "state": "NY",
       "zip": "11205-3660",
       "id": "genesis-9c449e07ac920740bad6",
-      "category": "National challenges",
+      "category": "Data",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Data",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Horn, Tanja",
@@ -1283,12 +1554,16 @@
       "state": "DC",
       "zip": "20064-0001",
       "id": "genesis-af12b134e04ae9066aab",
-      "category": "National challenges",
+      "category": "Data",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Data",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Isaacman-VanWertz, Gabriel",
@@ -1298,12 +1573,15 @@
       "state": "VA",
       "zip": "26061-0001",
       "id": "genesis-abfd1a62a6a3905ab662",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Isaacs, Farren",
@@ -1313,12 +1591,15 @@
       "state": "CT",
       "zip": "06520-8327",
       "id": "genesis-ba5dd7f8b04856295b12",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Islam, Tanzima",
@@ -1328,12 +1609,16 @@
       "state": "TX",
       "zip": "78666-4684",
       "id": "genesis-1de29691c0c13e7eef91",
-      "category": "AI models",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Isler, Ibrahim Volkan",
@@ -1343,12 +1628,15 @@
       "state": "TX",
       "zip": "78712-1111",
       "id": "genesis-cd17ff4ae5f52bef3a04",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Janik, Michael",
@@ -1363,7 +1651,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Jayaraman, Balaji",
@@ -1373,12 +1664,15 @@
       "state": "NY",
       "zip": "12309-1004",
       "id": "genesis-f542e2740e685eeef63d",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Ji, Hantao",
@@ -1393,7 +1687,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Jiao, Yongqin",
@@ -1403,12 +1700,15 @@
       "state": "CA",
       "zip": "94551-0808",
       "id": "genesis-8a2e8f216c8ea587fe9b",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Jornada, Felipe",
@@ -1418,12 +1718,15 @@
       "state": "CA",
       "zip": "94063-8445",
       "id": "genesis-be8d7d51b7ac9b499c67",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Jung, WooHyun",
@@ -1438,7 +1741,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Kametani, Fumitake",
@@ -1448,12 +1754,15 @@
       "state": "FL",
       "zip": "32306-4166",
       "id": "genesis-1044e5723b67efdee99c",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Kang, Peter",
@@ -1463,12 +1772,15 @@
       "state": "MN",
       "zip": "55455-2070",
       "id": "genesis-dc9b92f9247977fe9efa",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Karthein, Jonas",
@@ -1478,12 +1790,16 @@
       "state": "TX",
       "zip": "77845-4321",
       "id": "genesis-e48d929c15f8f98fc0b6",
-      "category": "AI models",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Kawakami, Roland",
@@ -1493,12 +1809,15 @@
       "state": "OH",
       "zip": "43210-1016",
       "id": "genesis-a2d0c1162ca405ad29f3",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Keidar, Michael",
@@ -1508,12 +1827,15 @@
       "state": "DC",
       "zip": "20052-0042",
       "id": "genesis-d7fecd129be51c94ae67",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Keitz, Benjamin",
@@ -1523,12 +1845,15 @@
       "state": "TX",
       "zip": "78712-1111",
       "id": "genesis-8e42322d36ff0c3edd15",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Kim, Isaac",
@@ -1538,12 +1863,15 @@
       "state": "CA",
       "zip": "95618-6153",
       "id": "genesis-5fd76845192675362741",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Kiran, Mariam",
@@ -1553,12 +1881,15 @@
       "state": "TN",
       "zip": "37831-6118",
       "id": "genesis-691ee89876e390f718cd",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure"
+      ]
     },
     {
       "principal_investigator": "Klimentov, Alexei",
@@ -1573,7 +1904,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Knaian, Ara",
@@ -1583,12 +1918,15 @@
       "state": "MA",
       "zip": "02139-1430",
       "id": "genesis-5c3df6604e63b240cb1f",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Kolemen, Egemen",
@@ -1603,7 +1941,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Kortshagen, Uwe",
@@ -1613,12 +1954,15 @@
       "state": "MN",
       "zip": "55455-2070",
       "id": "genesis-4f05ee1d15a846f0b69a",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Krahn, Steven",
@@ -1628,12 +1972,16 @@
       "state": "TN",
       "zip": "37235-7749",
       "id": "genesis-a774dc6eb99ee1eae1a5",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Krunz, Marwan",
@@ -1643,12 +1991,15 @@
       "state": "AZ",
       "zip": "85721-0158",
       "id": "genesis-082a0b008c5f69519367",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Kyrillidis, Tasos",
@@ -1658,12 +2009,15 @@
       "state": "TX",
       "zip": "77005-1892",
       "id": "genesis-f46732a849a97fbbc9ad",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Lamb, Kara",
@@ -1673,12 +2027,15 @@
       "state": "NY",
       "zip": "10027-7922",
       "id": "genesis-372d3e501d59d9e84c41",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Law, Stephanie",
@@ -1688,12 +2045,15 @@
       "state": "PA",
       "zip": "16802-7000",
       "id": "genesis-4e97bfc1c4857cd132ce",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Lee, Myoungkyu",
@@ -1703,12 +2063,15 @@
       "state": "TX",
       "zip": "77204-2015",
       "id": "genesis-eb16542ccd67fb2bbeb0",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Li, Aobo",
@@ -1723,7 +2086,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Li, Hong-Yi",
@@ -1733,12 +2099,15 @@
       "state": "PA",
       "zip": "18015-3093",
       "id": "genesis-029862540ce115c93e44",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Li, Jiang",
@@ -1748,12 +2117,15 @@
       "state": "VA",
       "zip": "23508-2561",
       "id": "genesis-e2612e478575d55e76ca",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Li, Qinghua",
@@ -1768,7 +2140,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Li, Zepeng",
@@ -1783,7 +2159,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Li, Ziyang",
@@ -1793,12 +2172,15 @@
       "state": "MD",
       "zip": "21218-2686",
       "id": "genesis-a22bff6e0c1ae05da6a9",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Lian, Jie",
@@ -1808,12 +2190,15 @@
       "state": "NY",
       "zip": "12180-3522",
       "id": "genesis-8c8606663e254e773810",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Ling, Haonan",
@@ -1828,7 +2213,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Lipor, John",
@@ -1838,12 +2226,15 @@
       "state": "OR",
       "zip": "97207-0751",
       "id": "genesis-0669d31e8eb4c92f5599",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Liu, Xiaorui",
@@ -1858,7 +2249,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Liu, Yang",
@@ -1868,12 +2262,15 @@
       "state": "TX",
       "zip": "77842-3131",
       "id": "genesis-00225e0076295cb7763f",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Lloyd, Karen",
@@ -1883,12 +2280,15 @@
       "state": "CA",
       "zip": "90089-4304",
       "id": "genesis-99b1fa8da3a5d248830c",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Loomba, Dinesh",
@@ -1898,12 +2298,15 @@
       "state": "NM",
       "zip": "87131-0001",
       "id": "genesis-bb32bfc54a57ad91e135",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Louie, Steven",
@@ -1918,7 +2321,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Data",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Lu, Dan",
@@ -1933,7 +2340,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Ma, Eric",
@@ -1943,12 +2353,15 @@
       "state": "CA",
       "zip": "94710-1749",
       "id": "genesis-3649c40d9f1b6c4e0585",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Ma, Pulong",
@@ -1958,12 +2371,15 @@
       "state": "IA",
       "zip": "50011-2207",
       "id": "genesis-a6ff2abf28e6508c0804",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Majewski, Stephanie",
@@ -1973,12 +2389,15 @@
       "state": "OR",
       "zip": "97403-5219",
       "id": "genesis-f0e8a982d794726c1c59",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Mandal, Soumayajit",
@@ -1988,12 +2407,16 @@
       "state": "NY",
       "zip": "11973-5000",
       "id": "genesis-1bcf4f3b151750030ea7",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Mandelbaum, Rachel",
@@ -2003,12 +2426,16 @@
       "state": "PA",
       "zip": "15213-3890",
       "id": "genesis-6ecaba04bbf64776aab6",
-      "category": "National challenges",
+      "category": "Data",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Data",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Maniyanganam, Ahamed Irshad",
@@ -2018,12 +2445,15 @@
       "state": "CA",
       "zip": "94025-7015",
       "id": "genesis-6041473a97052f0d7938",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Mariscal, Derek",
@@ -2038,7 +2468,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Matchev, Konstantin",
@@ -2048,12 +2482,15 @@
       "state": "AL",
       "zip": "35487-0104",
       "id": "genesis-5ec0e3ea2d4f29603833",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Mathuriya, Amrita",
@@ -2063,12 +2500,15 @@
       "state": "CA",
       "zip": "95134-1907",
       "id": "genesis-eb4be301d4574ca87240",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure"
+      ]
     },
     {
       "principal_investigator": "Mba-Wright, Mark",
@@ -2078,12 +2518,15 @@
       "state": "IA",
       "zip": "50011-2207",
       "id": "genesis-89132419456581bd5b0a",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "McCoy, Anna",
@@ -2093,12 +2536,15 @@
       "state": "IL",
       "zip": "60439-4803",
       "id": "genesis-17009ac9f481d6c56cc6",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "McLaughlin, Gail",
@@ -2108,12 +2554,15 @@
       "state": "NC",
       "zip": "27695-7514",
       "id": "genesis-cb940417aa3a527992b7",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Miceli, Antonino",
@@ -2123,12 +2572,16 @@
       "state": "IL",
       "zip": "60439-4803",
       "id": "genesis-7c7922ce1b0a5adff494",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Mishra, Umakant",
@@ -2138,12 +2591,15 @@
       "state": "CA",
       "zip": "94551-0969",
       "id": "genesis-7b293ffc5e3d9e7f73df",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Molaei, Reza",
@@ -2153,12 +2609,15 @@
       "state": "AL",
       "zip": "36832-5888",
       "id": "genesis-8644e27f3d30b65b0b98",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Morgan, Nathan",
@@ -2168,12 +2627,15 @@
       "state": "SC",
       "zip": "29808-0001",
       "id": "genesis-feae22da056c1e8132c7",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Morrissey, Ember",
@@ -2183,12 +2645,15 @@
       "state": "WV",
       "zip": "26506-6845",
       "id": "genesis-e64fc557de1e979a1d72",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Mosallaei, Hossein",
@@ -2203,7 +2668,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure"
+      ]
     },
     {
       "principal_investigator": "Mudunuru, Maruti",
@@ -2218,7 +2686,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Mutlu, Ovunc",
@@ -2228,12 +2699,15 @@
       "state": "VT",
       "zip": "05001-9263",
       "id": "genesis-ac11c6afad4ff39e1237",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Naghavi, Hossein",
@@ -2248,7 +2722,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Nakata, Rie",
@@ -2258,12 +2736,15 @@
       "state": "CA",
       "zip": "94720-8099",
       "id": "genesis-63ac3dee57160b5ee1eb",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Neupane, Ghanashyam Hari",
@@ -2273,12 +2754,15 @@
       "state": "ID",
       "zip": "83415-0001",
       "id": "genesis-f09b71c64d7772d98b2f",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Nghiem, Athena",
@@ -2293,7 +2777,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Nicolae, Bogdan",
@@ -2303,12 +2790,16 @@
       "state": "IL",
       "zip": "60439-4803",
       "id": "genesis-c6a8a1904b2426469eab",
-      "category": "National challenges",
+      "category": "Data",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Data",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Nicolosi, Gabriel",
@@ -2318,12 +2809,15 @@
       "state": "MO",
       "zip": "65409-6506",
       "id": "genesis-999401cba52791355023",
-      "category": "Partnerships",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Nugent, Peter",
@@ -2333,12 +2827,16 @@
       "state": "CA",
       "zip": "94720-8099",
       "id": "genesis-a70b12d0e29329bbe386",
-      "category": "AI models",
+      "category": "Infrastructure",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Olbrich, Lorenz",
@@ -2348,12 +2846,15 @@
       "state": "MA",
       "zip": "02143-3260",
       "id": "genesis-441c282920e0390d9165",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Olsen, Bradley",
@@ -2363,12 +2864,15 @@
       "state": "MA",
       "zip": "02139-4307",
       "id": "genesis-03e42799b99f56ecb4ca",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Olufowobi, Habeeb",
@@ -2378,12 +2882,15 @@
       "state": "TX",
       "zip": "76019-0145",
       "id": "genesis-7a7b8ebac31d7b54354b",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "O'Malley, Daniel",
@@ -2393,12 +2900,15 @@
       "state": "NM",
       "zip": "87544-0600",
       "id": "genesis-1ebaadb21fafaab93585",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "O'Malley, Michelle",
@@ -2408,12 +2918,15 @@
       "state": "CA",
       "zip": "93106-2050",
       "id": "genesis-5f87de8c54a025141c1b",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Opgenorth, Paul",
@@ -2423,12 +2936,15 @@
       "state": "CA",
       "zip": "91016-6356",
       "id": "genesis-35f56933003f7729a55c",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Orphan, Victoria",
@@ -2438,12 +2954,15 @@
       "state": "CA",
       "zip": "91125-0001",
       "id": "genesis-5a9d30e4fa4b6ce5e138",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Ostroumov, Peter",
@@ -2458,7 +2977,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure"
+      ]
     },
     {
       "principal_investigator": "Padhi, Amit",
@@ -2468,12 +2990,15 @@
       "state": "TX",
       "zip": "77032-3219",
       "id": "genesis-20bc5736e69ce16be2fa",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Park, David",
@@ -2488,7 +3013,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Patel, Lekha",
@@ -2498,12 +3026,15 @@
       "state": "NM",
       "zip": "87185-0100",
       "id": "genesis-d165caea737067d8dde8",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Pedram, Massoud",
@@ -2513,12 +3044,15 @@
       "state": "CA",
       "zip": "90089-4304",
       "id": "genesis-8690630c6823b7fb7ba3",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Peng, Jiayu",
@@ -2533,7 +3067,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Perez, Nicholas",
@@ -2543,12 +3080,15 @@
       "state": "TX",
       "zip": "77845-4321",
       "id": "genesis-fec06b07b22dbf0515a1",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Pettee, Mariel",
@@ -2563,7 +3103,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Pinto, Ameet",
@@ -2573,12 +3116,15 @@
       "state": "GA",
       "zip": "30332-0420",
       "id": "genesis-db97932667b4c02280a3",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Posen, Sam",
@@ -2593,7 +3139,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Pouya, Hamid",
@@ -2608,7 +3158,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Pressel, Kyle",
@@ -2623,7 +3177,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Radel, Ross",
@@ -2638,7 +3195,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Rafiq, Tariq",
@@ -2648,12 +3209,16 @@
       "state": "PA",
       "zip": "18015-3093",
       "id": "genesis-060473f6d4df5fb4a5f6",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Rea, Cristina",
@@ -2663,12 +3228,15 @@
       "state": "MA",
       "zip": "02139-4307",
       "id": "genesis-b7be03171f36005e5651",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Ren, Wei",
@@ -2678,12 +3246,15 @@
       "state": "CT",
       "zip": "06269-1133",
       "id": "genesis-147f2d492dd3b07a6747",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Ren, Yihui",
@@ -2693,12 +3264,15 @@
       "state": "NY",
       "zip": "11973-5000",
       "id": "genesis-b049f3a6342cb1b8d7d4",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Rezaei, Fateme",
@@ -2708,12 +3282,15 @@
       "state": "FL",
       "zip": "33146-2403",
       "id": "genesis-899603d871026ddbc791",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Ribet, Stephanie",
@@ -2723,12 +3300,15 @@
       "state": "CA",
       "zip": "94720-8099",
       "id": "genesis-cd3459da59c397effc6d",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Risko, Chad",
@@ -2738,12 +3318,15 @@
       "state": "KY",
       "zip": "40526-0001",
       "id": "genesis-0045bc007e4a6e04f573",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Roland, Gunther",
@@ -2758,7 +3341,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Rosso, Kevin",
@@ -2768,12 +3355,15 @@
       "state": "WA",
       "zip": "99352-1793",
       "id": "genesis-965cee689b540ab03de1",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Rowberg, Andrew",
@@ -2783,12 +3373,15 @@
       "state": "CA",
       "zip": "94551-0808",
       "id": "genesis-b894abc9a3b29256aea4",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Russo, Vincent",
@@ -2798,12 +3391,15 @@
       "state": "CA",
       "zip": "94111-2585",
       "id": "genesis-1041f1e154dab7a1af53",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Salas-Fernandez, Maria",
@@ -2813,12 +3409,15 @@
       "state": "IA",
       "zip": "50011-2207",
       "id": "genesis-e137ef40761dd03e1536",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Saldanha, Richard",
@@ -2828,12 +3427,15 @@
       "state": "WA",
       "zip": "99352-1793",
       "id": "genesis-19b38363bd1b6fb41baf",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Saleska, Scott",
@@ -2848,7 +3450,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Salman, Emre",
@@ -2858,12 +3463,16 @@
       "state": "NY",
       "zip": "11794-3362",
       "id": "genesis-1d53dca3ad203f869b1d",
-      "category": "AI models",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Sanchez, Mayly",
@@ -2873,12 +3482,15 @@
       "state": "FL",
       "zip": "32306-4166",
       "id": "genesis-4f9140797242daa4d152",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Santiesteban, Nathaly",
@@ -2893,7 +3505,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Sargent, Edward",
@@ -2908,7 +3523,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Sarkar, Soumik",
@@ -2923,7 +3541,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Schneider, Michael",
@@ -2933,12 +3554,15 @@
       "state": "CA",
       "zip": "94551-0808",
       "id": "genesis-b59c37ee857cd768c1c4",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Scholberg, Kate",
@@ -2948,12 +3572,15 @@
       "state": "NC",
       "zip": "27705-4010",
       "id": "genesis-d14da052b895ced8bc10",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Schuckers, Stephanie",
@@ -2963,12 +3590,15 @@
       "state": "NC",
       "zip": "28223-0001",
       "id": "genesis-740f6443a6927db28497",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Sedlacek, Arthur",
@@ -2978,12 +3608,15 @@
       "state": "NY",
       "zip": "11973-5000",
       "id": "genesis-96ab821b7e09baf18b5e",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Seeman, Mikhael",
@@ -2993,12 +3626,15 @@
       "state": "NM",
       "zip": "87501-1050",
       "id": "genesis-9e44a00fc644042f7f33",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Sengupta, Manajit",
@@ -3013,7 +3649,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Shafer, Jenifer",
@@ -3023,12 +3662,15 @@
       "state": "CO",
       "zip": "80401-1887",
       "id": "genesis-6e9a3f7427f1c5999427",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Shainline, Jeffrey",
@@ -3038,12 +3680,16 @@
       "state": "CO",
       "zip": "80301-2978",
       "id": "genesis-bf5b0a29118725efe99e",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Shaw, Raymond",
@@ -3053,12 +3699,15 @@
       "state": "MI",
       "zip": "49931-1295",
       "id": "genesis-65fb0eb147a624ea859c",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Shcherbakov, Maxim",
@@ -3068,12 +3717,15 @@
       "state": "CA",
       "zip": "92697-7600",
       "id": "genesis-9147bfa795caea48f0f3",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Shen, Han-Wei",
@@ -3083,12 +3735,15 @@
       "state": "OH",
       "zip": "43210-1016",
       "id": "genesis-4bfb6b34f4041a13dfc4",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Shen, Kyle",
@@ -3098,12 +3753,15 @@
       "state": "NY",
       "zip": "14850-2820",
       "id": "genesis-5ee9917971a3bbf82e46",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Shi, Yuan",
@@ -3118,7 +3776,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Shih, Kai",
@@ -3128,12 +3789,15 @@
       "state": "WI",
       "zip": "53717-2314",
       "id": "genesis-044562c4f10996d6745b",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Shipman, Galen",
@@ -3148,7 +3812,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Shiraiwa, Syun'ichi",
@@ -3158,12 +3825,15 @@
       "state": "NJ",
       "zip": "08542-0451",
       "id": "genesis-60bbd2502b9861322e5f",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Shukla, Ankita",
@@ -3178,7 +3848,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Simpson, Raspberry",
@@ -3188,12 +3861,16 @@
       "state": "CA",
       "zip": "94551-0808",
       "id": "genesis-d6c356e604798b8694e6",
-      "category": "National challenges",
+      "category": "Data",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Data",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Sinclair, Matt",
@@ -3203,12 +3880,16 @@
       "state": "WI",
       "zip": "53715-1218",
       "id": "genesis-c54130610f2a076e6a8f",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Singh, Hansi",
@@ -3218,12 +3899,15 @@
       "state": "WA",
       "zip": "98101-1377",
       "id": "genesis-f877ad652e64f0e6e519",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Siwach, Pooja",
@@ -3233,12 +3917,15 @@
       "state": "AZ",
       "zip": "85721-0158",
       "id": "genesis-bf211a0e4b81cb535940",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Smith, David",
@@ -3248,12 +3935,15 @@
       "state": "WI",
       "zip": "53715-1218",
       "id": "genesis-6331ef2314376bab6dd1",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Smith, Jeff",
@@ -3268,7 +3958,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Snurr, Randall",
@@ -3278,12 +3972,15 @@
       "state": "IL",
       "zip": "60611-4579",
       "id": "genesis-253965d1ee9e09cb9c83",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Soltanian, Mohamad",
@@ -3293,12 +3990,15 @@
       "state": "OH",
       "zip": "45221-0222",
       "id": "genesis-88d6463dc5bfbd151f69",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Soltz, Ron",
@@ -3313,7 +4013,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Spearot, Douglas",
@@ -3328,7 +4031,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Sprunger, Phillip",
@@ -3338,12 +4044,16 @@
       "state": "LA",
       "zip": "70803-0001",
       "id": "genesis-a710b3144908211f5e74",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Steefel, Carl",
@@ -3353,12 +4063,15 @@
       "state": "CA",
       "zip": "94720-8099",
       "id": "genesis-ae21707e57dcdd689007",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Sufian, Raza",
@@ -3368,12 +4081,16 @@
       "state": "NM",
       "zip": "88003-8002",
       "id": "genesis-e05dcd5594d3151251c2",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Sulman, Benjamin",
@@ -3383,12 +4100,15 @@
       "state": "TN",
       "zip": "37831-6118",
       "id": "genesis-b844caafd5a22ab8ad1e",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Sun, Jianwei",
@@ -3398,12 +4118,15 @@
       "state": "LA",
       "zip": "70118-5665",
       "id": "genesis-8f799ea1979f66bd08ce",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Suyderhoud, Peter",
@@ -3413,12 +4136,15 @@
       "state": "ID",
       "zip": "83415-0001",
       "id": "genesis-eff73d017d6abbdc4ce6",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure"
+      ]
     },
     {
       "principal_investigator": "Tallent, Nathan",
@@ -3428,12 +4154,15 @@
       "state": "WA",
       "zip": "99352-1793",
       "id": "genesis-4386947b518180a5b5c3",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Tchelepi, Hamdi",
@@ -3443,12 +4172,15 @@
       "state": "CA",
       "zip": "94063-8445",
       "id": "genesis-f7b6def84b07d1b61cfb",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Tedeschi, David",
@@ -3463,7 +4195,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Temme, Kristan",
@@ -3473,12 +4208,15 @@
       "state": "NY",
       "zip": "10598-0218",
       "id": "genesis-c0a81ba4e89d6cd257e2",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Tirupatikumara, Soundar",
@@ -3488,12 +4226,15 @@
       "state": "PA",
       "zip": "16802-7000",
       "id": "genesis-93ba0a9e2af1f8a676d2",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Traversy, Michael",
@@ -3503,12 +4244,15 @@
       "state": "MD",
       "zip": "20817-6523",
       "id": "genesis-389e8cfe188c5cfd5ea9",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Ulmer, Keith",
@@ -3518,12 +4262,15 @@
       "state": "CO",
       "zip": "80303-1058",
       "id": "genesis-8a99377c247434421935",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Ulrich, Craig",
@@ -3533,12 +4280,15 @@
       "state": "CA",
       "zip": "94720-8099",
       "id": "genesis-2314591555eb3fb04d64",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Ushizima, Daniela",
@@ -3548,12 +4298,16 @@
       "state": "CA",
       "zip": "94720-8099",
       "id": "genesis-e95ebaac1f070f6e40c2",
-      "category": "AI models",
+      "category": "Data",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Data",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Van Roekel, Luke",
@@ -3563,12 +4317,15 @@
       "state": "NM",
       "zip": "87544-0600",
       "id": "genesis-e884f69deec010730071",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Varadharajan, Charuleka",
@@ -3578,12 +4335,15 @@
       "state": "CA",
       "zip": "94720-8099",
       "id": "genesis-1ec7dd6eb94beed82462",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Vega, Daniel",
@@ -3598,7 +4358,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Vigil-Fowler, Derek",
@@ -3613,7 +4377,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Vijayakumar, Ganesh",
@@ -3623,12 +4390,15 @@
       "state": "CO",
       "zip": "80401-3111",
       "id": "genesis-07b9a9e741442a1999f5",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Viswanathan, Hari",
@@ -3643,7 +4413,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Volya, Alexander",
@@ -3653,12 +4426,15 @@
       "state": "FL",
       "zip": "32306-4166",
       "id": "genesis-13920cdde76991ab19f7",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Vrajitoarea, Andrei",
@@ -3668,12 +4444,15 @@
       "state": "NY",
       "zip": "10012-2331",
       "id": "genesis-c2a67a6fc49aee3ff544",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Vuran, Mehmet",
@@ -3688,7 +4467,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Wang, Dali",
@@ -3698,12 +4480,15 @@
       "state": "TN",
       "zip": "37831-6118",
       "id": "genesis-2c34bc08c6c95f4730eb",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Wang, Jian-Xun",
@@ -3713,12 +4498,15 @@
       "state": "NY",
       "zip": "14850-2820",
       "id": "genesis-7ab147f46e9c72037e2e",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Wang, Jiaze",
@@ -3728,12 +4516,16 @@
       "state": "ME",
       "zip": "04469-5717",
       "id": "genesis-3da8c22c36dbafd9f0f3",
-      "category": "National challenges",
+      "category": "Data",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Data",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Wang, Jinzhen",
@@ -3748,7 +4540,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Wheeler, Travis",
@@ -3763,7 +4558,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Wies, Richard",
@@ -3773,12 +4571,15 @@
       "state": "AK",
       "zip": "99775-7880",
       "id": "genesis-f1ecda22515edb25a54d",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Wilson, Justin",
@@ -3788,12 +4589,15 @@
       "state": "CA",
       "zip": "93106-2050",
       "id": "genesis-5dfc4b774f33996ad9b5",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Wilson, Paul",
@@ -3803,12 +4607,15 @@
       "state": "WI",
       "zip": "53715-1218",
       "id": "genesis-b85f506e3d338acc37d7",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Wong, Daniel",
@@ -3818,12 +4625,16 @@
       "state": "CA",
       "zip": "92521-0217",
       "id": "genesis-24d2ab4eadc529f591bc",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Xie, Wei",
@@ -3833,12 +4644,16 @@
       "state": "IN",
       "zip": "47906-1332",
       "id": "genesis-b80bb21c7cb9ead740ad",
-      "category": "AI models",
+      "category": "Data",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Data",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Xu, Guangping",
@@ -3848,12 +4663,15 @@
       "state": "NM",
       "zip": "87185-0100",
       "id": "genesis-696198d25a83a56cf34f",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Yadav, Monika",
@@ -3863,12 +4681,16 @@
       "state": "VA",
       "zip": "23508-2561",
       "id": "genesis-9c96a1f12535ab1e2626",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Yan, Eugene",
@@ -3883,7 +4705,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Yang, Da",
@@ -3893,12 +4718,15 @@
       "state": "CA",
       "zip": "94063-8445",
       "id": "genesis-a9a589ba255c32e4eb12",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Yang, Ying",
@@ -3908,12 +4736,15 @@
       "state": "TN",
       "zip": "37831-6118",
       "id": "genesis-05b060e3444b74cf8ffe",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Ye, Yinyin",
@@ -3923,12 +4754,15 @@
       "state": "NY",
       "zip": "14228-2567",
       "id": "genesis-398608c9438acc66401e",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Yeom, Jae-Seung",
@@ -3938,12 +4772,15 @@
       "state": "CA",
       "zip": "94551-0808",
       "id": "genesis-f2a28a9bd2612d50c945",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure"
+      ]
     },
     {
       "principal_investigator": "Yoo, Jinwoong",
@@ -3958,7 +4795,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Zakutayev, Andriy",
@@ -3973,7 +4813,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Zhang, David",
@@ -3983,12 +4826,15 @@
       "state": "CA",
       "zip": "94025-3453",
       "id": "genesis-00ae5e7815a6e1c3743c",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Zhang, Fan",
@@ -4003,7 +4849,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Zhang, Jielun",
@@ -4018,7 +4867,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Zhang, Shixuan",
@@ -4033,7 +4885,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Zhang, Shuai",
@@ -4043,12 +4898,16 @@
       "state": "WA",
       "zip": "99352-1793",
       "id": "genesis-b6d8ec68bd935a37fd6f",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Zhang, Youtao",
@@ -4058,12 +4917,15 @@
       "state": "PA",
       "zip": "15213-2303",
       "id": "genesis-a3d8b0b1c8c2627ec1f2",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Zhang, Yunyan",
@@ -4073,12 +4935,15 @@
       "state": "CA",
       "zip": "94551-0808",
       "id": "genesis-f961a4c9471f19688293",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Zhao, Huimin",
@@ -4093,7 +4958,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Zheng, Liange",
@@ -4108,7 +4976,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Data",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Zhou, Keren",
@@ -4118,12 +4990,16 @@
       "state": "VA",
       "zip": "22030-4422",
       "id": "genesis-df2075c6ed01b3ca4185",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Zhu, Liuwan",
@@ -4133,12 +5009,15 @@
       "state": "HI",
       "zip": "96822-2234",
       "id": "genesis-df8dcbe29366a2ab591b",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Zhu, Qing",
@@ -4148,12 +5027,15 @@
       "state": "CA",
       "zip": "94720-8099",
       "id": "genesis-b65d8bb14c7a37985456",
-      "category": "Infrastructure",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Zia, Roseanna",
@@ -4163,12 +5045,15 @@
       "state": "MO",
       "zip": "65201-0001",
       "id": "genesis-be4e2eb71acfbd0cdd6f",
-      "category": "Infrastructure",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Zucker, Jeremy",
@@ -4183,7 +5068,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-07-22",
       "source_url": "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-      "source_phase": "July 2026 RFA"
+      "source_phase": "July 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Looby, Thomas",
@@ -4193,12 +5081,16 @@
       "state": "MA",
       "zip": "02139",
       "id": "genesis-f2852e22acb614c59223",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Toor, Navtej",
@@ -4208,12 +5100,16 @@
       "state": "CA",
       "zip": "92093-0934",
       "id": "genesis-433801af714fb8cd1b69",
-      "category": "National challenges",
+      "category": "Data",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "Data",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Detmold, William",
@@ -4223,12 +5119,15 @@
       "state": "MA",
       "zip": "02139-4307",
       "id": "genesis-35b96b3b476511e64ab4",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Abdolhosseini Qomi, Mohammad",
@@ -4238,12 +5137,15 @@
       "state": "CA",
       "zip": "92697-7600",
       "id": "genesis-556b809425cc56df544c",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Su, Xiao",
@@ -4253,12 +5155,15 @@
       "state": "IL",
       "zip": "61820-7406",
       "id": "genesis-20c20a1f371e0dd300cf",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Baker, David",
@@ -4268,12 +5173,15 @@
       "state": "WA",
       "zip": "98195-9472",
       "id": "genesis-05d872bd9d86e68fad56",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Tran, Nhan",
@@ -4283,12 +5191,15 @@
       "state": "IL",
       "zip": "60510-5011",
       "id": "genesis-f364b03b65033fa8d04a",
-      "category": "National challenges",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "Infrastructure"
+      ]
     },
     {
       "principal_investigator": "Vay, Jean-Luc",
@@ -4303,7 +5214,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "Infrastructure"
+      ]
     },
     {
       "principal_investigator": "Lukin, Mikhail",
@@ -4313,12 +5227,15 @@
       "state": "MA",
       "zip": "02138-5369",
       "id": "genesis-4b736f4d96a9a451a36d",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Siegel, Andrew",
@@ -4328,12 +5245,15 @@
       "state": "IL",
       "zip": "60439-4803",
       "id": "genesis-d17da7d94333c69277a3",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Cheng, Yongqiang",
@@ -4343,12 +5263,15 @@
       "state": "TN",
       "zip": "37831-6118",
       "id": "genesis-28289f269a9c76ba01c3",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Labs",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Paul, Ayan",
@@ -4358,12 +5281,16 @@
       "state": "MA",
       "zip": "02115-5005",
       "id": "genesis-40c416d9e853ee142e56",
-      "category": "AI models",
+      "category": "Infrastructure",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Apte, Sourabh",
@@ -4373,12 +5300,15 @@
       "state": "OR",
       "zip": "97331-2140",
       "id": "genesis-4833270c6a771ebef182",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Brown, Kevin",
@@ -4388,12 +5318,15 @@
       "state": "TN",
       "zip": "37235-7749",
       "id": "genesis-a943166ce519d4d75005",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Lu, Yao",
@@ -4403,12 +5336,15 @@
       "state": "IL",
       "zip": "60510-5011",
       "id": "genesis-e532f534f13e01272a53",
-      "category": "National challenges",
+      "category": "AI models",
       "sector": "Partners",
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Scheinker, Alexander",
@@ -4423,7 +5359,11 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Sokaras, Dimosthenis",
@@ -4438,7 +5378,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "AI models"
+      ]
     },
     {
       "principal_investigator": "Sun, Andy",
@@ -4453,7 +5396,10 @@
       "selection_status": "Selected for award negotiations; funding not confirmed",
       "selection_date": "2026-10-08",
       "source_url": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2026/GM-RFA-Awards-List_09-30-26.pdf",
-      "source_phase": "October 2026 RFA"
+      "source_phase": "October 2026 RFA",
+      "categories": [
+        "Infrastructure"
+      ]
     },
     {
       "principal_investigator": "",
@@ -4468,7 +5414,11 @@
       "selection_date": "2026-09-01",
       "source_url": "https://www.energy.gov/oe/articles/does-office-electricity-announces-115m-genesis-mission-project-meet-growing-electricity",
       "source_phase": "Office of Electricity 2026",
-      "id": "genesis-b7df38817da4ca196ab0"
+      "id": "genesis-b7df38817da4ca196ab0",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ]
     }
   ]
 }

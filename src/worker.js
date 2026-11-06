@@ -2,21 +2,17 @@
 // All public APIs return only projects, news and non-sensitive health metadata.
 // Partner candidates and their evidence remain exclusively in the D1 database.
 const JSON_HEADERS={"content-type":"application/json; charset=utf-8","cache-control":"public, max-age=120"};
-const CATEGORY_RULES=[
- ["Data",/\b(dataset|data fusion|knowledge graph|data management|data repository)\b/i],
- ["Infrastructure",/\b(grid|infrastructure|compute|facility|accelerator|microchip|power system)\b/i],
- ["AI models",/\b(foundation model|language model|machine learning|AI model|agentic|neural network|autonomous|artificial intelligence)\b/i],
- ["National challenges",/\b(energy|fusion|climate|materials|biology|quantum|medicine|manufacturing|water|security|catalys|geothermal)\b/i]
-];
 function respond(v,status=200){return new Response(JSON.stringify(v),{status,headers:JSON_HEADERS})}
 async function digest(s){const data=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(String(s)));return Array.from(new Uint8Array(data)).map(b=>b.toString(16).padStart(2,"0")).join("")}
 async function asset(env,path){const r=await env.ASSETS.fetch(new Request("https://gih-assets.internal/"+path));if(!r.ok)throw Error("Asset not published: "+path+" ("+r.status+")");return r.json()}
-function tagsFor(p){
- const tags=new Set();
- if(["Data","Infrastructure","AI models","National challenges"].includes(p.category))tags.add(p.category);
- for(const [name,rule] of CATEGORY_RULES)if(rule.test(p.title||""))tags.add(name);
- if(!tags.size)tags.add("National challenges");
- return [...tags];
+function tagsFor(p,policy){
+ const tags=policy.rules.filter(([,pattern])=>new RegExp(pattern,"i").test(p.title||"")).map(([name])=>name);
+ if(/\b(ai|ml|models?|learning|agentic|neural|digital twin|artificial intelligence)\b/i.test(p.title||""))tags.push("AI models");
+ return tags.length?tags:[policy.default];
+}
+async function classifiedRoster(env){
+ const [doc,policy]=await Promise.all([asset(env,"projects.json"),asset(env,"project-classification.json")]);
+ return {...doc,metadata:{...doc.metadata,classification_version:policy.version},projects:doc.projects.map(p=>{const categories=tagsFor(p,policy);return {...p,category:categories[0],categories}})};
 }
 const MIGRATIONS=[
  "CREATE TABLE IF NOT EXISTS source_versions(source TEXT PRIMARY KEY,content_hash TEXT NOT NULL,imported_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,item_count INTEGER NOT NULL DEFAULT 0)",
@@ -34,15 +30,16 @@ async function markVersion(db,name,hash,count){await db.prepare("INSERT INTO sou
 async function recordEvent(db,source,status,total,added,message=""){await db.prepare("INSERT INTO collector_events(source,status,total_seen,added,message) VALUES(?,?,?,?,?)").bind(source,status,total,added,message.slice(0,350)).run()}
 async function sendBatches(db,stmts,size=35){for(let i=0;i<stmts.length;i+=size)await db.batch(stmts.slice(i,i+size))}
 async function syncProjects(env){
- const db=env.DB,doc=await asset(env,"projects.json");
+ const db=env.DB,doc=await classifiedRoster(env);
  if(!Array.isArray(doc.projects)||doc.projects.length<290)throw Error("Project roster incomplete; import skipped");
  const hash=await digest(JSON.stringify(doc.projects));
  if(hash===await previousHash(db,"projects"))return {changed:false,count:doc.projects.length};
  const stmts=[],tags=[];
  for(const p of doc.projects){
   if(!p.id||!p.title||!p.institution||!p.source_url)continue;
-  stmts.push(db.prepare("INSERT INTO projects(id,title,investigator,institution,city,state,postal_code,category,sector,selection_status,selection_date,source_url,source_phase) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET title=excluded.title,investigator=excluded.investigator,institution=excluded.institution,city=excluded.city,state=excluded.state,category=excluded.category,sector=excluded.sector,selection_status=excluded.selection_status,selection_date=excluded.selection_date,source_url=excluded.source_url,source_phase=excluded.source_phase,updated_at=CURRENT_TIMESTAMP").bind(p.id,p.title,p.principal_investigator||"",p.institution,p.city||"",p.state||"",p.zip||"",p.category||"National challenges",p.sector||"Partners",p.selection_status||"Selection — funding not independently confirmed",p.selection_date||"",p.source_url,p.source_phase||"DOE public selection"));
-  for(const t of tagsFor(p))tags.push(db.prepare("INSERT OR IGNORE INTO project_tags(project_id,tag,basis) VALUES(?,?,'provisional-title-classification')").bind(p.id,t));
+  stmts.push(db.prepare("INSERT INTO projects(id,title,investigator,institution,city,state,postal_code,category,sector,selection_status,selection_date,source_url,source_phase) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET title=excluded.title,investigator=excluded.investigator,institution=excluded.institution,city=excluded.city,state=excluded.state,category=excluded.category,sector=excluded.sector,selection_status=excluded.selection_status,selection_date=excluded.selection_date,source_url=excluded.source_url,source_phase=excluded.source_phase,updated_at=CURRENT_TIMESTAMP").bind(p.id,p.title,p.principal_investigator||"",p.institution,p.city||"",p.state||"",p.zip||"",p.category||"AI models",p.sector||"Partners",p.selection_status||"Selection — funding not independently confirmed",p.selection_date||"",p.source_url,p.source_phase||"DOE public selection"));
+  tags.push(db.prepare("DELETE FROM project_tags WHERE project_id=?").bind(p.id));
+  for(const t of p.categories)tags.push(db.prepare("INSERT OR IGNORE INTO project_tags(project_id,tag,basis) VALUES(?,?,'provisional-title-classification')").bind(p.id,t));
  }
  await sendBatches(db,stmts);
  await sendBatches(db,tags);
@@ -157,19 +154,19 @@ async function synchronize(env){
  return {ok:true,projects,news,connections};
 }
 async function apiProjects(env,ctx){
- if(!env.DB)return respond(await asset(env,"projects.json"));
+ if(!env.DB)return respond(await classifiedRoster(env));
  try{
   const count=await env.DB.prepare("SELECT COUNT(*) AS n FROM projects").first();
   if((count?.n||0)<250)ctx.waitUntil(synchronize(env).catch(e=>console.error("GIH D1 bootstrap",e)));
   else{
    const records=(await env.DB.prepare("SELECT id,title,investigator AS principal_investigator,institution,city,state,postal_code AS zip,category,sector,selection_status,selection_date,source_url,source_phase FROM projects ORDER BY title LIMIT 1400").all()).results;
-   const tags=(await env.DB.prepare("SELECT project_id,tag FROM project_tags LIMIT 3500").all()).results;
-   const index={};for(const t of tags) (index[t.project_id]??=[]).push(t.tag);
-   return respond({metadata:{count:records.length,source:"Cloudflare D1",classification:"Provisional research tags"},projects:records.map(p=>({...p,categories:index[p.id]||[p.category]}))});
+   const policy=await asset(env,"project-classification.json");
+   // Recompute on read so stale D1 tags cannot leak before the scheduled sync.
+   return respond({metadata:{count:records.length,source:"Cloudflare D1",classification:policy.note},projects:records.map(p=>{const categories=tagsFor(p,policy);return {...p,category:categories[0],categories}})});
   }
  }catch(e){console.error("Project API database fallback",e);ctx.waitUntil(synchronize(env).catch(x=>console.error("GIH D1 seed",x)))}
  // Never hide public project records because the D1 import is still running.
- return respond(await asset(env,"projects.json"));
+ return respond(await classifiedRoster(env));
 }
 async function apiNews(env,ctx){
  const fallback=await archivedDocument(env);

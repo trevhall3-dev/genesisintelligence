@@ -1,0 +1,38 @@
+const fs=require('node:fs');
+const vm=require('node:vm');
+const assert=require('node:assert/strict');
+const roster=JSON.parse(fs.readFileSync('dist/projects.json'));
+const catalog=JSON.parse(fs.readFileSync('dist/challenges.json'));
+const policy=JSON.parse(fs.readFileSync('dist/project-classification.json'));
+assert.equal(roster.projects.length,297);
+assert.equal(new Set(roster.projects.map(p=>p.id)).size,297);
+assert.equal(catalog.challenges.length,33);
+assert.equal(new Set(catalog.challenges.map(p=>p.title)).size,33);
+assert.equal(new Set(catalog.challenges.map(p=>p.group)).size,5);
+const worker=fs.readFileSync('src/worker.js','utf8');
+const backend={};vm.createContext(backend);
+vm.runInContext(worker.slice(worker.indexOf('function tagsFor'),worker.indexOf('async function classifiedRoster')),backend);
+for(const p of roster.projects){
+ assert.deepEqual(Array.from(backend.tagsFor(p,policy)),p.categories);
+ assert(!p.categories.includes('National challenges'));
+ assert.equal(p.category,p.categories[0]);
+}
+assert(!backend.tagsFor({title:'Energy materials biology water security',category:'National challenges'},policy).includes('National challenges'));
+const elements={};
+const frontend={document:{getElementById:id=>(elements[id]??={value:'az'}),querySelectorAll:()=>[]},window:{},location:{origin:'https://example.org'},URL};
+vm.createContext(frontend);
+const app=fs.readFileSync('dist/app.js','utf8');
+vm.runInContext(app.slice(0,app.indexOf('document.querySelectorAll("[data-section]").forEach(b=>b.onclick')),frontend);
+frontend.roster=roster;frontend.catalog=catalog;
+vm.runInContext('state.projects=roster.projects;state.challenges=catalog.challenges;state.section="Projects";state.area="National challenges";',frontend);
+assert.equal(vm.runInContext('records().length',frontend),33);
+assert.equal(vm.runInContext('records().every(p=>p.kind==="challenge")',frontend),true);
+vm.runInContext('state.area=null;',frontend);
+assert.equal(vm.runInContext('records().length',frontend),297);
+vm.runInContext('state.area="National challenges";state.activeQuery="pediatric";',frontend);
+assert.equal(vm.runInContext('records().length',frontend),1);
+vm.runInContext('state.area=null;state.activeQuery="gridfm";',frontend);
+assert.equal(vm.runInContext('records().length',frontend),1);
+vm.runInContext('state.section="All";state.activeQuery="pediatric";',frontend);
+assert.equal(vm.runInContext('records().length',frontend),1);
+console.log('Passed: 33 challenges, 297 projects, Worker/static classification parity, stale-tag removal, and registry/search separation.');

@@ -1,0 +1,15 @@
+{
+  "version": "official-challenges-v1",
+  "rules": [
+    [
+      "Infrastructure",
+      "\\b(grid|grids|infrastructure|cyber infrastructure|data centers?|hpc|accelerators?|facilit(?:y|ies)|microchips?|microelectronics|power modules?|reactors?|nuclear module|power plant|beam tuning|beam loss|injector|readout electronics|research networks|hardware|compute.in.memory|neuromorphic|silicon|sram|cmos|prometheus|sparc|nsls|camd)\\b"
+    ],
+    [
+      "Data",
+      "\\b(data sets?|datasets?|data fusion|knowledge graph|data management|data repository|data service|data pipelines?|data delivery|data evaluation|data integration|data streams?|data assimilation|data traceability|document processing|legacy document|provenance|data to equation|ai.ready|streaming readout|genomics|rna structurome)\\b"
+    ]
+  ],
+  "default": "AI models",
+  "note": "GIH provisional title-based research tags. AI Models includes applied AI methods and workflows; it does not imply a foundation-model deliverable. Official challenges are listed separately."
+}

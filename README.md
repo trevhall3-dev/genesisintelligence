@@ -5,7 +5,7 @@ Independent public-source research dashboard about the U.S. Department of Energy
 ## Build 2.1 implementation
 
 - **Approved compact masthead:** `dist/header-approved.svg` recreates the accepted composition of the GENESIS INTEL logotype with **SI superscript**, a neon-green network globe, and the Office of Synergy haloed S. This is a scalable vector recreation, not a claim that the original generated raster was uploaded verbatim.
-- **Four navigation pillars:** Projects, News, Archive, and Ask Genesis AI (Build 3 placeholder).
+- **Four navigation pillars:** Projects, News, Archive, and Ask Genesis SI (Build 3 placeholder).
 - **News first:** searchable, compact original-source headlines and enlarged readable font. Headlines open original publisher pages in a **new tab** rather than a preview modal.
 - **Projects:** searchable registry with institution, investigator, selection phase, and provisional, overlapping research tags. Full dossiers deferred.
 - **Project tracker:** clickable research-area counts. Partnerships are a separate private relationship dimension, not an exclusive research category.
@@ -80,4 +80,13 @@ The Build 2.1 GitHub validation workflow checks JS syntax, 297 unique public pro
 
 - Full individual project dossiers until substantial project milestones justify them
 - Public partnership claims or maps, until manually verified and explicitly approved
-- Build 3 **Ask Genesis AI** conversational assistant
+- Build 3 **Ask Genesis SI** conversational assistant
+
+
+## Official challenge catalog and corrected classification (November 6, 2026)
+
+`dist/challenges.json` contains the 33 named challenges in DOE’s current National Science & Technology Challenges document. These are separate challenge records, not additions to the 297 project selections. The National Challenges tracker opens only this official catalog. Overall search includes both with distinct labels.
+
+`dist/project-classification.json` supplies the same provisional rules to the daily importer and Worker. Project selections receive Data, Infrastructure and/or AI Models tags; AI Models includes applied AI workflows. Broad subject words no longer confer an official challenge label. The Worker replaces old stored tags during sync and recomputes tags on reads so an old D1 classification cannot reintroduce the catch-all before synchronization.
+
+Ask Genesis SI remains a Build 3 placeholder; no AI service has been activated.

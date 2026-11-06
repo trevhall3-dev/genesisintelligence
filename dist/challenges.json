@@ -1,0 +1,373 @@
+{
+  "metadata": {
+    "count": 33,
+    "source": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+    "verified_at": "2026-11-06",
+    "scope": "Official named challenges, not project awards"
+  },
+  "challenges": [
+    {
+      "id": "official-challenge-01",
+      "title": "Finding the Root Causes of Chronic Disease",
+      "group": "Helping Americans Live Longer, Healthier Lives",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-02",
+      "title": "Accelerating Drug Discovery and Clinical Translation",
+      "group": "Helping Americans Live Longer, Healthier Lives",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-03",
+      "title": "Unlocking Cures for Pediatric Cancer",
+      "group": "Helping Americans Live Longer, Healthier Lives",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-04",
+      "title": "Delivering Better Health Outcomes for Veterans",
+      "group": "Helping Americans Live Longer, Healthier Lives",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-05",
+      "title": "Reenvisioning Advanced Manufacturing and Industrial Productivity",
+      "group": "Building American Industrial Strength",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-06",
+      "title": "Scaling Biology for American Industrial Leadership",
+      "group": "Building American Industrial Strength",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-07",
+      "title": "Securing America’s Critical Minerals Supply",
+      "group": "Building American Industrial Strength",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-08",
+      "title": "Recentering Microelectronics in America",
+      "group": "Building American Industrial Strength",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-09",
+      "title": "Securing U.S. Leadership in Data Centers",
+      "group": "Building American Industrial Strength",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-10",
+      "title": "Reimagining the Lifecycle of American Infrastructure",
+      "group": "Delivering Reliable Infrastructure and Energy Affordability",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-11",
+      "title": "Delivering Nuclear Energy That is Faster, Safer, Cheaper",
+      "group": "Delivering Reliable Infrastructure and Energy Affordability",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-12",
+      "title": "Accelerating Delivery of Fusion Energy",
+      "group": "Delivering Reliable Infrastructure and Energy Affordability",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-13",
+      "title": "Transforming Nuclear Cleanup and Restoration",
+      "group": "Delivering Reliable Infrastructure and Energy Affordability",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-14",
+      "title": "Predicting U.S. Water for Energy",
+      "group": "Delivering Reliable Infrastructure and Energy Affordability",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-15",
+      "title": "Scaling the Grid to Power the American Economy",
+      "group": "Delivering Reliable Infrastructure and Energy Affordability",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-16",
+      "title": "Unleashing Subsurface Strategic Energy Assets",
+      "group": "Delivering Reliable Infrastructure and Energy Affordability",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-17",
+      "title": "Discovering Quantum Algorithms with AI",
+      "group": "Extending the Frontiers of American Discovery",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-18",
+      "title": "Realizing Quantum Systems for Discovery and Use",
+      "group": "Extending the Frontiers of American Discovery",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-19",
+      "title": "Achieving AI-Driven Autonomous Laboratories",
+      "group": "Extending the Frontiers of American Discovery",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-20",
+      "title": "Predicting Living Systems",
+      "group": "Extending the Frontiers of American Discovery",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-21",
+      "title": "Designing Materials with Predictable Functionality",
+      "group": "Extending the Frontiers of American Discovery",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-22",
+      "title": "Enhancing Particle Accelerators for Discovery",
+      "group": "Extending the Frontiers of American Discovery",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-23",
+      "title": "Unifying Physics from Quarks to the Cosmos",
+      "group": "Extending the Frontiers of American Discovery",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-24",
+      "title": "Mining Decades of Space Mission Data for Discovery",
+      "group": "Extending the Frontiers of American Discovery",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-25",
+      "title": "Early Detection and Attribution of Biological Threats",
+      "group": "Protecting the Nation from Emerging Threats",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-26",
+      "title": "Accelerating Design of Weapon Components and Systems",
+      "group": "Protecting the Nation from Emerging Threats",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-27",
+      "title": "Accelerating Materials Discovery, Production, and Qualification for Strategic Deterrence",
+      "group": "Protecting the Nation from Emerging Threats",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-28",
+      "title": "Accelerating Nuclear Threat Assessment, Preparedness, and Response",
+      "group": "Protecting the Nation from Emerging Threats",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-29",
+      "title": "Strengthening Deterrence Through Attribution of Nuclear Signatures",
+      "group": "Protecting the Nation from Emerging Threats",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-30",
+      "title": "Detecting, Locating, Identifying, and Characterizing Proliferation Threats",
+      "group": "Protecting the Nation from Emerging Threats",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-31",
+      "title": "Accelerating Experimental, Design, Production, and Nuclear Deterrence Outcomes",
+      "group": "Protecting the Nation from Emerging Threats",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-32",
+      "title": "Software Understanding for National Security",
+      "group": "Protecting the Nation from Emerging Threats",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    },
+    {
+      "id": "official-challenge-33",
+      "title": "Ensuring American Space Superiority",
+      "group": "Protecting the Nation from Emerging Threats",
+      "category": "National challenges",
+      "categories": [
+        "National challenges"
+      ],
+      "record_type": "challenge",
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+    }
+  ]
+}

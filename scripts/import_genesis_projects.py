@@ -27,17 +27,16 @@ LAB = re.compile(r"(national laboratory|national labs|fermilab|slac|sandia|ames 
 def clean(v):
     return re.sub(r"\s+", " ", v or "").strip()
 
+POLICY = json.loads((Path(__file__).resolve().parents[1] / "dist/project-classification.json").read_text())
+
+def categories(text):
+    tags = [name for name, pattern in POLICY["rules"] if re.search(pattern, text, re.I)]
+    if re.search(r"\b(ai|ml|models?|learning|agentic|neural|digital twin|artificial intelligence)\b", text, re.I):
+        tags.append("AI models")
+    return tags or [POLICY["default"]]
+
 def category(text):
-    s = text.lower()
-    if re.search(r"partnership|consortium|collaborat|industry", s):
-        return "Partnerships"
-    if re.search(r"grid|infrastructure|compute|facility|data.center|accelerator|microchip|power.module", s):
-        return "Infrastructure"
-    if re.search(r"dataset|data.fusion|knowledge.graph|data.management|repository", s):
-        return "Data"
-    if re.search(r"foundation.model|language.model|machine.learning|ai.model|agentic|neural.network|quantum.control|autonomous", s):
-        return "AI models"
-    return "National challenges"
+    return categories(text)[0]
 
 def parse_pdf(payload):
     rows = []
@@ -97,10 +96,14 @@ def main():
         unique[gridkey] = gridfm
     if len(unique) < 290:
         raise ValueError(f"Only {len(unique)} distinct projects assembled; refusing to publish partial index")
-    output = {"metadata":{"sources":[x[1] for x in SOURCES]+[gridfm["source_url"]],"retrieved_at":datetime.now(timezone.utc).isoformat(),"count":len(unique),"source_counts":source_counts,"scope":"July and October 2026 DOE Genesis RFA lists plus separately announced DOE GridFM 2.0. RFA selection is not confirmation of obligated funding.","category_note":"Research-area categories are GIH provisional title-based classifications"},"projects":list(unique.values())}
+    for project in unique.values():
+        project["categories"] = categories(project["title"])
+        project["category"] = project["categories"][0]
+    output = {"metadata":{"sources":[x[1] for x in SOURCES]+[gridfm["source_url"]],"retrieved_at":datetime.now(timezone.utc).isoformat(),"count":len(unique),"source_counts":source_counts,"scope":"July and October 2026 DOE Genesis RFA lists plus separately announced DOE GridFM 2.0. RFA selection is not confirmation of obligated funding.","category_note":POLICY["note"],"classification_version":POLICY["version"]},"projects":list(unique.values())}
     OUTPUT.parent.mkdir(exist_ok=True,parents=True)
     OUTPUT.write_text(json.dumps(output,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("Wrote",len(unique),"verified table records to",OUTPUT)
 
 if __name__=="__main__":
     main()
+
