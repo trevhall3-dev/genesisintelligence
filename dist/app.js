@@ -1,81 +1,130 @@
 "use strict";
+// Genesis Intelligence Hub Build 2.1 — news-first, readable and source-grounded.
 const $=id=>document.getElementById(id);
-const guides=[
- {title:"DOE Genesis Mission official overview",summary:"Primary source for DOE mission objectives and scientific-platform priorities.",url:"https://genesis.energy.gov/",date:"",source:"DOE",category:"National challenges",tier:"Official",kind:"guide"},
- {title:"DOE Genesis Mission program hub",summary:"Official program information, initiatives and announcements.",url:"https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission",date:"",source:"DOE",category:"National challenges",tier:"Official",kind:"guide"},
- {title:"DOE Genesis news archive",summary:"Official collection of DOE Genesis Mission news.",url:"https://www.energy.gov/undersecretaryforscience/genesis-mission/listings/genesis-mission-news",date:"",source:"DOE",category:"Partnerships",tier:"Official",kind:"guide"},
- {title:"DOE Office of Science news",summary:"Broader Office of Science updates that may intersect with Genesis.",url:"https://www.energy.gov/science/listings/office-science-news",date:"",source:"DOE",category:"AI models",tier:"Related",kind:"guide"},
- {title:"Oak Ridge Genesis projects",summary:"ORNL descriptions of Genesis projects and research areas.",url:"https://www.ornl.gov/genesis-mission-ai-driven-projects/",date:"",source:"ORNL",category:"AI models",tier:"Related",kind:"guide"},
- {title:"Argonne Leadership Computing Facility: Genesis",summary:"Facility perspective on Genesis scientific computing.",url:"https://www.alcf.anl.gov/genesis-mission",date:"",source:"Argonne",category:"Infrastructure",tier:"Related",kind:"guide"},
- {title:"Berkeley Lab Genesis Mission",summary:"Laboratory news and work on AI-enabled science.",url:"https://www.lbl.gov/genesis-mission/",date:"",source:"Berkeley Lab",category:"Partnerships",tier:"Related",kind:"guide"},
- {title:"Savannah River National Lab Genesis",summary:"Scientific data and models for mission applications.",url:"https://www.srnl.gov/srnl-genesis-mission/",date:"",source:"SRNL",category:"Data",tier:"Related",kind:"guide"}
+const safe=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl=value=>{try{let u=new URL(value,location.origin);return u.protocol==="https:"?u.href:"#"}catch{return"#"}};
+const dateLabel=value=>value&&Number.isFinite(Date.parse(value))?new Date(value).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric",timeZone:"UTC"}):"Date unavailable";
+const areas=["Data","Infrastructure","AI models","National challenges"];
+const areaLabels={"Data":"Data","Infrastructure":"Infrastructure","AI models":"AI Models","National challenges":"National Challenges"};
+const icons={"Data":"database","Infrastructure":"server","AI models":"cpu","National challenges":"leaf"};
+const primarySources=[
+ {title:"DOE Genesis Mission",url:"https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission",source:"DOE"},
+ {title:"Official DOE Genesis News",url:"https://www.energy.gov/undersecretaryforscience/genesis-mission/listings/genesis-mission-news",source:"DOE"},
+ {title:"Genesis Mission Platform",url:"https://genesis.energy.gov/",source:"DOE"},
+ {title:"DOE Genesis Project Selections",url:"https://www.energy.gov/documents/genesis-mission-rfa-awards-list",source:"DOE"}
 ];
-let projects=[
- {title:"GridFM 2.0",summary:"Brookhaven-led effort using artificial intelligence to accelerate electric-grid planning; linked to a DOE $11.5 million project announcement.",url:"https://www.energy.gov/oe/articles/does-office-electricity-announces-115m-genesis-mission-project-meet-growing-electricity",date:"2026-09-01",source:"Brookhaven / DOE",category:"Infrastructure",tier:"Official",kind:"project",organization:"Brookhaven National Laboratory"},
- {title:"AI4HPC",summary:"Argonne-led AI-assisted scientific software development and optimization, cited in DOE's October 2026 award announcement.",url:"https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science",date:"2026-10-08",source:"Argonne / DOE",category:"AI models",tier:"Official",kind:"project",organization:"Argonne National Laboratory"},
- {title:"MOAT-Core",summary:"Berkeley-led shared AI platform supporting accelerator science.",url:"https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science",date:"2026-10-08",source:"Berkeley / DOE",category:"AI models",tier:"Official",kind:"project",organization:"Berkeley Lab"},
- {title:"MAESTRO",summary:"AI reasoning and optimization for geothermal-reservoir research; UC Irvine-led.",url:"https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science",date:"2026-10-08",source:"UC Irvine / DOE",category:"National challenges",tier:"Official",kind:"project",organization:"University of California, Irvine"},
- {title:"AXESS",summary:"AI-enabled design of microchips for extreme environments; Fermilab-led.",url:"https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science",date:"2026-10-08",source:"Fermilab / DOE",category:"National challenges",tier:"Official",kind:"project",organization:"Fermilab"},
- {title:"AI-assisted quantum magnet design",summary:"Oak Ridge-led research into quantum materials with desired magnetic properties.",url:"https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science",date:"2026-10-08",source:"ORNL / DOE",category:"AI models",tier:"Official",kind:"project",organization:"Oak Ridge National Laboratory"}
-];
-const announcements=[
- {title:"DOE announces additional Genesis Mission Phase II awards",summary:"DOE announced 12 new Phase II awards totaling $159 million and described a first-year portfolio of 297 projects.",date:"2026-10-08",url:"https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science",source:"DOE",category:"National challenges",tier:"Official",kind:"news"},
- {title:"ORNL selected for six Phase II Genesis awards",summary:"Laboratory awards span materials, microelectronics, quantum computing, accelerator software and fusion.",date:"2026-10-08",url:"https://www.ornl.gov/news/ornl-selected-for-six-phase-ii-genesis-mission-awards/",source:"ORNL",category:"AI models",tier:"Related",kind:"news"}
-];
-
-const labs=[["DOE","https://www.energy.gov/"],["Genesis Mission","https://genesis.energy.gov/"],["Oak Ridge","https://www.ornl.gov/"],["Argonne","https://www.anl.gov/"],["Brookhaven","https://www.bnl.gov/"],["Berkeley Lab","https://www.lbl.gov/"],["Los Alamos","https://www.lanl.gov/"],["Pacific Northwest","https://www.pnnl.gov/"]];
-const research=["Data","Infrastructure","AI models","National challenges","Partnerships"];
-const icons={Data:"database",Infrastructure:"server","AI models":"cpu","National challenges":"leaf",Partnerships:"handshake"};
-const categoryLabels={Data:"Data",Infrastructure:"Infrastructure","AI models":"AI Models","National challenges":"National Challenges",Partnerships:"Public-Private Partnerships"};
-let registryStatus="initial examples",live=[],archived=[],statuses=[],checkedAt="",section="All",tier="All",limit=36,activeCategory="All",selected=null;
-const escapeHTML=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const safeUrl=v=>{try{let u=new URL(v);return u.protocol==="https:"?u.href:"#"}catch{return"#"}};
-const fmtDate=v=>v&&Number.isFinite(Date.parse(v))?new Date(v).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"}):"Undated";
-function typeOf(d){if(["DOE","Labs","Partners"].includes(d.group))return d.group;const s=((d.source||"")+" "+(d.organization||"")).toLowerCase();if(d.kind==="guide")return"DOE";if(/\b(ornl|anl|argonne|brookhaven|berkeley|lbnl|pnnl|lanl|llnl|sandia|fermilab|slac|nrel|national lab|oak ridge|idaho)\b/.test(s))return"Labs";if(/\b(doe|department of energy|energy.gov)\b/.test(s))return"DOE";return"Partners"}
-function items(){const seen=new Set();return [...live,...archived,...announcements,...projects,...guides].filter(d=>{const key=(d.kind==="project"?"project":"other")+"|"+d.title.toLowerCase().replace(/[^a-z0-9]/g,"").slice(0,90)+"|"+(d.organization||"").toLowerCase();if(seen.has(key))return false;seen.add(key);return true})}
-function matching(){const q=$("search").value.toLowerCase().trim().split(/\s+/).filter(Boolean);return items().filter(d=>{if((section==="News"||(section==="All"&&q.length===0))&& !["news","discovery"].includes(d.kind))return false;
-if(section==="Projects"&&d.kind!=="project")return false;
-if(section==="Sources"&&d.kind!=="guide")return false;
-if(section==="Archive"&&!["news","discovery"].includes(d.kind))return false;
-if(section==="Labs"&&typeOf(d)!=="Labs")return false;
-if(activeCategory!=="All"&&!(d.categories||[d.category]).includes(activeCategory))return false;
-if(tier!=="All"&&typeOf(d)!==tier)return false;
-return q.every(t=>[d.title,d.summary,d.source,d.organization,d.investigator,d.city,d.state,d.category,d.classification,...(d.categories||[])].join(" ").toLowerCase().includes(t))}).sort((a,b)=>{let v=$("sort").value;if(v==="az")return a.title.localeCompare(b.title);let x=(b.date||"").localeCompare(a.date||"");return v==="old"?-x:x})}
-function distinctiveTerms(title){return String(title||"").match(/[A-Z][A-Z0-9-]{3,}/g)?.filter(x=>!["GENESIS","MISSION","ENERGY","PROJECT","MODEL","DATA","SCIENCE"].includes(x))||[]}
-function projectMatches(article,project){const hay=(article.title+" "+(article.summary||"")).toLowerCase();const terms=distinctiveTerms(project.title);if(terms.some(t=>hay.includes(t.toLowerCase()))&&hay.includes("genesis"))return true;return project.title.length>24&&hay.includes(project.title.toLowerCase().slice(0,45))}
-function relatedNews(p){const news=[...live,...archived,...announcements].filter(d=>projectMatches(d,p)).slice(0,8);return news.length?news.map(a=>'<a target="_blank" rel="noopener noreferrer" href="'+safeUrl(a.url)+'">'+escapeHTML(a.title)+'</a>').join(""):'<p>No verified project-specific update associated yet.</p>'}
-function matchedProjectLinks(d){const matches=projects.filter(p=>projectMatches(d,p)).slice(0,5);return matches.length?'<p><strong>Project connections:</strong> '+matches.map(p=>'<button class="related-project" data-related="'+escapeHTML(p.id||p.title)+'">'+escapeHTML(p.title)+'</button>').join(" ")+'</p>':""}
-async function loadArchive(){try{const r=await fetch("/news-archive.json",{cache:"no-cache"});if(!r.ok)return;const data=await r.json();if(!Array.isArray(data.items))return;archived=data.items.filter(d=>d&&d.title&&safeUrl(d.url)!=="#").map(d=>({...d,kind:"discovery",group:d.group||"Partners"}));render()}catch(e){console.warn("Archive not yet published",e)}}
-async function loadRegistry(){try{const res=await fetch("/api/projects",{cache:"no-cache"});if(!res.ok)throw Error("registry not yet published");const data=await res.json();if(!Array.isArray(data.projects)||data.projects.length<250)throw Error("official import incomplete");const imported=data.projects.map(p=>({id:p.id,title:p.title,summary:"Officially documented Genesis Mission project. Source and award status shown below.",url:p.source_url,source:p.institution,date:p.selection_date,kind:"project",category:p.category,organization:p.institution,investigator:p.principal_investigator,city:p.city,state:p.state,phase:p.source_phase,selectionStatus:p.selection_status}));projects=imported;registryStatus="DOE project registry: "+imported.length+" documented records";}catch(e){registryStatus="Official roster import pending; showing curated project examples";}render()}
-function preview(d){selected=d;$("previewHint").classList.add("hidden");$("preview").classList.remove("hidden");$("preview").innerHTML=d.kind==="project"?
-'<h3>'+escapeHTML(d.title)+'</h3><p class="preview-meta">'+escapeHTML(d.organization||d.source)+'</p><p><strong>Lead investigator:</strong> '+escapeHTML(d.investigator||"Not listed in this record")+'</p><p><strong>Location:</strong> '+escapeHTML([d.city,d.state].filter(Boolean).join(", ")||"Not listed")+'</p><p><strong>Research area:</strong> '+escapeHTML(categoryLabels[d.category]||d.category)+'</p><p><strong>Status:</strong> '+escapeHTML(d.selectionStatus||"See DOE source for award status")+'</p><p>'+escapeHTML(d.summary||"Official Genesis project selection; see source roster for details.")+'</p><div class="project-related"><h4>Related project news</h4>'+relatedNews(d)+'</div><a class="read-full" href="'+safeUrl(d.url)+'" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link"></i> Official DOE Project Source</a>'
-:'<h3>'+escapeHTML(d.title)+'</h3><p class="preview-meta">'+escapeHTML(d.source)+' · '+escapeHTML(fmtDate(d.date))+'</p><p>'+escapeHTML(d.summary||"A source-provided excerpt is not available. Open the original for the complete article.")+'</p>'+matchedProjectLinks(d)+'<a class="read-full" href="'+safeUrl(d.url)+'" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link"></i> Open Full Article</a>';
-document.querySelectorAll("[data-related]").forEach(b=>b.onclick=()=>{const p=projects.find(x=>(x.id||x.title)===b.dataset.related);if(p)preview(p)});if(window.lucide)window.lucide.createIcons();
-if(window.matchMedia("(max-width:1190px)").matches)document.querySelector(".preview-card").scrollIntoView({behavior:"smooth",block:"nearest"});
+const state={news:[],projects:[],sources:[],health:null,archiveAt:"",registryLabel:"Official DOE selection registry",section:"All",tier:"All",area:null,limit:40,activeQuery:""};
+const cache=new Set();
+function dedupe(rows){cache.clear();return rows.filter(row=>{const key=row.url||row.title;if(cache.has(key))return false;cache.add(key);return true})}
+function filterType(item){if(["DOE","Labs","Partners"].includes(item.group))return item.group;const s=String(item.source||"").toLowerCase();if(/department of energy|^doe$|energy\.gov/.test(s))return"DOE";if(/national lab|oak ridge|argonne|brookhaven|berkeley|fermilab|pnnl|llnl|sandia|los alamos/.test(s))return"Labs";return"Partners"}
+function isMatch(d,q){if(!q)return true;const hay=[d.title,d.summary,d.source,d.institution,d.principal_investigator,d.city,d.state,d.category,d.source_phase,...(d.categories||[])].join(" ").toLowerCase();return q.split(/\s+/).every(x=>hay.includes(x))}
+function records(){
+ const q=state.activeQuery;
+ let list;
+ if(state.section==="Projects")list=state.projects.map(p=>({...p,kind:"project"}));
+ else if(state.section==="Sources")list=primarySources.map(p=>({...p,kind:"source"}));
+ else list=state.news.filter(i=>(state.section!=="Labs"||filterType(i)==="Labs"));
+ if(state.area)list=list.filter(i=>(i.categories||[i.category]).includes(state.area));
+ if(state.tier!=="All"&&state.section!=="Projects"&&state.section!=="Sources")list=list.filter(i=>filterType(i)===state.tier);
+ list=dedupe(list).filter(i=>isMatch(i,q));
+ const order=$("sort").value;
+ list.sort((a,b)=>order==="az"||state.section==="Projects"&&order==="new"
+ ?String(a.title||"").localeCompare(String(b.title||""))
+ :order==="old"?String(a.date||a.selection_date||"").localeCompare(String(b.date||b.selection_date||""))
+ :String(b.date||b.selection_date||"").localeCompare(String(a.date||a.selection_date||"")));
+ return list;
 }
-function render(){const list=matching();$("recordCount").textContent=list.length;$("count").textContent=list.length+" matching items"+(section==="Projects"?" · "+registryStatus:"");
-$("rows").innerHTML=list.slice(0,limit).map((d,i)=>{const glyph='<span class="article-glyph"><i data-lucide="'+(d.kind==="project"?"layers":"newspaper")+'"></i></span>';const title='<span class="headline">'+escapeHTML(d.title)+'</span><i data-lucide="external-link" class="item-arrow"></i>';const control=d.kind==="project"?'<button class="compact-title" data-record="'+i+'">'+glyph+title+'</button>':'<a class="compact-title" href="'+safeUrl(d.url)+'" target="_blank" rel="noopener noreferrer" aria-label="Open article in new tab: '+escapeHTML(d.title)+'">'+glyph+title+'</a>';return '<article class="compact-item">'+control+'<div class="compact-meta"><span class="article-source">'+escapeHTML(d.kind==="project"?(d.organization||d.source):d.source)+'</span><span class="article-date">'+escapeHTML(d.kind==="project"?(d.phase||"GENESIS PROJECT"):fmtDate(d.date))+'</span>'+(d.classification?'<span class="article-classification">'+escapeHTML(d.classification)+'</span>':'')+'</div></article>'}).join("")||'<div class="empty">No matching Genesis records found. Try changing the search or section.</div>';
-document.querySelectorAll("button[data-record]").forEach(b=>b.onclick=()=>preview(list[Number(b.dataset.record)]));
-$("more").hidden=list.length<=limit;
-document.querySelectorAll("[data-tier]").forEach(b=>{b.classList.toggle("selected",b.dataset.tier===tier);b.setAttribute("aria-pressed",String(b.dataset.tier===tier));const label=b.dataset.tier;const count=items().filter(x=>["news","discovery"].includes(x.kind)&&(label==="All"||typeOf(x)===label)).length;b.title=label+" • "+count+" available news records"});
-document.querySelectorAll("[data-section]").forEach(b=>{const on=section===b.dataset.section||(research.includes(b.dataset.section)&&activeCategory===b.dataset.section);b.classList.toggle("active",on);b.setAttribute("aria-current",on?"page":"false")});
-renderTracker();if(window.lucide)window.lucide.createIcons();}
-function renderTracker(){const max=Math.max(1,...research.map(c=>projects.filter(p=>p.category===c).length));$("trackerBars").innerHTML=research.map(c=>{const n=projects.filter(p=>p.category===c).length;return '<button class="tracker-row tracker-button" data-track="'+escapeHTML(c)+'"><span class="tracker-label"><i data-lucide="'+icons[c]+'"></i>'+categoryLabels[c]+'</span><span class="tracker-track"><span class="tracker-fill" style="width:'+(100*n/max)+'%"></span></span><strong class="tracker-count">'+n+'</strong></button>'}).join("");
-document.querySelectorAll("[data-track]").forEach(b=>b.onclick=()=>{section="Projects";activeCategory=b.dataset.track;tier="All";$("search").value="";limit=36;render();document.querySelector(".feed").scrollIntoView({behavior:"smooth",block:"start"})})}
-function showSection(name){section=name;activeCategory=research.includes(name)?name:"All";tier="All";limit=36;$("search").value="";render();document.querySelector(".feed").scrollIntoView({behavior:"smooth",block:"start"})}
-function setStatus(t,warn=false){$("feedStatus").textContent=t;$("feedStatus").classList.toggle("warn",warn)}
-function monitor(){const list=statuses.length?statuses:[{name:"DOE Genesis Mission",ok:false,count:0}];const good=list.filter(x=>x.ok).length;$("sourceState").textContent=good?good+" / "+list.length+" updating":"Not verified";$("sourceState").classList.toggle("ok",good>0);
-$("sourceMonitor").innerHTML=list.map(x=>'<div class="monitor-row"><i data-lucide="'+(x.ok?"check-square":"square-x")+'"></i><span>'+escapeHTML(x.name)+'</span><small>'+(x.ok?x.count+" articles":"Unavailable")+'</small></div>').join("");if(window.lucide)window.lucide.createIcons();}
-async function fetchNews(force=false){$("refresh").disabled=true;setStatus("Loading Genesis and related research headlines…");try{const ac=new AbortController(),timer=setTimeout(()=>ac.abort(),14000);let response;try{response=await fetch("/api/news"+(force?"?refresh="+Date.now():""),{signal:ac.signal})}finally{clearTimeout(timer)}if(!response.ok)throw Error("HTTP "+response.status);const data=await response.json();live=Array.isArray(data.items)?data.items.filter(x=>x?.title&&safeUrl(x.url)!=="#").map(x=>({...x,kind:"discovery"})):[];statuses=Array.isArray(data.sources)?data.sources:[];checkedAt=data.checkedAt||"";setStatus(statuses.some(s=>s.ok)?"News archive checked "+new Date(checkedAt).toLocaleString()+" · "+live.length+" source-linked articles.":"Direct DOE feed unavailable; showing last archived content.",!statuses.some(s=>s.ok))}catch(e){setStatus("News feeds unavailable; showing curated records. "+e.message,true)}finally{$("refresh").disabled=false;monitor();render()}}
-document.querySelectorAll("[data-section]").forEach(b=>b.onclick=()=>showSection(b.dataset.section));
-document.querySelectorAll("[data-pillar]").forEach(b=>b.onclick=()=>showSection(b.dataset.pillar));
-document.querySelectorAll("[data-tier]").forEach(b=>b.onclick=()=>{tier=b.dataset.tier;limit=36;render()});
-$("search").oninput=()=>{limit=36;render()};$("searchBtn").onclick=()=>{limit=36;render();$("search").focus()};
-$("sort").onchange=render;$("more").onclick=()=>{limit+=36;render()};$("refresh").onclick=()=>fetchNews(true);
-$("researchToggle").onclick=()=>{let el=$("researchSub");el.hidden=!el.hidden;$("researchToggle").setAttribute("aria-expanded",String(!el.hidden))};
-$("viewProjects").onclick=()=>showSection("Projects");$("resources").onclick=()=>showSection("Sources");
-function comingSoon(){$("dialogBody").innerHTML="<h2>Ask Genesis AI</h2><p>Coming in Build 3. This feature is not active yet.</p>";$("dialog").showModal()}
+function sectionTitle(){const title=state.section==="Projects"?"GENESIS PROJECT REGISTRY":state.section==="Archive"?"GENESIS INTELLIGENCE ARCHIVE":state.section==="Sources"?"OFFICIAL SOURCES":state.section==="Labs"?"GENESIS LABORATORY NEWS":"LATEST GENESIS INTELLIGENCE";$("feedTitle").textContent=title}
+function render(){
+ sectionTitle();
+ const list=records();
+ $("recordCount").textContent=list.length;
+ $("count").textContent=state.section==="Projects"?list.length+" matching projects · "+state.registryLabel:list.length+" source-linked records";
+ $("rows").innerHTML=list.slice(0,state.limit).map(item=>{
+  const project=item.kind==="project",source=item.kind==="source";
+  const url=safeUrl(project?item.source_url:item.url);
+  const head='<a class="compact-title" target="_blank" rel="noopener noreferrer" href="'+url+'">'+
+   '<span class="article-glyph"><i data-lucide="'+(project?"layers":source?"link":"newspaper")+'"></i></span>'+
+   '<span class="headline">'+safe(item.title)+'</span><i data-lucide="external-link" class="item-arrow"></i></a>';
+  const sourceName=project?(item.institution||"Lead institution not listed"):source?item.source||"Official source":item.source||filterType(item);
+  const detail=project?([item.principal_investigator?"PI: "+item.principal_investigator:"",item.source_phase||"DOE project selection"].filter(Boolean).join(" · ")):source?"Official Genesis reference":dateLabel(item.date);
+  const tags=project?'<span class="record-tag">'+safe((item.categories||[item.category]).filter(t=>areas.includes(t)).slice(0,2).map(t=>areaLabels[t]).join(" · "))+'</span>':"";
+  return '<article class="compact-item">'+head+'<div class="compact-meta"><span class="article-source">'+safe(sourceName)+'</span><span class="article-date">'+safe(detail)+'</span>'+tags+'</div></article>';
+ }).join("")||'<p class="empty">No records match this view. Try All, clear search, or choose another category.</p>';
+ $("more").hidden=list.length<=state.limit;
+ document.querySelectorAll("[data-tier]").forEach(b=>{b.classList.toggle("selected",b.dataset.tier===state.tier);b.setAttribute("aria-pressed",String(b.dataset.tier===state.tier))});
+ document.querySelectorAll("[data-section]").forEach(b=>{const active=(state.section===b.dataset.section)||(state.area===b.dataset.section);b.classList.toggle("active",active);b.setAttribute("aria-current",active?"page":"false")});
+ document.querySelector(".tier-tabs").hidden=state.section==="Projects"||state.section==="Sources";
+ const pills=document.querySelectorAll("[data-pillar]");pills.forEach(b=>b.classList.toggle("current",b.dataset.pillar===state.section));
+ renderTracker();if(window.lucide)window.lucide.createIcons();
+}
+function renderTracker(){
+ const projects=state.projects||[];
+ const max=Math.max(1,...areas.map(area=>projects.filter(p=>(p.categories||[p.category]).includes(area)).length));
+ $("trackerBars").innerHTML=areas.map(area=>{
+  const n=projects.filter(p=>(p.categories||[p.category]).includes(area)).length;
+  return '<button type="button" class="tracker-row tracker-button" data-track="'+safe(area)+'" title="Show '+safe(area)+' projects"><span class="tracker-label"><i data-lucide="'+icons[area]+'"></i>'+areaLabels[area]+'</span><span class="tracker-track"><span class="tracker-fill" style="width:'+Math.round(n/max*100)+'%"></span></span><strong class="tracker-count">'+n+'</strong></button>';
+ }).join("");
+ document.querySelectorAll("[data-track]").forEach(button=>button.onclick=()=>{state.section="Projects";state.area=button.dataset.track;state.tier="All";state.limit=40;state.activeQuery="";$("search").value="";render();document.querySelector(".feed").scrollIntoView({behavior:"smooth",block:"start"})});
+}
+function setView(view){
+ state.section=areas.includes(view)?"Projects":view;state.area=areas.includes(view)?view:null;
+ state.tier="All";state.activeQuery="";state.limit=40;$("search").value="";
+ $("sort").value=state.section==="Projects"?"az":"new";
+ render();document.querySelector(".feed").scrollIntoView({behavior:"smooth",block:"start"});
+}
+function renderSources(){
+ const list=state.sources.length?state.sources:[{name:"DOE Genesis Mission News",group:"DOE",ok:false,count:0}];
+ const ok=list.filter(s=>s.ok).length;
+ $("sourceState").textContent=ok+"/"+list.length+" reachable";
+ $("sourceState").classList.toggle("ok",ok>0);
+ $("sourceMonitor").innerHTML=list.map(s=>'<div class="monitor-row"><i data-lucide="'+(s.ok?"check-square":"alert-triangle")+'"></i><span>'+safe(s.name)+'</span><small>'+(s.ok?Number(s.count||0)+" items":"Check failed")+'</small></div>').join("");
+ if(window.lucide)window.lucide.createIcons();
+}
+function renderHealth(){
+ const h=state.health;
+ const status=h?.status==="synced"?"D1 synchronized":h?.status==="pending-initial-import"?"D1 import pending":h?.databaseBound?"D1 status unavailable":"D1 connection unverified";
+ const projectCount=h?.projects??state.projects.length,newsCount=h?.articles??state.news.length;
+ $("collectorHealth").innerHTML='<div class="health-stat"><i data-lucide="database"></i><span>Project records</span><strong>'+Number(projectCount||0)+'</strong></div>'+
+ '<div class="health-stat"><i data-lucide="newspaper"></i><span>Archived articles</span><strong>'+Number(newsCount||0)+'</strong></div>'+
+ '<div class="health-stat"><i data-lucide="server"></i><span>Database</span><strong>'+safe(status)+'</strong></div>'+
+ '<p class="rail-note">Partnership candidates are collected privately and never published here without review.</p>';
+ if(window.lucide)window.lucide.createIcons();
+}
+async function readJson(path){const res=await fetch(path,{cache:"no-cache"});if(!res.ok)throw Error(path+": HTTP "+res.status);return res.json()}
+async function fetchAll(){
+ $("refresh").disabled=true;$("feedStatus").textContent="Loading Genesis records from official sources…";
+ const result=await Promise.allSettled([readJson("/api/projects"),readJson("/api/news"),readJson("/api/health")]);
+ if(result[0].status==="fulfilled"){
+  const body=result[0].value;
+  state.projects=Array.isArray(body.projects)?body.projects:[];
+  state.registryLabel=body.metadata?.source||"DOE source registry";
+ }else{
+  try{state.projects=(await readJson("/projects.json")).projects||[]}
+  catch{state.projects=[]}
+ }
+ if(result[1].status==="fulfilled"){
+  const body=result[1].value;state.news=Array.isArray(body.items)?body.items:[];state.sources=body.sources||[];state.archiveAt=body.checkedAt||"";
+ }else{
+  try{const body=await readJson("/news-archive.json");state.news=body.items||[];state.sources=body.sources||[];state.archiveAt=body.updated_at||""}catch{state.news=[];state.sources=[]}
+ }
+ state.health=result[2].status==="fulfilled"?result[2].value:null;
+ const stamp=state.archiveAt&&Number.isFinite(Date.parse(state.archiveAt))?new Date(state.archiveAt).toLocaleString("en-US",{dateStyle:"medium",timeStyle:"short"}):"Date not reported";
+ $("feedStatus").textContent=state.news.length?("Official publisher archive: "+state.news.length+" articles · Updated "+stamp):"No articles available yet. Review collector status.";
+ $("refresh").disabled=false;
+ renderSources();renderHealth();render();
+}
+document.querySelectorAll("[data-section]").forEach(b=>b.onclick=()=>setView(b.dataset.section));
+document.querySelectorAll("[data-pillar]").forEach(b=>b.onclick=()=>setView(b.dataset.pillar));
+document.querySelectorAll("[data-tier]").forEach(b=>b.onclick=()=>{state.tier=b.dataset.tier;state.limit=40;render()});
+$("search").oninput=()=>{state.activeQuery=$("search").value.toLowerCase().trim();state.limit=40;render()};
+$("searchBtn").onclick=()=>{$("search").focus();state.activeQuery=$("search").value.toLowerCase().trim();render()};
+$("sort").onchange=render;$("more").onclick=()=>{state.limit+=40;render()};$("refresh").onclick=fetchAll;
+$("researchToggle").onclick=()=>{const el=$("researchSub");el.hidden=!el.hidden;$("researchToggle").setAttribute("aria-expanded",String(!el.hidden))};
+$("viewProjects").onclick=()=>setView("Projects");$("resources").onclick=()=>setView("Sources");
+$("partnershipInfo").onclick=()=>{$("dialogBody").innerHTML='<h2>Partnership Intelligence</h2><p>GIH is collecting potential project collaborators from source-linked Genesis news. Candidate relationships are kept privately in Cloudflare D1 and are not public claims.</p><p>Once evidence has been reviewed, a future build can publish approved relationships and source citations.</p>';$("dialog").showModal()};
+function comingSoon(){$("dialogBody").innerHTML="<h2>Ask Genesis AI</h2><p>Planned for Build 3. No conversational AI service is active on this dashboard yet.</p>";$("dialog").showModal()}
 $("askAI").onclick=comingSoon;$("pillarAI").onclick=comingSoon;
-$("about").onclick=()=>{$("dialogBody").innerHTML="<h2>About Genesis Intelligence Hub</h2><p>Independent public-source intelligence dashboard covering the DOE Genesis Mission and related AI and SI initiatives. Inclusion does not imply official Genesis affiliation. Articles marked Confirmed Genesis have an explicit mission connection; Related AI &amp; SI Research indicates relevant work without confirmed affiliation. Not an official DOE website and not affiliated with or endorsed by DOE.</p><p>News combines the official DOE Genesis Mission listing with editorially verified laboratory announcements in a source-linked archive. The public project registry includes DOE-documented projects; its research-area classifications are provisional. </p><p>Office of Synergy is an independent creative identity.</p>";$("dialog").showModal()};
+$("about").onclick=()=>{$("dialogBody").innerHTML='<h2>About Genesis Intelligence Hub</h2><p>This is an independent public-source intelligence dashboard about the DOE Genesis Mission. It is not an official DOE website or endorsed by DOE.</p><p>Project selection status is not equivalent to disbursed funding. Research tags are GIH provisional classifications. News links open original publisher pages in new tabs. Private candidate partnerships are not published.</p><p>Office of Synergy is an independent creative identity.</p>';$("dialog").showModal()};
 $("close").onclick=()=>$("dialog").close();
-render();monitor();fetchNews();loadRegistry();loadArchive();
+render();renderSources();renderHealth();fetchAll();
