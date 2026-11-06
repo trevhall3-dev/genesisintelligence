@@ -1,4 +1,4 @@
-name: Refresh official Genesis news
+name: Refresh official DOE Genesis news
 on:
   push:
     paths:
@@ -21,7 +21,8 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests beautifulsoup4
-      - run: python scripts/collect_genesis_news.py
+      - run: python -m py_compile scripts/collect_genesis_news.py
+      - run: python scripts/collect_genesis_news.py --channel doe
       - name: Commit updated Genesis news archive
         run: |
           git config user.name "genesis-intelligence-bot"
