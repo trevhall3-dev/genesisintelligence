@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-06T01:37:26.695609+00:00",
-  "count": 20,
+  "updated_at": "2026-11-06T01:38:07.954246+00:00",
+  "count": 25,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -13,6 +13,64 @@
       "group": "DOE",
       "ok": true,
       "count": 13
+    },
+    {
+      "name": "Argonne National Laboratory",
+      "group": "Labs",
+      "ok": false,
+      "count": 0,
+      "error": "403 Client Error: Forbidden for url: https://www.anl.gov/news"
+    },
+    {
+      "name": "Brookhaven National Laboratory",
+      "group": "Labs",
+      "ok": true,
+      "count": 0
+    },
+    {
+      "name": "Fermilab",
+      "group": "Labs",
+      "ok": true,
+      "count": 0
+    },
+    {
+      "name": "Lawrence Berkeley National Laboratory",
+      "group": "Labs",
+      "ok": false,
+      "count": 0,
+      "error": "403 Client Error: Forbidden for url: https://newscenter.lbl.gov/"
+    },
+    {
+      "name": "Lawrence Livermore National Laboratory",
+      "group": "Labs",
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://www.llnl.gov/articles"
+    },
+    {
+      "name": "Los Alamos National Laboratory",
+      "group": "Labs",
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://www.lanl.gov/media/news/"
+    },
+    {
+      "name": "Oak Ridge National Laboratory",
+      "group": "Labs",
+      "ok": true,
+      "count": 0
+    },
+    {
+      "name": "Pacific Northwest National Laboratory",
+      "group": "Labs",
+      "ok": true,
+      "count": 3
+    },
+    {
+      "name": "Sandia National Laboratories",
+      "group": "Labs",
+      "ok": true,
+      "count": 0
     }
   ],
   "items": [
@@ -126,6 +184,21 @@
       "id": "cb8488f2f24e7f251808"
     },
     {
+      "id": "a3a522f786c7db71faa3",
+      "title": "October 22, 2026 PNNL Breaks Ground on First-of-Its-Kind Autonomous Laboratory for Biosciences",
+      "summary": "ciences Microbial Molecular Phenotyping Capability to help strengthen American biotechnology leadership Karyn Hede, PNNL Open Pacific Northwest National Laboratory Director Deb Gracio, third from left, leads the ceremonial groundbreaking for the Micr",
+      "source": "Pacific Northwest National Laboratory",
+      "url": "https://www.pnnl.gov/news-media/pnnl-breaks-ground-first-its-kind-autonomous-laboratory-biosciences",
+      "date": "2026-10-22",
+      "group": "Labs",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": [
+        "genesis-5ee9917971a3bbf82e46"
+      ]
+    },
+    {
       "id": "c324109fda3509b52f80",
       "title": "Genesis Mission Hackathon brings research community together to build future of science",
       "summary": "October 21, 2026 Over 450 attendees participated in the Genesis Mission Hackathon, developing a strong starting point for integrating their scientific workflows into the Genesis Mission Platform.",
@@ -150,6 +223,34 @@
       "kind": "discovery",
       "source_method": "publisher-direct",
       "project_ids": []
+    },
+    {
+      "id": "171d476f823b76b9a8a9",
+      "title": "October 15, 2026 PNNL and Berkeley Lab Lead Genesis Mission Skills Release",
+      "summary": "nt Skills’ release to support innovation across the Genesis Mission Karyn Hede, PNNL Open Contributors to the Genesis Agent Skills package represent many national laboratories across the nation. (Image by Derek Munson | Pacific Northwest National Lab",
+      "source": "Pacific Northwest National Laboratory",
+      "url": "https://www.pnnl.gov/news-media/pnnl-and-berkeley-lab-lead-genesis-mission-skills-release",
+      "date": "2026-10-15",
+      "group": "Labs",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": []
+    },
+    {
+      "id": "51d52bc9b5f3271d66b7",
+      "title": "October 9, 2026 Genesis Mission Draws on PNNL Expertise for Five New SI-Driven Projects",
+      "summary": "ects support physics, grid, computing, and geothermal projects Karyn Hede, PNNL Media Contact: PNNL News & Media Relations Open Pacific Northwest National Laboratory awards reflect the breadth of its mission. (Image by Melanie Hess-Robinson | Pacific",
+      "source": "Pacific Northwest National Laboratory",
+      "url": "https://www.pnnl.gov/news-media/genesis-mission-draws-pnnl-expertise-five-new-si-driven-projects",
+      "date": "2026-10-09",
+      "group": "Labs",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": [
+        "genesis-5ee9917971a3bbf82e46"
+      ]
     },
     {
       "id": "f5f24a10da6c61e5099d",
@@ -228,6 +329,21 @@
       "kind": "discovery"
     },
     {
+      "id": "0dd2fb07095ac1dc41f1",
+      "title": "Brookhaven Lab to Lead $14M AI Project for Nation's Electric Grid",
+      "summary": "Brookhaven Lab to Lead $14M AI Project for Nation's Electric Grid | BNL Newsroom Because you are not running JavaScript or allowing active scripting, some features on this page may not work. | Enable JavaScript Local Navigation Site Navigation General Lab Information Our Science",
+      "source": "Brookhaven National Laboratory",
+      "url": "https://www.bnl.gov/newsroom/news.php?a=223136",
+      "date": "2026-09-01",
+      "group": "Labs",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": [
+        "genesis-5ee9917971a3bbf82e46"
+      ]
+    },
+    {
       "id": "7689790f6ce9167907bb",
       "title": "U.S. Department of Energy Launches the Genesis Open Models Initiative – Apply Now!",
       "summary": "August 7, 2026 By releasing models with open-weights, DOE seeks to galvanize the scientific and AI communities around shared infrastructure for science.",
@@ -304,6 +420,21 @@
       "kind": "discovery",
       "source_method": "publisher-direct",
       "project_ids": []
+    },
+    {
+      "id": "8d5dc16bfc0c8bbcaf9c",
+      "title": "ORNL Selected for Six Phase II Genesis Mission Awards",
+      "summary": "The Department of Energy’s (DOE) Oak Ridge National Laboratory (ORNL) has been selected for six Phase II awards under the DOE’s Genesis Mission . The six multi-year projects will advance Super Intelligence (SI)-enabled research in materials science, microelectronics, quantum comp",
+      "source": "Oak Ridge National Laboratory",
+      "url": "https://www.ornl.gov/news/ornl-selected-for-six-phase-ii-genesis-mission-awards/",
+      "date": "",
+      "group": "Labs",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": [
+        "genesis-d17da7d94333c69277a3"
+      ]
     }
   ]
 }
