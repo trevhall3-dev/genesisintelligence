@@ -23,6 +23,7 @@ function records(){
  let list;
  if(state.section==="Projects")list=state.projects.map(p=>({...p,kind:"project"}));
  else if(state.section==="Sources")list=primarySources.map(p=>({...p,kind:"source"}));
+ else if(state.section==="All"&&q)list=[...state.news,...state.projects.map(p=>({...p,kind:"project"}))];
  else list=state.news.filter(i=>(state.section!=="Labs"||filterType(i)==="Labs"));
  if(state.area)list=list.filter(i=>(i.categories||[i.category]).includes(state.area));
  if(state.tier!=="All"&&state.section!=="Projects"&&state.section!=="Sources")list=list.filter(i=>filterType(i)===state.tier);
@@ -34,7 +35,7 @@ function records(){
  :String(b.date||b.selection_date||"").localeCompare(String(a.date||a.selection_date||"")));
  return list;
 }
-function sectionTitle(){const title=state.section==="Projects"?"GENESIS PROJECT REGISTRY":state.section==="Archive"?"GENESIS INTELLIGENCE ARCHIVE":state.section==="Sources"?"OFFICIAL SOURCES":state.section==="Labs"?"GENESIS LABORATORY NEWS":"LATEST GENESIS INTELLIGENCE";$("feedTitle").textContent=title}
+function sectionTitle(){const title=(state.section==="All"&&state.activeQuery)?"GENESIS SEARCH RESULTS":state.section==="Projects"?"GENESIS PROJECT REGISTRY":state.section==="Archive"?"GENESIS INTELLIGENCE ARCHIVE":state.section==="Sources"?"OFFICIAL SOURCES":state.section==="Labs"?"GENESIS LABORATORY NEWS":"LATEST GENESIS INTELLIGENCE";$("feedTitle").textContent=title}
 function render(){
  sectionTitle();
  const list=records();
