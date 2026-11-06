@@ -65,6 +65,20 @@ async function syncNews(env){
   inserts.push(db.prepare("INSERT INTO news(id,title,summary,source,url,published_at,category,source_group) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(url) DO UPDATE SET title=excluded.title,summary=excluded.summary,source=excluded.source,published_at=excluded.published_at,category=excluded.category,source_group=excluded.source_group").bind(id,item.title,String(item.summary||"").slice(0,480),item.source||group,item.url,item.date||"",item.category||"National challenges",group));
  }
  await sendBatches(db,inserts);
+ // Preserve project identities found within official publisher article bodies by the
+ // rotating project watchlist collector. These are provisional article links only.
+ const knownIds=new Set((await db.prepare("SELECT id FROM projects LIMIT 1400").all()).results.map(x=>x.id));
+ const newsIdByUrl=new Map((await db.prepare("SELECT id,url FROM news ORDER BY discovered_at DESC LIMIT 5000").all()).results.map(x=>[x.url,x.id]));
+ const hints=[];
+ for(const article of doc.items){
+  const articleId=newsIdByUrl.get(article.url);
+  if(!articleId||!Array.isArray(article.project_ids))continue;
+  for(const projectId of article.project_ids.slice(0,8)){
+   if(!knownIds.has(projectId))continue;
+   hints.push(db.prepare("INSERT OR IGNORE INTO project_news(project_id,news_id,match_method) VALUES(?,?,'publisher-page-project-match')").bind(projectId,articleId));
+  }
+ }
+ await sendBatches(db,hints);
  await markVersion(db,"news",hash,doc.items.length);
  await db.prepare("INSERT INTO sync_runs(source,last_checked,last_success,imported_count,last_error) VALUES('News archive',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,?,NULL) ON CONFLICT(source) DO UPDATE SET last_checked=CURRENT_TIMESTAMP,last_success=CURRENT_TIMESTAMP,imported_count=excluded.imported_count,last_error=NULL").bind(doc.items.length).run();
  await recordEvent(db,"news","ok",doc.items.length,inserts.length,"Imported first-party news archive");
@@ -81,17 +95,20 @@ async function linkProjectsAndCandidates(env){
  const db=env.DB;
  const projects=(await db.prepare("SELECT id,title,institution FROM projects LIMIT 1200").all()).results||[];
  const news=(await db.prepare("SELECT id,title,summary,url,source FROM news ORDER BY discovered_at DESC LIMIT 400").all()).results||[];
+ const hinted=(await db.prepare("SELECT project_id,news_id FROM project_news LIMIT 8000").all()).results||[];
+ const hintedByNews=new Map();
+ for(const hint of hinted){if(!hintedByNews.has(hint.news_id))hintedByNews.set(hint.news_id,new Set());hintedByNews.get(hint.news_id).add(hint.project_id)}
  if(!projects.length||!news.length)return {links:0,candidates:0};
  const linked=[],candidates=[],organizations=new Map();
  // Candidate evidence is deliberately conservative: project identity + collaboration term + named second institution.
  const candidatesByOrg=projects.filter(p=>p.institution&&p.institution.length>9);
  let checked=0;
  for(const d of news){
-  const matched=projects.filter(p=>projectAssociation(d,p)).slice(0,4);
+  const matched=projects.filter(p=>hintedByNews.get(d.id)?.has(p.id)||projectAssociation(d,p)).slice(0,4);
   if(!matched.length)continue;
   const content=(d.title+" "+(d.summary||""));const collab=/\b(collaborat(?:ion|or|e|ing)|partner(?:ship|ed|s)?|jointly|in partnership with|working with)\b/i.test(content);
   for(const p of matched){
-   const method=projectAssociation(d,p);
+   const method=hintedByNews.get(d.id)?.has(p.id)?"publisher-page-project-match":projectAssociation(d,p);
    linked.push(db.prepare("INSERT OR IGNORE INTO project_news(project_id,news_id,match_method) VALUES(?,?,?)").bind(p.id,d.id,method));
    if(!collab)continue;
    for(const org of candidatesByOrg){
