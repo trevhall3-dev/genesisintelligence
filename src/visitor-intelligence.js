@@ -30,6 +30,9 @@ export async function visitorEvent(req,env){
  const count=Number.isInteger(data.results)&&data.results>=0&&data.results<=100000?data.results:null;
  try{
  await init(env.DB);
+ // Bound write volume per session; additionally configure Cloudflare WAF rate limits.
+ const recent=await env.DB.prepare("SELECT COUNT(*) AS n FROM visitor_events WHERE session_id=? AND event_at>=datetime('now','-1 day')").bind(data.session).first();
+ if((recent?.n||0)>=300)return json({error:"Rate limit"},429);
  const s=env.DB.prepare("INSERT INTO visitor_sessions(session_id,country,region,city,asn,network_name,device_type,browser_family,os_family,referrer_host,landing_path,pageviews,events) VALUES(?,?,?,?,?,?,?,?,?,?,?,0,0) ON CONFLICT(session_id) DO NOTHING").bind(data.session,clean(cf.country,2),clean(cf.region,80),clean(cf.city,80),Number(cf.asn)||null,clean(cf.asOrganization,120),family(ua,"device"),family(ua,"browser"),family(ua,"os"),host(data.referrer),path);
  const e=env.DB.prepare("INSERT INTO visitor_events(session_id,event_type,path,section,record_id,search_result_count) VALUES(?,?,?,?,?,?)").bind(data.session,data.type,path,section,record,count);
  const u=env.DB.prepare("UPDATE visitor_sessions SET last_seen_at=CURRENT_TIMESTAMP,pageviews=pageviews+?,events=events+1 WHERE session_id=?").bind(data.type==="page_view"?1:0,data.session);
