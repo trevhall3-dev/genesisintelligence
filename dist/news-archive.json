@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T13:04:13.807Z",
+  "updated_at": "2026-11-07T13:23:54.508102+00:00",
   "count": 31,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -222,27 +222,6 @@
       "id": "03c6ff877e4a668487a7"
     },
     {
-      "title": "Aclara and Argonne validate rare-earth separation model; Genesis digital twin planned",
-      "summary": "Aclara reports that its Argonne CRADA delivered a validated steady-state rare-earth separation model for Project Dynamo. Aclara, Argonne and Virginia Tech were selected for Genesis Phase I to pursue an AI-supported dynamic digital twin; the DOE award agreement was still being finalized on Nov. 2.",
-      "source": "Aclara Resources / Argonne",
-      "url": "https://www.prnewswire.com/news-releases/aclara-and-argonne-national-laboratory-complete-the-first-phase-of-developing-a-digital-twin-for-heavy-rare-earths-separation-302925848.html",
-      "date": "2026-11-02",
-      "group": "Partners",
-      "category": "AI models",
-      "categories": [
-        "AI models",
-        "National challenges"
-      ],
-      "classification": "Confirmed Genesis",
-      "kind": "discovery",
-      "source_method": "editorially-verified-original-company-release",
-      "project_ids": [
-        "genesis-389e8cfe188c5cfd5ea9"
-      ],
-      "editorial_status": "approved",
-      "evidence_note": "Company reports DOE Genesis Phase I selection; separate completed CRADA from prospective DOE award and planned dynamic twin."
-    },
-    {
       "title": "DOE Secretary visits University of Oklahoma's two Genesis Mission research teams",
       "summary": "University of Oklahoma reports that Energy Secretary Chris Wright met with Genesis researchers Oct. 30. Two OU-led teams received nearly $1.4 million in Phase I funding, including Ahmad Ghassemi's machine-learning and physics-based geothermal work and Grant Biedermann's quantum research.",
       "source": "University of Oklahoma",
@@ -263,6 +242,27 @@
       ],
       "editorial_status": "approved",
       "evidence_note": "University primary-source reporting of DOE Genesis research; linked to existing OU projects."
+    },
+    {
+      "title": "Aclara and Argonne validate rare-earth separation model; Genesis digital twin planned",
+      "summary": "Aclara reports that its Argonne CRADA delivered a validated steady-state rare-earth separation model for Project Dynamo. Aclara, Argonne and Virginia Tech were selected for Genesis Phase I to pursue an AI-supported dynamic digital twin; the DOE award agreement was still being finalized on Nov. 2.",
+      "source": "Aclara Resources / Argonne",
+      "url": "https://www.prnewswire.com/news-releases/aclara-and-argonne-national-laboratory-complete-the-first-phase-of-developing-a-digital-twin-for-heavy-rare-earths-separation-302925848.html",
+      "date": "2026-11-02",
+      "group": "Partners",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "National challenges"
+      ],
+      "classification": "Confirmed Genesis",
+      "kind": "discovery",
+      "source_method": "editorially-verified-original-company-release",
+      "project_ids": [
+        "genesis-389e8cfe188c5cfd5ea9"
+      ],
+      "editorial_status": "approved",
+      "evidence_note": "Company reports DOE Genesis Phase I selection; separate completed CRADA from prospective DOE award and planned dynamic twin."
     },
     {
       "title": "Cadence joins Genesis Mission Consortium for AI-driven science and microelectronics",
