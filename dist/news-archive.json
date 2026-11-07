@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-06T19:31:57.577801+00:00",
-  "count": 26,
+  "updated_at": "2026-11-07T12:33:08.758Z",
+  "count": 29,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -200,6 +200,68 @@
       "kind": "discovery",
       "source_method": "editorially-verified-official-source",
       "id": "03c6ff877e4a668487a7"
+    },
+    {
+      "title": "Aclara and Argonne validate rare-earth separation model; Genesis digital twin planned",
+      "summary": "Aclara reports that its Argonne CRADA delivered a validated steady-state rare-earth separation model for Project Dynamo. Aclara, Argonne and Virginia Tech were selected for Genesis Phase I to pursue an AI-supported dynamic digital twin; the DOE award agreement was still being finalized on Nov. 2.",
+      "source": "Aclara Resources / Argonne",
+      "url": "https://www.prnewswire.com/news-releases/aclara-and-argonne-national-laboratory-complete-the-first-phase-of-developing-a-digital-twin-for-heavy-rare-earths-separation-302925848.html",
+      "date": "2026-11-02",
+      "group": "Partners",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "National challenges"
+      ],
+      "classification": "Confirmed Genesis",
+      "kind": "discovery",
+      "source_method": "editorially-verified-original-company-release",
+      "project_ids": [
+        "genesis-389e8cfe188c5cfd5ea9"
+      ],
+      "editorial_status": "approved",
+      "evidence_note": "Company reports DOE Genesis Phase I selection; separate completed CRADA from prospective DOE award and planned dynamic twin."
+    },
+    {
+      "title": "DOE Secretary visits University of Oklahoma's two Genesis Mission research teams",
+      "summary": "University of Oklahoma reports that Energy Secretary Chris Wright met with Genesis researchers Oct. 30. Two OU-led teams received nearly $1.4 million in Phase I funding, including Ahmad Ghassemi's machine-learning and physics-based geothermal work and Grant Biedermann's quantum research.",
+      "source": "University of Oklahoma",
+      "url": "https://ou.edu/news/articles/2026/november/us-energy-secretary-ou-genesis-mission-research",
+      "date": "2026-11-02",
+      "group": "Partners",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "National challenges"
+      ],
+      "classification": "Confirmed Genesis",
+      "kind": "discovery",
+      "source_method": "editorially-verified-university-release",
+      "project_ids": [
+        "genesis-8cc82080b915db3a94ee",
+        "genesis-5bf5e7870a285006dfa9"
+      ],
+      "editorial_status": "approved",
+      "evidence_note": "University primary-source reporting of DOE Genesis research; linked to existing OU projects."
+    },
+    {
+      "title": "Cadence joins Genesis Mission Consortium for AI-driven science and microelectronics",
+      "summary": "Cadence announced Oct. 29 that it joined the Genesis Mission Consortium and plans to contribute AI-enabled electronic design automation, simulation and digital-twin expertise to DOE laboratory collaborations. Consortium participation is confirmed, but no specific project award is claimed.",
+      "source": "Cadence Design Systems",
+      "url": "https://newsroom.cadence.com/press-releases/press-release-details/2026/Cadence-Joins-the-Genesis-Mission-Consortium-to-Advance-AI-Driven-Scientific-Discovery-and-Microelectronics-Innovation/default.aspx",
+      "date": "2026-10-29",
+      "group": "Partners",
+      "category": "Infrastructure",
+      "categories": [
+        "Infrastructure",
+        "AI models",
+        "Partnerships"
+      ],
+      "classification": "Confirmed Genesis",
+      "kind": "discovery",
+      "source_method": "editorially-verified-company-press-release",
+      "editorial_status": "approved",
+      "evidence_note": "Cadence press release and Genesis Mission Consortium news list confirm membership only; no specific Genesis grant asserted."
     },
     {
       "title": "PNNL launches BattMan Accelerator for SI-driven battery manufacturing",
