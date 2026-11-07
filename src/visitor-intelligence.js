@@ -42,7 +42,7 @@ export async function visitorEvent(req,env){
 }
 function b64(s){return Uint8Array.from(atob(s.replace(/-/g,"+").replace(/_/g,"/").padEnd(Math.ceil(s.length/4)*4,"=")),c=>c.charCodeAt(0))}
 async function accessAuthorized(req,env){
- if(!env.ACCESS_TEAM_DOMAIN||!env.ACCESS_AUD)return false;
+ if(!env.ACCESS_TEAM_DOMAIN||!env.ACCESS_AUD_API)return false;
  const token=req.headers.get("cf-access-jwt-assertion");if(!token)return false;
  const parts=token.split(".");if(parts.length!==3)return false;
  try{
@@ -50,7 +50,7 @@ async function accessAuthorized(req,env){
  const domain=env.ACCESS_TEAM_DOMAIN.replace(/^https?:\/\//,"").replace(/\/$/,"");
  if(!/^[a-z0-9.-]+\.cloudflareaccess\.com$/i.test(domain)||header.alg!=="RS256"||!header.kid)return false;
  const now=Math.floor(Date.now()/1000);
- if(payload.iss!=="https://"+domain||!Array.isArray(payload.aud)||!payload.aud.includes(env.ACCESS_AUD)||payload.exp<=now||payload.nbf>now)return false;
+ if(payload.iss!=="https://"+domain||!Array.isArray(payload.aud)||!payload.aud.includes(env.ACCESS_AUD_API)||payload.exp<=now||payload.nbf>now)return false;
  const res=await fetch("https://"+domain+"/cdn-cgi/access/certs");if(!res.ok)return false;
  const keys=(await res.json()).keys||[];const jwk=keys.find(k=>k.kid===header.kid);if(!jwk)return false;
  const key=await crypto.subtle.importKey("jwk",jwk,{name:"RSASSA-PKCS1-v1_5",hash:"SHA-256"},false,["verify"]);
