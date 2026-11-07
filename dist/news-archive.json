@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-07T12:33:08.758Z",
-  "count": 29,
+  "updated_at": "2026-11-07T12:35:14.859Z",
+  "count": 30,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -401,6 +401,30 @@
       "kind": "discovery",
       "source_method": "publisher-direct",
       "project_ids": []
+    },
+    {
+      "title": "DOE, NIH and Biohub partner on Genesis-aligned predictive biology data",
+      "summary": "DOE Office of Science, NIH and Biohub signed an MOU to develop SI-ready biological datasets and predictive models of living systems. DOE explicitly says the partnership delivers on the national Genesis Mission; NIH identifies Bio Genesis as its contribution to that mission. This is an interagency partnership, not a new award to a specific DOE Genesis project.",
+      "source": "U.S. Department of Energy, Office of Science",
+      "url": "https://www.energy.gov/science/articles/doe-nih-and-biohub-partner-build-foundational-data-predictive-biological-super",
+      "date": "2026-10-07",
+      "group": "DOE",
+      "category": "Data",
+      "categories": [
+        "Data",
+        "AI models",
+        "Partnerships",
+        "National challenges"
+      ],
+      "classification": "Confirmed Genesis",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-DOE-and-NIH-sources",
+      "editorial_status": "approved",
+      "evidence_urls": [
+        "https://www.energy.gov/science/articles/doe-nih-and-biohub-partner-build-foundational-data-predictive-biological-super",
+        "https://www.nih.gov/bio-genesismission"
+      ],
+      "evidence_note": "DOE states partnership delivers on Genesis Mission EO; NIH states Bio Genesis is NIH contribution to national Genesis Mission. Do not equate Bio Genesis program with a specific DOE-funded project."
     },
     {
       "id": "5a1200fb4d5982f4158f",
