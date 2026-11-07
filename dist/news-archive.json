@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-07T12:35:14.859Z",
-  "count": 30,
+  "updated_at": "2026-11-07T13:04:13.807Z",
+  "count": 31,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -95,6 +95,26 @@
     }
   ],
   "items": [
+    {
+      "id": "gih-weekly-2026-11-07",
+      "title": "Weekly Genesis Intelligence Briefing — Issue 001 (Nov 1–7, 2026)",
+      "summary": "Genesis Intel Hub's editorial analysis of the week's major developments: Argonne AI inference expansion, Aclara's rare-earth modeling, University of Oklahoma projects, and PNNL's related scientific AI research. Includes original sources and article-sourced photographs.",
+      "source": "Genesis Intel Hub",
+      "url": "https://genesisintelligence.trevhall3.workers.dev/briefings/2026-11-07.html",
+      "date": "2026-11-07",
+      "group": "Partners",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "Infrastructure",
+        "National challenges"
+      ],
+      "classification": "GIH Editorial Analysis",
+      "kind": "briefing",
+      "source_method": "editorial-synthesis-of-linked-original-sources",
+      "editorial_status": "approved",
+      "briefing_issue": "001"
+    },
     {
       "id": "38ec666710042c50cc29",
       "title": "‘Genesis Agent Skills’ release to support innovation across the Genesis Mission",
