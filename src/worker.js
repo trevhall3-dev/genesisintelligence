@@ -1,3 +1,4 @@
+import {visitorEvent,visitorAdmin,visitorCleanup} from "./visitor-intelligence.js";
 // Genesis Intelligence Hub Build 2.1 — public-source data, private intelligence.
 // All public APIs return only projects, news and non-sensitive health metadata.
 // Partner candidates and their evidence remain exclusively in the D1 database.
@@ -205,10 +206,13 @@ export default{
  async scheduled(controller,env,ctx){
   console.log("GIH hourly scheduled sync",controller.cron);
   if(!env.DB){console.error("DB binding missing");return}
+  try{await visitorCleanup(env)}catch(e){console.error("Visitor retention failed",e)}
   try{await synchronize(env)}catch(e){console.error("GIH scheduled sync failed",e);try{await recordEvent(env.DB,"hourly-sync","error",0,0,String(e))}catch{}}
  },
  async fetch(request,env,ctx){
   const path=new URL(request.url).pathname;
+  if(path==="/api/visitor-event")return visitorEvent(request,env);
+  if(path==="/api/admin/visitor-intelligence")return visitorAdmin(request,env);
   if(path==="/api/projects")return apiProjects(env,ctx);
   if(path==="/api/news")return apiNews(env,ctx);
   if(path==="/api/health")return apiHealth(env);
