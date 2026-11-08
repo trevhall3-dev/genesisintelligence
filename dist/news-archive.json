@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-07T15:06:01.128439+00:00",
-  "count": 31,
+  "updated_at": "2026-11-08T13:56:00+00:00",
+  "count": 32,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -65,7 +65,7 @@
       "name": "Sandia National Laboratories",
       "group": "Labs",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "name": "Caltech News",
@@ -129,6 +129,28 @@
       "project_ids": [
         "genesis-5ee9917971a3bbf82e46"
       ]
+    },
+    {
+      "title": "Sandia demonstrates continual-learning improvements in AIGM Lite",
+      "summary": "Sandia's three-year AIGM Lite LDRD project has completed core components of a fast-and-slow continual-learning architecture for sensor-data models. Controlled incremental-learning tests reported accuracy above 90 percent versus above 70 percent for the baseline, with novelty detection, human-reviewed updates and unsupervised clustering now being integrated. The official source does not establish Genesis Mission affiliation.",
+      "source": "Sandia National Laboratories",
+      "url": "https://www.sandia.gov/labnews/2026/11/05/building-computer-models-that-stay-current-as-conditions-change/",
+      "date": "2026-11-05",
+      "group": "Labs",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "National challenges"
+      ],
+      "classification": "GENESIS LINK NOT CONFIRMED",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "editorial_status": "approved",
+      "evidence_urls": [
+        "https://www.sandia.gov/labnews/2026/11/05/building-computer-models-that-stay-current-as-conditions-change/"
+      ],
+      "evidence_note": "Sandia identifies AIGM Lite as an internally funded Laboratory Directed Research and Development project. No official Genesis Mission or verified Genesis-project connection was found.",
+      "id": "sandia-aigm-lite-2026-11-05"
     },
     {
       "title": "EMSL opens FY 2027 Systems Biology Modeling campaign",
