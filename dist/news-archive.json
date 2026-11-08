@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T13:56:00+00:00",
+  "updated_at": "2026-11-08T15:22:20.838747+00:00",
   "count": 32,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -65,7 +65,7 @@
       "name": "Sandia National Laboratories",
       "group": "Labs",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "name": "Caltech News",
