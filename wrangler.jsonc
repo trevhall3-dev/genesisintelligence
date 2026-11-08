@@ -14,6 +14,14 @@
       "/api/*"
     ]
   },
+  "previews": {
+    "d1_databases": [
+      {
+        "binding": "DB",
+        "database_id": "b970b3b1-4cb9-4ab7-b0b7-4a307f4e7084"
+      }
+    ]
+  },
   "d1_databases": [
     {
       "binding": "DB",
