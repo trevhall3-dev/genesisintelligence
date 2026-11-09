@@ -121,8 +121,10 @@ body{font-size:16px;line-height:1.37}
 .weekly-kicker{font-size:13px;color:#adff58;font-weight:850;letter-spacing:.055em;display:flex;align-items:center;gap:8px;margin-bottom:5px}.weekly-kicker .lucide{width:18px;height:18px}.weekly-feature-row{display:flex;align-items:center;justify-content:space-between;gap:14px}.weekly-feature strong{font-size:16px}.weekly-feature p{font-size:13px;margin:3px 0 0;color:#c1d8cf;line-height:1.4}.weekly-read{display:inline-flex;flex-shrink:0;align-items:center;justify-content:center;border:1px solid #97df3d;background:#193b22;border-radius:7px;padding:9px 12px;color:#c5ff8c;text-decoration:none;font-size:13px;font-weight:800}.weekly-read:hover{background:#275735;color:#fff}@media(max-width:800px){.weekly-feature-row{display:block}.weekly-read{margin-top:10px}}
 
 /* Build 2 soft-launch: compact masthead and right-rail briefing/source disclosure. */
-.hero.approved-hero{height:clamp(92px,10vw,215px)}
-.hero.approved-hero .approved-header-art{object-position:center 48%}
+/* Keep the existing upper crop and remove extra space below the logos.
+   At the artwork's 2048px width, show y=50..208 (158px high). */
+.hero.approved-hero{height:auto;min-height:0;aspect-ratio:2048 / 158;overflow:hidden}
+.hero.approved-hero .approved-header-art{position:absolute;top:0;left:0;width:100%;height:auto;max-width:none;transform:translateY(-16.129032%);object-fit:contain;object-position:center}
 .right-rail>.weekly-feature{margin-bottom:10px;padding:11px}
 .right-rail .weekly-feature-row{display:block}
 .right-rail .weekly-read{margin-top:10px}
