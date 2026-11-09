@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T15:22:20.838747+00:00",
+  "updated_at": "2026-11-09T13:32:01.980921+00:00",
   "count": 32,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -7,7 +7,9 @@
       "name": "DOE Genesis Mission News",
       "group": "DOE",
       "ok": true,
-      "count": 13
+      "count": 13,
+      "endpoint": "https://www.energy.gov/undersecretaryforscience/genesis-mission/listings/genesis-mission-news",
+      "method": "html"
     },
     {
       "name": "Argonne National Laboratory",
