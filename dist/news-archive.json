@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T13:32:01.980921+00:00",
+  "updated_at": "2026-11-09T13:32:12.549785+00:00",
   "count": 32,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -80,13 +80,17 @@
       "name": "IBM Newsroom",
       "group": "Partners",
       "ok": true,
-      "count": 0
+      "count": 0,
+      "endpoint": "https://newsroom.ibm.com/",
+      "method": "html"
     },
     {
       "name": "MIT News",
       "group": "Partners",
       "ok": true,
-      "count": 0
+      "count": 0,
+      "endpoint": "https://news.mit.edu/",
+      "method": "html"
     },
     {
       "name": "Stanford Report",
