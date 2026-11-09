@@ -9,6 +9,8 @@ import hashlib
 import json
 import re
 import sys
+import xml.etree.ElementTree as ET
+from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse, urlunparse
@@ -24,12 +26,15 @@ SOURCES = [
     dict(id="ornl",name="Oak Ridge National Laboratory",group="Labs",url="https://www.ornl.gov/news",host="ornl.gov",pages=1,cap=15),
     dict(id="argonne",name="Argonne National Laboratory",group="Labs",url="https://www.anl.gov/news",host="anl.gov",pages=1,cap=15),
     dict(id="brookhaven",name="Brookhaven National Laboratory",group="Labs",url="https://www.bnl.gov/newsroom/",host="bnl.gov",pages=1,cap=15),
-    dict(id="lbnl",name="Lawrence Berkeley National Laboratory",group="Labs",url="https://newscenter.lbl.gov/",host="lbl.gov",pages=1,cap=15),
+    dict(id="lbnl",name="Lawrence Berkeley National Laboratory",group="Labs",url="https://newscenter.lbl.gov/all-news/",feed="https://newscenter.lbl.gov/feed/",host="lbl.gov",pages=1,cap=15),
     dict(id="pnnl",name="Pacific Northwest National Laboratory",group="Labs",url="https://www.pnnl.gov/news",host="pnnl.gov",pages=1,cap=15),
     dict(id="lanl",name="Los Alamos National Laboratory",group="Labs",url="https://www.lanl.gov/media/news/",host="lanl.gov",pages=1,cap=15),
-    dict(id="llnl",name="Lawrence Livermore National Laboratory",group="Labs",url="https://www.llnl.gov/articles",host="llnl.gov",pages=1,cap=15),
+    dict(id="llnl",name="Lawrence Livermore National Laboratory",group="Labs",url="https://www.llnl.gov/news",host="llnl.gov",pages=1,cap=15),
     dict(id="fermilab",name="Fermilab",group="Labs",url="https://news.fnal.gov/",host="fnal.gov",pages=1,cap=15),
     dict(id="sandia",name="Sandia National Laboratories",group="Labs",url="https://newsreleases.sandia.gov/",host="sandia.gov",pages=1,cap=15),
+    # Supplemental official coverage; these do not replace lab-wide source health.
+    dict(id="alcf",name="Argonne Leadership Computing Facility",group="Labs",url="https://www.alcf.anl.gov/news",feed="https://www.alcf.anl.gov/news/rss.xml",host="anl.gov",pages=1,cap=15),
+    dict(id="lanl-nnsa",name="DOE / NNSA Los Alamos news",group="Labs",url="https://www.energy.gov/nnsa/listings/listing-los-alamos-national-laboratory-articles-and-press-releases",host="energy.gov",pages=1,cap=15),
     # First-party research/industry newsrooms. New sources can be appended here.
     dict(id="mit",name="MIT News",group="Partners",url="https://news.mit.edu/",host="mit.edu",pages=1,cap=12),
     dict(id="caltech",name="Caltech News",group="Partners",url="https://www.caltech.edu/about/news",host="caltech.edu",pages=1,cap=12),
@@ -190,6 +195,62 @@ def index_links(source,projects,mode="normal"):
         if len(results)>=budget:break
     return list(results.values())
 
+def feed_links(source,projects):
+    """Read official RSS/Atom; verify relevance on the publisher article itself."""
+    r=requests.get(source["feed"],timeout=24,headers=HEADERS)
+    r.raise_for_status()
+    if not permitted(r.url,source["host"]):
+        raise ValueError("Feed redirected outside publisher domain")
+    root=ET.fromstring(r.content)
+    local=lambda tag:tag.rsplit("}",1)[-1]
+    if local(root.tag) not in ("rss","feed","RDF"):
+        raise ValueError("Publisher endpoint is not an RSS/Atom feed")
+    entries=[node for node in root.iter() if local(node.tag) in ("item","entry")]
+    if not entries:raise ValueError("Publisher feed contains no entries")
+    results={};candidates=0;fetched=0
+    for entry in entries[:source["cap"]]:
+        fields={local(node.tag):node for node in entry}
+        value=lambda key:"".join(fields[key].itertext()) if key in fields else ""
+        title=clean(value("title"))
+        link=value("link").strip()
+        if not link:
+            link=next((n.get("href","") for n in entry if local(n.tag)=="link" and n.get("rel","alternate")=="alternate"),"")
+        link=normurl(urljoin(r.url,link))
+        if not title or not permitted(link,source["host"]):continue
+        excerpt=clean(BeautifulSoup(" ".join(value(k) for k in ("description","summary","encoded","content","category")),"html.parser").get_text(" ",strip=True))
+        text=title+" "+excerpt
+        # Feed summaries often omit Genesis affiliation; inspect bounded recent articles.
+        candidates+=1
+        try:body,date=article_body(link,source["host"])
+        except (requests.RequestException,ValueError):continue
+        if not body:continue
+        fetched+=1
+        matches=project_ids(body,projects)
+        if not GENESIS.search(body[:12000]) and not matches:continue
+        if not date:
+            raw=value("pubDate") or value("published") or value("updated")
+            try:date=parsedate_to_datetime(raw).date().isoformat()
+            except (ValueError,TypeError):
+                try:date=datetime.fromisoformat(raw.replace("Z","+00:00")).date().isoformat()
+                except ValueError:date=""
+        item=record(title,link,source,date,excerpt or body[:300],matches)
+        results[item["id"]]=item
+        if len(results)>=source["cap"]:break
+    if candidates and not fetched:
+        raise ValueError("Feed reachable but all candidate article fetches failed")
+    return list(results.values())
+
+
+def source_items(source,projects,channel):
+    if source.get("feed"):
+        try:return feed_links(source,projects),source["feed"],"rss",None
+        except (requests.RequestException,ValueError,ET.ParseError) as exc:
+            warning="RSS unavailable; using news page: "+str(exc)[:140]
+            return index_links(source,projects,channel),source["url"],"html",warning
+    found=doe_index(source) if source["group"]=="DOE" else index_links(source,projects,channel)
+    return found,source["url"],"html",None
+
+
 def collect(channel):
     projects=registered()
     if channel=="doe":selected=[SOURCES[0]]
@@ -201,10 +262,10 @@ def collect(channel):
     successes=0;source_status=[];all_items={}
     for source in selected:
         try:
-            found=doe_index(source) if source["group"]=="DOE" else index_links(source,eligible,channel)
+            found,endpoint,method,warning=source_items(source,eligible,channel)
             successes+=1
             for r in found:all_items[r["id"]]=r
-            source_status.append({"name":source["name"],"group":source["group"],"ok":True,"count":len(found)})
+            source_status.append({"name":source["name"],"group":source["group"],"ok":True,"count":len(found),"endpoint":endpoint,"method":method,**({"warning":warning} if warning else {})})
             print(source["name"],len(found),"Genesis-relevant articles")
         except Exception as e:
             source_status.append({"name":source["name"],"group":source["group"],"ok":False,"count":0,"error":str(e)[:140]})
@@ -236,6 +297,9 @@ def merge(channel,found,source_status):
         previous=records.get(key)
         if previous and previous.get("project_ids") and not d.get("project_ids"):
             d["project_ids"]=previous["project_ids"]
+        # A restored source must not overwrite reviewed summaries or affiliation labels.
+        if previous and (previous.get("classification") or previous.get("editorial_status")):
+            d={**d,**previous,"project_ids":list(dict.fromkeys(previous.get("project_ids",[])+d.get("project_ids",[])))}
         records[key]=d
     rows=sorted(records.values(),key=lambda x:(x.get("date") or "",x.get("title") or ""),reverse=True)[:4000]
     old_states={(("DOE Genesis Mission News" if x["name"]=="DOE Genesis Mission" else x["name"])):{**x,"name":("DOE Genesis Mission News" if x["name"]=="DOE Genesis Mission" else x["name"])} for x in old.get("sources",[])}
@@ -258,3 +322,4 @@ if __name__=="__main__":
     args=parser.parse_args()
     discovered,states=collect(args.channel)
     merge(args.channel,discovered,states)
+
