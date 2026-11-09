@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T13:32:12.549785+00:00",
+  "updated_at": "2026-11-09T13:32:56.340872+00:00",
   "count": 32,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -12,6 +12,13 @@
       "method": "html"
     },
     {
+      "name": "Argonne Leadership Computing Facility",
+      "group": "Labs",
+      "ok": false,
+      "count": 0,
+      "error": "403 Client Error: Forbidden for url: https://www.alcf.anl.gov/news"
+    },
+    {
       "name": "Argonne National Laboratory",
       "group": "Labs",
       "ok": false,
@@ -22,27 +29,40 @@
       "name": "Brookhaven National Laboratory",
       "group": "Labs",
       "ok": true,
-      "count": 0
+      "count": 0,
+      "endpoint": "https://www.bnl.gov/newsroom/",
+      "method": "html"
+    },
+    {
+      "name": "DOE / NNSA Los Alamos news",
+      "group": "Labs",
+      "ok": true,
+      "count": 0,
+      "endpoint": "https://www.energy.gov/nnsa/listings/listing-los-alamos-national-laboratory-articles-and-press-releases",
+      "method": "html"
     },
     {
       "name": "Fermilab",
       "group": "Labs",
       "ok": true,
-      "count": 1
+      "count": 1,
+      "endpoint": "https://news.fnal.gov/",
+      "method": "html"
     },
     {
       "name": "Lawrence Berkeley National Laboratory",
       "group": "Labs",
       "ok": false,
       "count": 0,
-      "error": "403 Client Error: Forbidden for url: https://newscenter.lbl.gov/"
+      "error": "403 Client Error: Forbidden for url: https://newscenter.lbl.gov/all-news/"
     },
     {
       "name": "Lawrence Livermore National Laboratory",
       "group": "Labs",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "404 Client Error: Not Found for url: https://www.llnl.gov/articles"
+      "endpoint": "https://www.llnl.gov/news",
+      "method": "html"
     },
     {
       "name": "Los Alamos National Laboratory",
@@ -55,19 +75,25 @@
       "name": "Oak Ridge National Laboratory",
       "group": "Labs",
       "ok": true,
-      "count": 0
+      "count": 0,
+      "endpoint": "https://www.ornl.gov/news",
+      "method": "html"
     },
     {
       "name": "Pacific Northwest National Laboratory",
       "group": "Labs",
       "ok": true,
-      "count": 3
+      "count": 3,
+      "endpoint": "https://www.pnnl.gov/news",
+      "method": "html"
     },
     {
       "name": "Sandia National Laboratories",
       "group": "Labs",
       "ok": true,
-      "count": 0
+      "count": 0,
+      "endpoint": "https://newsreleases.sandia.gov/",
+      "method": "html"
     },
     {
       "name": "Caltech News",
