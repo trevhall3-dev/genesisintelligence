@@ -170,3 +170,7 @@ body{font-size:16px;line-height:1.37}
 @media(max-width:800px){.pillars{grid-template-columns:repeat(2,minmax(0,1fr))}.dashboard{display:flex}.dashboard>.navigation{order:0;width:100%;min-height:0}.dashboard>.feed{order:1;width:100%}.dashboard>.right-rail{order:2;width:100%}.side-nav{grid-template-columns:repeat(2,minmax(0,1fr))}.side-nav .research-heading,.side-nav .research-sub,.side-nav .nav-divider,.side-nav .sidebar-sources,.side-nav .context-filters{grid-column:1/-1}.nav-art{display:none}.search-wrap input{font-size:14px}.feed-heading{flex-wrap:wrap}.hero.digital-masthead{height:15vw;min-height:70px}.masthead-left,.masthead-right{background-position-y:-4vw}.masthead-globe{width:24%;left:44%}.pillar-bar .utility-btn{display:block}.navigation{padding-bottom:8px}.sidebar-sources summary:focus-visible{outline:2px solid var(--green)}}
 
 .monitored-source{display:block;font-size:13px;color:#b9d8c6;padding:8px 4px}
+
+/* Display the supplied finished header as one complete image. */
+.hero.image-masthead{height:auto;min-height:0;aspect-ratio:auto;overflow:hidden;padding:0;background:#000}
+.hero.image-masthead .approved-header-art{display:block;position:static;width:100%;height:auto;max-width:100%;transform:none;object-fit:contain}
