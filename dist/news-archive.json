@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T13:35:55+00:00",
+  "updated_at": "2026-11-10T19:54:29.886028+00:00",
   "count": 33,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -257,23 +257,6 @@
       "id": "94453b9e61550de43188"
     },
     {
-      "title": "Argonne expands ALCF Inference Service with Tara and Minerva",
-      "summary": "New Tara and Minerva systems expand shared model-serving capacity for Genesis Mission teams and the broader ALCF research community. The service offers more than 50 models and is developing support for agent-assisted scientific workflows.",
-      "source": "Argonne / ALCF",
-      "url": "https://www.alcf.anl.gov/news/new-systems-boost-capabilities-alcf-inference-service",
-      "date": "2026-11-04",
-      "group": "Labs",
-      "category": "Infrastructure",
-      "categories": [
-        "Infrastructure",
-        "AI models"
-      ],
-      "classification": "Confirmed Genesis",
-      "kind": "discovery",
-      "source_method": "editorially-verified-official-source",
-      "id": "03c6ff877e4a668487a7"
-    },
-    {
       "title": "LLNL Genesis projects advance faster, more accurate atmospheric prediction",
       "summary": "LLNL reports substantive progress across two Genesis Mission projects. MAGGIE will generate consistent initial conditions for Earth-system predictions, while LLNL's STITCH team is building machine-learning emulators for warm-rain microphysics and turbulence. Related STRATA emulators reduced an ensemble evaluation from an estimated three months to one weekend, providing a practical path to test MAGGIE outputs and improve cloud physics in E3SM.",
       "source": "Lawrence Livermore National Laboratory",
@@ -300,6 +283,23 @@
       ],
       "evidence_note": "LLNL explicitly states that MAGGIE and STITCH are funded through the DOE Genesis Mission. STITCH independently matches LLNL's verified project record in the official July 2026 Genesis RFA roster.",
       "id": "llnl-stitch-maggie-atmospheric-emulators-2026-11-04"
+    },
+    {
+      "title": "Argonne expands ALCF Inference Service with Tara and Minerva",
+      "summary": "New Tara and Minerva systems expand shared model-serving capacity for Genesis Mission teams and the broader ALCF research community. The service offers more than 50 models and is developing support for agent-assisted scientific workflows.",
+      "source": "Argonne / ALCF",
+      "url": "https://www.alcf.anl.gov/news/new-systems-boost-capabilities-alcf-inference-service",
+      "date": "2026-11-04",
+      "group": "Labs",
+      "category": "Infrastructure",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ],
+      "classification": "Confirmed Genesis",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "id": "03c6ff877e4a668487a7"
     },
     {
       "title": "DOE Secretary visits University of Oklahoma's two Genesis Mission research teams",
