@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T13:32:56.340872+00:00",
+  "updated_at": "2026-11-10T12:57:35.745655+00:00",
   "count": 32,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -59,10 +59,9 @@
     {
       "name": "Lawrence Livermore National Laboratory",
       "group": "Labs",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "endpoint": "https://www.llnl.gov/news",
-      "method": "html"
+      "error": "Not an HTML publisher page"
     },
     {
       "name": "Los Alamos National Laboratory",
