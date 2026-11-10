@@ -3,7 +3,9 @@
     "count": 33,
     "source": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
     "verified_at": "2026-11-06",
-    "scope": "Official named challenges, not project awards"
+    "scope": "Official named challenges, not project awards",
+    "description_source": "Official DOE catalog Challenge paragraphs",
+    "classification_note": "Lighthouse is an alternate name for the challenge portfolio, not a separate set of project awards."
   },
   "challenges": [
     {
@@ -15,7 +17,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "America faces a chronic disease crisis, with more than 40% of the nation's 73 million children living with at least one chronic condition and rising rates of obesity, diabetes, autism, ADHD, and pediatric cancer whose causes remain poorly understood. Tens of thousands of chemicals are in commercial use with little human safety data, and the cumulative effects of simultaneous exposures, especially during critical developmental windows, are largely uncharacterized because environmental, biological, and health-outcome evidence has never been integrated at scale. The Nation cannot yet trace how the environments in which Americans live, together with lifestyle and genetic variation, drive disease across the life course.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-02",
@@ -26,7 +30,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "The Nation possesses the biomedical knowledge and clinical infrastructure to identify therapeutic relevance faster than it can turn these discoveries into treatments. Bringing new drug therapies to patients can still take over a decade and cost billions of dollars as many candidates fail late. This challenge intends to reduce the timeline by half in ten years, doubling the number of drug-based treatments we bring to patients as a nation. For example, in rare diseases, which impact 30 million Americans, 95% of 10,000 have no viable treatment options--small market size and the number of disparate conditions create economic barriers that standard drug development models cannot overcome. Thousands of approved and investigational drugs may hold untapped therapeutic value, yet the genomic, chemical, clinical, structural, and real-world evidence needed to find those uses sits in disconnected systems that cannot be queried together.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-03",
@@ -37,7 +43,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Cancer is the leading cause of disease-related death for American children; roughly 15,000 are diagnosed each year, and those with relapsed, refractory, or rare cancers have few options. Unlike adult cancers, pediatric cancers are hundreds of rare, molecularly distinct diseases, producing small patient populations and fragmented data that defeat conventional approaches. Realizing AI's potential for these children requires secure, interoperable, AI-ready data and advanced computing at national scale, and will change lives and save thousands of children.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-04",
@@ -48,7 +56,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "The United States can develop more reliable ways to identify when a veteran’s health or circumstances call for earlier care. Critical signals are distributed across years of clinical record, genetic background, and other health and social data, while existing risk models are static and difficult to validate across large and varied populations. Data integration and new medical and biological applications can advance discovery, diagnosis, and treatment of chronic diseases such as cancer, heart disease, neurologic disease, and mental health conditions. This challenge will expand ongoing efforts to improve risk prediction models in Department of Veteran Affairs (VA) priority areas such as homelessness, suicide, frailty, and chronic diseases prevalent among Veterans, leading to better preventive care and improved health outcomes for those who have served in our nation’s military.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-05",
@@ -59,7 +69,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Bridging the gap between scientific discovery and commercially viable products and processes, known as the “valley of death”, remains the biggest challenge in industrial manufacturing. The scaling, modification, or deployment of innovative materials and processes depends on a vast and complex parameter space, requiring the uncovering and integration of underlying physical and chemical principles that hold the key to the next United States (U.S.) manufacturing revolution.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-06",
@@ -70,7 +82,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Bioindustrial manufacturing translates capability and advances in the biological sciences into industrial and economic power. The United States leads the world in scientific discovery but struggles to scale those discoveries into domestic industrial manufacturing. Living systems can synthesize unique molecules no chemical process can and they can also efficiently sequester elements such as critical metals from ores and wastes that conventional processing leaves behind. Securing domestic biomanufacturing of vital fuels, chemicals, and materials will contribute to the American industrial renaissance and build the commercial basis to move technology from the lab to everyday Americans.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-07",
@@ -81,7 +95,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "America's dependence on foreign supply chains for CMM threatens national security, economic competitiveness, and the deployment of technologies essential for energy independence. Domestic critical mineral production is expensive, complex, and time-consuming, in part because of the many steps to identify, extract, refine, and concentrate from complex, heterogeneous sources across critical mineral supply chains.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-08",
@@ -92,7 +108,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Microelectronics powers all aspects of our lives, including AI, but America faces intense global competition in critical microelectronics applications, including ultra-efficient semiconductors for AI computing, power electronics, and communication networks. At the same time, microelectronics in the national security enterprise must perform complex calculations across highly varied thermal, shock, vibration, electromagnetic, and radiation environments while meeting steep operational constraints that evolve with novel flight vehicle, terrain, and mission needs. Continued American leadership in microelectronics faces a tremendous scientific and technological challenge: designing and engineering the next generation of microelectronic devices and platforms that push the boundaries of miniaturization, processing speed, power consumption, thermal management, and operations environment.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-09",
@@ -103,7 +121,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Winning the AI race will require accelerating the process of developing and deploying new data center technologies and energy management strategies to provide the extreme compute power for AI advancements, while ensuring secure, reliable, and affordable energy for consumers.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-10",
@@ -114,7 +134,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "America's built infrastructure, including residential and commercial buildings roads, bridges, maritime ports, rail beds, rail track supports, runways, terminals, and transshipment warehouses that connect us, faces high costs and lengthy timelines at every stage of the lifecycle: design, materials, permitting, construction, operations, maintenance, and decommissioning. Developing stronger, longer lasting, and lower- cost materials remains slow, requiring years of laboratory testing and validation. When assets enter service, inefficient designs, unseen structural wear, and faulty controls can drive up costs and safety risks. New AI models and advanced simulations can reduce costs, accelerate the discovery of next-generation construction materials and improve the design, operation, and longevity of the Nation's physical infrastructure.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-11",
@@ -125,7 +147,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Nuclear power plants have historically been challenged by long development timelines and burgeoning costs, limiting America’s ability to deliver affordable, resilient, and reliable energy as demand continues to grow—particularly from AI data centers.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-12",
@@ -136,7 +160,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Realizing fusion energy on the grid requires coordinated progress across six tightly coupled challenge areas defined in the Fusion Science and Technology Roadmap. 1 Isolated, device-specific trial-and- error approaches cannot manage these interdependencies at the scale, complexity, or pace required to meet national energy objectives.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-13",
@@ -147,7 +173,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "DOE's environmental cleanup mission faces an estimated $540 billion liability over eight decades with ~90 million gallons of highly radioactive tank waste requiring treatment that impedes site remediation and restoration crucial for American energy, security, and innovation.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-14",
@@ -158,7 +186,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Water availability is essential for expanding production and utilization of energy, as well as the nation’s health and security. However, there are fundamental scientific gaps in our understanding of terrestrial and atmospheric systems that limit our ability to predict water resources, especially on the time scale of weeks to years.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-15",
@@ -169,7 +199,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "The electric grid faces reliability challenges and infrastructure limitations to accommodate dramatic increases in electricity demand from data centers, manufacturing, and electrification while maintaining affordable power for Americans.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-16",
@@ -180,7 +212,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Delivering cost-effective energy from the Earth’s subsurface entails the use of heterogeneous reservoirs, dominated by fractures. Tools capable of predicting reservoir behavior and the interactions of complex biogeochemical, mechanical, and hydrologic processes are critical to the development of innovative, cost-effective extraction of subsurface energy sources, including unconventional oil and gas, geothermal, and coal bed methane.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-17",
@@ -191,7 +225,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Discovering new quantum algorithms is an exceptionally difficult challenge due to the number of potential quantum operations and is highly counter-intuitive for human researchers to navigate. U.S. leadership in the emerging quantum computing revolution will require accelerating the design and development of quantum algorithms (including those that capitalize on the convergence of classical HPC, AI, and quantum computers) that demonstrate scientific utility and a provable quantum advantage.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-18",
@@ -202,7 +238,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Quantum systems for quantum computing, quantum sensing, and quantum communication are poised to revolutionize discovery science by enabling unprecedented capabilities in modeling, simulation, and measurement. The use of current quantum systems is severely limited by their fragility, scalability, and integration into existing infrastructure. The inherent challenge is the lack of understanding and control of the complex cause-and-effect relationships within a quantum system. Quantum systems, both for computing and for sensing, rely on complex cause-and-effect relationships that are currently poorly understood. Sensors allow the ability to detect fundamental underlying features on the atomic scale, while computing allows numerous advancements in optimization and simulation.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-19",
@@ -213,7 +251,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "The pace of scientific discovery is influenced by the traditional, human-driven experimental process and the availability of non-deterministic AI-driven control tools to implement complex experimental designs in combinatorially large design parameter spaces. These bottlenecks slow the cycle of hypothesis, experimentation, and discovery, leading to inefficient use of critical national assets and delaying scientific breakthroughs. Automating at least some parts of the scientific experimental scheme will both increase the volume of data produced for improved AI models and improve the repeatability of experiments.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-20",
@@ -224,7 +264,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "The United States has cataloged life in extraordinary detail, but it lacks the ability to confidently predict the behavior of complex living systems from smaller, simpler building blocks, such as proteins or genes. We intend to change that by building a foundation for biology as predictable as the physical sciences by measuring and understanding the natural laws and causal mechanisms governing genomes, proteins, cells, tissues, systems, and eventually whole organisms.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-21",
@@ -235,7 +277,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Accelerating materials innovation will enable rapid deployment of advanced energy and industrial technologies that are essential for American competitiveness, from structural materials to materials for energy storage to other functional materials for advanced technologies. The identification and commercialization of new materials with transformative properties that dramatically improve performance, energy efficiency, reliability, and resilience, however, is a time- and resource-intensive process due to the inherent complexity of materials science and the practical limitations of traditional simulations, synthesis, and characterization techniques that still require significant trial and error.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-22",
@@ -246,7 +290,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Modern particle accelerators are complex, requiring extensive human intervention that leads to high operating costs, operational variability, suboptimal experiment optimization, and inadequate data integration. Further, the physical limitations of existing accelerator technologies slow progress in pushing the limits of resolution in space, time, and energy. Transforming accelerator-based facilities into highly efficient, autonomous, and more productive capabilities requires a tight integration of AI with design and operation.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-23",
@@ -257,7 +303,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "The universe obeys only one set of rules, and scientists have hundreds of experiments targeting parts of that one set. Experiments range over distance scale (31 orders of magnitude), cost ($100k to $B), duration (fractions of a section to decades), and human investment (few to thousands). We need a way to integrate the disparate experimental results with theoretical knowledge to accelerate discovery.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-24",
@@ -268,7 +316,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "For over seventy years, NASA’s telescopes, orbiters, landers, and satellites have returned more data about our planet and the cosmos than any institution in history. Only a fraction has been truly examined. These holdings now exceed a scale and complexity that traditional computational analysis methods cannot fully exploit; scientists have found planets, transient events, and physical phenomena in data previously thought fully analyzed. By processing and integrating more than 150 petabytes of heterogeneous data, scientists will connect observations, simulations, and models across disciplines, time scales, and physical regimes in ways that accelerate discovery.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-25",
@@ -279,7 +329,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Unlocking the full promise of biotechnology requires building and sustaining the technological means to identify and combat emerging biological threats, whether natural, accidental, or deliberate, across every stage: (i) early detection and characterization of enhanced and novel biological threats, including those that may not resemble known pathogens, (ii) synthesis screening tools robust enough to disrupt materials access at the point of acquisition, and (iii) the ability to rapidly and accurately discern the origin of a biological incident.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-26",
@@ -290,7 +342,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Designing novel weapon components and systems using traditional, human-intensive methods is slow and costly, resulting in long timelines before new weapon systems reach national security missions and the American warfighter. The United States possesses exceptional modeling and simulation capabilities that could enable rapid virtual design, iteration, testing, and certification. In particular, large metal castings and forgings remain a key bottleneck.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-27",
@@ -301,7 +355,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "The nuclear security enterprise faces significant hurdles in designing, manufacturing, and qualifying mission-critical nuclear and non-nuclear materials. This challenge will develop a digital, AI- accelerated workflow that connects the entire lifecycle of critical materials, from initial formulation to final production. This approach will incorporate real-time anomaly detection and in-process corrections to significantly reduce the need for extensive qualification testing and improve the safety and reliability of these critical materials. It will also expedite new technology development, enabling production acceleration opportunities to meet evolving military requirements.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-28",
@@ -312,7 +368,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Rapid and effective response to nuclear and radiological events demands detailed analysis of vast and varied data, from radiation detectors and environmental sensors to intelligence reports and simulation outputs. Today, the NNSA Nuclear Emergency Support Teams (NEST) relies on manual review and static artificial intelligence (AI) models that cannot sufficiently adapt as new data streams in, creating delays in detection, assessment, and response. This leaves decision-makers without real-time situational awareness or clear risk metrics during threat assessment and event response.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-29",
@@ -323,7 +381,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Effective deterrence depends on credible accountability. Every nuclear material has a signature, and through a combination of radiation measurements and material characterization, the provenance of nuclear materials and detonated nuclear device designs can be determined. Attributing nuclear materials either outside of controlled environments or following a nuclear detonation of unknown origin to their source through forensic attribution will enable the credible commitment of American retaliation. This effort will dramatically improve the speed and accuracy of nuclear forensic assessments by leveraging AI-enabled workflows, data integration, and physics-based machine learning, thereby enhancing United States deterrence against potential nuclear threats.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-30",
@@ -334,7 +394,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "It is central to America's security interest to be able to detect, locate, identify, characterize, and respond to or mitigate nuclear weapons development by our adversaries. This challenge is exacerbated by the surge in demand for civilian nuclear power, which will lead to many conflicting signals, making it harder to distinguish between civilian and military uses of nuclear power. AI-enabled tools can analyze large, complex data streams in real time, identifying anomalies that indicate potential proliferation activities and providing decision makers with faster, more actionable information.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-31",
@@ -345,7 +407,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Deterring adversaries in a rapidly evolving threat landscape requires transforming experimental learning into fielded capabilities with greater speed, confidence, and agility. Today, high-consequence R&D campaigns, weapon design, qualification, production, and stockpile operations are slowed by limited- throughput experimental facilities, document-heavy workflows, fragmented data environments, and complex multi-site dependencies. These constraints delay risk-informed decisions and lengthen the path from novel idea to delivered deterrent capability.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-32",
@@ -356,7 +420,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "The United States faces extensive, unbounded risk to its national security and critical infrastructure (NS&CI) missions because of widespread dependence on largely inscrutable third-party and legacy software whose behavior cannot be verified. Assessing and mitigating this risk requires “software understanding,” the ability to construct and assess software-controlled systems to verify their functionality, safety, and security across all conditions. The ability to create software greatly outstrips our ability to understand it, and current methods such as dynamic testing, digital signatures, software bills of materials, and attestation provide insufficient evidence for confidence in mission critical systems. The consequences are concrete and severe, from the Therac-25 radiation deaths to the SolarWinds and Log4j compromises to the PRC’s Volt Typhoon prepositioning in U.S. critical infrastructure. Without a coordinated national capability, the nation accepts unknown and unbounded mission risk in the very systems on which deterrence, public safety, and economic prosperity depend.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     },
     {
       "id": "official-challenge-33",
@@ -367,7 +433,9 @@
         "National challenges"
       ],
       "record_type": "challenge",
-      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges"
+      "source_url": "https://www.energy.gov/documents/genesis-mission-national-science-technology-challenges",
+      "description": "Superiority in space begins with the ability to see, predict, and safely maneuver within a domain that is growing more crowded, more contested, and more dynamic by the year. As American operations extend from low Earth orbit and out into cislunar space, the United States must develop, field, and sustain increasingly complex space capabilities on timelines that push beyond what traditional engineering and mission operations methods were designed to support. Across spacecraft, surface systems, communications, logistics, environmental forecasting, autonomous operations, and supporting infrastructure, NASA must be able to design, simulate, test, qualify, integrate, and operate tightly coupled systems at a speed, scale, and level of concurrency that was previously impractical. AI-enabled engineering capabilities will compress the path from concept to trusted operational readiness while preserving safety, performance, and mission assurance.",
+      "classification": "National Science & Technology Challenge (Lighthouse Challenge)"
     }
   ]
 }

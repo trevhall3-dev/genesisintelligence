@@ -136,3 +136,37 @@ body{font-size:16px;line-height:1.37}
 
 /* Office of Synergy: subtle white lowercase i, tight against the lower S. */
 
+
+/* November 9 navigation and compact, undistorted approved artwork.
+   CSS viewports reuse original pixels for each logo, globe and wave ribbon. */
+.hero.digital-masthead{height:clamp(110px,12vw,210px);aspect-ratio:auto;overflow:hidden;position:relative}
+.digital-masthead>div{position:absolute;background-image:url('/header-digital-20261109.png');background-repeat:no-repeat;pointer-events:none}
+.masthead-left{left:0;top:0;width:45%;height:90%;background-size:222.222% auto;background-position:left top;background-position-y:-5.4vw;z-index:2}
+.masthead-right{right:0;top:0;width:33%;height:90%;background-size:303.03% auto;background-position:right top;background-position-y:-5.4vw;z-index:2}
+.masthead-globe{left:43%;top:0;width:26%;height:100%;background-size:205% auto;background-position:50% 59%;z-index:1}
+.masthead-waves{left:0;bottom:0;width:100%;height:20%;background-size:100% auto;background-position:center 96%;z-index:3}
+.pillar-bar{padding:7px 12px;height:auto;min-height:66px;gap:10px}
+.pillars{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%;min-width:0}
+.pillars>button{min-width:0;justify-content:center;padding:8px;gap:9px}
+.pillars>button strong{font-size:13px;white-space:normal}
+.pillars>button small{font-size:11px;white-space:normal}
+.side-nav button{gap:9px;padding:10px 9px;line-height:1.3}
+.side-nav button>span{min-width:0}
+.side-nav button>span>small{display:block;font-size:11px;line-height:1.4;font-weight:400;color:#abc7bc;margin-top:3px}
+.side-nav button.active>span>small{color:#163600}
+.sidebar-sources{margin:4px 9px;border-top:1px solid #345654;padding-top:8px}
+.sidebar-sources summary{display:flex;align-items:center;gap:9px;cursor:pointer;color:#d6f4e5;font-weight:700;padding:8px 0}
+.sidebar-sources summary:after{content:'⌄';margin-left:auto}
+.sidebar-sources a{display:block;font-size:13px;padding:8px 4px;color:#b9d8c6;overflow-wrap:anywhere}
+.sidebar-sources a:hover{color:var(--green)}
+.view-subtitle{color:#b2d5be;font-size:13px;margin:7px 0 12px}
+.challenge-intro{background:#102b25;border-left:3px solid #9aff14;padding:12px;margin:10px 0;font-size:14px;line-height:1.5}
+.challenge-intro p{margin:7px 0 0;color:#bfd4cc}
+.challenge-description{margin:9px 5px 8px 27px;color:#bfd1cc;font-size:14px;line-height:1.55}
+.context-filters{padding:12px 9px;border-block:1px solid #345654;margin:8px 0}
+.context-filters label{display:block;font-size:12px;color:#b9d8c6;margin-bottom:7px}
+.context-filters select{width:100%;max-width:100%;background:#102b2c;border:1px solid #567c70;color:#edf8ed;padding:8px;border-radius:5px;font-size:13px}
+@media(min-width:801px) and (max-width:1330px){.dashboard{grid-template-columns:minmax(170px,20%) minmax(0,1fr) minmax(220px,26%)}.pillars>button strong{font-size:11px}.side-nav button{font-size:14px}.search-wrap button{padding-inline:12px}}
+@media(max-width:800px){.pillars{grid-template-columns:repeat(2,minmax(0,1fr))}.dashboard{display:flex}.dashboard>.navigation{order:0;width:100%;min-height:0}.dashboard>.feed{order:1;width:100%}.dashboard>.right-rail{order:2;width:100%}.side-nav{grid-template-columns:repeat(2,minmax(0,1fr))}.side-nav .research-heading,.side-nav .research-sub,.side-nav .nav-divider,.side-nav .sidebar-sources,.side-nav .context-filters{grid-column:1/-1}.nav-art{display:none}.search-wrap input{font-size:14px}.feed-heading{flex-wrap:wrap}.hero.digital-masthead{height:15vw;min-height:70px}.masthead-left,.masthead-right{background-position-y:-4vw}.masthead-globe{width:24%;left:44%}.pillar-bar .utility-btn{display:block}.navigation{padding-bottom:8px}.sidebar-sources summary:focus-visible{outline:2px solid var(--green)}}
+
+.monitored-source{display:block;font-size:13px;color:#b9d8c6;padding:8px 4px}

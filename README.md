@@ -92,3 +92,11 @@ The Build 2.1 GitHub validation workflow checks JS syntax, 297 unique public pro
 Ask Genesis SI remains a Build 3 placeholder; no AI service has been activated.
 
 The final masthead is the approved generated image `dist/header-final-20261106.png`, with the shortened L foot and SI overhang. It is displayed at its native proportions without cropping or substituting a drawn globe. The hourly D1 synchronization also stores the 33 official challenges in `national_challenges`, separately from project selections.
+
+## November 9 evening build
+
+- Four top navigation buttons: Projects, National Challenges, Laboratories, Ask Genesis SI (Coming Soon). Home and Archive remain in the sidebar with the approved section subtitles; Research Areas and private partnership information are preserved.
+- Approved digital-globe artwork is displayed through compact CSS viewports without stretching the logos. Sources expand on demand. Tablet widths preserve all three columns; phones stack the navigation, news and right rail without horizontal overflow.
+- National Challenges has keyword and theme filtering across 33 distinct records, including the Lighthouse portfolio name and verbatim Challenge descriptions from the official DOE document. Laboratories opens laboratory news with a publisher filter.
+- Existing challenge announcements remain in the news archive and collector paths. No project–challenge relationship table, backfill, or unsupported associations were added. Video Intelligence and Ask Genesis SI remain deferred.
+- Validation: JavaScript syntax, registry/classification tests, source URL/schema checks, Wrangler dry run, browser navigation and filters, 1024px tablet and 390px phone iframe layout checks.

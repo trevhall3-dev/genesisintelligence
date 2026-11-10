@@ -30,9 +30,14 @@ assert.equal(vm.runInContext('records().every(p=>p.kind==="challenge")',frontend
 vm.runInContext('state.area=null;',frontend);
 assert.equal(vm.runInContext('records().length',frontend),297);
 vm.runInContext('state.area="National challenges";state.activeQuery="pediatric";',frontend);
-assert.equal(vm.runInContext('records().length',frontend),1);
+assert.equal(vm.runInContext('records().length',frontend),2); // Official descriptions also match chronic-disease context.
 vm.runInContext('state.area=null;state.activeQuery="gridfm";',frontend);
 assert.equal(vm.runInContext('records().length',frontend),1);
 vm.runInContext('state.section="All";state.activeQuery="pediatric";',frontend);
-assert.equal(vm.runInContext('records().length',frontend),1);
+assert.equal(vm.runInContext('records().length',frontend),2);
+vm.runInContext('state.section="Projects";state.area="National challenges";state.activeQuery="";state.context="Helping Americans Live Longer, Healthier Lives";',frontend);
+assert.equal(vm.runInContext('records().length',frontend),4);
+vm.runInContext('state.context="";state.activeQuery="lighthouse";',frontend);
+assert.equal(vm.runInContext('records().length',frontend),33);
+assert(catalog.challenges.every(c=>c.description && c.source_url.startsWith('https://www.energy.gov/')));
 console.log('Passed: 33 challenges, 297 projects, Worker/static classification parity, stale-tag removal, and registry/search separation.');
