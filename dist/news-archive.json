@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-10T12:57:35.745655+00:00",
-  "count": 32,
+  "updated_at": "2026-11-10T13:35:55+00:00",
+  "count": 33,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -59,9 +59,8 @@
     {
       "name": "Lawrence Livermore National Laboratory",
       "group": "Labs",
-      "ok": false,
-      "count": 0,
-      "error": "Not an HTML publisher page"
+      "ok": true,
+      "count": 1
     },
     {
       "name": "Los Alamos National Laboratory",
@@ -273,6 +272,34 @@
       "kind": "discovery",
       "source_method": "editorially-verified-official-source",
       "id": "03c6ff877e4a668487a7"
+    },
+    {
+      "title": "LLNL Genesis projects advance faster, more accurate atmospheric prediction",
+      "summary": "LLNL reports substantive progress across two Genesis Mission projects. MAGGIE will generate consistent initial conditions for Earth-system predictions, while LLNL's STITCH team is building machine-learning emulators for warm-rain microphysics and turbulence. Related STRATA emulators reduced an ensemble evaluation from an estimated three months to one weekend, providing a practical path to test MAGGIE outputs and improve cloud physics in E3SM.",
+      "source": "Lawrence Livermore National Laboratory",
+      "url": "https://www.llnl.gov/article/55191/llnl-researchers-emulate-earths-atmosphere-faster-more-accurate-weather-predictions",
+      "date": "2026-11-04",
+      "group": "Labs",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "Data",
+        "National challenges",
+        "Infrastructure"
+      ],
+      "classification": "Confirmed Genesis",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "editorial_status": "published",
+      "project_ids": [
+        "genesis-f961a4c9471f19688293"
+      ],
+      "evidence_urls": [
+        "https://www.llnl.gov/article/55191/llnl-researchers-emulate-earths-atmosphere-faster-more-accurate-weather-predictions",
+        "https://www.energy.gov/documents/genesis-mission-rfa-awards-list"
+      ],
+      "evidence_note": "LLNL explicitly states that MAGGIE and STITCH are funded through the DOE Genesis Mission. STITCH independently matches LLNL's verified project record in the official July 2026 Genesis RFA roster.",
+      "id": "llnl-stitch-maggie-atmospheric-emulators-2026-11-04"
     },
     {
       "title": "DOE Secretary visits University of Oklahoma's two Genesis Mission research teams",
