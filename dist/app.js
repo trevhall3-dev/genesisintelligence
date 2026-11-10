@@ -6,18 +6,18 @@ const safeUrl=value=>{try{let u=new URL(value,location.origin);return u.protocol
 const dateLabel=value=>value&&Number.isFinite(Date.parse(value))?new Date(value).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric",timeZone:"UTC"}):"Date unavailable";
 const areas=["Data","Infrastructure","AI models","National challenges"];
 const areaLabels={"Data":"Data","Infrastructure":"Infrastructure","AI models":"AI Models","National challenges":"National Challenges"};
-const icons={"Data":"database","Infrastructure":"server","AI models":"cpu","National challenges":"leaf"};
+const icons={"Data":"database","Infrastructure":"server","AI models":"cpu","National challenges":"target"};
 const primarySources=[
  {title:"DOE Genesis Mission",url:"https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission",source:"DOE"},
  {title:"Official DOE Genesis News",url:"https://www.energy.gov/undersecretaryforscience/genesis-mission/listings/genesis-mission-news",source:"DOE"},
  {title:"Genesis Mission Platform",url:"https://genesis.energy.gov/",source:"DOE"},
  {title:"DOE Genesis Project Selections",url:"https://www.energy.gov/documents/genesis-mission-rfa-awards-list",source:"DOE"}
 ];
-const state={news:[],projects:[],challenges:[],sources:[],health:null,archiveAt:"",registryLabel:"Official DOE selection registry",section:"All",tier:"All",area:null,limit:40,activeQuery:""};
+const state={news:[],projects:[],challenges:[],sources:[],health:null,archiveAt:"",registryLabel:"Official DOE selection registry",section:"All",tier:"All",area:null,limit:40,activeQuery:"",context:""};
 const cache=new Set();
 function dedupe(rows){cache.clear();return rows.filter(row=>{const key=row.url||row.title;if(cache.has(key))return false;cache.add(key);return true})}
 function filterType(item){if(["DOE","Labs","Partners"].includes(item.group))return item.group;const s=String(item.source||"").toLowerCase();if(/department of energy|^doe$|energy\.gov/.test(s))return"DOE";if(/national lab|oak ridge|argonne|brookhaven|berkeley|fermilab|pnnl|llnl|sandia|los alamos/.test(s))return"Labs";return"Partners"}
-function isMatch(d,q){if(!q)return true;const hay=[d.title,d.summary,d.source,d.institution,d.principal_investigator,d.city,d.state,d.category,d.group,d.source_phase,...(d.categories||[])].join(" ").toLowerCase();return q.split(/\s+/).every(x=>hay.includes(x))}
+function isMatch(d,q){if(!q)return true;const hay=[d.title,d.summary,d.description,d.classification,d.source,d.institution,d.principal_investigator,d.city,d.state,d.category,d.group,d.source_phase,...(d.categories||[])].join(" ").toLowerCase();return q.split(/\s+/).every(x=>hay.includes(x))}
 function records(){
  const q=state.activeQuery;
  let list;
@@ -26,6 +26,7 @@ function records(){
  else if(state.section==="All"&&q)list=[...state.news,...state.projects.map(p=>({...p,kind:"project"})),...state.challenges.map(p=>({...p,kind:"challenge"}))];
  else list=state.news.filter(i=>(state.section!=="Labs"||filterType(i)==="Labs"));
  if(state.area)list=list.filter(i=>(i.categories||[i.category]).includes(state.area));
+ if(state.context)list=list.filter(i=>(state.area==="National challenges"?i.group:i.source)===state.context);
  if(state.tier!=="All"&&state.section!=="Projects"&&state.section!=="Sources")list=list.filter(i=>filterType(i)===state.tier);
  list=dedupe(list).filter(i=>isMatch(i,q));
  const order=$("sort").value;
@@ -35,28 +36,35 @@ function records(){
  :String(b.date||b.selection_date||"").localeCompare(String(a.date||a.selection_date||"")));
  return list;
 }
-function sectionTitle(){const title=state.area==="National challenges"?"OFFICIAL NATIONAL CHALLENGES":(state.section==="All"&&state.activeQuery)?"GENESIS SEARCH RESULTS":state.section==="Projects"?"GENESIS PROJECT REGISTRY":state.section==="Archive"?"GENESIS INTELLIGENCE ARCHIVE":state.section==="Sources"?"OFFICIAL SOURCES":state.section==="Labs"?"GENESIS LABORATORY NEWS":"LATEST GENESIS INTELLIGENCE";$("feedTitle").textContent=title}
+function sectionTitle(){const title=state.area==="National challenges"?"OFFICIAL NATIONAL CHALLENGES":(state.section==="All"&&state.activeQuery)?"GENESIS SEARCH RESULTS":state.section==="Projects"?"GENESIS PROJECT REGISTRY":state.section==="Archive"?"GENESIS INTELLIGENCE ARCHIVE":state.section==="Sources"?"OFFICIAL SOURCES":state.section==="Labs"?"GENESIS LABORATORY NEWS":"GENESIS NEWS";$("feedTitle").textContent=title}
 function render(){
  sectionTitle();
+ renderContext();
+ $("viewSubtitle").textContent=state.area==="National challenges"?"The Grand Pursuits":state.section==="Projects"?"The Foundation":state.section==="Labs"?"The Engines of Discovery":state.section==="Archive"?"The Institutional Memory":state.section==="Sources"?"Publisher and reference sources":"The Live Signal";
+ $("challengeIntro").hidden=state.area!=="National challenges";
  const list=records();
+ if(state.area==="National challenges")$("feedStatus").textContent="Official DOE challenge catalog · 33 National Science & Technology Challenges";
+ else if(state.section==="Projects")$("feedStatus").textContent="Official DOE registry · "+state.projects.length+" project selections";
+ else if(state.section==="Sources")$("feedStatus").textContent="Official references and monitored publishers";
+ else $("feedStatus").textContent=(state.section==="Labs"?"Laboratory news · ":"Publisher archive · ")+state.news.length+" collected articles";
  $("recordCount").textContent=list.length;
  $("count").textContent=state.area==="National challenges"?list.length+" official challenges · DOE source list · not project awards":state.section==="Projects"?list.length+" matching projects · "+state.registryLabel:list.length+" source-linked records";
  $("rows").innerHTML=list.slice(0,state.limit).map(item=>{
   const challenge=item.kind==="challenge",project=item.kind==="project",source=item.kind==="source";
   const url=safeUrl(project||challenge?item.source_url:item.url);
   const head='<a class="compact-title" target="_blank" rel="noopener noreferrer" href="'+url+'">'+
-   '<span class="article-glyph"><i data-lucide="'+(project?"layers":source?"link":"newspaper")+'"></i></span>'+
+   '<span class="article-glyph"><i data-lucide="'+(challenge?"target":project?"files":source?"link":"newspaper")+'"></i></span>'+
    '<span class="headline">'+safe(item.title)+'</span><i data-lucide="external-link" class="item-arrow"></i></a>';
   const sourceName=challenge?item.group:project?(item.institution||"Lead institution not listed"):source?item.source||"Official source":item.source||filterType(item);
   const detail=challenge?"Official DOE challenge · not a project award":project?([item.principal_investigator?"PI: "+item.principal_investigator:"",item.source_phase||"DOE project selection"].filter(Boolean).join(" · ")):source?"Official Genesis reference":dateLabel(item.date);
   const tags=project?'<span class="record-tag">'+safe((item.categories||[item.category]).filter(t=>areas.includes(t)).slice(0,2).map(t=>areaLabels[t]).join(" · "))+'</span>':"";
-  return '<article class="compact-item">'+head+'<div class="compact-meta"><span class="article-source">'+safe(sourceName)+'</span><span class="article-date">'+safe(detail)+'</span>'+tags+'</div></article>';
+  return '<article class="compact-item">'+head+'<div class="compact-meta"><span class="article-source">'+safe(sourceName)+'</span><span class="article-date">'+safe(detail)+'</span>'+tags+'</div>'+(challenge&&item.description?'<p class="challenge-description">'+safe(item.description)+'</p>':'')+'</article>';
  }).join("")||'<p class="empty">No records match this view. Try All, clear search, or choose another category.</p>';
  $("more").hidden=list.length<=state.limit;
  document.querySelectorAll("[data-tier]").forEach(b=>{b.classList.toggle("selected",b.dataset.tier===state.tier);b.setAttribute("aria-pressed",String(b.dataset.tier===state.tier))});
- document.querySelectorAll("[data-section]").forEach(b=>{const active=(state.section===b.dataset.section)||(state.area===b.dataset.section);b.classList.toggle("active",active);b.setAttribute("aria-current",active?"page":"false")});
- document.querySelector(".tier-tabs").hidden=state.section==="Projects"||state.section==="Sources";
- const pills=document.querySelectorAll("[data-pillar]");pills.forEach(b=>b.classList.toggle("current",b.dataset.pillar===state.section));
+ document.querySelectorAll("[data-section]").forEach(b=>{const active=state.area?state.area===b.dataset.section:state.section===b.dataset.section;b.classList.toggle("active",active);b.setAttribute("aria-current",active?"page":"false")});
+ document.querySelector(".tier-tabs").hidden=state.section==="Projects"||state.section==="Sources"||state.section==="Labs";
+ const pills=document.querySelectorAll("[data-pillar]");pills.forEach(b=>b.classList.toggle("current",(b.dataset.pillar==="National challenges"?state.area==="National challenges":b.dataset.pillar===state.section&&state.area!=="National challenges")));
  renderTracker();if(window.lucide)window.lucide.createIcons();
 }
 function renderTracker(){
@@ -67,15 +75,26 @@ function renderTracker(){
   const n=countArea(area);
   return '<button type="button" class="tracker-row tracker-button" data-track="'+safe(area)+'" title="Show '+safe(area)+(area==="National challenges"?' challenges':' projects')+'"><span class="tracker-label"><i data-lucide="'+icons[area]+'"></i>'+areaLabels[area]+'</span><span class="tracker-track"><span class="tracker-fill" style="width:'+Math.round(n/max*100)+'%"></span></span><strong class="tracker-count">'+n+'</strong></button>';
  }).join("");
- document.querySelectorAll("[data-track]").forEach(button=>button.onclick=()=>{state.section="Projects";state.area=button.dataset.track;state.tier="All";state.limit=40;state.activeQuery="";$("search").value="";render();document.querySelector(".feed").scrollIntoView({behavior:"smooth",block:"start"})});
+ document.querySelectorAll("[data-track]").forEach(button=>button.onclick=()=>{state.section="Projects";state.context="";state.area=button.dataset.track;state.tier="All";state.limit=40;state.activeQuery="";$("search").value="";render();document.querySelector(".feed").scrollIntoView({behavior:"smooth",block:"start"})});
+}
+function renderContext(){
+ const challenge=state.area==="National challenges",labs=state.section==="Labs";
+ $("contextFilters").hidden=!challenge&&!labs;
+ if(!challenge&&!labs)return;
+ const values=[...new Set((challenge?state.challenges:state.news.filter(i=>filterType(i)==="Labs")).map(i=>challenge?i.group:i.source).filter(Boolean))].sort();
+ $("contextLabel").textContent=challenge?"Challenge themes":"Laboratory sources";
+ $("contextSelect").innerHTML='<option value="">'+(challenge?"All challenge themes":"All laboratories")+'</option>'+values.map(v=>'<option value="'+safe(v)+'">'+safe(v)+'</option>').join("");
+ $("contextSelect").value=state.context;
 }
 function setView(view){
+ state.context="";
  state.section=areas.includes(view)?"Projects":view;state.area=areas.includes(view)?view:null;
  state.tier="All";state.activeQuery="";state.limit=40;$("search").value="";
  $("sort").value=state.section==="Projects"?"az":"new";
  render();document.querySelector(".feed").scrollIntoView({behavior:"smooth",block:"start"});
 }
 function renderSources(){
+ $("sidebarSourceLinks").innerHTML=[...primarySources,...state.sources.map(s=>({title:s.name,url:s.endpoint}))].map(s=>s.url?'<a target="_blank" rel="noopener noreferrer" href="'+safeUrl(s.url)+'">'+safe(s.title)+'</a>':'<span class="monitored-source">'+safe(s.title)+'</span>').join("");
  const list=state.sources.length?state.sources:[{name:"DOE Genesis Mission News",group:"DOE",ok:false,count:0}];
  const ok=list.filter(s=>s.ok).length;
  $("sourceState").textContent=ok+"/"+list.length+" reachable";
@@ -120,6 +139,7 @@ async function fetchAll(){
 document.querySelectorAll("[data-section]").forEach(b=>b.onclick=()=>setView(b.dataset.section));
 document.querySelectorAll("[data-pillar]").forEach(b=>b.onclick=()=>setView(b.dataset.pillar));
 document.querySelectorAll("[data-tier]").forEach(b=>b.onclick=()=>{state.tier=b.dataset.tier;state.limit=40;render()});
+$("contextSelect").onchange=()=>{state.context=$("contextSelect").value;state.limit=40;render()};
 $("search").oninput=()=>{state.activeQuery=$("search").value.toLowerCase().trim();state.limit=40;render()};
 $("searchBtn").onclick=()=>{$("search").focus();state.activeQuery=$("search").value.toLowerCase().trim();render()};
 $("sort").onchange=render;$("more").onclick=()=>{state.limit+=40;render()};$("refresh").onclick=fetchAll;
