@@ -64,7 +64,7 @@ function render(){
  document.querySelectorAll("[data-tier]").forEach(b=>{b.classList.toggle("selected",b.dataset.tier===state.tier);b.setAttribute("aria-pressed",String(b.dataset.tier===state.tier))});
  document.querySelectorAll("[data-section]").forEach(b=>{const active=state.area?state.area===b.dataset.section:state.section===b.dataset.section;b.classList.toggle("active",active);b.setAttribute("aria-current",active?"page":"false")});
  document.querySelector(".tier-tabs").hidden=state.section==="Projects"||state.section==="Sources"||state.section==="Labs";
- const pills=document.querySelectorAll("[data-pillar]");pills.forEach(b=>b.classList.toggle("current",(b.dataset.pillar==="National challenges"?state.area==="National challenges":b.dataset.pillar===state.section&&state.area!=="National challenges")));
+ const pills=document.querySelectorAll("[data-pillar]");pills.forEach(b=>b.classList.toggle("current",(b.dataset.pillar==="National challenges"?state.area==="National challenges":(b.dataset.pillar===state.section||b.dataset.pillar==="News"&&state.section==="All")&&state.area!=="National challenges")));
  renderTracker();if(window.lucide)window.lucide.createIcons();
 }
 function renderTracker(){
@@ -75,11 +75,14 @@ function renderTracker(){
   const n=countArea(area);
   return '<button type="button" class="tracker-row tracker-button" data-track="'+safe(area)+'" title="Show '+safe(area)+(area==="National challenges"?' challenges':' projects')+'"><span class="tracker-label"><i data-lucide="'+icons[area]+'"></i>'+areaLabels[area]+'</span><span class="tracker-track"><span class="tracker-fill" style="width:'+Math.round(n/max*100)+'%"></span></span><strong class="tracker-count">'+n+'</strong></button>';
  }).join("");
- document.querySelectorAll("[data-track]").forEach(button=>button.onclick=()=>{state.section="Projects";state.context="";state.area=button.dataset.track;state.tier="All";state.limit=40;state.activeQuery="";$("search").value="";render();document.querySelector(".feed").scrollIntoView({behavior:"smooth",block:"start"})});
+ document.querySelectorAll("[data-track]").forEach(button=>button.onclick=()=>{state.section="Projects";state.context="";state.area=button.dataset.track;$("challengeThemes").open=state.area==="National challenges";state.tier="All";state.limit=40;state.activeQuery="";$("search").value="";render();document.querySelector(".feed").scrollIntoView({behavior:"smooth",block:"start"})});
 }
 function renderContext(){
  const challenge=state.area==="National challenges",labs=state.section==="Labs";
- $("contextFilters").hidden=!challenge&&!labs;
+ const themes=[...new Set(state.challenges.map(i=>i.group).filter(Boolean))].sort();
+ $("challengeThemeSelect").innerHTML='<option value="">All challenge themes</option>'+themes.map(v=>'<option value="'+safe(v)+'">'+safe(v)+'</option>').join("");
+ $("challengeThemeSelect").value=challenge?state.context:"";
+ $("contextFilters").hidden=!labs;
  if(!challenge&&!labs)return;
  const values=[...new Set((challenge?state.challenges:state.news.filter(i=>filterType(i)==="Labs")).map(i=>challenge?i.group:i.source).filter(Boolean))].sort();
  $("contextLabel").textContent=challenge?"Challenge themes":"Laboratory sources";
@@ -87,6 +90,7 @@ function renderContext(){
  $("contextSelect").value=state.context;
 }
 function setView(view){
+ $("challengeThemes").open=view==="National challenges";
  state.context="";
  state.section=areas.includes(view)?"Projects":view;state.area=areas.includes(view)?view:null;
  state.tier="All";state.activeQuery="";state.limit=40;$("search").value="";
@@ -139,6 +143,7 @@ async function fetchAll(){
 document.querySelectorAll("[data-section]").forEach(b=>b.onclick=()=>setView(b.dataset.section));
 document.querySelectorAll("[data-pillar]").forEach(b=>b.onclick=()=>setView(b.dataset.pillar));
 document.querySelectorAll("[data-tier]").forEach(b=>b.onclick=()=>{state.tier=b.dataset.tier;state.limit=40;render()});
+$("challengeThemeSelect").onchange=()=>{const theme=$("challengeThemeSelect").value;setView("National challenges");state.context=theme;render()};
 $("contextSelect").onchange=()=>{state.context=$("contextSelect").value;state.limit=40;render()};
 $("search").oninput=()=>{state.activeQuery=$("search").value.toLowerCase().trim();state.limit=40;render()};
 $("searchBtn").onclick=()=>{$("search").focus();state.activeQuery=$("search").value.toLowerCase().trim();render()};

@@ -174,3 +174,16 @@ body{font-size:16px;line-height:1.37}
 /* Display the supplied finished header as one complete image. */
 .hero.image-masthead{height:auto;min-height:0;aspect-ratio:auto;overflow:hidden;padding:0;background:#000}
 .hero.image-masthead .approved-header-art{display:block;position:static;width:100%;height:auto;max-width:100%;transform:none;object-fit:contain}
+
+/* November 10 approved navigation touch-ups; existing icon artwork retained. */
+.pillars{grid-template-columns:repeat(5,minmax(0,1fr))}
+.feed-heading{flex-wrap:wrap;gap:8px}
+.feed-heading h2{display:flex;align-items:center;flex-wrap:wrap;gap:8px;min-width:0}
+.feed-heading .view-subtitle{margin:0;font-size:13px;font-weight:400;letter-spacing:normal;text-transform:none}
+.challenge-themes{margin:0 9px 5px}
+.challenge-themes summary{display:flex;align-items:center;gap:9px;cursor:pointer;padding:9px 0;color:#b9d8c6;font-size:13px}
+.challenge-themes summary:after{content:'⌄';margin-left:auto}
+.challenge-themes[open] summary:after{content:'⌃'}
+.challenge-themes summary:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.challenge-themes .context-filters{margin:0;padding:8px 0;border:0}
+@media(max-width:800px){.pillars{grid-template-columns:repeat(2,minmax(0,1fr))}.side-nav .challenge-themes{grid-column:1/-1}}
