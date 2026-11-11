@@ -1,0 +1,116 @@
+{
+  "checked_at": "2026-11-11T13:22:19Z",
+  "items": [
+    {
+      "title": "SYNAPS-I demonstrates autonomous X-ray imaging and rapid reconstruction",
+      "url": "https://www.bnl.gov/newsroom/news.php?a=223173&btw=1",
+      "source": "Brookhaven National Laboratory",
+      "source_published_at": "2026-11-04",
+      "project": "SYNAPS-I, a ModCon seed project",
+      "participants": [
+        "Lawrence Berkeley National Laboratory / Advanced Light Source (lead)",
+        "Brookhaven National Laboratory / NSLS-II",
+        "Argonne National Laboratory",
+        "Oak Ridge National Laboratory",
+        "SLAC National Accelerator Laboratory",
+        "NVIDIA"
+      ],
+      "what_changed": "Demonstrations selected imaging targets autonomously, reconstructed ptychographic images at 200 per second, and produced a microchip reconstruction using roughly one tenth of the usual data.",
+      "significance": "Could reduce beam time and radiation exposure while accelerating microelectronics and materials analysis.",
+      "affiliation_evidence": "Brookhaven explicitly identifies SYNAPS-I as a ModCon seed project within DOE's Genesis Mission.",
+      "evidence_urls": [
+        "https://www.bnl.gov/newsroom/news.php?a=223173&btw=1"
+      ],
+      "categories": [
+        "AI models",
+        "Data",
+        "Infrastructure"
+      ],
+      "deduplication_note": "Absent from the 33-item main archive and current science-discoveries review file; substantive experimental results.",
+      "id": "bnl-synaps-i-2026-11-04",
+      "gih_added_at": "2026-11-11T13:22:19Z",
+      "gih_added_date": "2026-11-11",
+      "date": "2026-11-11",
+      "date_basis": "GIH first repository addition; America/New_York",
+      "classification": "confirmed Genesis",
+      "suggested_visible_label": null,
+      "editorial_status": "verified-ready-pending-date-pipeline",
+      "publication_approved": true,
+      "feed_published": false,
+      "group": "Labs"
+    },
+    {
+      "title": "Two Genesis projects target faster electric-grid planning",
+      "url": "https://www.pnnl.gov/news-media/two-genesis-awards-support-si-powered-grid-planning",
+      "source": "Pacific Northwest National Laboratory",
+      "source_published_at": "2026-10-29",
+      "project": "SI-assisted electromagnetic transient modeling and capacity-expansion scenario selection",
+      "participants": [
+        "PNNL (Marcelo Elizondo; Casey Burleyson)",
+        "Argonne",
+        "Sandia",
+        "Siemens",
+        "Washington State University",
+        "Xcel Energy Services",
+        "ERCOT",
+        "Arizona State University (capacity-expansion lead)",
+        "Lawrence Berkeley National Laboratory",
+        "Pennsylvania State University",
+        "UC San Diego"
+      ],
+      "what_changed": "PNNL detailed two six-month projects: learning approximations for expensive grid-physics simulations and selecting informative scenarios from large capacity-expansion ensembles. These are research plans, not demonstrated speedups.",
+      "significance": "Targets computational bottlenecks in grid reliability and expansion planning.",
+      "affiliation_evidence": "PNNL explicitly states that both projects received Genesis Mission funding; its Genesis project page also lists this feature.",
+      "evidence_urls": [
+        "https://www.pnnl.gov/news-media/two-genesis-awards-support-si-powered-grid-planning",
+        "https://www.pnnl.gov/projects/genesis-mission"
+      ],
+      "categories": [
+        "AI models",
+        "National challenges"
+      ],
+      "deduplication_note": "Absent from archive and review file; different projects and substantive detail from the archived October 9 five-project feature.",
+      "id": "pnnl-grid-planning-2026-10-29",
+      "gih_added_at": "2026-11-11T13:22:19Z",
+      "gih_added_date": "2026-11-11",
+      "date": "2026-11-11",
+      "date_basis": "GIH first repository addition; America/New_York",
+      "classification": "confirmed Genesis",
+      "suggested_visible_label": null,
+      "editorial_status": "verified-ready-pending-date-pipeline",
+      "publication_approved": true,
+      "feed_published": false,
+      "group": "Labs"
+    }
+  ],
+  "publication_blocker": "Current main app sorts and displays date in UTC without an Added to GIH label; Worker writes date into published_at, returns/sorts published_at, and does not persist added-at. Publishing these records through that path would misidentify repository dates as source dates. Retain gih_added_at when promoting these records to the unified Genesis News feed.",
+  "implementation_audit": {
+    "archive_count": 33,
+    "app": "dist/app.js: records sorts date; render uses dateLabel(item.date); timeZone UTC; no visible classification label rendering.",
+    "worker": "src/worker.js: syncNews binds item.date to published_at; apiNews orders published_at and merges by date; no added-at persistence.",
+    "collector": "scripts/collect_genesis_news.py: ordinary refresh can replace records; no general added-at retention. Reviewed records are preserved, but sorting still uses date.",
+    "llnl": "Existing STITCH/MAGGIE archive record still has date 2026-11-04 and no added-at. Required GIH date is 2026-11-10; retain source date 2026-11-04. Exact first commit time should be recovered from commit 15540e1aff05867401aee9a13633467139d8f081, not invented.",
+    "production": "Main site, app.js, api/news and api/health could not be retrieved via web tool; production rendering and D1 ingestion unverified.",
+    "writes_to_live_feed": false
+  },
+  "other_reviewed": [
+    {
+      "url": "https://newsreleases.sandia.gov/building-computer-models-that-stay-current-as-conditions-change/",
+      "decision": "Skip substantially identical republication of already approved Nov 5 AIGM Lite story. Preserve GENESIS LINK NOT CONFIRMED; no approval requested."
+    },
+    {
+      "url": "https://www.pppl.gov/news/2026/key-pppl-staff-working-genesis-mission-efforts-honored-secretary-energy-achievement-award",
+      "classification": "confirmed Genesis",
+      "decision": "Skip routine staff award recognition; article identifies IGNOS affiliation but announces no substantive new technical milestone."
+    },
+    {
+      "url": "https://www.pnnl.gov/publications/raw-signals-ai-and-omics-agnostic-algorithms-multidimensional-mass-spectrometry",
+      "classification": "Genesis link not confirmed",
+      "decision": "Skip perspective/research retrospective; no material new demonstrated capability established."
+    },
+    {
+      "url": "https://www.alcf.anl.gov/news/argonne-researchers-showcase-tools-and-technology-sc26",
+      "decision": "Conference preview; no qualifying new finding verified; article retrieval failed."
+    }
+  ]
+}
