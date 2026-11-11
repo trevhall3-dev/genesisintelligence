@@ -16,6 +16,7 @@ async function classifiedRoster(env){
  return {...doc,metadata:{...doc.metadata,classification_version:policy.version},projects:doc.projects.map(p=>{const categories=tagsFor(p,policy);return {...p,category:categories[0],categories}})};
 }
 const MIGRATIONS=[
+ "CREATE TABLE IF NOT EXISTS news_editorial(url TEXT PRIMARY KEY,gih_added_at TEXT,gih_added_date TEXT)",
  "CREATE TABLE IF NOT EXISTS national_challenges(id TEXT PRIMARY KEY,title TEXT NOT NULL,challenge_group TEXT NOT NULL,source_url TEXT NOT NULL,verified_at TEXT NOT NULL)",
  "CREATE TABLE IF NOT EXISTS source_versions(source TEXT PRIMARY KEY,content_hash TEXT NOT NULL,imported_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,item_count INTEGER NOT NULL DEFAULT 0)",
  "CREATE TABLE IF NOT EXISTS organizations(id TEXT PRIMARY KEY,name TEXT NOT NULL UNIQUE,organization_type TEXT,website TEXT,first_seen_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP)",
@@ -61,9 +62,10 @@ async function syncNews(env){
  const inserts=[];
  for(const item of doc.items){
   const id=await digest(item.url);const group=["DOE","Labs","Partners"].includes(item.group)?item.group:"Partners";
-  inserts.push(db.prepare("INSERT INTO news(id,title,summary,source,url,published_at,category,source_group) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(url) DO UPDATE SET title=excluded.title,summary=excluded.summary,source=excluded.source,published_at=excluded.published_at,category=excluded.category,source_group=excluded.source_group").bind(id,item.title,String(item.summary||"").slice(0,480),item.source||group,item.url,item.date||"",item.category||"National challenges",group));
+  inserts.push(db.prepare("INSERT INTO news(id,title,summary,source,url,published_at,category,source_group) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(url) DO UPDATE SET title=excluded.title,summary=excluded.summary,source=excluded.source,published_at=excluded.published_at,category=excluded.category,source_group=excluded.source_group").bind(id,item.title,String(item.summary||"").slice(0,480),item.source||group,item.url,item.source_published_at||item.date||"",item.category||"National challenges",group));
  }
  await sendBatches(db,inserts);
+ await sendBatches(db,doc.items.filter(i=>i.gih_added_at||i.gih_added_date).map(i=>db.prepare("INSERT INTO news_editorial(url,gih_added_at,gih_added_date) VALUES(?,?,?) ON CONFLICT(url) DO NOTHING").bind(i.url,i.gih_added_at||null,i.gih_added_date||null)));
  // Preserve project identities found within official publisher article bodies by the
  // rotating project watchlist collector. These are provisional article links only.
  const knownIds=new Set((await db.prepare("SELECT id FROM projects LIMIT 1400").all()).results.map(x=>x.id));
@@ -183,9 +185,9 @@ async function apiNews(env,ctx){
  try{
   const count=await env.DB.prepare("SELECT COUNT(*) AS n FROM news").first();
   if((count?.n||0)<1)ctx.waitUntil(synchronize(env).catch(e=>console.error("GIH D1 bootstrap",e)));
-  const rows=(await env.DB.prepare("SELECT title,summary,source,url,published_at AS date,category,source_group AS 'group' FROM news ORDER BY published_at DESC LIMIT 1000").all()).results;
+  const rows=(await env.DB.prepare("SELECT n.title,n.summary,n.source,n.url,n.published_at AS date,n.published_at AS source_published_at,n.category,n.source_group AS 'group',e.gih_added_at,e.gih_added_date FROM news n LEFT JOIN news_editorial e ON e.url=n.url ORDER BY COALESCE(e.gih_added_at,e.gih_added_date,n.published_at) DESC LIMIT 1000").all()).results;
   const seen=new Set();
-  const merged=[...fallback.items,...rows].filter(i=>{if(seen.has(i.url))return false;seen.add(i.url);return true}).sort((a,b)=>String(b.date||"").localeCompare(String(a.date||"")));
+  const merged=[...fallback.items,...rows].filter(i=>{if(seen.has(i.url))return false;seen.add(i.url);return true}).sort((a,b)=>String(b.gih_added_at||b.gih_added_date||b.date||"").localeCompare(String(a.gih_added_at||a.gih_added_date||a.date||"")));
   return respond({...fallback,items:merged,archiveEnabled:true});
  }catch(e){console.error("News API database fallback",e);ctx.waitUntil(synchronize(env).catch(x=>console.error("GIH D1 seed",x)));return respond({...fallback,archiveEnabled:false})}
 }

@@ -34,9 +34,9 @@
       "date_basis": "GIH first repository addition; America/New_York",
       "classification": "confirmed Genesis",
       "suggested_visible_label": null,
-      "editorial_status": "verified-ready-pending-date-pipeline",
+      "editorial_status": "approved",
       "publication_approved": true,
-      "feed_published": false,
+      "feed_published": true,
       "group": "Labs"
     },
     {
@@ -77,13 +77,13 @@
       "date_basis": "GIH first repository addition; America/New_York",
       "classification": "confirmed Genesis",
       "suggested_visible_label": null,
-      "editorial_status": "verified-ready-pending-date-pipeline",
+      "editorial_status": "approved",
       "publication_approved": true,
-      "feed_published": false,
+      "feed_published": true,
       "group": "Labs"
     }
   ],
-  "publication_blocker": "Current main app sorts and displays date in UTC without an Added to GIH label; Worker writes date into published_at, returns/sorts published_at, and does not persist added-at. Publishing these records through that path would misidentify repository dates as source dates. Retain gih_added_at when promoting these records to the unified Genesis News feed.",
+  "publication_blocker": null,
   "implementation_audit": {
     "archive_count": 33,
     "app": "dist/app.js: records sorts date; render uses dateLabel(item.date); timeZone UTC; no visible classification label rendering.",
@@ -112,5 +112,6 @@
       "url": "https://www.alcf.anl.gov/news/argonne-researchers-showcase-tools-and-technology-sc26",
       "decision": "Conference preview; no qualifying new finding verified; article retrieval failed."
     }
-  ]
+  ],
+  "publication_note": "Promoted to the public archive with separate GIH added and source publication dates."
 }

@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-10T21:50:42.951882+00:00",
-  "count": 33,
+  "updated_at": "2026-11-11T14:19:04.801321+00:00",
+  "count": 35,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -127,6 +127,93 @@
     }
   ],
   "items": [
+    {
+      "title": "SYNAPS-I demonstrates autonomous X-ray imaging and rapid reconstruction",
+      "url": "https://www.bnl.gov/newsroom/news.php?a=223173&btw=1",
+      "source": "Brookhaven National Laboratory",
+      "source_published_at": "2026-11-04",
+      "project": "SYNAPS-I, a ModCon seed project",
+      "participants": [
+        "Lawrence Berkeley National Laboratory / Advanced Light Source (lead)",
+        "Brookhaven National Laboratory / NSLS-II",
+        "Argonne National Laboratory",
+        "Oak Ridge National Laboratory",
+        "SLAC National Accelerator Laboratory",
+        "NVIDIA"
+      ],
+      "what_changed": "Demonstrations selected imaging targets autonomously, reconstructed ptychographic images at 200 per second, and produced a microchip reconstruction using roughly one tenth of the usual data.",
+      "significance": "Could reduce beam time and radiation exposure while accelerating microelectronics and materials analysis.",
+      "affiliation_evidence": "Brookhaven explicitly identifies SYNAPS-I as a ModCon seed project within DOE's Genesis Mission.",
+      "evidence_urls": [
+        "https://www.bnl.gov/newsroom/news.php?a=223173&btw=1"
+      ],
+      "categories": [
+        "AI models",
+        "Data",
+        "Infrastructure"
+      ],
+      "deduplication_note": "Absent from the 33-item main archive and current science-discoveries review file; substantive experimental results.",
+      "id": "bnl-synaps-i-2026-11-04",
+      "gih_added_at": "2026-11-11T13:22:19Z",
+      "gih_added_date": "2026-11-11",
+      "date": "2026-11-11",
+      "date_basis": "GIH first repository addition; America/New_York",
+      "classification": "confirmed Genesis",
+      "suggested_visible_label": null,
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "group": "Labs",
+      "summary": "Demonstrations selected imaging targets autonomously, reconstructed ptychographic images at 200 per second, and produced a microchip reconstruction using roughly one tenth of the usual data. Could reduce beam time and radiation exposure while accelerating microelectronics and materials analysis.",
+      "category": "AI models",
+      "kind": "discovery"
+    },
+    {
+      "title": "Two Genesis projects target faster electric-grid planning",
+      "url": "https://www.pnnl.gov/news-media/two-genesis-awards-support-si-powered-grid-planning",
+      "source": "Pacific Northwest National Laboratory",
+      "source_published_at": "2026-10-29",
+      "project": "SI-assisted electromagnetic transient modeling and capacity-expansion scenario selection",
+      "participants": [
+        "PNNL (Marcelo Elizondo; Casey Burleyson)",
+        "Argonne",
+        "Sandia",
+        "Siemens",
+        "Washington State University",
+        "Xcel Energy Services",
+        "ERCOT",
+        "Arizona State University (capacity-expansion lead)",
+        "Lawrence Berkeley National Laboratory",
+        "Pennsylvania State University",
+        "UC San Diego"
+      ],
+      "what_changed": "PNNL detailed two six-month projects: learning approximations for expensive grid-physics simulations and selecting informative scenarios from large capacity-expansion ensembles. These are research plans, not demonstrated speedups.",
+      "significance": "Targets computational bottlenecks in grid reliability and expansion planning.",
+      "affiliation_evidence": "PNNL explicitly states that both projects received Genesis Mission funding; its Genesis project page also lists this feature.",
+      "evidence_urls": [
+        "https://www.pnnl.gov/news-media/two-genesis-awards-support-si-powered-grid-planning",
+        "https://www.pnnl.gov/projects/genesis-mission"
+      ],
+      "categories": [
+        "AI models",
+        "National challenges"
+      ],
+      "deduplication_note": "Absent from archive and review file; different projects and substantive detail from the archived October 9 five-project feature.",
+      "id": "pnnl-grid-planning-2026-10-29",
+      "gih_added_at": "2026-11-11T13:22:19Z",
+      "gih_added_date": "2026-11-11",
+      "date": "2026-11-11",
+      "date_basis": "GIH first repository addition; America/New_York",
+      "classification": "confirmed Genesis",
+      "suggested_visible_label": null,
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "group": "Labs",
+      "summary": "PNNL detailed two six-month projects: learning approximations for expensive grid-physics simulations and selecting informative scenarios from large capacity-expansion ensembles. These are research plans, not demonstrated speedups. Targets computational bottlenecks in grid reliability and expansion planning.",
+      "category": "AI models",
+      "kind": "discovery"
+    },
     {
       "id": "gih-weekly-2026-11-07",
       "title": "Weekly Genesis Intelligence Briefing — Issue 001 (Nov 1–7, 2026)",

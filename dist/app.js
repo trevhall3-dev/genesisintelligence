@@ -4,6 +4,7 @@ const $=id=>document.getElementById(id);
 const safe=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl=value=>{try{let u=new URL(value,location.origin);return u.protocol==="https:"?u.href:"#"}catch{return"#"}};
 const dateLabel=value=>value&&Number.isFinite(Date.parse(value))?new Date(value).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric",timeZone:"UTC"}):"Date unavailable";
+const newsDate=item=>item.gih_added_at||item.gih_added_date||item.date||item.selection_date||"";
 const areas=["Data","Infrastructure","AI models","National challenges"];
 const areaLabels={"Data":"Data","Infrastructure":"Infrastructure","AI models":"AI Models","National challenges":"National Challenges"};
 const icons={"Data":"database","Infrastructure":"server","AI models":"cpu","National challenges":"target"};
@@ -32,8 +33,8 @@ function records(){
  const order=$("sort").value;
  list.sort((a,b)=>order==="az"||state.section==="Projects"&&order==="new"
  ?String(a.title||"").localeCompare(String(b.title||""))
- :order==="old"?String(a.date||a.selection_date||"").localeCompare(String(b.date||b.selection_date||""))
- :String(b.date||b.selection_date||"").localeCompare(String(a.date||a.selection_date||"")));
+ :order==="old"?String(newsDate(a)).localeCompare(String(newsDate(b)))
+ :String(newsDate(b)).localeCompare(String(newsDate(a))));
  return list;
 }
 function sectionTitle(){const title=state.area==="National challenges"?"OFFICIAL NATIONAL CHALLENGES":(state.section==="All"&&state.activeQuery)?"GENESIS SEARCH RESULTS":state.section==="Projects"?"GENESIS PROJECT REGISTRY":state.section==="Archive"?"GENESIS INTELLIGENCE ARCHIVE":state.section==="Sources"?"OFFICIAL SOURCES":state.section==="Labs"?"GENESIS LABORATORY NEWS":"GENESIS NEWS";$("feedTitle").textContent=title}
@@ -56,7 +57,7 @@ function render(){
    '<span class="article-glyph"><i data-lucide="'+(challenge?"target":project?"files":source?"link":"newspaper")+'"></i></span>'+
    '<span class="headline">'+safe(item.title)+'</span><i data-lucide="external-link" class="item-arrow"></i></a>';
   const sourceName=challenge?item.group:project?(item.institution||"Lead institution not listed"):source?item.source||"Official source":item.source||filterType(item);
-  const detail=challenge?"Official DOE challenge · not a project award":project?([item.principal_investigator?"PI: "+item.principal_investigator:"",item.source_phase||"DOE project selection"].filter(Boolean).join(" · ")):source?"Official Genesis reference":dateLabel(item.date);
+  const detail=challenge?"Official DOE challenge · not a project award":project?([item.principal_investigator?"PI: "+item.principal_investigator:"",item.source_phase||"DOE project selection"].filter(Boolean).join(" · ")):source?"Official Genesis reference":item.gih_added_date?"Added to GIH "+dateLabel(item.gih_added_date)+" · Published "+dateLabel(item.source_published_at||item.date):dateLabel(item.date);
   const tags=project?'<span class="record-tag">'+safe((item.categories||[item.category]).filter(t=>areas.includes(t)).slice(0,2).map(t=>areaLabels[t]).join(" · "))+'</span>':"";
   return '<article class="compact-item">'+head+'<div class="compact-meta"><span class="article-source">'+safe(sourceName)+'</span><span class="article-date">'+safe(detail)+'</span>'+tags+'</div>'+(challenge&&item.description?'<p class="challenge-description">'+safe(item.description)+'</p>':'')+'</article>';
  }).join("")||'<p class="empty">No records match this view. Try All, clear search, or choose another category.</p>';
