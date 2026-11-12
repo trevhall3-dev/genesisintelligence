@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-12T07:41:14.886326+00:00",
-  "count": 35,
+  "updated_at": "2026-11-12T13:32:28Z",
+  "count": 36,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -128,6 +128,47 @@
   ],
   "items": [
     {
+      "id": "lbnl-synaps-i-segmentation-2026-11-10",
+      "title": "SYNAPS-I accelerates tomography segmentation from months to minutes",
+      "summary": "Berkeley Lab reports a grapevine drought case study reducing image segmentation from months to 15 minutes. Two AI models are running on NERSC and ALCF inference servers; an open-source interface lets tomography users annotate data and train custom models.",
+      "source": "Lawrence Berkeley National Laboratory / Advanced Light Source",
+      "url": "https://als.lbl.gov/synaps-i-workshop-accelerates-data-segmentation/",
+      "source_published_at": "2026-11-10",
+      "gih_added_at": "2026-11-12T13:32:28Z",
+      "gih_added_date": "2026-11-12",
+      "date": "2026-11-12",
+      "date_basis": "GIH first repository addition; America/New_York",
+      "group": "Labs",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "Data",
+        "Infrastructure"
+      ],
+      "kind": "discovery",
+      "project": "SYNAPS-I",
+      "participants": [
+        "Berkeley Lab / ALS (Alex Hexemer, David Abramov, Liz Clark and team)",
+        "NERSC",
+        "Argonne / ALCF",
+        "Tomography users including NASA Ames and CSU Monterey Bay"
+      ],
+      "what_changed": "November 10 report describes results from an August 2026 workshop: deployed SAM3 and DINOv3-seg models, running inference servers at NERSC and ALCF, an open-source annotation/training interface, and a grapevine drought case study reducing segmentation from months to 15 minutes.",
+      "significance": "Addresses the human annotation bottleneck in high-volume tomography and enables faster experimental feedback across materials, energy and biological research. The timing result is case-specific, not a universal benchmark.",
+      "classification": "confirmed Genesis",
+      "affiliation_evidence": "The official ALS article explicitly identifies SYNAPS-I as a DOE seedling pilot project of the Genesis Mission; it is the same verified project covered by Brookhaven's November 4 report.",
+      "evidence_urls": [
+        "https://als.lbl.gov/synaps-i-workshop-accelerates-data-segmentation/",
+        "https://www.bnl.gov/newsroom/news.php?a=223173&btw=1"
+      ],
+      "suggested_visible_label": null,
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "source_method": "editorially-verified-official-source",
+      "deduplication_note": "Absent from the 35-record archive. Distinct from Brookhaven's November 4 reconstruction/autonomous-imaging report: adds segmentation case-study timing, inference deployment and user-workflow details."
+    },
+    {
       "title": "Two Genesis projects target faster electric-grid planning",
       "url": "https://www.pnnl.gov/news-media/two-genesis-awards-support-si-powered-grid-planning",
       "source": "Pacific Northwest National Laboratory",
@@ -213,6 +254,38 @@
       "summary": "Demonstrations selected imaging targets autonomously, reconstructed ptychographic images at 200 per second, and produced a microchip reconstruction using roughly one tenth of the usual data. Could reduce beam time and radiation exposure while accelerating microelectronics and materials analysis.",
       "category": "AI models",
       "kind": "discovery"
+    },
+    {
+      "title": "LLNL Genesis projects advance faster, more accurate atmospheric prediction",
+      "summary": "LLNL reports substantive progress across two Genesis Mission projects. MAGGIE will generate consistent initial conditions for Earth-system predictions, while LLNL's STITCH team is building machine-learning emulators for warm-rain microphysics and turbulence. Related STRATA emulators reduced an ensemble evaluation from an estimated three months to one weekend, providing a practical path to test MAGGIE outputs and improve cloud physics in E3SM.",
+      "source": "Lawrence Livermore National Laboratory",
+      "url": "https://www.llnl.gov/article/55191/llnl-researchers-emulate-earths-atmosphere-faster-more-accurate-weather-predictions",
+      "date": "2026-11-10",
+      "group": "Labs",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "Data",
+        "National challenges",
+        "Infrastructure"
+      ],
+      "classification": "Confirmed Genesis",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "editorial_status": "published",
+      "project_ids": [
+        "genesis-f961a4c9471f19688293"
+      ],
+      "evidence_urls": [
+        "https://www.llnl.gov/article/55191/llnl-researchers-emulate-earths-atmosphere-faster-more-accurate-weather-predictions",
+        "https://www.energy.gov/documents/genesis-mission-rfa-awards-list"
+      ],
+      "evidence_note": "LLNL explicitly states that MAGGIE and STITCH are funded through the DOE Genesis Mission. STITCH independently matches LLNL's verified project record in the official July 2026 Genesis RFA roster.",
+      "id": "llnl-stitch-maggie-atmospheric-emulators-2026-11-04",
+      "gih_added_at": "2026-11-10T13:37:21Z",
+      "gih_added_date": "2026-11-10",
+      "source_published_at": "2026-11-04",
+      "date_basis": "First repository commit 15540e1aff05867401aee9a13633467139d8f081; America/New_York"
     },
     {
       "id": "gih-weekly-2026-11-07",
@@ -344,34 +417,6 @@
       "kind": "discovery",
       "source_method": "editorially-verified-official-source",
       "id": "94453b9e61550de43188"
-    },
-    {
-      "title": "LLNL Genesis projects advance faster, more accurate atmospheric prediction",
-      "summary": "LLNL reports substantive progress across two Genesis Mission projects. MAGGIE will generate consistent initial conditions for Earth-system predictions, while LLNL's STITCH team is building machine-learning emulators for warm-rain microphysics and turbulence. Related STRATA emulators reduced an ensemble evaluation from an estimated three months to one weekend, providing a practical path to test MAGGIE outputs and improve cloud physics in E3SM.",
-      "source": "Lawrence Livermore National Laboratory",
-      "url": "https://www.llnl.gov/article/55191/llnl-researchers-emulate-earths-atmosphere-faster-more-accurate-weather-predictions",
-      "date": "2026-11-04",
-      "group": "Labs",
-      "category": "AI models",
-      "categories": [
-        "AI models",
-        "Data",
-        "National challenges",
-        "Infrastructure"
-      ],
-      "classification": "Confirmed Genesis",
-      "kind": "discovery",
-      "source_method": "editorially-verified-official-source",
-      "editorial_status": "published",
-      "project_ids": [
-        "genesis-f961a4c9471f19688293"
-      ],
-      "evidence_urls": [
-        "https://www.llnl.gov/article/55191/llnl-researchers-emulate-earths-atmosphere-faster-more-accurate-weather-predictions",
-        "https://www.energy.gov/documents/genesis-mission-rfa-awards-list"
-      ],
-      "evidence_note": "LLNL explicitly states that MAGGIE and STITCH are funded through the DOE Genesis Mission. STITCH independently matches LLNL's verified project record in the official July 2026 Genesis RFA roster.",
-      "id": "llnl-stitch-maggie-atmospheric-emulators-2026-11-04"
     },
     {
       "title": "Argonne expands ALCF Inference Service with Tara and Minerva",
