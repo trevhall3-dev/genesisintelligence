@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-13T15:08:00Z",
-  "count": 38,
+  "updated_at": "2026-11-13T23:36:40.257450+00:00",
+  "count": 39,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -15,7 +15,7 @@
       "name": "DOE Genesis Mission News",
       "group": "DOE",
       "ok": true,
-      "count": 13,
+      "count": 14,
       "endpoint": "https://www.energy.gov/undersecretaryforscience/genesis-mission/listings/genesis-mission-news",
       "method": "html"
     },
@@ -183,6 +183,19 @@
       "gih_added_date": "2026-11-13",
       "date": "2026-11-13",
       "date_basis": "GIH first repository addition; America/New_York"
+    },
+    {
+      "id": "99b7a49f6d1ee7498699",
+      "title": "Under Secretary Gil’s Letter to the Community: One Year In",
+      "summary": "November 12, 2026 DOE’s Under Secretary for Science reflects on his first year, accomplishments across the Office of Science and Genesis Mission, and what lies ahead.",
+      "source": "DOE Genesis Mission News",
+      "url": "https://www.energy.gov/undersecretaryforscience/articles/under-secretary-gils-letter-community-one-year",
+      "date": "2026-11-12",
+      "group": "DOE",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "id": "lbnl-synaps-i-segmentation-2026-11-10",
