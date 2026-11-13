@@ -41,7 +41,7 @@ function records(){
  else list=state.news.filter(i=>(state.section!=="Labs"||filterType(i)==="Labs"));
  if(state.area)list=list.filter(i=>(i.categories||[i.category]).includes(state.area));
  if(state.context)list=list.filter(i=>(state.area==="National challenges"?i.group:i.source)===state.context);
- if(state.tier!=="All"&&state.section!=="Projects"&&state.section!=="Sources")list=list.filter(i=>filterType(i)===state.tier);
+ if(state.tier!=="All"&&state.section!=="Projects"&&state.section!=="Sources")list=list.filter(i=>!["project","challenge","source"].includes(i.kind)&&filterType(i)===state.tier);
  list=dedupe(list).filter(i=>isMatch(i,q));
  const order=$("sort").value;
  list.sort((a,b)=>order==="az"||state.section==="Projects"&&order==="new"
