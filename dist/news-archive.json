@@ -1,15 +1,14 @@
 {
-  "updated_at": "2026-11-13T00:30:42.372724+00:00",
+  "updated_at": "2026-11-13T01:12:37.464360+00:00",
   "count": 36,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
       "name": "DOE / NNSA Los Alamos news",
       "group": "DOE",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "endpoint": "https://www.energy.gov/nnsa/listings/listing-los-alamos-national-laboratory-articles-and-press-releases",
-      "method": "html"
+      "error": "HTTPSConnectionPool(host='www.energy.gov', port=443): Read timed out. (read timeout=24)"
     },
     {
       "name": "DOE Genesis Mission News",
