@@ -51,9 +51,19 @@ async function syncProjects(env){
  await recordEvent(db,"projects","ok",doc.projects.length,stmts.length,"Reconciled official project roster");
  return {changed:true,count:stmts.length};
 }
+const labPublisherHosts=["anl.gov","ornl.gov","bnl.gov","lbl.gov","pnnl.gov","lanl.gov","llnl.gov","fnal.gov","sandia.gov","slac.stanford.edu","jlab.org","pppl.gov","nrel.gov","inl.gov","ameslab.gov","srnl.gov","netl.doe.gov","frib.msu.edu"];
+function publisherGroup(item){
+ let host="";
+ try{host=new URL(String(item.url||"")).hostname.toLowerCase()}catch{}
+ const isHost=d=>host===d||host.endsWith("."+d);
+ if(labPublisherHosts.some(isHost))return"Labs";
+ if(isHost("energy.gov"))return"DOE";
+ if(host)return"Partners";
+ return ["DOE","Labs","Partners"].includes(item.group)?item.group:"Partners";
+}
 async function archivedDocument(env){
  const doc=await asset(env,"news-archive.json");
- return {items:Array.isArray(doc.items)?doc.items.filter(d=>d.title&&/^https:\/\//.test(d.url||"")):[],
+ return {items:Array.isArray(doc.items)?doc.items.filter(d=>d.title&&/^https:\/\//.test(d.url||"")).map(d=>({...d,group:publisherGroup(d)})):[],
          sources:Array.isArray(doc.sources)?doc.sources:[],checkedAt:doc.updated_at||null,method:doc.method||"First-party public-source discovery"};
 }
 async function syncNews(env){
@@ -61,7 +71,7 @@ async function syncNews(env){
  if(hash===await previousHash(db,"news"))return {changed:false,count:doc.items.length};
  const inserts=[];
  for(const item of doc.items){
-  const id=await digest(item.url);const group=["DOE","Labs","Partners"].includes(item.group)?item.group:"Partners";
+  const id=await digest(item.url);const group=publisherGroup(item);
   inserts.push(db.prepare("INSERT INTO news(id,title,summary,source,url,published_at,category,source_group) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(url) DO UPDATE SET title=excluded.title,summary=excluded.summary,source=excluded.source,published_at=excluded.published_at,category=excluded.category,source_group=excluded.source_group").bind(id,item.title,String(item.summary||"").slice(0,480),item.source||group,item.url,item.source_published_at||item.date||"",item.category||"National challenges",group));
  }
  await sendBatches(db,inserts);
@@ -160,7 +170,9 @@ async function synchronize(env){
  }
  const projects=await syncProjects(env);
  const news=await syncNews(env);
- const connections=await linkProjectsAndCandidates(env);
+ // Private partnership discovery is paused; existing D1 records and code are retained.
+  // Explicit article-to-project hints remain active through syncNews().
+  const connections={links:0,candidates:0,partnerCandidateCollection:"paused"};
  console.log("GIH D1 synchronization",JSON.stringify({projects,news,connections}));
  return {ok:true,projects,news,connections};
 }
@@ -187,7 +199,7 @@ async function apiNews(env,ctx){
   if((count?.n||0)<1)ctx.waitUntil(synchronize(env).catch(e=>console.error("GIH D1 bootstrap",e)));
   const rows=(await env.DB.prepare("SELECT n.title,n.summary,n.source,n.url,n.published_at AS date,n.published_at AS source_published_at,n.category,n.source_group AS 'group',e.gih_added_at,e.gih_added_date FROM news n LEFT JOIN news_editorial e ON e.url=n.url ORDER BY COALESCE(e.gih_added_at,e.gih_added_date,n.published_at) DESC LIMIT 1000").all()).results;
   const seen=new Set();
-  const merged=[...fallback.items,...rows].filter(i=>{if(seen.has(i.url))return false;seen.add(i.url);return true}).sort((a,b)=>String(b.gih_added_at||b.gih_added_date||b.date||"").localeCompare(String(a.gih_added_at||a.gih_added_date||a.date||"")));
+  const merged=[...fallback.items,...rows].filter(i=>{if(seen.has(i.url))return false;seen.add(i.url);return true}).map(i=>({...i,group:publisherGroup(i)})).sort((a,b)=>String(b.gih_added_at||b.gih_added_date||b.date||"").localeCompare(String(a.gih_added_at||a.gih_added_date||a.date||"")));
   return respond({...fallback,items:merged,archiveEnabled:true});
  }catch(e){console.error("News API database fallback",e);ctx.waitUntil(synchronize(env).catch(x=>console.error("GIH D1 seed",x)));return respond({...fallback,archiveEnabled:false})}
 }

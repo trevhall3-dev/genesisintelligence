@@ -1,6 +1,7 @@
 name: Collect national laboratory Genesis news
 on:
   push:
+    branches: [main]
     paths:
       - 'scripts/collect_genesis_news.py'
       - '.github/workflows/refresh-lab-news.yml'

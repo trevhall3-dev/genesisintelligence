@@ -17,7 +17,20 @@ const primarySources=[
 const state={news:[],projects:[],challenges:[],sources:[],health:null,archiveAt:"",registryLabel:"Official DOE selection registry",section:"All",tier:"All",area:null,limit:40,activeQuery:"",context:""};
 const cache=new Set();
 function dedupe(rows){cache.clear();return rows.filter(row=>{const key=row.url||row.title;if(cache.has(key))return false;cache.add(key);return true})}
-function filterType(item){if(["DOE","Labs","Partners"].includes(item.group))return item.group;const s=String(item.source||"").toLowerCase();if(/department of energy|^doe$|energy\.gov/.test(s))return"DOE";if(/national lab|oak ridge|argonne|brookhaven|berkeley|fermilab|pnnl|llnl|sandia|los alamos/.test(s))return"Labs";return"Partners"}
+const labPublisherHosts=["anl.gov","ornl.gov","bnl.gov","lbl.gov","pnnl.gov","lanl.gov","llnl.gov","fnal.gov","sandia.gov","slac.stanford.edu","jlab.org","pppl.gov","nrel.gov","inl.gov","ameslab.gov","srnl.gov","netl.doe.gov","frib.msu.edu"];
+function publisherGroup(item){
+ let host="";
+ try{host=new URL(String(item.url||"")).hostname.toLowerCase()}catch{}
+ const isHost=d=>host===d||host.endsWith("."+d);
+ if(labPublisherHosts.some(isHost))return"Labs";
+ if(isHost("energy.gov"))return"DOE";
+ if(host)return"Partners";
+ const source=String(item.source||"").toLowerCase();
+ if(/national laborator|oak ridge|argonne|brookhaven|berkeley lab|pnnl|llnl|sandia|los alamos|fermilab/.test(source))return"Labs";
+ if(/department of energy|^doe$/.test(source))return"DOE";
+ return ["DOE","Labs","Partners"].includes(item.group)?item.group:"Partners";
+}
+function filterType(item){return publisherGroup(item)}
 function isMatch(d,q){if(!q)return true;const hay=[d.title,d.summary,d.description,d.classification,d.source,d.institution,d.principal_investigator,d.city,d.state,d.category,d.group,d.source_phase,...(d.categories||[])].join(" ").toLowerCase();return q.split(/\s+/).every(x=>hay.includes(x))}
 function records(){
  const q=state.activeQuery;
@@ -28,7 +41,7 @@ function records(){
  else list=state.news.filter(i=>(state.section!=="Labs"||filterType(i)==="Labs"));
  if(state.area)list=list.filter(i=>(i.categories||[i.category]).includes(state.area));
  if(state.context)list=list.filter(i=>(state.area==="National challenges"?i.group:i.source)===state.context);
- if(state.tier!=="All"&&state.section!=="Projects"&&state.section!=="Sources")list=list.filter(i=>filterType(i)===state.tier);
+ if(state.tier!=="All"&&state.section!=="Projects"&&state.section!=="Sources")list=list.filter(i=>!["project","challenge","source"].includes(i.kind)&&filterType(i)===state.tier);
  list=dedupe(list).filter(i=>isMatch(i,q));
  const order=$("sort").value;
  list.sort((a,b)=>order==="az"||state.section==="Projects"&&order==="new"
@@ -57,7 +70,7 @@ function render(){
    '<span class="article-glyph"><i data-lucide="'+(challenge?"target":project?"files":source?"link":"newspaper")+'"></i></span>'+
    '<span class="headline">'+safe(item.title)+'</span><i data-lucide="external-link" class="item-arrow"></i></a>';
   const sourceName=challenge?item.group:project?(item.institution||"Lead institution not listed"):source?item.source||"Official source":item.source||filterType(item);
-  const detail=challenge?"Official DOE challenge · not a project award":project?([item.principal_investigator?"PI: "+item.principal_investigator:"",item.source_phase||"DOE project selection"].filter(Boolean).join(" · ")):source?"Official Genesis reference":item.gih_added_date?"Added to GIH "+dateLabel(item.gih_added_date)+" · Published "+dateLabel(item.source_published_at||item.date):dateLabel(item.date);
+  const detail=challenge?"Official DOE challenge · not a project award":project?([item.principal_investigator?"PI: "+item.principal_investigator:"",item.source_phase||"DOE project selection"].filter(Boolean).join(" · ")):source?"Official Genesis reference":item.gih_added_date?"Added to Genesis Intel "+dateLabel(item.gih_added_date)+" · Published "+dateLabel(item.source_published_at||item.date):dateLabel(item.date);
   const tags=project?'<span class="record-tag">'+safe((item.categories||[item.category]).filter(t=>areas.includes(t)).slice(0,2).map(t=>areaLabels[t]).join(" · "))+'</span>':"";
   return '<article class="compact-item">'+head+'<div class="compact-meta"><span class="article-source">'+safe(sourceName)+'</span><span class="article-date">'+safe(detail)+'</span>'+tags+'</div>'+(challenge&&item.description?'<p class="challenge-description">'+safe(item.description)+'</p>':'')+'</article>';
  }).join("")||'<p class="empty">No records match this view. Try All, clear search, or choose another category.</p>';
@@ -113,8 +126,7 @@ function renderHealth(){
  const projectCount=h?.projects??state.projects.length,newsCount=h?.articles??state.news.length;
  $("collectorHealth").innerHTML='<div class="health-stat"><i data-lucide="database"></i><span>Project records</span><strong>'+Number(projectCount||0)+'</strong></div>'+
  '<div class="health-stat"><i data-lucide="newspaper"></i><span>Archived articles</span><strong>'+Number(newsCount||0)+'</strong></div>'+
- '<div class="health-stat"><i data-lucide="server"></i><span>Database</span><strong>'+safe(status)+'</strong></div>'+
- '<p class="rail-note">Partnership candidates are collected privately and never published here without review.</p>';
+ '<div class="health-stat"><i data-lucide="server"></i><span>Database</span><strong>'+safe(status)+'</strong></div>';
  if(window.lucide)window.lucide.createIcons();
 }
 async function readJson(path){const res=await fetch(path,{cache:"no-cache"});if(!res.ok)throw Error(path+": HTTP "+res.status);return res.json()}
@@ -130,9 +142,9 @@ async function fetchAll(){
   catch{state.projects=[]}
  }
  if(result[1].status==="fulfilled"){
-  const body=result[1].value;state.news=Array.isArray(body.items)?body.items:[];state.sources=body.sources||[];state.archiveAt=body.checkedAt||"";
+  const body=result[1].value;state.news=(Array.isArray(body.items)?body.items:[]).map(i=>({...i,group:publisherGroup(i)}));state.sources=body.sources||[];state.archiveAt=body.checkedAt||"";
  }else{
-  try{const body=await readJson("/news-archive.json");state.news=body.items||[];state.sources=body.sources||[];state.archiveAt=body.updated_at||""}catch{state.news=[];state.sources=[]}
+  try{const body=await readJson("/news-archive.json");state.news=(body.items||[]).map(i=>({...i,group:publisherGroup(i)}));state.sources=body.sources||[];state.archiveAt=body.updated_at||""}catch{state.news=[];state.sources=[]}
  }
  state.challenges=result[3].status==="fulfilled"?(result[3].value.challenges||[]):[];
  state.health=result[2].status==="fulfilled"?result[2].value:null;
@@ -151,10 +163,9 @@ $("searchBtn").onclick=()=>{$("search").focus();state.activeQuery=$("search").va
 $("sort").onchange=render;$("more").onclick=()=>{state.limit+=40;render()};$("refresh").onclick=fetchAll;
 $("researchToggle").onclick=()=>{const el=$("researchSub");el.hidden=!el.hidden;$("researchToggle").setAttribute("aria-expanded",String(!el.hidden))};
 $("viewProjects").onclick=()=>setView("Projects");$("resources").onclick=()=>setView("Sources");
-$("partnershipInfo").onclick=()=>{$("dialogBody").innerHTML='<h2>Partnership Intelligence</h2><p>GIH is collecting potential project collaborators from source-linked Genesis news. Candidate relationships are kept privately in Cloudflare D1 and are not public claims.</p><p>Once evidence has been reviewed, a future build can publish approved relationships and source citations.</p>';$("dialog").showModal()};
-function comingSoon(){$("dialogBody").innerHTML="<h2>Ask Genesis SI</h2><p>Coming Soon. Genesis Intel Hub is currently publishing verified research and editorial intelligence briefings. A conversational assistant may be added in a future release.</p>";$("dialog").showModal()}
+function comingSoon(){$("dialogBody").innerHTML="<h2>Ask Genesis SI</h2><p>Coming Soon. Genesis Intel is currently publishing verified research and editorial intelligence briefings. A conversational assistant may be added in a future release.</p>";$("dialog").showModal()}
 $("askAI").onclick=comingSoon;$("pillarAI").onclick=comingSoon;
-$("about").onclick=()=>{$("dialogBody").innerHTML='<h2>About Genesis Intelligence Hub</h2><p>This is an independent public-source intelligence dashboard about the DOE Genesis Mission. It is not an official DOE website or endorsed by DOE.</p><p>Genesis Intel Hub is an independently developed, cloud-native scientific intelligence platform built to monitor and organize the evolving U.S. Department of Energy Genesis Mission. Powered by Cloudflare serverless infrastructure, a structured SQL intelligence database, Python-based research collectors, GitHub automation and a custom JavaScript dashboard, the platform brings together hundreds of documented projects, official national challenges and continuously collected research news. Its evidence-first methodology emphasizes source traceability, affiliation verification and responsible classification, creating a foundation for future AI-assisted scientific intelligence.</p><p>Project selection status is not equivalent to disbursed funding. Research tags are GIH provisional classifications. News links open original publisher pages in new tabs. Private candidate partnerships are not published.</p><p>Office of Synergy is an independent creative identity.</p>';$("dialog").showModal()};
+$("about").onclick=()=>{$("dialogBody").innerHTML="<h2>About Genesis Intel (SI)</h2><p>This is an independent public-source intelligence dashboard about the DOE Genesis Mission. It is not an official DOE website or endorsed by DOE.</p><p>Genesis Intel is an independently developed, cloud-native scientific intelligence platform built to monitor and organize the evolving U.S. Department of Energy Genesis Mission. Powered by Cloudflare serverless infrastructure, a structured SQL intelligence database, Python-based research collectors, GitHub automation and a custom JavaScript dashboard, the platform brings together hundreds of documented projects, official national challenges and continuously collected research news. Its evidence-first methodology emphasizes source traceability, affiliation verification and responsible classification, creating a foundation for future AI-assisted Super Intelligence.</p><p>Announced project funding does not necessarily reflect money awarded or paid. Research tags are provisional classifications developed by Genesis Intel. News links open original publisher pages in new tabs.</p><h3>Office of Synergy</h3><p>Office of Synergy is an independent creative identity behind Genesis Intel. It is not affiliated with any government office, department, or agency. It reflects a quiet interest in the intersection of human ingenuity, scientific discovery and emerging intelligence. Its name suggests the value of bringing ideas, information and technology together in unexpected ways. The subtle <strong>S and i</strong> carry a nod to scientific intelligence, strategic intelligence and superintelligence.</p>";$("dialog").showModal()};
 $("close").onclick=()=>$("dialog").close();
 render();renderSources();renderHealth();fetchAll();
 

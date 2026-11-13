@@ -1,6 +1,7 @@
 name: Refresh official Genesis project registry daily
 on:
   push:
+    branches: [main]
     paths:
       - 'scripts/import_genesis_projects.py'
       - '.github/workflows/refresh-genesis-projects-daily.yml'

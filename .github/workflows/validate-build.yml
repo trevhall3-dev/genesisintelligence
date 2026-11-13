@@ -45,6 +45,8 @@ jobs:
           assert len(db.execute("SELECT name FROM sqlite_master WHERE type='table'").fetchall())>=8
           print('Validated 297 unique projects,',len(news),'publisher links, header SVG and D1 schema')
           PY
+      - name: Check publisher classification, About copy, navigation, and filters
+        run: node scripts/test-news-classification.cjs
       - name: Compile scheduled collectors
         run: python -m py_compile scripts/import_genesis_projects.py scripts/collect_genesis_news.py
       - name: Validate Cloudflare Worker bundle locally (no deployment)

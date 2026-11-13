@@ -28,3 +28,6 @@ Source: https://www.sandia.gov/labnews/2026/11/05/building-computer-models-that-
 Status: APPROVED for Genesis News.
 Visible label: GENESIS LINK NOT CONFIRMED.
 Do not re-request editorial approval.
+
+## Publisher source classification (approved November 12, 2026)
+News tiers use the **original article publisher** rather than a laboratory, company, or university merely mentioned in a headline. DOE-published pages belong to DOE; official national laboratory publisher sites belong to Labs; other university, industry, media, and independently published stories belong to Partners. These are mutually exclusive publisher labels, not claims of official Genesis partnership or affiliation. All News combines the three categories without repeating a URL. Apply the rules to archived news, fresh collection, D1 reads, and frontend filters. The separate private partnership candidate collector is paused (underlying records and code retained); the general third-party news collector continues.

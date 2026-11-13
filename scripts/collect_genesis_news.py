@@ -57,6 +57,15 @@ def normurl(url):
     p=urlparse(url)
     return urlunparse((p.scheme,p.netloc,p.path,p.params,p.query,""))
 
+LAB_PUBLISHER_HOSTS = ["anl.gov","ornl.gov","bnl.gov","lbl.gov","pnnl.gov","lanl.gov","llnl.gov","fnal.gov","sandia.gov","slac.stanford.edu","jlab.org","pppl.gov","nrel.gov","inl.gov","ameslab.gov","srnl.gov","netl.doe.gov","frib.msu.edu"]
+def publisher_group(url, fallback="Partners"):
+    """Use the page's publisher rather than the organizations discussed in the article."""
+    host=(urlparse(url).hostname or "").lower()
+    is_host=lambda domain: host==domain or host.endswith("."+domain)
+    if any(is_host(domain) for domain in LAB_PUBLISHER_HOSTS):return "Labs"
+    if is_host("energy.gov"):return "DOE"
+    return "Partners" if host else fallback
+
 def permitted(url,host):
     p=urlparse(url)
     return p.scheme=="https" and bool(p.hostname) and (p.hostname==host or p.hostname.endswith("."+host))
@@ -108,7 +117,7 @@ def record(title,url,source,date,summary,project_ids=None,verified_type="publish
         "id":hashlib.sha256(u.encode()).hexdigest()[:20],
         "title":clean(title)[:250],"summary":clean(summary)[:300],
         "source":source["name"],"url":u,"date":date,
-        "group":source["group"],"category":"National challenges","kind":"discovery",
+        "group":publisher_group(u,source["group"]),"category":"National challenges","kind":"discovery",
         "source_method":verified_type,"project_ids":project_ids or []
     }
 
@@ -265,10 +274,10 @@ def collect(channel):
             found,endpoint,method,warning=source_items(source,eligible,channel)
             successes+=1
             for r in found:all_items[r["id"]]=r
-            source_status.append({"name":source["name"],"group":source["group"],"ok":True,"count":len(found),"endpoint":endpoint,"method":method,**({"warning":warning} if warning else {})})
+            source_status.append({"name":source["name"],"group":publisher_group(endpoint,source["group"]),"ok":True,"count":len(found),"endpoint":endpoint,"method":method,**({"warning":warning} if warning else {})})
             print(source["name"],len(found),"Genesis-relevant articles")
         except Exception as e:
-            source_status.append({"name":source["name"],"group":source["group"],"ok":False,"count":0,"error":str(e)[:140]})
+            source_status.append({"name":source["name"],"group":publisher_group(source["url"],source["group"]),"ok":False,"count":0,"error":str(e)[:140]})
             print(source["name"],"failed",str(e)[:140],file=sys.stderr)
     if channel in ("labs","projects"):
         for group,title,url,name in SEED_ARTICLES:
@@ -302,6 +311,7 @@ def merge(channel,found,source_status):
             d={**d,**previous,"project_ids":list(dict.fromkeys(previous.get("project_ids",[])+d.get("project_ids",[])))}
         records[key]=d
     rows=sorted(records.values(),key=lambda x:(x.get("date") or "",x.get("title") or ""),reverse=True)[:4000]
+    for item in rows:item["group"]=publisher_group(item.get("url",""),item.get("group","Partners"))
     old_states={(("DOE Genesis Mission News" if x["name"]=="DOE Genesis Mission" else x["name"])):{**x,"name":("DOE Genesis Mission News" if x["name"]=="DOE Genesis Mission" else x["name"])} for x in old.get("sources",[])}
     for x in source_status:old_states[x["name"]]=x
     statuses=sorted(old_states.values(),key=lambda x:(x.get("group") or "",x["name"]))
