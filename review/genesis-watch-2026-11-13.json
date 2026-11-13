@@ -1,0 +1,112 @@
+{
+  "checked_at": "2026-11-13T13:25:14Z",
+  "items": [
+    {
+      "gih_added_at": "2026-11-13T13:25:14Z",
+      "gih_added_date": "2026-11-13",
+      "date": "2026-11-13",
+      "date_basis": "First repository addition; America/New_York",
+      "classification": "Genesis link not confirmed",
+      "suggested_visible_label": "GENESIS LINK NOT CONFIRMED",
+      "editorial_status": "pending user approval",
+      "publication_approved": false,
+      "feed_published": false,
+      "group": "Labs",
+      "id": "olcf-galaxy-simulation-2026-11-12",
+      "title": "SI-assisted galaxy simulations reach 5.4 trillion particles",
+      "source": "Oak Ridge Leadership Computing Facility",
+      "url": "https://www.olcf.ornl.gov/2026/11/12/galaxy-researchers-leveraging-alcf-and-olcf-systems-named-as-finalists-for-2026-gordon-bell-prize/",
+      "source_published_at": "2026-11-12",
+      "project": "ASURA-FDPS-ML / PHEASANT",
+      "participants": [
+        "Keiya Hirashima (RIKEN / Flatiron Institute), lead",
+        "Argonne / ALCF (Aurora)",
+        "Oak Ridge / OLCF (Frontier)",
+        "Forschungszentrum Juelich (JUPITER)",
+        "University of Tokyo",
+        "Kobe University",
+        "NVIDIA",
+        "Other international collaborators named in official report"
+      ],
+      "what_changed": "New official report documents AI-surrogate-assisted galaxy simulations up to 5.4 trillion particles and Aurora throughput of 144 billion particles per second; Gordon Bell finalist status is secondary to technical results.",
+      "significance": "AI surrogates reduce the cost of resolving supernova feedback, enabling detailed study of star formation and galactic evolution.",
+      "affiliation_evidence": "Official OLCF report credits Director's Discretionary computing allocations and describes AI surrogate models, but identifies no Genesis award or project connection. Searches for ASURA-FDPS-ML and PHEASANT with Genesis and comparison against the 297-project repository registry found no documented linkage. DOE computing use alone is not evidence of Genesis affiliation.",
+      "evidence_urls": [
+        "https://www.olcf.ornl.gov/2026/11/12/galaxy-researchers-leveraging-alcf-and-olcf-systems-named-as-finalists-for-2026-gordon-bell-prize/",
+        "https://pheasant-galaxy.org/",
+        "https://www.energy.gov/documents/genesis-mission-rfa-awards-list"
+      ],
+      "deduplication_note": "Absent from 36-item archive and 56-candidate science review file; new performance results differ from earlier 300-billion-particle work.",
+      "categories": [
+        "AI models",
+        "Infrastructure",
+        "National challenges"
+      ]
+    },
+    {
+      "gih_added_at": "2026-11-13T13:25:14Z",
+      "gih_added_date": "2026-11-13",
+      "date": "2026-11-13",
+      "date_basis": "First repository addition; America/New_York",
+      "classification": "Genesis link not confirmed",
+      "suggested_visible_label": "GENESIS LINK NOT CONFIRMED",
+      "editorial_status": "pending user approval",
+      "publication_approved": false,
+      "feed_published": false,
+      "group": "Labs",
+      "id": "lbl-tem-agent-2026-10-29",
+      "title": "TEM Agent connects natural-language microscope control with computing and data tools",
+      "source": "Lawrence Berkeley National Laboratory",
+      "url": "https://newscenter.lbl.gov/2026/10/29/new-virtual-assistant-streamlines-one-of-the-most-advanced-microscopes/",
+      "source_published_at": "2026-10-29",
+      "project": "TEM Agent",
+      "participants": [
+        "Berkeley Lab / Molecular Foundry / NCEM",
+        "Peter Ercius",
+        "Stephanie Ribet",
+        "Morgan Wall",
+        "Alexander Pattison",
+        "Edward Barnard",
+        "NERSC",
+        "Crucible data platform"
+      ],
+      "what_changed": "Newly discovered October report describes tested natural-language microscope control through constrained MCP actions, tomography and ptychography workflows, and links to NERSC and Crucible. It reports processing in seconds instead of hours and documents an initial sample-tilt error requiring human correction.",
+      "significance": "Could make sophisticated microscopy workflows more accessible and reduce analysis bottlenecks; this is supervised research capability, not evidence of error-free autonomy.",
+      "affiliation_evidence": "Official article credits DOE Office of Science support without Genesis attribution. Peter Ercius participates in Ceder's Genesis autonomous-lab team (registry project A-WILD), but shared personnel do not establish that TEM Agent belongs to that award. No project-specific linkage verified.",
+      "evidence_urls": [
+        "https://newscenter.lbl.gov/2026/10/29/new-virtual-assistant-streamlines-one-of-the-most-advanced-microscopes/",
+        "https://foundry.lbl.gov/2026/10/29/new-virtual-assistant-streamlines-one-of-the-most-advanced-microscopes/",
+        "https://www.nature.com/articles/s41524-026-02103-z",
+        "https://ceder.berkeley.edu/news/professor-ceder-to-lead-new-genesis-mission-project/",
+        "https://www.energy.gov/documents/genesis-mission-rfa-awards-list"
+      ],
+      "deduplication_note": "Absent from archive and review candidates. Foundry republication is treated as the same article; separate from SYNAPS-I X-ray imaging articles.",
+      "categories": [
+        "AI models",
+        "Infrastructure",
+        "Data"
+      ]
+    }
+  ],
+  "other_reviewed": [
+    {
+      "url": "https://www.pnnl.gov/publications/editorial-artificial-intelligence-ion-mobility-spectrometry-mass-spectrometry-omics",
+      "decision": "Skip editorial overview; no independently verified new material technical milestone."
+    },
+    {
+      "url": "https://www.energy.gov/undersecretaryforscience/genesis-mission/listings/genesis-mission-news",
+      "decision": "No new central DOE announcement; latest listed date October 21."
+    },
+    {
+      "url": "https://www.aps.anl.gov/APS-News/2026-10-06/a-new-kind-of-microscope-agentic-ai-turns-simple-language-into-self-guided",
+      "decision": "Previously reported SYNAPS-I agentic imaging demonstration; core experimental results overlap archived Brookhaven report. No new substantive update established."
+    }
+  ],
+  "archive_check": {
+    "count": 36,
+    "latest_added_date": "2026-11-12",
+    "llnl_gih_date": "2026-11-10",
+    "llnl_source_date": "2026-11-04",
+    "production": "Live site inaccessible through web tool; no claim of live sorting or D1 verification."
+  }
+}
