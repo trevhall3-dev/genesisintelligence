@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-13T01:27:24.365822+00:00",
-  "count": 36,
+  "updated_at": "2026-11-13T15:08:00Z",
+  "count": 38,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -127,6 +127,63 @@
     }
   ],
   "items": [
+    {
+      "id": "doe-genesis-national-challenges-2026-11-12",
+      "title": "DOE expands Genesis Mission National Science and Technology Challenges resource",
+      "summary": "DOE's November 12 Genesis Mission challenges page brings together featured national challenges, aligned national laboratory activities, and examples of Genesis awardee projects. It provides explicit challenge-to-project associations that can support future evidence-backed links in Genesis Intel.",
+      "source": "U.S. Department of Energy — Office of the Under Secretary for Science",
+      "url": "https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission-national-science-and-technology-challenges",
+      "source_published_at": "2026-11-12",
+      "group": "DOE",
+      "category": "National challenges",
+      "categories": [
+        "National challenges",
+        "Projects and awards"
+      ],
+      "classification": "confirmed Genesis",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "evidence_urls": [
+        "https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission-national-science-and-technology-challenges"
+      ],
+      "deduplication_note": "Distinct from February challenge announcement and March funding announcement: new official November 12 resource with explicit aligned lab and awardee examples.",
+      "gih_added_at": "2026-11-13T15:08:00Z",
+      "gih_added_date": "2026-11-13",
+      "date": "2026-11-13",
+      "date_basis": "GIH first repository addition; America/New_York"
+    },
+    {
+      "id": "doe-genesis-platform-2026-11-10",
+      "title": "DOE details the American Science and Security Platform at the heart of Genesis Mission",
+      "summary": "DOE's November 10 Genesis Mission Platform page identifies the American Science and Security Platform as the mission's core technology engine, integrating high-performance computing, experimental facilities, scientific data, and production capabilities. It also links to the American Science Cloud and ModCon initiatives.",
+      "source": "U.S. Department of Energy — Office of the Under Secretary for Science",
+      "url": "https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission-platform",
+      "source_published_at": "2026-11-10",
+      "group": "DOE",
+      "category": "Infrastructure",
+      "categories": [
+        "Infrastructure",
+        "Data",
+        "AI models"
+      ],
+      "classification": "confirmed Genesis",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "evidence_urls": [
+        "https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission-platform"
+      ],
+      "deduplication_note": "Official November 10 platform overview; distinct from individual American Science Cloud and ModCon news.",
+      "gih_added_at": "2026-11-13T15:08:00Z",
+      "gih_added_date": "2026-11-13",
+      "date": "2026-11-13",
+      "date_basis": "GIH first repository addition; America/New_York"
+    },
     {
       "id": "lbnl-synaps-i-segmentation-2026-11-10",
       "title": "SYNAPS-I accelerates tomography segmentation from months to minutes",
