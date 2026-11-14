@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14T13:13:51Z",
+  "updated_at": "2026-11-14T15:07:11.689976+00:00",
   "count": 40,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -231,6 +231,19 @@
       "date_basis": "GIH first repository addition; America/New_York"
     },
     {
+      "id": "99b7a49f6d1ee7498699",
+      "title": "Under Secretary Gil’s Letter to the Community: One Year In",
+      "summary": "November 12, 2026 DOE’s Under Secretary for Science reflects on his first year, accomplishments across the Office of Science and Genesis Mission, and what lies ahead.",
+      "source": "DOE Genesis Mission News",
+      "url": "https://www.energy.gov/undersecretaryforscience/articles/under-secretary-gils-letter-community-one-year",
+      "date": "2026-11-12",
+      "group": "DOE",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": []
+    },
+    {
       "id": "lbnl-synaps-i-segmentation-2026-11-10",
       "title": "SYNAPS-I accelerates tomography segmentation from months to minutes",
       "summary": "Berkeley Lab reports a grapevine drought case study reducing image segmentation from months to 15 minutes. Two AI models are running on NERSC and ALCF inference servers; an open-source interface lets tomography users annotate data and train custom models.",
@@ -270,19 +283,6 @@
       "feed_published": true,
       "source_method": "editorially-verified-official-source",
       "deduplication_note": "Absent from the 35-record archive. Distinct from Brookhaven's November 4 reconstruction/autonomous-imaging report: adds segmentation case-study timing, inference deployment and user-workflow details."
-    },
-    {
-      "id": "99b7a49f6d1ee7498699",
-      "title": "Under Secretary Gil’s Letter to the Community: One Year In",
-      "summary": "November 12, 2026 DOE’s Under Secretary for Science reflects on his first year, accomplishments across the Office of Science and Genesis Mission, and what lies ahead.",
-      "source": "DOE Genesis Mission News",
-      "url": "https://www.energy.gov/undersecretaryforscience/articles/under-secretary-gils-letter-community-one-year",
-      "date": "2026-11-12",
-      "group": "DOE",
-      "category": "National challenges",
-      "kind": "discovery",
-      "source_method": "publisher-direct",
-      "project_ids": []
     },
     {
       "title": "Two Genesis projects target faster electric-grid planning",
