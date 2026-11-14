@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-13T23:36:40.257450+00:00",
-  "count": 39,
+  "updated_at": "2026-11-14T13:13:51Z",
+  "count": 40,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -128,6 +128,52 @@
   ],
   "items": [
     {
+      "id": "bnl-unsupervised-jet-signals-2026-11-13",
+      "title": "Brookhaven SI method separates particle-jet signals from collision backgrounds",
+      "summary": "An unpaired, unsupervised generative model reconstructed jet positions, energies and internal structure more accurately than conventional methods in simulated sPHENIX data. Brookhaven explicitly links the work to a Baruch-led Genesis Phase I project; application to experimental data is next.",
+      "source": "Brookhaven National Laboratory",
+      "url": "https://www.bnl.gov/newsroom/news.php?a=123018",
+      "source_published_at": "2026-11-13",
+      "gih_added_at": "2026-11-14T13:13:51Z",
+      "gih_added_date": "2026-11-14",
+      "date": "2026-11-14",
+      "date_basis": "GIH first repository addition; America/New_York",
+      "group": "Labs",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "Data",
+        "National challenges"
+      ],
+      "kind": "discovery",
+      "project": "Characterizing Jet Modification in the Quark-Gluon Plasma Using Unsupervised, Cycle-Consistent Generative Learning",
+      "project_ids": [
+        "genesis-1dfe5b62d2fa07e82709"
+      ],
+      "participants": [
+        "Baruch College / RFCUNY (Genesis project lead Stefan Bathe)",
+        "Brookhaven National Laboratory (Yeonju Go, Dmitrii Torbunov and colleagues)",
+        "Stony Brook University",
+        "Columbia University",
+        "University of Colorado Boulder"
+      ],
+      "what_changed": "Unpaired, unsupervised generative learning improves reconstruction of jet positions, energies and internal structure in simulated sPHENIX calorimeter data, especially for larger jets. Experimental data application remains future work.",
+      "significance": "Could improve precision in probing quark-gluon plasma without requiring paired training examples unavailable in real experiments.",
+      "classification": "confirmed Genesis",
+      "affiliation_evidence": "Brookhaven explicitly connects this work to the named Baruch-led Genesis Phase I award. DOE's official RFA roster independently lists the exact project title and Stefan Bathe at RFCUNY / Baruch. The reported underlying study credits LDRD and DOE Office of Science support; linkage does not imply all study funding came from Genesis.",
+      "evidence_urls": [
+        "https://www.bnl.gov/newsroom/news.php?a=123018",
+        "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
+        "https://www.bnl.gov/newsroom/news.php?a=223070&btw=1"
+      ],
+      "suggested_visible_label": null,
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "source_method": "editorially-verified-official-source",
+      "deduplication_note": "Absent from 39-item archive and science-discoveries review queue; substantive new research report, distinct from archived SYNAPS-I imaging results."
+    },
+    {
       "id": "doe-genesis-national-challenges-2026-11-12",
       "title": "DOE expands Genesis Mission National Science and Technology Challenges resource",
       "summary": "DOE's November 12 Genesis Mission challenges page brings together featured national challenges, aligned national laboratory activities, and examples of Genesis awardee projects. It provides explicit challenge-to-project associations that can support future evidence-backed links in Genesis Intel.",
@@ -185,19 +231,6 @@
       "date_basis": "GIH first repository addition; America/New_York"
     },
     {
-      "id": "99b7a49f6d1ee7498699",
-      "title": "Under Secretary Gil’s Letter to the Community: One Year In",
-      "summary": "November 12, 2026 DOE’s Under Secretary for Science reflects on his first year, accomplishments across the Office of Science and Genesis Mission, and what lies ahead.",
-      "source": "DOE Genesis Mission News",
-      "url": "https://www.energy.gov/undersecretaryforscience/articles/under-secretary-gils-letter-community-one-year",
-      "date": "2026-11-12",
-      "group": "DOE",
-      "category": "National challenges",
-      "kind": "discovery",
-      "source_method": "publisher-direct",
-      "project_ids": []
-    },
-    {
       "id": "lbnl-synaps-i-segmentation-2026-11-10",
       "title": "SYNAPS-I accelerates tomography segmentation from months to minutes",
       "summary": "Berkeley Lab reports a grapevine drought case study reducing image segmentation from months to 15 minutes. Two AI models are running on NERSC and ALCF inference servers; an open-source interface lets tomography users annotate data and train custom models.",
@@ -237,6 +270,19 @@
       "feed_published": true,
       "source_method": "editorially-verified-official-source",
       "deduplication_note": "Absent from the 35-record archive. Distinct from Brookhaven's November 4 reconstruction/autonomous-imaging report: adds segmentation case-study timing, inference deployment and user-workflow details."
+    },
+    {
+      "id": "99b7a49f6d1ee7498699",
+      "title": "Under Secretary Gil’s Letter to the Community: One Year In",
+      "summary": "November 12, 2026 DOE’s Under Secretary for Science reflects on his first year, accomplishments across the Office of Science and Genesis Mission, and what lies ahead.",
+      "source": "DOE Genesis Mission News",
+      "url": "https://www.energy.gov/undersecretaryforscience/articles/under-secretary-gils-letter-community-one-year",
+      "date": "2026-11-12",
+      "group": "DOE",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "title": "Two Genesis projects target faster electric-grid planning",
