@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-14T15:07:11.689976+00:00",
-  "count": 40,
+  "updated_at": "2026-11-15T16:24:15.805Z",
+  "count": 41,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -127,6 +127,54 @@
     }
   ],
   "items": [
+    {
+      "id": "lbl-tem-agent-2026-10-29",
+      "title": "TEM Agent connects natural-language microscope control with computing and data tools",
+      "summary": "Berkeley Lab's TEM Agent turns natural-language requests into supervised microscopy workflows, connecting advanced electron microscopes with tomography and ptychography tools, NERSC computing and the Crucible data platform. Researchers report processing tasks in seconds instead of hours, with human correction still essential. No project-specific Genesis Mission funding or affiliation has been verified.",
+      "source": "Lawrence Berkeley National Laboratory",
+      "url": "https://newscenter.lbl.gov/2026/10/29/new-virtual-assistant-streamlines-one-of-the-most-advanced-microscopes/",
+      "source_published_at": "2026-10-29",
+      "gih_added_at": "2026-11-15T16:24:15.805Z",
+      "gih_added_date": "2026-11-15",
+      "date": "2026-11-15",
+      "date_basis": "GIH first Genesis News archive addition; America/New_York",
+      "group": "Labs",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "Infrastructure",
+        "Data"
+      ],
+      "kind": "discovery",
+      "project": "TEM Agent",
+      "participants": [
+        "Berkeley Lab / Molecular Foundry / NCEM",
+        "Peter Ercius",
+        "Stephanie Ribet",
+        "Morgan Wall",
+        "Alexander Pattison",
+        "Edward Barnard",
+        "NERSC",
+        "Crucible data platform"
+      ],
+      "what_changed": "Newly discovered October report describes tested natural-language microscope control through constrained MCP actions, tomography and ptychography workflows, and links to NERSC and Crucible. It reports processing in seconds instead of hours and documents an initial sample-tilt error requiring human correction.",
+      "significance": "Could make sophisticated microscopy workflows more accessible and reduce analysis bottlenecks; this is supervised research capability, not evidence of error-free autonomy.",
+      "classification": "GENESIS LINK NOT CONFIRMED",
+      "suggested_visible_label": "GENESIS LINK NOT CONFIRMED",
+      "affiliation_evidence": "Official article credits DOE Office of Science support without Genesis attribution. Peter Ercius participates in Ceder's Genesis autonomous-lab team (registry project A-WILD), but shared personnel do not establish that TEM Agent belongs to that award. No project-specific linkage verified.",
+      "evidence_urls": [
+        "https://newscenter.lbl.gov/2026/10/29/new-virtual-assistant-streamlines-one-of-the-most-advanced-microscopes/",
+        "https://foundry.lbl.gov/2026/10/29/new-virtual-assistant-streamlines-one-of-the-most-advanced-microscopes/",
+        "https://www.nature.com/articles/s41524-026-02103-z",
+        "https://ceder.berkeley.edu/news/professor-ceder-to-lead-new-genesis-mission-project/",
+        "https://www.energy.gov/documents/genesis-mission-rfa-awards-list"
+      ],
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "source_method": "editorially-verified-official-source",
+      "deduplication_note": "Absent from archive and review candidates. Foundry republication is treated as the same article; separate from SYNAPS-I X-ray imaging articles."
+    },
     {
       "id": "bnl-unsupervised-jet-signals-2026-11-13",
       "title": "Brookhaven SI method separates particle-jet signals from collision backgrounds",
