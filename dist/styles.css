@@ -65,6 +65,7 @@ body{font-size:16px;line-height:1.37}
 .article-source{color:#A3FF38;font-weight:700}
 .article-date{color:#B0C3D1}
 .record-tag{color:#89B3A0;font-size:12px}
+.news-affiliation-label{font-size:10px;line-height:1.2;letter-spacing:.02em;font-weight:750;color:#F1CD8A;border:1px solid #8D7042;border-radius:3px;padding:1px 4px;white-space:nowrap}
 .research-sub #partnershipInfo{color:#ADD9B2;border-top:1px solid #2A4C4B;margin-top:4px;padding-top:10px}
 .research-sub #partnershipInfo::before{display:none}
 .research-sub #partnershipInfo .lucide{width:15px;height:15px;color:#9AFF14}
