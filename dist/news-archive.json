@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-15T16:24:15.805Z",
-  "count": 41,
+  "updated_at": "2026-11-15T18:15:00Z",
+  "count": 42,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -127,6 +127,24 @@
     }
   ],
   "items": [
+    {
+      "id": "weekly-genesis-intelligence-issue-002-2026-11-15",
+      "title": "Weekly Genesis Intelligence Briefing — Issue 002 (Nov 8–14, 2026)",
+      "summary": "From National Ambition to Scientific Execution: DOE's integrated Genesis architecture, first-year scale, Brookhaven particle-physics AI, and links between the 33 existing National Challenges and laboratory projects.",
+      "source": "Genesis Intel",
+      "url": "https://genesisintelhub.com/briefings/2026-11-15.html",
+      "source_published_at": "2026-11-15",
+      "gih_added_at": "2026-11-15T18:15:00Z",
+      "gih_added_date": "2026-11-15",
+      "date": "2026-11-15",
+      "group": "DOE",
+      "category": "Infrastructure",
+      "kind": "weekly-briefing",
+      "classification": "Independent editorial briefing",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true
+    },
     {
       "id": "lbl-tem-agent-2026-10-29",
       "title": "TEM Agent connects natural-language microscope control with computing and data tools",
