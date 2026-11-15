@@ -129,6 +129,19 @@ body{font-size:16px;line-height:1.37}
 .right-rail>.weekly-feature{margin-bottom:10px;padding:11px}
 .right-rail .weekly-feature-row{display:block}
 .right-rail .weekly-read{margin-top:10px}
+
+/* Persistent weekly briefing history: compact, accessible, newest first. */
+.weekly-issue-list{display:flex;flex-direction:column;gap:0}
+.weekly-issue{display:block;border-top:1px solid #426452;padding:10px 4px 11px;color:#eaf6eb;text-decoration:none;border-radius:3px}
+.weekly-issue:first-child{border-top:0;padding-top:5px}
+.weekly-issue strong{display:block;color:#e7ffd7;font-size:13px;line-height:1.35}
+.weekly-issue p{font-size:12px;line-height:1.45;margin:4px 0 0;color:#c1d8cf}
+.weekly-issue:hover,.weekly-issue:focus-visible{background:#214633;color:#fff}
+.weekly-issue:hover strong,.weekly-issue:focus-visible strong{color:#bdff7e}
+.weekly-issue:focus-visible{outline:2px solid #adff58;outline-offset:2px}
+.weekly-issue[aria-current="true"] strong{color:#baff76}
+.news-new-label{display:inline-block;white-space:nowrap;font-size:10px;font-weight:800;letter-spacing:.05em;line-height:1.2;padding:1px 4px;border:1px solid #8baa55;color:#d3f99d;border-radius:3px}
+
 .source-disclosure{border-top:1px solid #29474b;padding-top:7px}
 .source-disclosure summary{cursor:pointer;color:#b9f78d;font-size:13px;font-weight:700;padding:7px 3px}
 .source-disclosure summary:focus-visible{outline:2px solid #9aff14}
