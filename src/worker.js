@@ -191,17 +191,30 @@ async function apiProjects(env,ctx){
  // Never hide public project records because the D1 import is still running.
  return respond(await classifiedRoster(env));
 }
+function applyEditorialNewsOrder(items){
+ const ordered=[...items];
+ for(const article of items){
+  if(!article.editorial_feed_after_id)continue;
+  const from=ordered.findIndex(i=>i.id===article.id);
+  const anchor=ordered.findIndex(i=>i.id===article.editorial_feed_after_id);
+  if(from<0||anchor<0||from===anchor||from===anchor+1)continue;
+  ordered.splice(from,1);
+  const newAnchor=ordered.findIndex(i=>i.id===article.editorial_feed_after_id);
+  ordered.splice(newAnchor+1,0,article);
+ }
+ return ordered;
+}
 async function apiNews(env,ctx){
  const fallback=await archivedDocument(env);
- if(!env.DB)return respond({...fallback,archiveEnabled:false});
+ if(!env.DB)return respond({...fallback,items:applyEditorialNewsOrder(fallback.items),archiveEnabled:false});
  try{
   const count=await env.DB.prepare("SELECT COUNT(*) AS n FROM news").first();
   if((count?.n||0)<1)ctx.waitUntil(synchronize(env).catch(e=>console.error("GIH D1 bootstrap",e)));
   const rows=(await env.DB.prepare("SELECT n.title,n.summary,n.source,n.url,n.published_at AS date,n.published_at AS source_published_at,n.category,n.source_group AS 'group',e.gih_added_at,e.gih_added_date FROM news n LEFT JOIN news_editorial e ON e.url=n.url ORDER BY COALESCE(e.gih_added_at,e.gih_added_date,n.published_at) DESC LIMIT 1000").all()).results;
   const seen=new Set();
   const merged=[...fallback.items,...rows].filter(i=>{if(seen.has(i.url))return false;seen.add(i.url);return true}).map(i=>({...i,group:publisherGroup(i)})).sort((a,b)=>String(b.gih_added_at||b.gih_added_date||b.date||"").localeCompare(String(a.gih_added_at||a.gih_added_date||a.date||"")));
-  return respond({...fallback,items:merged,archiveEnabled:true});
- }catch(e){console.error("News API database fallback",e);ctx.waitUntil(synchronize(env).catch(x=>console.error("GIH D1 seed",x)));return respond({...fallback,archiveEnabled:false})}
+  return respond({...fallback,items:applyEditorialNewsOrder(merged),archiveEnabled:true});
+ }catch(e){console.error("News API database fallback",e);ctx.waitUntil(synchronize(env).catch(x=>console.error("GIH D1 seed",x)));return respond({...fallback,items:applyEditorialNewsOrder(fallback.items),archiveEnabled:false})}
 }
 async function apiHealth(env){
  const base={databaseBound:!!env.DB,version:"2.1",partnershipsPublic:false};
