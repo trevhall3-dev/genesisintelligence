@@ -28,5 +28,9 @@
       "database_name": "genesis-intelligence-db",
       "database_id": "ce5064b8-96ea-4729-ab47-3bd78da05cea"
     }
-  ]
+  ],
+  "vars": {
+    "ACCESS_TEAM_DOMAIN": "steep-rice-85bf.cloudflareaccess.com",
+    "ACCESS_AUD_API": "2c0c541fab56d43fc41661368f89e7c33395d1580545ffa3e8c8a3072fbec6af"
+  }
 }
