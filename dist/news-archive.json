@@ -173,7 +173,8 @@
       "publication_approved": true,
       "feed_published": true,
       "source_method": "editorially-verified-official-source",
-      "deduplication_note": "Absent from archive and review candidates. Foundry republication is treated as the same article; separate from SYNAPS-I X-ray imaging articles."
+      "deduplication_note": "Absent from archive and review candidates. Foundry republication is treated as the same article; separate from SYNAPS-I X-ray imaging articles.",
+      "editorial_feed_after_id": "99b7a49f6d1ee7498699"
     },
     {
       "id": "bnl-unsupervised-jet-signals-2026-11-13",
