@@ -7,7 +7,9 @@ const DDL=[
 "CREATE TABLE IF NOT EXISTS visitor_events(id INTEGER PRIMARY KEY AUTOINCREMENT,session_id TEXT NOT NULL,event_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,event_type TEXT NOT NULL CHECK(event_type IN ('page_view','search','project_open','article_open','briefing_open','section_view','source_open')),path TEXT,section TEXT,record_id TEXT,search_result_count INTEGER,FOREIGN KEY(session_id) REFERENCES visitor_sessions(session_id))",
 "CREATE INDEX IF NOT EXISTS idx_vi_events_date ON visitor_events(event_at)",
 "CREATE INDEX IF NOT EXISTS idx_vi_events_type_date ON visitor_events(event_type,event_at)",
-"CREATE INDEX IF NOT EXISTS idx_vi_events_session ON visitor_events(session_id,event_at)"
+"CREATE INDEX IF NOT EXISTS idx_vi_events_session ON visitor_events(session_id,event_at)",
+"CREATE TABLE IF NOT EXISTS visitor_ip_observations(session_id TEXT NOT NULL,ip_address TEXT NOT NULL,first_seen_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,last_seen_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,country TEXT,region TEXT,city TEXT,asn INTEGER,network_name TEXT,device_type TEXT,browser_family TEXT,referrer_host TEXT,last_path TEXT,event_count INTEGER NOT NULL DEFAULT 0,pageviews INTEGER NOT NULL DEFAULT 0,PRIMARY KEY(session_id,ip_address))",
+"CREATE INDEX IF NOT EXISTS idx_vi_ip_recent ON visitor_ip_observations(last_seen_at DESC)",
 ];
 let ready;
 async function init(db){if(!ready)ready=(async()=>{for(const sql of DDL)await db.prepare(sql).run()})().catch(e=>{ready=null;throw e});return ready}
@@ -17,6 +19,16 @@ function clean(v,n=90){return typeof v==="string"?v.replace(/[<>\x00-\x1f]/g,"")
 function pathOnly(v){const p=clean(v,180);return p.startsWith("/")&&!p.startsWith("//")&&!p.includes("?")&&!p.includes("#")?p:"/"}
 function family(ua,kind){if(kind==="device")return /bot|crawler|spider/i.test(ua)?"bot":/ipad|tablet/i.test(ua)?"tablet":/mobile|iphone|android/i.test(ua)?"mobile":"desktop";if(kind==="browser")return /Edg\//.test(ua)?"Edge":/Firefox\//.test(ua)?"Firefox":/Chrome\//.test(ua)?"Chrome":/Safari\//.test(ua)?"Safari":"Other";return /Windows/i.test(ua)?"Windows":/iPhone|iPad|iOS/i.test(ua)?"iOS":/Android/i.test(ua)?"Android":/Mac OS/i.test(ua)?"macOS":/Linux/i.test(ua)?"Linux":"Other"}
 function host(v){try{const u=new URL(v);return /^https?:$/.test(u.protocol)?u.hostname.slice(0,120):""}catch{return""}}
+// Capture only the Cloudflare edge's connecting-IP headers, not browser-provided
+// X-Forwarded-For fields. Some configurations preserve the real IPv6 separately.
+function connectingIP(req){
+ const raw=req.headers.get("cf-connecting-ipv6")||req.headers.get("cf-connecting-ip")||"";
+ const ip=String(raw).trim();
+ if(!ip||ip.length>45||!/^[0-9a-fA-F:.]+$/.test(ip))return "";
+ if(ip.includes(":"))return ip.split(":").length>=3?ip:"";
+ const octets=ip.split(".");
+ return octets.length===4&&octets.every(n=>/^\d{1,3}$/.test(n)&&Number(n)<=255)?ip:"";
+}
 export async function visitorEvent(req,env){
  if(req.method!=="POST")return json({error:"Method not allowed"},405);
  if(!env.DB)return json({error:"Unavailable"},503);
@@ -36,7 +48,13 @@ export async function visitorEvent(req,env){
  const s=env.DB.prepare("INSERT INTO visitor_sessions(session_id,country,region,city,asn,network_name,device_type,browser_family,os_family,referrer_host,landing_path,pageviews,events) VALUES(?,?,?,?,?,?,?,?,?,?,?,0,0) ON CONFLICT(session_id) DO NOTHING").bind(data.session,clean(cf.country,2),clean(cf.region,80),clean(cf.city,80),Number(cf.asn)||null,clean(cf.asOrganization,120),family(ua,"device"),family(ua,"browser"),family(ua,"os"),host(data.referrer),path);
  const e=env.DB.prepare("INSERT INTO visitor_events(session_id,event_type,path,section,record_id,search_result_count) VALUES(?,?,?,?,?,?)").bind(data.session,data.type,path,section,record,count);
  const u=env.DB.prepare("UPDATE visitor_sessions SET last_seen_at=CURRENT_TIMESTAMP,pageviews=pageviews+?,events=events+1 WHERE session_id=?").bind(data.type==="page_view"?1:0,data.session);
- await env.DB.batch([s,e,u]);
+ const batch=[s,e,u];
+ const ip=connectingIP(req);
+ if(ip){
+  // Keep a rolling observation per session and IP; no raw IP in logs or public routes.
+  batch.push(env.DB.prepare("INSERT INTO visitor_ip_observations(session_id,ip_address,country,region,city,asn,network_name,device_type,browser_family,referrer_host,last_path,event_count,pageviews) VALUES(?,?,?,?,?,?,?,?,?,?,?,1,?) ON CONFLICT(session_id,ip_address) DO UPDATE SET last_seen_at=CURRENT_TIMESTAMP,last_path=excluded.last_path,event_count=event_count+1,pageviews=pageviews+excluded.pageviews").bind(data.session,ip,clean(cf.country,2),clean(cf.region,80),clean(cf.city,80),Number(cf.asn)||null,clean(cf.asOrganization,120),family(ua,"device"),family(ua,"browser"),host(data.referrer),path,data.type==="page_view"?1:0));
+ }
+ await env.DB.batch(batch);
  return new Response(null,{status:204,headers:{"cache-control":"no-store"}});
  }catch(err){console.error("Visitor event write failed",err);return json({error:"Temporarily unavailable"},503)}
 }
@@ -84,20 +102,22 @@ export async function visitorAdmin(req,env){
  if(!env.DB)return json({error:"Database unavailable"},503);
  try{
  await init(env.DB);
- const [summary,events,countries,networks,sections]=await Promise.all([
+ const [summary,events,countries,networks,sections,ipConnections]=await Promise.all([
  env.DB.prepare("SELECT COUNT(*) sessions,COALESCE(SUM(pageviews),0) pageviews,COALESCE(SUM(events),0) events FROM visitor_sessions WHERE first_seen_at>=datetime('now','-30 days')").first(),
  env.DB.prepare("SELECT event_type,COUNT(*) total FROM visitor_events WHERE event_at>=datetime('now','-30 days') GROUP BY event_type ORDER BY total DESC").all(),
  env.DB.prepare("SELECT country,COUNT(*) total FROM visitor_sessions WHERE first_seen_at>=datetime('now','-30 days') GROUP BY country ORDER BY total DESC LIMIT 20").all(),
  env.DB.prepare("SELECT asn,network_name,COUNT(*) total FROM visitor_sessions WHERE first_seen_at>=datetime('now','-30 days') GROUP BY asn,network_name ORDER BY total DESC LIMIT 20").all(),
- env.DB.prepare("SELECT section,COUNT(*) total FROM visitor_events WHERE event_at>=datetime('now','-30 days') AND section!='' GROUP BY section ORDER BY total DESC LIMIT 20").all()
+ env.DB.prepare("SELECT section,COUNT(*) total FROM visitor_events WHERE event_at>=datetime('now','-30 days') AND section!='' GROUP BY section ORDER BY total DESC LIMIT 20").all(),
+ env.DB.prepare("SELECT ip_address,MAX(last_seen_at) AS last_seen_at,MIN(first_seen_at) AS first_seen_at,COUNT(DISTINCT session_id) AS sessions,SUM(pageviews) AS pageviews,SUM(event_count) AS events,MAX(network_name) AS network_name,MAX(asn) AS asn,MAX(country) AS country,MAX(region) AS region,MAX(city) AS city,MAX(device_type) AS device_type,MAX(referrer_host) AS referrer_host FROM visitor_ip_observations WHERE last_seen_at>=datetime('now','-30 days') GROUP BY ip_address ORDER BY last_seen_at DESC LIMIT 250").all()
  ]);
- return json({period:"last 30 days",summary,events:events.results,countries:countries.results,networks:networks.results,sections:sections.results});
+ return json({period:"last 30 days",summary,events:events.results,countries:countries.results,networks:networks.results,sections:sections.results,ipConnections:ipConnections.results,ipRetentionDays:30});
  }catch(err){console.error("Visitor admin read failed",err);return json({error:"Analytics unavailable"},503)}
 }
 export async function visitorCleanup(env){
  if(!env.DB)return;
  await init(env.DB);
  await env.DB.batch([
+ env.DB.prepare("DELETE FROM visitor_ip_observations WHERE last_seen_at<datetime('now','-30 days')"),
  env.DB.prepare("DELETE FROM visitor_events WHERE event_at<datetime('now','-90 days')"),
  env.DB.prepare("DELETE FROM visitor_sessions WHERE last_seen_at<datetime('now','-90 days')")
  ]);
