@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T18:15:00Z",
+  "updated_at": "2026-11-15T20:36:18.834Z",
   "count": 42,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -143,7 +143,11 @@
       "classification": "Independent editorial briefing",
       "editorial_status": "approved",
       "publication_approved": true,
-      "feed_published": true
+      "feed_published": true,
+      "briefing_issue": "002",
+      "briefing_period": "November 8–14, 2026",
+      "briefing_teaser": "From National Ambition to Scientific Execution: DOE architecture, mission scale, Brookhaven scientific AI, and National Challenges in action.",
+      "briefing_path": "/briefings/2026-11-15"
     },
     {
       "id": "lbl-tem-agent-2026-10-29",
@@ -488,7 +492,10 @@
       "kind": "briefing",
       "source_method": "editorial-synthesis-of-linked-original-sources",
       "editorial_status": "approved",
-      "briefing_issue": "001"
+      "briefing_issue": "001",
+      "briefing_period": "November 1–7, 2026",
+      "briefing_teaser": "Genesis Infrastructure Takes Shape: Argonne’s AI computing expansion, Aclara’s rare-earth digital twin, University of Oklahoma research, and PNNL scientific AI initiatives.",
+      "briefing_path": "/briefings/2026-11-07.html"
     },
     {
       "id": "38ec666710042c50cc29",
