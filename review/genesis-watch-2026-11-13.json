@@ -44,15 +44,15 @@
       ]
     },
     {
-      "gih_added_at": "2026-11-13T13:25:14Z",
-      "gih_added_date": "2026-11-13",
-      "date": "2026-11-13",
-      "date_basis": "First repository addition; America/New_York",
+      "gih_added_at": "2026-11-15T16:24:15.805Z",
+      "gih_added_date": "2026-11-15",
+      "date": "2026-11-15",
+      "date_basis": "First Genesis News archive addition; America/New_York",
       "classification": "Genesis link not confirmed",
       "suggested_visible_label": "GENESIS LINK NOT CONFIRMED",
-      "editorial_status": "pending user approval",
-      "publication_approved": false,
-      "feed_published": false,
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
       "group": "Labs",
       "id": "lbl-tem-agent-2026-10-29",
       "title": "TEM Agent connects natural-language microscope control with computing and data tools",
@@ -85,7 +85,9 @@
         "AI models",
         "Infrastructure",
         "Data"
-      ]
+      ],
+      "approved_at": "2026-11-15T16:24:15.805Z",
+      "published_to_archive_at": "2026-11-15T16:24:15.805Z"
     }
   ],
   "other_reviewed": [
