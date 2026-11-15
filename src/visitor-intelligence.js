@@ -41,21 +41,43 @@ export async function visitorEvent(req,env){
  }catch(err){console.error("Visitor event write failed",err);return json({error:"Temporarily unavailable"},503)}
 }
 function b64(s){return Uint8Array.from(atob(s.replace(/-/g,"+").replace(/_/g,"/").padEnd(Math.ceil(s.length/4)*4,"=")),c=>c.charCodeAt(0))}
+function accessDenial(reason){
+ // Diagnostic categories only. Never log tokens, cookies, personal identities, or keys.
+ console.warn("Genesis Visitor Intelligence: Access JWT rejected",reason);
+ return false;
+}
+function accessCookie(req){
+ // Cloudflare supplies a signed JWT in the assertion header; some routed browser
+ // requests only carry the CF_Authorization cookie. Both MUST pass full verification.
+ const cookie=(req.headers.get("cookie")||"").split(";").map(s=>s.trim()).find(s=>s.startsWith("CF_Authorization="));
+ if(!cookie)return "";
+ try{return decodeURIComponent(cookie.slice("CF_Authorization=".length))}catch{return ""}
+}
 async function accessAuthorized(req,env){
- if(!env.ACCESS_TEAM_DOMAIN||!env.ACCESS_AUD_API)return false;
- const token=req.headers.get("cf-access-jwt-assertion");if(!token)return false;
- const parts=token.split(".");if(parts.length!==3)return false;
+ if(!env.ACCESS_TEAM_DOMAIN||!env.ACCESS_AUD_API)return accessDenial("missing-worker-configuration");
+ const token=req.headers.get("cf-access-jwt-assertion")||accessCookie(req);
+ if(!token)return accessDenial("missing-access-assertion-and-cookie");
+ const parts=token.split(".");
+ if(parts.length!==3)return accessDenial("malformed-jwt");
  try{
- const header=JSON.parse(new TextDecoder().decode(b64(parts[0]))),payload=JSON.parse(new TextDecoder().decode(b64(parts[1])));
- const domain=env.ACCESS_TEAM_DOMAIN.replace(/^https?:\/\//,"").replace(/\/$/,"");
- if(!/^[a-z0-9.-]+\.cloudflareaccess\.com$/i.test(domain)||header.alg!=="RS256"||!header.kid)return false;
- const now=Math.floor(Date.now()/1000);
- if(payload.iss!=="https://"+domain||!Array.isArray(payload.aud)||!payload.aud.includes(env.ACCESS_AUD_API)||payload.exp<=now||payload.nbf>now)return false;
- const res=await fetch("https://"+domain+"/cdn-cgi/access/certs");if(!res.ok)return false;
- const keys=(await res.json()).keys||[];const jwk=keys.find(k=>k.kid===header.kid);if(!jwk)return false;
- const key=await crypto.subtle.importKey("jwk",jwk,{name:"RSASSA-PKCS1-v1_5",hash:"SHA-256"},false,["verify"]);
- return crypto.subtle.verify("RSASSA-PKCS1-v1_5",key,b64(parts[2]),new TextEncoder().encode(parts[0]+"."+parts[1]));
- }catch{return false}
+  const header=JSON.parse(new TextDecoder().decode(b64(parts[0])));
+  const payload=JSON.parse(new TextDecoder().decode(b64(parts[1])));
+  const domain=env.ACCESS_TEAM_DOMAIN.replace(/^https?:\/\//,"").replace(/\/$/,"");
+  if(!/^[a-z0-9.-]+\.cloudflareaccess\.com$/i.test(domain))return accessDenial("invalid-team-domain");
+  if(header.alg!=="RS256"||!header.kid)return accessDenial("unexpected-signing-algorithm");
+  const now=Math.floor(Date.now()/1000);
+  if(payload.iss!=="https://"+domain)return accessDenial("issuer-mismatch");
+  if(!Array.isArray(payload.aud)||!payload.aud.includes(env.ACCESS_AUD_API))return accessDenial("application-audience-mismatch");
+  if(typeof payload.exp!=="number"||payload.exp<=now||typeof payload.nbf==="number"&&payload.nbf>now)return accessDenial("token-outside-validity-window");
+  const res=await fetch("https://"+domain+"/cdn-cgi/access/certs");
+  if(!res.ok)return accessDenial("access-public-keys-unavailable");
+  const keys=(await res.json()).keys||[];
+  const jwk=keys.find(k=>k.kid===header.kid);
+  if(!jwk)return accessDenial("jwt-signing-key-not-found");
+  const key=await crypto.subtle.importKey("jwk",jwk,{name:"RSASSA-PKCS1-v1_5",hash:"SHA-256"},false,["verify"]);
+  const valid=await crypto.subtle.verify("RSASSA-PKCS1-v1_5",key,b64(parts[2]),new TextEncoder().encode(parts[0]+"."+parts[1]));
+  return valid||accessDenial("invalid-jwt-signature");
+ }catch{return accessDenial("jwt-verification-exception")}
 }
 export async function visitorAdmin(req,env){
  if(!(await accessAuthorized(req,env)))return json({error:"Unauthorized; configure Cloudflare Access"},403);
