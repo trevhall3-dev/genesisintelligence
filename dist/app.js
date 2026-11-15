@@ -5,6 +5,27 @@ const safe=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"
 const safeUrl=value=>{try{let u=new URL(value,location.origin);return u.protocol==="https:"?u.href:"#"}catch{return"#"}};
 const dateLabel=value=>value&&Number.isFinite(Date.parse(value))?new Date(value).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric",timeZone:"UTC"}):"Date unavailable";
 const newsDate=item=>item.gih_added_at||item.gih_added_date||item.date||item.selection_date||"";
+const isNewNewsItem=item=>{
+ const timestamp=Date.parse(item.gih_added_at||"");
+ if(!Number.isFinite(timestamp))return false;
+ const age=Date.now()-timestamp;
+ return age>=0&&age<48*60*60*1000;
+};
+function renderWeeklyBriefings(){
+ const target=$("weeklyBriefings");
+ if(!target)return;
+ // Every issue is selected from the approved Genesis News archive.
+ const entries=state.news.filter(i=>i.kind==="briefing"||i.kind==="weekly-briefing"||i.briefing_issue)
+   .sort((a,b)=>String(b.date||b.gih_added_date||"").localeCompare(String(a.date||a.gih_added_date||"")));
+ if(!entries.length)return; // Preserve the static two-issue fallback if loading fails.
+ target.innerHTML=entries.map((item,index)=>{
+  const match=String(item.title||"").match(/Issue\s+(\d+)/i);
+  const issue=String(item.briefing_issue||(match?match[1]:"")).padStart(3,"0");
+  const coverage=item.briefing_period||("Week of "+dateLabel(item.date));
+  const teaser=item.briefing_teaser||item.summary||item.title||"Read the weekly intelligence briefing.";
+  return '<a class="weekly-issue" href="'+safeUrl(item.briefing_path||item.url)+'"'+(index===0?' aria-current="true"':'')+'><strong>Issue '+safe(issue)+' · '+safe(coverage)+'</strong><p>'+safe(teaser)+'</p></a>';
+ }).join("");
+}
 function applyEditorialNewsOrder(items){
  const ordered=[...items];
  for(const article of items){
@@ -73,7 +94,7 @@ function render(){
  if(state.area==="National challenges")$("feedStatus").textContent="Official DOE challenge catalog · 33 National Science & Technology Challenges";
  else if(state.section==="Projects")$("feedStatus").textContent="Official DOE registry · "+state.projects.length+" project selections";
  else if(state.section==="Sources")$("feedStatus").textContent="Official references and monitored publishers";
- else $("feedStatus").textContent=(state.section==="Labs"?"Laboratory news · ":"Publisher archive · ")+state.news.length+" collected articles";
+ else {const stamp=state.archiveAt&&Number.isFinite(Date.parse(state.archiveAt))?new Date(state.archiveAt).toLocaleString("en-US",{month:"short",day:"numeric",year:"numeric",hour:"numeric",minute:"2-digit",timeZone:"America/New_York",timeZoneName:"short"}):"not available";$("feedStatus").textContent=(state.section==="Labs"?"Laboratory news":"News archive")+" · "+state.news.length+" articles · Last updated "+stamp;}
  $("recordCount").textContent=list.length;
  $("count").textContent=state.area==="National challenges"?list.length+" official challenges · DOE source list · not project awards":state.section==="Projects"?list.length+" matching projects · "+state.registryLabel:list.length+" source-linked records";
  $("rows").innerHTML=list.slice(0,state.limit).map(item=>{
@@ -86,7 +107,8 @@ function render(){
   const detail=challenge?"Official DOE challenge · not a project award":project?([item.principal_investigator?"PI: "+item.principal_investigator:"",item.source_phase||"DOE project selection"].filter(Boolean).join(" · ")):source?"Official Genesis reference":item.gih_added_date?"Added to Genesis Intel "+dateLabel(item.gih_added_date)+" · Published "+dateLabel(item.source_published_at||item.date):dateLabel(item.date);
   const tags=project?'<span class="record-tag">'+safe((item.categories||[item.category]).filter(t=>areas.includes(t)).slice(0,2).map(t=>areaLabels[t]).join(" · "))+'</span>':"";
   const editorialLabel=(!project&&!challenge&&!source&&item.classification==="GENESIS LINK NOT CONFIRMED")?'<span class="news-affiliation-label">GENESIS LINK NOT CONFIRMED</span>':"";
-  return '<article class="compact-item">'+head+'<div class="compact-meta"><span class="article-source">'+safe(sourceName)+'</span><span class="article-date">'+safe(detail)+'</span>'+tags+editorialLabel+'</div>'+(challenge&&item.description?'<p class="challenge-description">'+safe(item.description)+'</p>':'')+'</article>';
+  const newBadge=(!project&&!challenge&&!source&&isNewNewsItem(item))?'<span class="news-new-label" title="Added to Genesis Intel within the past 48 hours">NEW</span>':"";
+  return '<article class="compact-item">'+head+'<div class="compact-meta"><span class="article-source">'+safe(sourceName)+'</span><span class="article-date">'+safe(detail)+'</span>'+tags+editorialLabel+newBadge+'</div>'+(challenge&&item.description?'<p class="challenge-description">'+safe(item.description)+'</p>':'')+'</article>';
  }).join("")||'<p class="empty">No records match this view. Try All, clear search, or choose another category.</p>';
  $("more").hidden=list.length<=state.limit;
  document.querySelectorAll("[data-tier]").forEach(b=>{b.classList.toggle("selected",b.dataset.tier===state.tier);b.setAttribute("aria-pressed",String(b.dataset.tier===state.tier))});
@@ -162,10 +184,8 @@ async function fetchAll(){
  }
  state.challenges=result[3].status==="fulfilled"?(result[3].value.challenges||[]):[];
  state.health=result[2].status==="fulfilled"?result[2].value:null;
- const stamp=state.archiveAt&&Number.isFinite(Date.parse(state.archiveAt))?new Date(state.archiveAt).toLocaleString("en-US",{dateStyle:"medium",timeStyle:"short"}):"Date not reported";
- $("feedStatus").textContent=state.news.length?("Official publisher archive: "+state.news.length+" articles · Updated "+stamp):"No articles available yet. Review collector status.";
  $("refresh").disabled=false;
- renderSources();renderHealth();render();
+ renderSources();renderHealth();renderWeeklyBriefings();render();
 }
 document.querySelectorAll("[data-section]").forEach(b=>b.onclick=()=>setView(b.dataset.section));
 document.querySelectorAll("[data-pillar]").forEach(b=>b.onclick=()=>setView(b.dataset.pillar));
