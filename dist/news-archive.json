@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T02:58:59.521589+00:00",
+  "updated_at": "2026-11-17T03:08:34.843298+00:00",
   "count": 43,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -44,10 +44,9 @@
     {
       "name": "Fermilab",
       "group": "Labs",
-      "ok": true,
-      "count": 1,
-      "endpoint": "https://news.fnal.gov/",
-      "method": "html"
+      "ok": false,
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='news.fnal.gov', port=443): Read timed out. (read timeout=24)"
     },
     {
       "name": "Lawrence Berkeley National Laboratory",
