@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T13:28:49.677784+00:00",
+  "updated_at": "2026-11-17T13:37:15.634978+00:00",
   "count": 43,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -44,9 +44,10 @@
     {
       "name": "Fermilab",
       "group": "Labs",
-      "ok": false,
-      "count": 0,
-      "error": "HTTPSConnectionPool(host='news.fnal.gov', port=443): Read timed out. (read timeout=24)"
+      "ok": true,
+      "count": 1,
+      "endpoint": "https://news.fnal.gov/",
+      "method": "html"
     },
     {
       "name": "Lawrence Berkeley National Laboratory",
@@ -137,7 +138,9 @@
       "category": "Infrastructure",
       "kind": "discovery",
       "source_method": "publisher-direct",
-      "project_ids": [],
+      "project_ids": [
+        "genesis-5ee9917971a3bbf82e46"
+      ],
       "gih_added_at": "2026-11-17T02:58:59Z",
       "gih_added_date": "2026-11-16",
       "source_published_at": "2026-11-16",
