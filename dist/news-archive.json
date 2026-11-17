@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-16T06:46:38.698350+00:00",
-  "count": 42,
+  "updated_at": "2026-11-17T02:58:59.521589+00:00",
+  "count": 43,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -75,7 +75,7 @@
       "name": "Oak Ridge National Laboratory",
       "group": "Labs",
       "ok": true,
-      "count": 0,
+      "count": 1,
       "endpoint": "https://www.ornl.gov/news",
       "method": "html"
     },
@@ -980,6 +980,21 @@
       "source_method": "publisher-direct",
       "project_ids": [
         "genesis-d17da7d94333c69277a3"
+      ]
+    },
+    {
+      "id": "2e19adb67f40ed94d13d",
+      "title": "Lux SI+HPC supercomputer debuts in the Top500, advances Genesis Mission goals",
+      "summary": "its debut today at 14th on the Top500 list with 220.79 petaflops, or 220 quadrillion calculations per second of performance. The debut marks the opening of Lux, the product of a historic public-private partnership between ORNL, AMD and HPE, to scient",
+      "source": "Oak Ridge National Laboratory",
+      "url": "https://www.ornl.gov/news/lux-sihpc-supercomputer-debuts-in-the-top500-advances-genesis-mission-goals/",
+      "date": "",
+      "group": "Labs",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": [
+        "genesis-5ee9917971a3bbf82e46"
       ]
     }
   ]
