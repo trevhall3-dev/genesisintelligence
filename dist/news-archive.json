@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T13:37:15.634978+00:00",
+  "updated_at": "2026-11-17T23:38:31.413126+00:00",
   "count": 43,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -82,10 +82,9 @@
     {
       "name": "Pacific Northwest National Laboratory",
       "group": "Labs",
-      "ok": true,
-      "count": 3,
-      "endpoint": "https://www.pnnl.gov/news",
-      "method": "html"
+      "ok": false,
+      "count": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
     },
     {
       "name": "Sandia National Laboratories",
