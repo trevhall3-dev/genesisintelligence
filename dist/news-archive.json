@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T03:08:34.843298+00:00",
+  "updated_at": "2026-11-17T13:22:55Z",
   "count": 43,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -126,6 +126,48 @@
     }
   ],
   "items": [
+    {
+      "id": "2e19adb67f40ed94d13d",
+      "title": "Lux SI+HPC supercomputer debuts in the Top500, advances Genesis Mission goals",
+      "summary": "Lux opened to scientific users and debuted at No. 14 on the TOP500 with 220.79 petaflops. ORNL, AMD and HPE report that about half of its annual 3.5 million node-hours will support Genesis, combining simulation with SI training, inference and agentic workflows.",
+      "source": "Oak Ridge National Laboratory",
+      "url": "https://www.ornl.gov/news/lux-sihpc-supercomputer-debuts-in-the-top500-advances-genesis-mission-goals/",
+      "date": "2026-11-16",
+      "group": "Labs",
+      "category": "Infrastructure",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": [],
+      "gih_added_at": "2026-11-17T02:58:59Z",
+      "gih_added_date": "2026-11-16",
+      "source_published_at": "2026-11-16",
+      "date_basis": "First repository addition in commit 8e8656a3bcd000212762455506e481807b05b061; America/New_York",
+      "project": "Lux SI+HPC supercomputer",
+      "participants": [
+        "DOE",
+        "Oak Ridge National Laboratory / OLCF",
+        "AMD",
+        "HPE"
+      ],
+      "what_changed": "Lux opened to scientific users and debuted at rank 14 on the 68th TOP500 list with 220.79 petaflops. Approximately half its annual 3.5 million node-hours are allocated to Genesis, with the remainder available to AMD.",
+      "significance": "Adds operational computing capacity for Genesis scientific workflows, including fusion design, materials/manufacturing and Earth-system prediction.",
+      "classification": "confirmed Genesis",
+      "affiliation_evidence": "Official ORNL/OLCF announcement explicitly identifies Lux as computing infrastructure supporting Genesis and specifies its Genesis allocation and example mission workloads.",
+      "evidence_urls": [
+        "https://www.ornl.gov/news/lux-sihpc-supercomputer-debuts-in-the-top500-advances-genesis-mission-goals/",
+        "https://www.olcf.ornl.gov/2026/11/16/lux-genesis-mission/"
+      ],
+      "suggested_visible_label": null,
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "categories": [
+        "Infrastructure",
+        "AI models",
+        "National challenges"
+      ],
+      "deduplication_note": "Enhanced existing collector record; OLCF and ORNL copies are the same report. Restored first-added timestamp from commit history, without resetting to review date."
+    },
     {
       "id": "weekly-genesis-intelligence-issue-002-2026-11-15",
       "title": "Weekly Genesis Intelligence Briefing — Issue 002 (Nov 8–14, 2026)",
@@ -301,19 +343,6 @@
       "date_basis": "GIH first repository addition; America/New_York"
     },
     {
-      "id": "99b7a49f6d1ee7498699",
-      "title": "Under Secretary Gil’s Letter to the Community: One Year In",
-      "summary": "November 12, 2026 DOE’s Under Secretary for Science reflects on his first year, accomplishments across the Office of Science and Genesis Mission, and what lies ahead.",
-      "source": "DOE Genesis Mission News",
-      "url": "https://www.energy.gov/undersecretaryforscience/articles/under-secretary-gils-letter-community-one-year",
-      "date": "2026-11-12",
-      "group": "DOE",
-      "category": "National challenges",
-      "kind": "discovery",
-      "source_method": "publisher-direct",
-      "project_ids": []
-    },
-    {
       "id": "lbnl-synaps-i-segmentation-2026-11-10",
       "title": "SYNAPS-I accelerates tomography segmentation from months to minutes",
       "summary": "Berkeley Lab reports a grapevine drought case study reducing image segmentation from months to 15 minutes. Two AI models are running on NERSC and ALCF inference servers; an open-source interface lets tomography users annotate data and train custom models.",
@@ -353,6 +382,19 @@
       "feed_published": true,
       "source_method": "editorially-verified-official-source",
       "deduplication_note": "Absent from the 35-record archive. Distinct from Brookhaven's November 4 reconstruction/autonomous-imaging report: adds segmentation case-study timing, inference deployment and user-workflow details."
+    },
+    {
+      "id": "99b7a49f6d1ee7498699",
+      "title": "Under Secretary Gil’s Letter to the Community: One Year In",
+      "summary": "November 12, 2026 DOE’s Under Secretary for Science reflects on his first year, accomplishments across the Office of Science and Genesis Mission, and what lies ahead.",
+      "source": "DOE Genesis Mission News",
+      "url": "https://www.energy.gov/undersecretaryforscience/articles/under-secretary-gils-letter-community-one-year",
+      "date": "2026-11-12",
+      "group": "DOE",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "title": "Two Genesis projects target faster electric-grid planning",
@@ -979,21 +1021,6 @@
       "source_method": "publisher-direct",
       "project_ids": [
         "genesis-d17da7d94333c69277a3"
-      ]
-    },
-    {
-      "id": "2e19adb67f40ed94d13d",
-      "title": "Lux SI+HPC supercomputer debuts in the Top500, advances Genesis Mission goals",
-      "summary": "its debut today at 14th on the Top500 list with 220.79 petaflops, or 220 quadrillion calculations per second of performance. The debut marks the opening of Lux, the product of a historic public-private partnership between ORNL, AMD and HPE, to scient",
-      "source": "Oak Ridge National Laboratory",
-      "url": "https://www.ornl.gov/news/lux-sihpc-supercomputer-debuts-in-the-top500-advances-genesis-mission-goals/",
-      "date": "",
-      "group": "Labs",
-      "category": "National challenges",
-      "kind": "discovery",
-      "source_method": "publisher-direct",
-      "project_ids": [
-        "genesis-5ee9917971a3bbf82e46"
       ]
     }
   ]
