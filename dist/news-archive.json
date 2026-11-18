@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T15:12:45.836Z",
+  "updated_at": "2026-11-18T17:16:46.026067+00:00",
   "count": 45,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -142,50 +142,6 @@
       ],
       "kind": "discovery",
       "source_method": "editorially-verified-official-source",
-      "id": "llnl-elmerfold-2026-11-17",
-      "title": "ElMerFold accelerates protein-structure training-data generation on El Capitan",
-      "project": "ElMerFold / OpenFold3",
-      "source": "Lawrence Livermore National Laboratory",
-      "url": "https://www.llnl.gov/article/55276/llnl-team-accelerates-protein-structure-prediction-el-capitan-elmerfold-collaboration",
-      "participants": [
-        "LLNL (Brian Van Essen, Nikoli Dryden, Tal Ben-Nun)",
-        "AMD",
-        "Columbia University (Mohammed AlQuraishi)"
-      ],
-      "what_changed": "Reports more than 10,700 predicted protein structures per second on 45,200 MI300A APUs, 71.7-fold speedup over an extrapolated baseline, and estimated generation of approximately 41 million structures in 2.5 hours instead of eight days. Gordon Bell finalist; winner not yet announced.",
-      "significance": "Accelerates synthetic training-data production for open biomolecular models and antibody-antigen prediction. Substantive performance update beyond earlier roughly 2,400 structures/second report.",
-      "classification": "GENESIS LINK NOT CONFIRMED",
-      "affiliation_evidence": "LLNL's new article and official ElMerFold project page describe OpenFold distillation and NNSA mission applications without project-specific Genesis attribution. Checked DOE RFA roster, repository project records, LLNL's ten-project Genesis announcement and targeted ElMerFold/OpenFold searches. LLNL's BIND metalloprotein project and common biology themes do not document affiliation for ElMerFold.",
-      "evidence_urls": [
-        "https://www.llnl.gov/article/55276/llnl-team-accelerates-protein-structure-prediction-el-capitan-elmerfold-collaboration",
-        "https://computing.llnl.gov/projects/elmerfold",
-        "https://www.llnl.gov/article/53581/llnl-partners-launch-record-breaking-protein-folding-workflow-worlds-fastest-supercomputer",
-        "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
-        "https://www.llnl.gov/article/54711/llnl-selected-lead-10-projects-under-does-genesis-mission"
-      ],
-      "suggested_visible_label": "GENESIS LINK NOT CONFIRMED",
-      "editorial_status": "approved",
-      "publication_approved": true,
-      "feed_published": true,
-      "deduplication_note": "Absent from archive and accessible review records; syndicated copies suppressed. Preserve timestamp from this review-repository addition if subsequently published.",
-      "project_ids": [],
-      "summary": "LLNL, AMD and Columbia report more than 10,700 protein-structure predictions per second on El Capitan, accelerating training-data generation for OpenFold3. The work could speed development of open biomolecular models. No project-specific Genesis Mission affiliation has been verified."
-    },
-    {
-      "gih_added_at": "2026-11-18T13:53:41Z",
-      "gih_added_date": "2026-11-18",
-      "date": "2026-11-18",
-      "source_published_at": "2026-11-17",
-      "date_basis": "First repository addition; displayed calendar date America/New_York",
-      "group": "Labs",
-      "category": "AI models",
-      "categories": [
-        "AI models",
-        "Infrastructure",
-        "Data"
-      ],
-      "kind": "discovery",
-      "source_method": "editorially-verified-official-source",
       "id": "fnal-femtomind-speedup-2026-11-17",
       "title": "FemtoMind reports threefold lattice-QCD simulation speedup with agentic SI",
       "summary": "Fermilab reports that SI-generated assembly and code optimization made a collaborator's simulations three times faster in a couple of weeks. The American Science Cloud infrastructure partner is developing verified computational workflows for nuclear physics and future DUNE interpretation.",
@@ -216,6 +172,50 @@
       "feed_published": true,
       "project_ids": [],
       "deduplication_note": "Absent from current 43-item archive and accessible review records. New measured progress beyond earlier project descriptions."
+    },
+    {
+      "gih_added_at": "2026-11-18T13:53:41Z",
+      "gih_added_date": "2026-11-18",
+      "date": "2026-11-18",
+      "source_published_at": "2026-11-17",
+      "date_basis": "First repository addition; displayed calendar date America/New_York",
+      "group": "Labs",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "Infrastructure",
+        "Data"
+      ],
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "id": "llnl-elmerfold-2026-11-17",
+      "title": "ElMerFold accelerates protein-structure training-data generation on El Capitan",
+      "project": "ElMerFold / OpenFold3",
+      "source": "Lawrence Livermore National Laboratory",
+      "url": "https://www.llnl.gov/article/55276/llnl-team-accelerates-protein-structure-prediction-el-capitan-elmerfold-collaboration",
+      "participants": [
+        "LLNL (Brian Van Essen, Nikoli Dryden, Tal Ben-Nun)",
+        "AMD",
+        "Columbia University (Mohammed AlQuraishi)"
+      ],
+      "what_changed": "Reports more than 10,700 predicted protein structures per second on 45,200 MI300A APUs, 71.7-fold speedup over an extrapolated baseline, and estimated generation of approximately 41 million structures in 2.5 hours instead of eight days. Gordon Bell finalist; winner not yet announced.",
+      "significance": "Accelerates synthetic training-data production for open biomolecular models and antibody-antigen prediction. Substantive performance update beyond earlier roughly 2,400 structures/second report.",
+      "classification": "GENESIS LINK NOT CONFIRMED",
+      "affiliation_evidence": "LLNL's new article and official ElMerFold project page describe OpenFold distillation and NNSA mission applications without project-specific Genesis attribution. Checked DOE RFA roster, repository project records, LLNL's ten-project Genesis announcement and targeted ElMerFold/OpenFold searches. LLNL's BIND metalloprotein project and common biology themes do not document affiliation for ElMerFold.",
+      "evidence_urls": [
+        "https://www.llnl.gov/article/55276/llnl-team-accelerates-protein-structure-prediction-el-capitan-elmerfold-collaboration",
+        "https://computing.llnl.gov/projects/elmerfold",
+        "https://www.llnl.gov/article/53581/llnl-partners-launch-record-breaking-protein-folding-workflow-worlds-fastest-supercomputer",
+        "https://www.energy.gov/documents/genesis-mission-rfa-awards-list",
+        "https://www.llnl.gov/article/54711/llnl-selected-lead-10-projects-under-does-genesis-mission"
+      ],
+      "suggested_visible_label": "GENESIS LINK NOT CONFIRMED",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "deduplication_note": "Absent from archive and accessible review records; syndicated copies suppressed. Preserve timestamp from this review-repository addition if subsequently published.",
+      "project_ids": [],
+      "summary": "LLNL, AMD and Columbia report more than 10,700 protein-structure predictions per second on El Capitan, accelerating training-data generation for OpenFold3. The work could speed development of open biomolecular models. No project-specific Genesis Mission affiliation has been verified."
     },
     {
       "id": "2e19adb67f40ed94d13d",
