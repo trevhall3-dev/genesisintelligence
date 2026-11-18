@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-18T07:41:32.306404+00:00",
-  "count": 43,
+  "updated_at": "2026-11-18T13:53:41Z",
+  "count": 44,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -127,6 +127,52 @@
     }
   ],
   "items": [
+    {
+      "gih_added_at": "2026-11-18T13:53:41Z",
+      "gih_added_date": "2026-11-18",
+      "date": "2026-11-18",
+      "source_published_at": "2026-11-17",
+      "date_basis": "First repository addition; displayed calendar date America/New_York",
+      "group": "Labs",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "Infrastructure",
+        "Data"
+      ],
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "id": "fnal-femtomind-speedup-2026-11-17",
+      "title": "FemtoMind reports threefold lattice-QCD simulation speedup with agentic SI",
+      "summary": "Fermilab reports that SI-generated assembly and code optimization made a collaborator's simulations three times faster in a couple of weeks. The American Science Cloud infrastructure partner is developing verified computational workflows for nuclear physics and future DUNE interpretation.",
+      "project": "FemtoMind",
+      "source": "Fermi National Accelerator Laboratory",
+      "url": "https://news.fnal.gov/2026/11/femtomind-advances-genesis-mission-at-the-proton-scale/",
+      "participants": [
+        "Fermilab (Michael Wagman, Dan Hackett)",
+        "Brookhaven National Laboratory",
+        "Jefferson Lab",
+        "Argonne National Laboratory",
+        "Stony Brook University",
+        "William & Mary"
+      ],
+      "what_changed": "November 17 feature reports a threefold simulation speedup achieved over a couple of weeks using an SI agent to write and optimize assembly code. The team is moving from exploration toward practical tools for the lattice-QCD community.",
+      "significance": "Could reduce computational costs and improve neutrino-interaction calculations needed to interpret DUNE. Reference code checks correctness; the report does not establish a threefold gain across every workflow.",
+      "classification": "confirmed Genesis",
+      "affiliation_evidence": "Fermilab explicitly identifies FemtoMind as Genesis-linked via American Science Cloud. Jefferson Lab's official project page independently calls it an AmSC infrastructure partner; DOE's March 27 Genesis presentation lists US Lattice Quantum Chromodynamics Collaboration (FemtoMind), TJNAF/FNAL, among initial AmSC partners.",
+      "evidence_urls": [
+        "https://news.fnal.gov/2026/11/femtomind-advances-genesis-mission-at-the-proton-scale/",
+        "https://www.jlab.org/AI/Projects/Femtomind",
+        "https://science.osti.gov/-/media/About/pdf/scac/meetings/2026/DOE-Genesis-Mission-Launched---2026-03-27.pdf",
+        "https://artificialintelligence.fnal.gov/collaborative-project-opportunities-genesis-mission/"
+      ],
+      "suggested_visible_label": null,
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "project_ids": [],
+      "deduplication_note": "Absent from current 43-item archive and accessible review records. New measured progress beyond earlier project descriptions."
+    },
     {
       "id": "2e19adb67f40ed94d13d",
       "title": "Lux SI+HPC supercomputer debuts in the Top500, advances Genesis Mission goals",
