@@ -1,0 +1,122 @@
+{
+  "updated_at": "2026-11-19T13:20:02Z",
+  "items": [
+    {
+      "gih_added_at": "2026-11-19T13:20:02Z",
+      "gih_added_date": "2026-11-19",
+      "date": "2026-11-19",
+      "date_basis": "First addition to repository review queue; America/New_York calendar date. Preserve on subsequent feed publication.",
+      "group": "Labs",
+      "kind": "discovery",
+      "classification": "Genesis link not confirmed",
+      "suggested_visible_label": "GENESIS LINK NOT CONFIRMED",
+      "editorial_status": "pending_user_approval",
+      "publication_approved": false,
+      "feed_published": false,
+      "project_ids": [],
+      "id": "sandia-vast-alloys-2026-11-18",
+      "title": "Sandia VASt model predicts complex alloy properties with small training datasets",
+      "project": "Voxelized Atomic Structure (VASt)",
+      "source": "Sandia National Laboratories",
+      "source_published_at": "2026-11-18",
+      "url": "https://newsreleases.sandia.gov/before-the-forge/",
+      "participants": [
+        "Sandia National Laboratories (Matthew Barry and colleagues)",
+        "Georgia Institute of Technology",
+        "NASA (collaboration/support described in Sandia release)",
+        "Stevens Institute of Technology (paper author affiliation)"
+      ],
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "Data"
+      ],
+      "what_changed": "New Sandia feature describes VASt predictions for high-entropy alloys using tens of training samples and electron-density representations. The underlying journal paper appeared June 16, 2026; this is new laboratory reporting, not a newly published paper.",
+      "significance": "Potentially reduces training-data and simulation costs for materials design. Experimental validation and generalization beyond evaluated alloys remain work in progress.",
+      "affiliation_evidence": "Sandia release and underlying paper identify LDRD and other support without Genesis attribution. Checked official July award roster, repository 297-project registry, Sandia Genesis project announcement, and targeted VASt/Barry/Genesis searches. Shared materials themes and Sandia participation do not establish a documented project connection.",
+      "evidence_urls": [
+        "https://newsreleases.sandia.gov/before-the-forge/",
+        "https://www.nature.com/articles/s41524-026-02187-7",
+        "https://newsreleases.sandia.gov/sandia-selected-to-lead-six-genesis-mission-projects-partner-on-17-others/",
+        "https://www.energy.gov/documents/genesis-mission-rfa-awards-list"
+      ],
+      "deduplication_note": "Not in current 45-item repository/live archive or accessible review records. Distinct from approved Sandia AIGM Lite article.",
+      "summary": "Sandia reports that VASt predicts high-entropy alloy properties from small training datasets using electron-density representations. Experimental validation and broader generalization remain in progress. GENESIS LINK NOT CONFIRMED."
+    },
+    {
+      "gih_added_at": "2026-11-19T13:20:02Z",
+      "gih_added_date": "2026-11-19",
+      "date": "2026-11-19",
+      "date_basis": "First addition to repository review queue; America/New_York calendar date. Preserve on subsequent feed publication.",
+      "group": "Labs",
+      "kind": "discovery",
+      "classification": "Genesis link not confirmed",
+      "suggested_visible_label": "GENESIS LINK NOT CONFIRMED",
+      "editorial_status": "pending_user_approval",
+      "publication_approved": false,
+      "feed_published": false,
+      "project_ids": [],
+      "id": "sandia-dakota-7-2026-11-17",
+      "title": "Dakota 7.0 adds Python API for automated scientific studies",
+      "project": "Dakota 7.0",
+      "source": "Sandia National Laboratories / Dakota",
+      "source_published_at": "2026-11-17",
+      "url": "https://dakota.sandia.gov/2026/11/17/dakota-7-0/",
+      "participants": [
+        "Sandia National Laboratories Dakota development team"
+      ],
+      "category": "Infrastructure",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ],
+      "what_changed": "Released Dakota 7.0 with a Python API spanning uncertainty quantification, calibration, optimization and surrogate models; release explicitly describes embedding studies in agentic AI workflows.",
+      "significance": "Makes established scientific analysis methods directly callable from automation and agent workflows. This is enabling software, not a demonstrated autonomous-discovery result.",
+      "affiliation_evidence": "Official release documents agentic-workflow capability but no Genesis project affiliation. Targeted DOE/Sandia searches and repository project-registry checks did not establish linkage. Dakota State University quantum-circuit project is a different entity and is not evidence for this software.",
+      "evidence_urls": [
+        "https://dakota.sandia.gov/2026/11/17/dakota-7-0/",
+        "https://newsreleases.sandia.gov/sandia-selected-to-lead-six-genesis-mission-projects-partner-on-17-others/",
+        "https://www.energy.gov/documents/genesis-mission-rfa-awards-list"
+      ],
+      "deduplication_note": "Not present in accessible archive/review records; materially distinct software capability.",
+      "summary": "Dakota 7.0 introduces a Python API that embeds uncertainty quantification, optimization and related studies in automated scientific applications and agentic workflows. GENESIS LINK NOT CONFIRMED."
+    }
+  ],
+  "suppressed": [
+    {
+      "url": "https://www.anl.gov/article/argonne-expands-scientific-computing-resources-for-does-genesis-mission",
+      "source_published_at": "2026-11-18",
+      "classification": "confirmed Genesis",
+      "editorial_status": "skip_substantially_identical",
+      "existing_url": "https://www.alcf.anl.gov/news/new-systems-boost-capabilities-alcf-inference-service",
+      "reason": "Compared full articles: same author, hardware specifications, memory increase, model count, quotes, ChemGraph and SYNAPS-I demonstration. November 18 release condenses November 4 reporting; no substantive new development identified."
+    },
+    {
+      "url": "https://news.fnal.gov/2026/11/femtomind-advances-genesis-mission-at-the-proton-scale/",
+      "editorial_status": "already_in_feed"
+    },
+    {
+      "url": "https://www.ornl.gov/news/lux-sihpc-supercomputer-debuts-in-the-top500-advances-genesis-mission-goals/",
+      "editorial_status": "already_in_feed"
+    }
+  ],
+  "implementation_audit": {
+    "live_api_checked": "https://genesisintelhub.com/api/news",
+    "live_article_count": 45,
+    "missing_added_at": 33,
+    "stitch_maggie": {
+      "gih_added_at": "2026-11-10T13:37:21Z",
+      "gih_added_date": "2026-11-10",
+      "source_published_at": "2026-11-04",
+      "live_api_verified": true
+    },
+    "findings": [
+      "Repository frontend sorts news using gih_added_at, then gih_added_date, then legacy date; displays Added and Published separately when gih_added_date exists.",
+      "Collector merge does not assign first-added timestamps, sorts archive by date, and can discard timestamps on unreviewed refreshed records.",
+      "D1 editorial table preserves existing added timestamps with ON CONFLICT DO NOTHING, but only for inputs that supply them.",
+      "Live JavaScript retrieval returned 403, so actual rendered dashboard date/sorting not verified in this run."
+    ],
+    "website_or_database_write_performed": false
+  },
+  "approved_exception": "Sandia AIGM Lite November 5 article remains approved; no approval requested again."
+}
