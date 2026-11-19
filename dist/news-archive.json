@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T17:16:46.026067+00:00",
+  "updated_at": "2026-11-19T01:54:50.717580+00:00",
   "count": 45,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -67,9 +67,10 @@
     {
       "name": "Los Alamos National Laboratory",
       "group": "Labs",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "404 Client Error: Not Found for url: https://www.lanl.gov/media/news/"
+      "endpoint": "https://www.lanl.gov/media/news/",
+      "method": "html"
     },
     {
       "name": "Oak Ridge National Laboratory",
@@ -82,10 +83,9 @@
     {
       "name": "Pacific Northwest National Laboratory",
       "group": "Labs",
-      "ok": true,
-      "count": 3,
-      "endpoint": "https://www.pnnl.gov/news",
-      "method": "html"
+      "ok": false,
+      "count": 0,
+      "error": "403 Client Error: Forbidden for url: https://www.pnnl.gov/news"
     },
     {
       "name": "Sandia National Laboratories",
