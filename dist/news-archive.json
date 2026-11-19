@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-19T01:59:00.026789+00:00",
-  "count": 45,
+  "updated_at": "2026-11-19T14:12:29.562Z",
+  "count": 47,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -127,6 +127,66 @@
     }
   ],
   "items": [
+    {
+      "source": "Sandia National Laboratories",
+      "group": "Labs",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "classification": "GENESIS LINK NOT CONFIRMED",
+      "suggested_visible_label": "Not Genesis",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "project_ids": [],
+      "gih_added_at": "2026-11-19T14:12:29.562Z",
+      "gih_added_date": "2026-11-19",
+      "date": "2026-11-19",
+      "date_basis": "First Genesis News publication; displayed calendar date America/New_York",
+      "id": "sandia-vast-alloys-2026-11-18",
+      "title": "Sandia VASt model predicts advanced-alloy properties with limited training data",
+      "url": "https://newsreleases.sandia.gov/before-the-forge/",
+      "source_published_at": "2026-11-18",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "Data"
+      ],
+      "summary": "Sandia's VASt machine-learning model uses electron-distribution fingerprints to predict properties of complex metal alloys from tens of training samples. Researchers are testing its limits and validating predictions experimentally. No project-specific Genesis Mission affiliation has been verified.",
+      "affiliation_evidence": "Sandia's official announcement describes collaboration with Georgia Tech and NASA and partial Laboratory Directed Research and Development support; it does not identify this work as a Genesis Mission project.",
+      "evidence_urls": [
+        "https://newsreleases.sandia.gov/before-the-forge/"
+      ]
+    },
+    {
+      "source": "Sandia National Laboratories",
+      "group": "Labs",
+      "kind": "discovery",
+      "source_method": "editorially-verified-official-source",
+      "classification": "GENESIS LINK NOT CONFIRMED",
+      "suggested_visible_label": "Not Genesis",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "project_ids": [],
+      "gih_added_at": "2026-11-19T14:12:29.562Z",
+      "gih_added_date": "2026-11-19",
+      "date": "2026-11-19",
+      "date_basis": "First Genesis News publication; displayed calendar date America/New_York",
+      "id": "sandia-dakota-7-0-2026-11-17",
+      "title": "Sandia releases Dakota 7.0 with Python API for automated scientific workflows",
+      "url": "https://dakota.sandia.gov/2026/11/17/dakota-7-0/",
+      "source_published_at": "2026-11-17",
+      "category": "Infrastructure",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ],
+      "summary": "Dakota 7.0 adds a Python API for building and running uncertainty quantification, calibration and optimization studies within larger applications, automation pipelines and agentic SI workflows. The release also updates tutorials. No project-specific Genesis Mission affiliation has been verified.",
+      "affiliation_evidence": "The official Dakota release announcement documents the Python API and agentic AI workflow support without identifying a Genesis Mission affiliation.",
+      "evidence_urls": [
+        "https://dakota.sandia.gov/2026/11/17/dakota-7-0/"
+      ]
+    },
     {
       "gih_added_at": "2026-11-18T13:53:41Z",
       "gih_added_date": "2026-11-18",
