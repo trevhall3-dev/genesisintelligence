@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T13:55:00Z",
+  "updated_at": "2026-11-20T17:01:39.268381+00:00",
   "count": 48,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -82,10 +82,9 @@
     {
       "name": "Pacific Northwest National Laboratory",
       "group": "Labs",
-      "ok": true,
-      "count": 3,
-      "endpoint": "https://www.pnnl.gov/news",
-      "method": "html"
+      "ok": false,
+      "count": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
     },
     {
       "name": "Sandia National Laboratories",
@@ -137,7 +136,7 @@
       "gih_added_at": "2026-11-20T13:55:00Z",
       "gih_added_date": "2026-11-20",
       "date_basis": "Genesis Intel site addition date (America/New_York); original source published November 19",
-      "group": "Universities",
+      "group": "Partners",
       "category": "Data",
       "categories": [
         "Data",
