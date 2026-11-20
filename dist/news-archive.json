@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T07:29:28.326268+00:00",
+  "updated_at": "2026-11-20T07:42:34.351840+00:00",
   "count": 47,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -83,7 +83,7 @@
       "name": "Pacific Northwest National Laboratory",
       "group": "Labs",
       "ok": true,
-      "count": 1,
+      "count": 3,
       "endpoint": "https://www.pnnl.gov/news",
       "method": "html"
     },
