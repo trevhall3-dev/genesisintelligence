@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-20T07:42:34.351840+00:00",
-  "count": 47,
+  "updated_at": "2026-11-20T13:55:00Z",
+  "count": 48,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -127,6 +127,36 @@
     }
   ],
   "items": [
+    {
+      "id": "cset-biodata-genesis-2026-11-19",
+      "title": "Biodata Matters for the Genesis Mission",
+      "source": "Georgetown University — Center for Security and Emerging Technology",
+      "url": "https://cset.georgetown.edu/article/biodata-matters-for-the-genesis-mission/",
+      "date": "2026-11-20",
+      "source_published_at": "2026-11-19",
+      "gih_added_at": "2026-11-20T13:55:00Z",
+      "gih_added_date": "2026-11-20",
+      "date_basis": "Genesis Intel site addition date (America/New_York); original source published November 19",
+      "group": "Universities",
+      "category": "Data",
+      "categories": [
+        "Data",
+        "AI models"
+      ],
+      "kind": "analysis",
+      "source_method": "editorially-verified-primary-source",
+      "classification": "Genesis-focused independent analysis",
+      "suggested_visible_label": "Genesis Analysis",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "project_ids": [],
+      "summary": "Georgetown CSET examines five biological-data challenges facing DOE's Genesis Mission: quantity, distribution, metadata standardization, quality and validation, and accessibility. The analysis recommends coordinated data curation, interdisciplinary expertise and sustained funding for the American Science and Security Platform. This is independent policy analysis, not a DOE announcement or new project award.",
+      "affiliation_evidence": "The original Georgetown CSET article explicitly analyzes the DOE Genesis Mission and its proposed integrated scientific data platform. Its recommendations are the author's analysis, not official DOE policy.",
+      "evidence_urls": [
+        "https://cset.georgetown.edu/article/biodata-matters-for-the-genesis-mission/"
+      ]
+    },
     {
       "source": "Sandia National Laboratories",
       "group": "Labs",
