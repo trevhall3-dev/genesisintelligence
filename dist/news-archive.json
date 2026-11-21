@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-21T11:01:50Z",
-  "count": 49,
+  "updated_at": "2026-11-21T11:59:02Z",
+  "count": 50,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -127,6 +127,48 @@
     }
   ],
   "items": [
+    {
+      "id": "lbl-bsaip-schmidt-2026-11-16",
+      "title": "Berkeley Science AI Platform expands planned computing access for Genesis research",
+      "source": "Lawrence Berkeley National Laboratory",
+      "url": "https://newscenter.lbl.gov/2026/11/16/schmidt-science-computing-network-partnership-will-power-research/",
+      "date": "2026-11-21",
+      "gih_added_at": "2026-11-21T11:59:02Z",
+      "gih_added_date": "2026-11-21",
+      "source_published_at": "2026-11-16",
+      "date_basis": "First repository addition; America/New_York calendar date. Preserve through refreshes and imports.",
+      "group": "Labs",
+      "category": "Infrastructure",
+      "categories": [
+        "Infrastructure",
+        "AI models"
+      ],
+      "kind": "discovery",
+      "project": "Berkeley Science AI Platform (BSAIP)",
+      "participants": [
+        "UC Berkeley",
+        "Berkeley Lab / NERSC",
+        "Schmidt Sciences",
+        "Dell Technologies",
+        "NVIDIA"
+      ],
+      "classification": "confirmed Genesis",
+      "suggested_visible_label": "",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "project_ids": [],
+      "source_method": "editorially-verified-official-source",
+      "summary": "Schmidt Sciences support will establish the Berkeley Science AI Platform at NERSC, adding compute and storage using Doudna architecture. Berkeley Lab explicitly links the system to Genesis. User availability is planned for 2028; this is an infrastructure commitment, not an operational launch.",
+      "what_changed": "November 16 announcement establishes a philanthropic computing collaboration and dedicated capacity for Schmidt Sciences awardees and UC Berkeley researchers.",
+      "significance": "Broadens access to scientific machine learning infrastructure.",
+      "affiliation_evidence": "Berkeley Lab director Kathy Yelick explicitly identifies this system as contributing to DOE's Genesis Mission. This confirms mission linkage, not a Genesis RFA award.",
+      "evidence_urls": [
+        "https://newscenter.lbl.gov/2026/11/16/schmidt-science-computing-network-partnership-will-power-research/",
+        "https://www.nersc.gov/news-and-events/news/uc-berkeley-berkeley-lab-collaboration-with-schmidt-science-computing-network-will-provide-high-performance-computing-for-cutting-edge-research"
+      ],
+      "deduplication_note": "Absent from 49-item repository and live feed. NERSC and UC Berkeley versions contain substantially identical reporting and are evidence mirrors, not separate additions."
+    },
     {
       "id": "harvard-asqc-genesis-2026-11-20",
       "title": "Harvard-led Genesis team details $12 million AI quantum error-correction project",
