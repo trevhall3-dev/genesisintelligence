@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-11-21T11:59:02Z",
+  "new_item_id": "lbl-bsaip-schmidt-2026-11-16",
+  "publication_commit": "930b33c432c5ea7238161c2ce7ab2ae9bbce1f93",
+  "checked_feed_count_before": 49,
+  "already_present": [
+    "Harvard ASQC November 20 feature",
+    "LLNL ElMerFold",
+    "ORNL Lux",
+    "Fermilab FemtoMind",
+    "Brookhaven jet reconstruction"
+  ],
+  "suppressed_mirrors": [
+    "https://www.nersc.gov/news-and-events/news/uc-berkeley-berkeley-lab-collaboration-with-schmidt-science-computing-network-will-provide-high-performance-computing-for-cutting-edge-research"
+  ],
+  "implementation_audit": {
+    "missing_added_at": 33,
+    "stitch_maggie": {
+      "gih_added_date": "2026-11-10",
+      "source_published_at": "2026-11-04",
+      "live_api_verified": true
+    },
+    "frontend_repository_sort": "gih_added_at then gih_added_date then legacy date",
+    "frontend_repository_display": "Added and Published separately when gih_added_date exists",
+    "live_javascript": "403; rendered ordering/date not verified",
+    "label_gap": "Frontend uses Not Genesis instead of required GENESIS LINK NOT CONFIRMED",
+    "collector_gap": "No gih_added timestamp handling found in collect_genesis_news.py",
+    "database_timestamp_protection": "news_editorial INSERT ON CONFLICT DO NOTHING preserves supplied existing values"
+  },
+  "approved_exception": "AIGM Lite remains approved; no reapproval requested"
+}
