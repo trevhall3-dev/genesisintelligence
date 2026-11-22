@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22T07:25:07.436583+00:00",
-  "count": 50,
+  "updated_at": "2026-11-22T12:02:41Z",
+  "count": 52,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -128,34 +128,83 @@
   ],
   "items": [
     {
-      "id": "harvard-asqc-genesis-2026-11-20",
-      "title": "Harvard-led Genesis team details $12 million AI quantum error-correction project",
-      "source": "Harvard Gazette",
-      "url": "https://news.harvard.edu/gazette/story/2026/11/harvard-led-team-receives-12-million-in-federal-funds-to-advance-quantum-computing-with-ai/",
-      "date": "2026-11-21",
-      "source_published_at": "2026-11-20",
-      "gih_added_at": "2026-11-21T11:01:50Z",
-      "gih_added_date": "2026-11-21",
-      "date_basis": "Genesis Intel repository addition date America/New_York; original source published November 20",
-      "group": "Partners",
-      "category": "AI models",
-      "categories": [
-        "AI models",
-        "Infrastructure"
-      ],
+      "date": "2026-11-22",
+      "gih_added_at": "2026-11-22T12:02:41Z",
+      "gih_added_date": "2026-11-22",
+      "date_basis": "Actual first repository addition; America/New_York. Source publication date retained separately.",
       "kind": "discovery",
       "source_method": "editorially-verified-primary-source",
+      "project_ids": [],
+      "id": "cornell-asqc-role-2026-11-20",
+      "title": "Cornell details reinforcement-learning compiler and quantum-materials role in ASQC",
+      "source": "Cornell University — College of Arts and Sciences",
+      "url": "https://as.cornell.edu/news/cornell-collaborate-genesis-mission-project-advance-quantum-computing-ai",
+      "source_published_at": "2026-11-20",
+      "group": "Partners",
+      "category": "AI models",
+      "project": "ASQC",
+      "participants": [
+        "Cornell (Eun-Ah Kim)",
+        "Harvard (Mikhail Lukin)",
+        "MIT",
+        "Los Alamos",
+        "Berkeley Lab",
+        "Sandia",
+        "QuEra",
+        "NVIDIA",
+        "Anthropic"
+      ],
+      "summary": "Cornell details its ASQC work on reinforcement-learning compilation for neutral-atom computers and hybrid simulations of interacting electrons. The report adds specific research responsibilities beyond Harvard's overview.",
+      "what_changed": "New details of Cornell's compiler, quantum-materials application and error-correction evaluation work.",
+      "significance": "Connects scientific applications to hardware-aware quantum error correction.",
       "classification": "confirmed Genesis",
+      "affiliation_evidence": "DOE's October 8 announcement explicitly lists Harvard-led ASQC; Cornell confirms its participation.",
+      "official_source": "https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science",
+      "evidence_urls": [
+        "https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science",
+        "https://as.cornell.edu/news/cornell-collaborate-genesis-mission-project-advance-quantum-computing-ai"
+      ],
+      "suggested_visible_label": "",
       "editorial_status": "approved",
       "publication_approved": true,
       "feed_published": true,
+      "deduplication_note": "Distinct technical detail from Harvard article; Cornell Chronicle teaser suppressed in favor of full original."
+    },
+    {
+      "date": "2026-11-22",
+      "gih_added_at": "2026-11-22T12:02:41Z",
+      "gih_added_date": "2026-11-22",
+      "date_basis": "Actual first repository addition; America/New_York. Source publication date retained separately.",
+      "kind": "discovery",
+      "source_method": "editorially-verified-primary-source",
       "project_ids": [],
-      "summary": "Harvard describes the $12 million Application-Aware Error Correction Codesign for Scientific Quantum Computing (ASQC) project, part of DOE's previously announced October Phase II Genesis awards. Led by Mikhail Lukin with MIT, Cornell, three DOE laboratories and industry partners, the project aims to use AI to design and test quantum error-correction codes adapted to scientific applications. The November 20 feature provides new technical and collaboration details, not a newly awarded grant.",
-      "affiliation_evidence": "Harvard Gazette explicitly identifies ASQC as one of the 12 Phase II Genesis Mission awards announced in October; Cornell independently confirms participation.",
+      "id": "aip-gil-genesis-year-two-2026-11-20",
+      "title": "Gil outlines Genesis expansion priorities in first-anniversary interview",
+      "source": "American Institute of Physics — FYI",
+      "url": "https://www.aip.org/fyi/genesis-mission-chief-takes-stock-one-year-in",
+      "source_published_at": "2026-11-20",
+      "group": "Partners",
+      "category": "Infrastructure",
+      "project": "Genesis Mission / American Science and Security Platform",
+      "participants": [
+        "DOE Under Secretary Darío Gil",
+        "AIP interviewer Clare Zhang"
+      ],
+      "summary": "In an AIP interview, Darío Gil prioritizes expanded compute, scientific models and connected instruments, with quantum selections expected in early January. His budget comments are attributed statements, not an independently resolved funding assessment.",
+      "what_changed": "New interview describes year-two priorities and expected January quantum decisions.",
+      "significance": "Provides forward milestones for monitoring platform growth and congressional support.",
+      "classification": "confirmed Genesis",
+      "affiliation_evidence": "Direct interview with Genesis director; DOE independently identifies Gil's role and platform. Interview-specific plans remain attributed to Gil.",
+      "official_source": "https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission-platform",
       "evidence_urls": [
-        "https://news.harvard.edu/gazette/story/2026/11/harvard-led-team-receives-12-million-in-federal-funds-to-advance-quantum-computing-with-ai/",
-        "https://as.cornell.edu/news/cornell-collaborate-genesis-mission-project-advance-quantum-computing-ai"
-      ]
+        "https://www.aip.org/fyi/genesis-mission-chief-takes-stock-one-year-in",
+        "https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission-platform"
+      ],
+      "suggested_visible_label": "",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "deduplication_note": "Distinct interview and future milestones beyond existing November 12 DOE letter; not a duplicate."
     },
     {
       "id": "lbl-bsaip-schmidt-2026-11-16",
@@ -198,6 +247,36 @@
         "https://www.nersc.gov/news-and-events/news/uc-berkeley-berkeley-lab-collaboration-with-schmidt-science-computing-network-will-provide-high-performance-computing-for-cutting-edge-research"
       ],
       "deduplication_note": "Absent from 49-item repository and live feed. NERSC and UC Berkeley versions contain substantially identical reporting and are evidence mirrors, not separate additions."
+    },
+    {
+      "id": "harvard-asqc-genesis-2026-11-20",
+      "title": "Harvard-led Genesis team details $12 million AI quantum error-correction project",
+      "source": "Harvard Gazette",
+      "url": "https://news.harvard.edu/gazette/story/2026/11/harvard-led-team-receives-12-million-in-federal-funds-to-advance-quantum-computing-with-ai/",
+      "date": "2026-11-21",
+      "source_published_at": "2026-11-20",
+      "gih_added_at": "2026-11-21T11:01:50Z",
+      "gih_added_date": "2026-11-21",
+      "date_basis": "Genesis Intel repository addition date America/New_York; original source published November 20",
+      "group": "Partners",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "Infrastructure"
+      ],
+      "kind": "discovery",
+      "source_method": "editorially-verified-primary-source",
+      "classification": "confirmed Genesis",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "project_ids": [],
+      "summary": "Harvard describes the $12 million Application-Aware Error Correction Codesign for Scientific Quantum Computing (ASQC) project, part of DOE's previously announced October Phase II Genesis awards. Led by Mikhail Lukin with MIT, Cornell, three DOE laboratories and industry partners, the project aims to use AI to design and test quantum error-correction codes adapted to scientific applications. The November 20 feature provides new technical and collaboration details, not a newly awarded grant.",
+      "affiliation_evidence": "Harvard Gazette explicitly identifies ASQC as one of the 12 Phase II Genesis Mission awards announced in October; Cornell independently confirms participation.",
+      "evidence_urls": [
+        "https://news.harvard.edu/gazette/story/2026/11/harvard-led-team-receives-12-million-in-federal-funds-to-advance-quantum-computing-with-ai/",
+        "https://as.cornell.edu/news/cornell-collaborate-genesis-mission-project-advance-quantum-computing-ai"
+      ]
     },
     {
       "id": "cset-biodata-genesis-2026-11-19",
@@ -598,19 +677,6 @@
       "date_basis": "GIH first repository addition; America/New_York"
     },
     {
-      "id": "99b7a49f6d1ee7498699",
-      "title": "Under Secretary Gil’s Letter to the Community: One Year In",
-      "summary": "November 12, 2026 DOE’s Under Secretary for Science reflects on his first year, accomplishments across the Office of Science and Genesis Mission, and what lies ahead.",
-      "source": "DOE Genesis Mission News",
-      "url": "https://www.energy.gov/undersecretaryforscience/articles/under-secretary-gils-letter-community-one-year",
-      "date": "2026-11-12",
-      "group": "DOE",
-      "category": "National challenges",
-      "kind": "discovery",
-      "source_method": "publisher-direct",
-      "project_ids": []
-    },
-    {
       "id": "lbnl-synaps-i-segmentation-2026-11-10",
       "title": "SYNAPS-I accelerates tomography segmentation from months to minutes",
       "summary": "Berkeley Lab reports a grapevine drought case study reducing image segmentation from months to 15 minutes. Two AI models are running on NERSC and ALCF inference servers; an open-source interface lets tomography users annotate data and train custom models.",
@@ -650,6 +716,19 @@
       "feed_published": true,
       "source_method": "editorially-verified-official-source",
       "deduplication_note": "Absent from the 35-record archive. Distinct from Brookhaven's November 4 reconstruction/autonomous-imaging report: adds segmentation case-study timing, inference deployment and user-workflow details."
+    },
+    {
+      "id": "99b7a49f6d1ee7498699",
+      "title": "Under Secretary Gil’s Letter to the Community: One Year In",
+      "summary": "November 12, 2026 DOE’s Under Secretary for Science reflects on his first year, accomplishments across the Office of Science and Genesis Mission, and what lies ahead.",
+      "source": "DOE Genesis Mission News",
+      "url": "https://www.energy.gov/undersecretaryforscience/articles/under-secretary-gils-letter-community-one-year",
+      "date": "2026-11-12",
+      "group": "DOE",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "title": "Two Genesis projects target faster electric-grid planning",
