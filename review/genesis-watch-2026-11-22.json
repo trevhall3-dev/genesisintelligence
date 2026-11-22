@@ -1,0 +1,76 @@
+{
+  "checked_at": "2026-11-22T12:02:41Z",
+  "items": [
+    {
+      "date": "2026-11-22",
+      "gih_added_at": "2026-11-22T12:02:41Z",
+      "gih_added_date": "2026-11-22",
+      "date_basis": "Actual first repository addition; America/New_York. Source publication date retained separately.",
+      "kind": "discovery",
+      "source_method": "editorially-verified-primary-source",
+      "project_ids": [],
+      "id": "fnal-ibm-nvidia-modular-2026-11-16",
+      "title": "Fermilab, IBM and NVIDIA propose modular quantum computing co-design platform",
+      "source": "Fermilab",
+      "url": "https://news.fnal.gov/2026/11/fermilab-ibm-and-nvidia-plan-modular-quantum-computing-co-design-platform-to-advance-scientific-discovery/",
+      "source_published_at": "2026-11-16",
+      "group": "Labs",
+      "category": "Infrastructure",
+      "project": "SQMS modular quantum computing co-design platform",
+      "participants": [
+        "Fermilab / SQMS",
+        "IBM",
+        "NVIDIA"
+      ],
+      "summary": "Proposed platform combines quantum processors and accelerated computing for scientific applications and AI-assisted control. It remains a plan rather than an operational launch.",
+      "what_changed": "Partners announced intended collaboration on modular quantum-classical systems.",
+      "significance": "Could support scalable quantum computing for high-energy and nuclear physics.",
+      "classification": "Genesis link not confirmed",
+      "suggested_visible_label": "GENESIS LINK NOT CONFIRMED",
+      "editorial_status": "pending_user_approval",
+      "publication_approved": false,
+      "feed_published": false,
+      "affiliation_evidence": "Fermilab and IBM releases identify SQMS support, but no Genesis attribution. Targeted searches and the 297-project registry did not establish project-specific linkage. Shared institutions and complementary ORNL work are insufficient.",
+      "evidence_urls": [
+        "https://news.fnal.gov/2026/11/fermilab-ibm-and-nvidia-plan-modular-quantum-computing-co-design-platform-to-advance-scientific-discovery/",
+        "https://newsroom.ibm.com/2026-11-16-ibm%2C-fermilab%2C-and-nvidia-announce-plans-for-new-co-design-platform-to-accelerate-the-development-of-next-generation%2C-modular-quantum-computers",
+        "https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science"
+      ],
+      "deduplication_note": "Absent from feed and accessible prior review files."
+    }
+  ],
+  "approved_added_ids": [
+    "cornell-asqc-role-2026-11-20",
+    "aip-gil-genesis-year-two-2026-11-20"
+  ],
+  "archive_commit": "d47318744f8417999520a0e41b7716cda634c599",
+  "suppressed": [
+    {
+      "url": "https://news.cornell.edu/stories/2026/11/cornell-collaborate-genesis-mission-project-advance-quantum-computing-ai",
+      "reason": "Teaser of full Cornell article retained."
+    },
+    {
+      "url": "https://news.fnal.gov/2026/11/fermilabs-chris-polly-wins-prestigious-ernest-orlando-lawrence-award-for-muon-g-2-leadership/",
+      "classification": "irrelevant",
+      "reason": "Award recognition; no material AI/SI or Genesis development."
+    }
+  ],
+  "implementation_audit": {
+    "live_before_count": 50,
+    "berkeley_live_verified": true,
+    "missing_added_at": 33,
+    "live_api_added_order_verified": true,
+    "live_javascript_verified": "Sorts using added-at and displays Added and Published separately for timestamped records; rendered browser UI not inspected.",
+    "stitch_maggie": {
+      "gih_added_date": "2026-11-10",
+      "source_published_at": "2026-11-04",
+      "live_verified": true
+    },
+    "unresolved": [
+      "Collector lacks added-at creation/preservation handling.",
+      "Frontend displays Not Genesis rather than required GENESIS LINK NOT CONFIRMED.",
+      "Repository archive was date-sorted rather than full added-at sorted before this write; refresh can regress it."
+    ]
+  },
+  "approved_exception": "AIGM Lite remains approved; no reapproval requested."
+}
