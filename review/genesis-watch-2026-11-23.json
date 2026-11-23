@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-11-23T12:05:15Z",
+  "items": [
+    {
+      "id": "pnnl-agentic-radiation-alloys-2026-11-21",
+      "title": "PNNL reports agentic AI search for radiation-tolerant alloys",
+      "project": "Agentic discovery of CoCrFeMnNi high-entropy alloys",
+      "participants": [
+        "Ankit Roy",
+        "Ram Devanathan",
+        "Ayoub Soulami",
+        "Maria L. Sushko",
+        "PNNL"
+      ],
+      "source": "Pacific Northwest National Laboratory",
+      "official_source": "https://www.pnnl.gov/publications/agentic-ai-autonomous-discovery-radiation-tolerant-cocrfemnni-high-entropy-alloys",
+      "url": "https://www.pnnl.gov/publications/agentic-ai-autonomous-discovery-radiation-tolerant-cocrfemnni-high-entropy-alloys",
+      "source_published_at": "2026-11-21",
+      "source_date_note": "Date displayed by PNNL; publisher's original online date not independently verified because DOI retrieval failed.",
+      "gih_added_at": "2026-11-23T12:05:15Z",
+      "gih_added_date": "2026-11-23",
+      "date": "2026-11-23",
+      "date_basis": "First repository review-queue addition; America/New_York. Preserve if later published.",
+      "classification": "Genesis link not confirmed",
+      "suggested_visible_label": "GENESIS LINK NOT CONFIRMED",
+      "editorial_status": "pending_user_approval",
+      "publication_approved": false,
+      "feed_published": false,
+      "group": "Labs",
+      "category": "AI models",
+      "what_changed": "PNNL posted a study coupling an LLM with LAMMPS simulations to propose alloy compositions and adapt searches using simulated defects.",
+      "significance": "Potentially reduces manual iteration in radiation-resistant materials discovery; experimental validation is not established by the abstract.",
+      "affiliation_evidence": "No Genesis attribution in official abstract. Author/title checks against the 297-project registry, PNNL project announcements and targeted searches found no documented connection. Similar alloy projects and laboratory participation are insufficient.",
+      "evidence_urls": [
+        "https://www.pnnl.gov/publications/agentic-ai-autonomous-discovery-radiation-tolerant-cocrfemnni-high-entropy-alloys",
+        "https://doi.org/10.1016/j.scriptamat.2026.117286",
+        "https://www.pnnl.gov/news-media/genesis-mission-draws-pnnl-expertise-five-new-si-driven-projects",
+        "https://www.energy.gov/documents/genesis-mission-rfa-awards-list"
+      ],
+      "deduplication_note": "Absent from 52-item repository/live feed; distinct from Sandia VASt."
+    }
+  ],
+  "implementation_audit": {
+    "live_count": 52,
+    "yesterday_additions_live_verified": [
+      "cornell-asqc-role-2026-11-20",
+      "aip-gil-genesis-year-two-2026-11-20"
+    ],
+    "missing_added_at": 33,
+    "live_api_sort": "Verified recent additions ordered by added-at",
+    "live_javascript": "Retrieved: sorts by added-at and separates Added/Published for records with added dates. Browser-rendered UI not inspected.",
+    "label_gap": "Live JavaScript still uses Not Genesis instead of GENESIS LINK NOT CONFIRMED",
+    "repository_order_gap": "Harvard precedes later-added Berkeley item; collector refresh has regressed full timestamp ordering.",
+    "stitch_maggie": {
+      "gih_added_date": "2026-11-10",
+      "source_published_at": "2026-11-04",
+      "live_verified": true
+    }
+  },
+  "feed_write_performed": false,
+  "approved_exception": "AIGM Lite remains approved; no approval requested again.",
+  "official_news_index": "https://www.energy.gov/undersecretaryforscience/genesis-mission/listings/genesis-mission-news"
+}
