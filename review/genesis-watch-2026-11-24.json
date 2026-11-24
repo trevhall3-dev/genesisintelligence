@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-11-24T12:04:03Z",
+  "approved_added_ids": [
+    "doe-genesis-one-year-2026-11-23",
+    "fedscoop-genesis-funding-2026-11-23",
+    "quera-asqc-hardware-2026-11-23"
+  ],
+  "archive_commit": "feb7c80f4dd1743a1ebc6ced62315e00a6afce9b",
+  "new_pending_items": [],
+  "existing_pending": "PNNL alloy study and Fermilab quantum platform remain pending; no repeat approval request.",
+  "excluded": [
+    {
+      "url": "https://www.esa.int/articles/about-us/directorates/resilience-navigation-and-connectivity/genesis-mission-upgraded",
+      "classification": "irrelevant",
+      "reason": "ESA geodesy mission, not DOE Genesis."
+    },
+    {
+      "url": "https://www.pnnl.gov/news-media/researchers-reveal-predictive-model-novel-structures-mimic-biominerals",
+      "classification": "irrelevant",
+      "reason": "Physical chemistry predictive modeling; no material AI/SI or documented Genesis development established."
+    },
+    {
+      "url": "https://www.pnnl.gov/news-media/proving-power-and-potential-microreactors-soldiers",
+      "classification": "irrelevant",
+      "reason": "Janus microreactor program; no qualifying AI/SI or Genesis connection established."
+    }
+  ],
+  "implementation_audit": {
+    "live_before_count": 52,
+    "missing_added_at": 33,
+    "stitch_maggie": {
+      "gih_added_date": "2026-11-10",
+      "source_published_at": "2026-11-04",
+      "live_verified": true
+    },
+    "live_api_recent_order": "Correct added-at ordering",
+    "repository_order": "Refresh reverted Harvard/Berkeley ordering; sorted again with this addition. Underlying collector gap remains.",
+    "rendered_dashboard": "Not inspected in browser; no claim of full rendered verification.",
+    "known_gaps": [
+      "Legacy records lack timestamps",
+      "Collector does not reliably maintain timestamp ordering",
+      "Required unconfirmed label differs from existing frontend"
+    ]
+  },
+  "approved_exception": "AIGM Lite approval preserved"
+}
