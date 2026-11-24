@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24T12:04:03Z",
-  "count": 55,
+  "updated_at": "2026-11-24T12:22:18.688Z",
+  "count": 56,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -245,6 +245,48 @@
         "https://www.quera.com/press-releases/quera-computing-joins-harvard-led-12-million-doe-project-to-design-ai-driven-error-correction-for-fault-tolerant-quantum-computing"
       ],
       "deduplication_note": "Distinct perspective beyond Harvard and Cornell reports; syndicated release mirrors suppressed."
+    },
+    {
+      "id": "pnnl-agentic-radiation-alloys-2026-11-21",
+      "title": "PNNL reports agentic AI search for radiation-tolerant alloys",
+      "project": "Agentic discovery of CoCrFeMnNi high-entropy alloys",
+      "participants": [
+        "Ankit Roy",
+        "Ram Devanathan",
+        "Ayoub Soulami",
+        "Maria L. Sushko",
+        "PNNL"
+      ],
+      "source": "Pacific Northwest National Laboratory",
+      "official_source": "https://www.pnnl.gov/publications/agentic-ai-autonomous-discovery-radiation-tolerant-cocrfemnni-high-entropy-alloys",
+      "url": "https://www.pnnl.gov/publications/agentic-ai-autonomous-discovery-radiation-tolerant-cocrfemnni-high-entropy-alloys",
+      "source_published_at": "2026-11-21",
+      "source_date_note": "Date displayed by PNNL; publisher's original online date not independently verified because DOI retrieval failed.",
+      "gih_added_at": "2026-11-23T12:05:15Z",
+      "gih_added_date": "2026-11-23",
+      "date": "2026-11-23",
+      "date_basis": "First repository review-queue addition; America/New_York. Preserve if later published.",
+      "classification": "NOT GENESIS",
+      "suggested_visible_label": "NOT GENESIS",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "group": "Labs",
+      "category": "AI models",
+      "what_changed": "PNNL posted a study coupling an LLM with LAMMPS simulations to propose alloy compositions and adapt searches using simulated defects.",
+      "significance": "Potentially reduces manual iteration in radiation-resistant materials discovery; experimental validation is not established by the abstract.",
+      "affiliation_evidence": "No Genesis attribution in official abstract. Author/title checks against the 297-project registry, PNNL project announcements and targeted searches found no documented connection. Similar alloy projects and laboratory participation are insufficient.",
+      "evidence_urls": [
+        "https://www.pnnl.gov/publications/agentic-ai-autonomous-discovery-radiation-tolerant-cocrfemnni-high-entropy-alloys",
+        "https://doi.org/10.1016/j.scriptamat.2026.117286",
+        "https://www.pnnl.gov/news-media/genesis-mission-draws-pnnl-expertise-five-new-si-driven-projects",
+        "https://www.energy.gov/documents/genesis-mission-rfa-awards-list"
+      ],
+      "deduplication_note": "Absent from 52-item repository/live feed; distinct from Sandia VASt.",
+      "kind": "discovery",
+      "project_ids": [],
+      "source_method": "editorially-reviewed-primary-source",
+      "summary": "PNNL posted a study coupling an LLM with LAMMPS simulations to propose alloy compositions and adapt searches using simulated defects. Potentially reduces manual iteration in radiation-resistant materials discovery; experimental validation is not established by the abstract."
     },
     {
       "date": "2026-11-22",
