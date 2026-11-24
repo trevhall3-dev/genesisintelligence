@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23T20:31:29.799534+00:00",
-  "count": 52,
+  "updated_at": "2026-11-24T12:04:03Z",
+  "count": 55,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -128,6 +128,125 @@
   ],
   "items": [
     {
+      "gih_added_at": "2026-11-24T12:04:03Z",
+      "gih_added_date": "2026-11-24",
+      "date": "2026-11-24",
+      "date_basis": "First repository addition, America/New_York calendar date; preserve across refreshes.",
+      "classification": "confirmed Genesis",
+      "suggested_visible_label": "",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "kind": "discovery",
+      "project_ids": [],
+      "source_method": "editorially-verified-primary-source",
+      "id": "doe-genesis-one-year-2026-11-23",
+      "title": "DOE publishes Genesis Mission year-one review and next-phase outlook",
+      "source": "U.S. Department of Energy",
+      "url": "https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission-one-year",
+      "official_source": "https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission-one-year",
+      "source_published_at": "unknown",
+      "source_updated_at": "2026-11-23",
+      "source_date_note": "DOE displays last updated November 23; original publication date is not stated. Unknown prevents fallback to site addition date.",
+      "group": "DOE",
+      "category": "Infrastructure",
+      "project": "Genesis Mission",
+      "participants": [
+        "DOE",
+        "National laboratories",
+        "University and industry research teams"
+      ],
+      "summary": "DOE's anniversary review consolidates platform milestones and describes the next phase of research delivery. It is a retrospective and outlook, not a new award announcement.",
+      "what_changed": "New official consolidated timeline and year-two outlook.",
+      "significance": "Provides a primary reference for tracking mission implementation.",
+      "affiliation_evidence": "Published in DOE's official Genesis Mission section.",
+      "evidence_urls": [
+        "https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission-one-year"
+      ],
+      "deduplication_note": "Distinct full mission review; preserves November 12 letter and November 20 interview."
+    },
+    {
+      "gih_added_at": "2026-11-24T12:04:03Z",
+      "gih_added_date": "2026-11-24",
+      "date": "2026-11-24",
+      "date_basis": "First repository addition, America/New_York calendar date; preserve across refreshes.",
+      "classification": "confirmed Genesis",
+      "suggested_visible_label": "",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "kind": "discovery",
+      "project_ids": [],
+      "source_method": "editorially-verified-primary-source",
+      "id": "fedscoop-genesis-funding-2026-11-23",
+      "title": "Gil discusses Genesis funding constraints and AI-ready data in FedScoop interview",
+      "source": "FedScoop",
+      "url": "https://fedscoop.com/energy-department-genesis-mission-one-year-milestones-whats-next/",
+      "official_source": "https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission-one-year",
+      "source_published_at": "2026-11-23",
+      "group": "Partners",
+      "category": "Data",
+      "project": "Genesis Mission",
+      "participants": [
+        "Darío Gil",
+        "DOE",
+        "FedScoop reporter Lindsey Wilkinson"
+      ],
+      "summary": "Gil tells FedScoop that scaling Genesis requires additional investment, AI-ready datasets and upgraded scientific instruments. He anticipates further funding opportunities; these are stated priorities, not new appropriations or open solicitations.",
+      "what_changed": "Separate interview adds funding and data-readiness perspectives.",
+      "significance": "Identifies constraints on expansion and future opportunities to monitor.",
+      "affiliation_evidence": "Direct interview with mission director; official DOE mission page independently confirms program context.",
+      "evidence_urls": [
+        "https://fedscoop.com/energy-department-genesis-mission-one-year-milestones-whats-next/",
+        "https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission-one-year"
+      ],
+      "deduplication_note": "Original interview, distinct from AIP's November 20 reporting."
+    },
+    {
+      "gih_added_at": "2026-11-24T12:04:03Z",
+      "gih_added_date": "2026-11-24",
+      "date": "2026-11-24",
+      "date_basis": "First repository addition, America/New_York calendar date; preserve across refreshes.",
+      "classification": "confirmed Genesis",
+      "suggested_visible_label": "",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "kind": "discovery",
+      "project_ids": [],
+      "source_method": "editorially-verified-primary-source",
+      "id": "quera-asqc-hardware-2026-11-23",
+      "title": "QuEra details ASQC hardware testing and error-correction roadmap",
+      "source": "QuEra Computing",
+      "url": "https://www.quera.com/press-releases/quera-computing-joins-harvard-led-12-million-doe-project-to-design-ai-driven-error-correction-for-fault-tolerant-quantum-computing",
+      "official_source": "https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science",
+      "source_published_at": "2026-11-23",
+      "source_date_note": "Page date November 23; body dateline November 24, 2026. Both retained; not a new grant award.",
+      "group": "Partners",
+      "category": "AI models",
+      "project": "ASQC",
+      "participants": [
+        "QuEra",
+        "Harvard",
+        "MIT",
+        "Cornell",
+        "Los Alamos",
+        "Berkeley Lab",
+        "Sandia",
+        "NVIDIA",
+        "Anthropic"
+      ],
+      "summary": "QuEra describes testing AI-designed error-correction codes on neutral-atom hardware and explains the potential connection to its commercial fault-tolerance roadmap. Planned capabilities remain prospective.",
+      "what_changed": "Company-specific hardware and roadmap perspective on existing ASQC award.",
+      "significance": "Clarifies how application-specific error correction could reduce hardware overhead.",
+      "affiliation_evidence": "DOE October 8 award announcement lists Harvard-led ASQC; QuEra explicitly identifies its role.",
+      "evidence_urls": [
+        "https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science",
+        "https://www.quera.com/press-releases/quera-computing-joins-harvard-led-12-million-doe-project-to-design-ai-driven-error-correction-for-fault-tolerant-quantum-computing"
+      ],
+      "deduplication_note": "Distinct perspective beyond Harvard and Cornell reports; syndicated release mirrors suppressed."
+    },
+    {
       "date": "2026-11-22",
       "gih_added_at": "2026-11-22T12:02:41Z",
       "gih_added_date": "2026-11-22",
@@ -207,36 +326,6 @@
       "deduplication_note": "Distinct technical detail from Harvard article; Cornell Chronicle teaser suppressed in favor of full original."
     },
     {
-      "id": "harvard-asqc-genesis-2026-11-20",
-      "title": "Harvard-led Genesis team details $12 million AI quantum error-correction project",
-      "source": "Harvard Gazette",
-      "url": "https://news.harvard.edu/gazette/story/2026/11/harvard-led-team-receives-12-million-in-federal-funds-to-advance-quantum-computing-with-ai/",
-      "date": "2026-11-21",
-      "source_published_at": "2026-11-20",
-      "gih_added_at": "2026-11-21T11:01:50Z",
-      "gih_added_date": "2026-11-21",
-      "date_basis": "Genesis Intel repository addition date America/New_York; original source published November 20",
-      "group": "Partners",
-      "category": "AI models",
-      "categories": [
-        "AI models",
-        "Infrastructure"
-      ],
-      "kind": "discovery",
-      "source_method": "editorially-verified-primary-source",
-      "classification": "confirmed Genesis",
-      "editorial_status": "approved",
-      "publication_approved": true,
-      "feed_published": true,
-      "project_ids": [],
-      "summary": "Harvard describes the $12 million Application-Aware Error Correction Codesign for Scientific Quantum Computing (ASQC) project, part of DOE's previously announced October Phase II Genesis awards. Led by Mikhail Lukin with MIT, Cornell, three DOE laboratories and industry partners, the project aims to use AI to design and test quantum error-correction codes adapted to scientific applications. The November 20 feature provides new technical and collaboration details, not a newly awarded grant.",
-      "affiliation_evidence": "Harvard Gazette explicitly identifies ASQC as one of the 12 Phase II Genesis Mission awards announced in October; Cornell independently confirms participation.",
-      "evidence_urls": [
-        "https://news.harvard.edu/gazette/story/2026/11/harvard-led-team-receives-12-million-in-federal-funds-to-advance-quantum-computing-with-ai/",
-        "https://as.cornell.edu/news/cornell-collaborate-genesis-mission-project-advance-quantum-computing-ai"
-      ]
-    },
-    {
       "id": "lbl-bsaip-schmidt-2026-11-16",
       "title": "Berkeley Science AI Platform expands planned computing access for Genesis research",
       "source": "Lawrence Berkeley National Laboratory",
@@ -277,6 +366,36 @@
         "https://www.nersc.gov/news-and-events/news/uc-berkeley-berkeley-lab-collaboration-with-schmidt-science-computing-network-will-provide-high-performance-computing-for-cutting-edge-research"
       ],
       "deduplication_note": "Absent from 49-item repository and live feed. NERSC and UC Berkeley versions contain substantially identical reporting and are evidence mirrors, not separate additions."
+    },
+    {
+      "id": "harvard-asqc-genesis-2026-11-20",
+      "title": "Harvard-led Genesis team details $12 million AI quantum error-correction project",
+      "source": "Harvard Gazette",
+      "url": "https://news.harvard.edu/gazette/story/2026/11/harvard-led-team-receives-12-million-in-federal-funds-to-advance-quantum-computing-with-ai/",
+      "date": "2026-11-21",
+      "source_published_at": "2026-11-20",
+      "gih_added_at": "2026-11-21T11:01:50Z",
+      "gih_added_date": "2026-11-21",
+      "date_basis": "Genesis Intel repository addition date America/New_York; original source published November 20",
+      "group": "Partners",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "Infrastructure"
+      ],
+      "kind": "discovery",
+      "source_method": "editorially-verified-primary-source",
+      "classification": "confirmed Genesis",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "project_ids": [],
+      "summary": "Harvard describes the $12 million Application-Aware Error Correction Codesign for Scientific Quantum Computing (ASQC) project, part of DOE's previously announced October Phase II Genesis awards. Led by Mikhail Lukin with MIT, Cornell, three DOE laboratories and industry partners, the project aims to use AI to design and test quantum error-correction codes adapted to scientific applications. The November 20 feature provides new technical and collaboration details, not a newly awarded grant.",
+      "affiliation_evidence": "Harvard Gazette explicitly identifies ASQC as one of the 12 Phase II Genesis Mission awards announced in October; Cornell independently confirms participation.",
+      "evidence_urls": [
+        "https://news.harvard.edu/gazette/story/2026/11/harvard-led-team-receives-12-million-in-federal-funds-to-advance-quantum-computing-with-ai/",
+        "https://as.cornell.edu/news/cornell-collaborate-genesis-mission-project-advance-quantum-computing-ai"
+      ]
     },
     {
       "id": "cset-biodata-genesis-2026-11-19",
@@ -677,19 +796,6 @@
       "date_basis": "GIH first repository addition; America/New_York"
     },
     {
-      "id": "99b7a49f6d1ee7498699",
-      "title": "Under Secretary Gil’s Letter to the Community: One Year In",
-      "summary": "November 12, 2026 DOE’s Under Secretary for Science reflects on his first year, accomplishments across the Office of Science and Genesis Mission, and what lies ahead.",
-      "source": "DOE Genesis Mission News",
-      "url": "https://www.energy.gov/undersecretaryforscience/articles/under-secretary-gils-letter-community-one-year",
-      "date": "2026-11-12",
-      "group": "DOE",
-      "category": "National challenges",
-      "kind": "discovery",
-      "source_method": "publisher-direct",
-      "project_ids": []
-    },
-    {
       "id": "lbnl-synaps-i-segmentation-2026-11-10",
       "title": "SYNAPS-I accelerates tomography segmentation from months to minutes",
       "summary": "Berkeley Lab reports a grapevine drought case study reducing image segmentation from months to 15 minutes. Two AI models are running on NERSC and ALCF inference servers; an open-source interface lets tomography users annotate data and train custom models.",
@@ -729,6 +835,19 @@
       "feed_published": true,
       "source_method": "editorially-verified-official-source",
       "deduplication_note": "Absent from the 35-record archive. Distinct from Brookhaven's November 4 reconstruction/autonomous-imaging report: adds segmentation case-study timing, inference deployment and user-workflow details."
+    },
+    {
+      "id": "99b7a49f6d1ee7498699",
+      "title": "Under Secretary Gil’s Letter to the Community: One Year In",
+      "summary": "November 12, 2026 DOE’s Under Secretary for Science reflects on his first year, accomplishments across the Office of Science and Genesis Mission, and what lies ahead.",
+      "source": "DOE Genesis Mission News",
+      "url": "https://www.energy.gov/undersecretaryforscience/articles/under-secretary-gils-letter-community-one-year",
+      "date": "2026-11-12",
+      "group": "DOE",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "title": "Two Genesis projects target faster electric-grid planning",
