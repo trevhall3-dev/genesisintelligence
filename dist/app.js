@@ -106,7 +106,7 @@ function render(){
   const sourceName=challenge?item.group:project?(item.institution||"Lead institution not listed"):source?item.source||"Official source":item.source||filterType(item);
   const detail=challenge?"Official DOE challenge · not a project award":project?([item.principal_investigator?"PI: "+item.principal_investigator:"",item.source_phase||"DOE project selection"].filter(Boolean).join(" · ")):source?"Official Genesis reference":item.gih_added_date?"Added to Genesis Intel "+dateLabel(item.gih_added_date)+" · Published "+dateLabel(item.source_published_at||item.date):dateLabel(item.date);
   const tags=project?'<span class="record-tag">'+safe((item.categories||[item.category]).filter(t=>areas.includes(t)).slice(0,2).map(t=>areaLabels[t]).join(" · "))+'</span>':"";
-  const editorialLabel=(!project&&!challenge&&!source&&item.classification==="GENESIS LINK NOT CONFIRMED")?'<span class="news-affiliation-label">Not Genesis</span>':"";
+  const editorialLabel=(!project&&!challenge&&!source&&["GENESIS LINK NOT CONFIRMED","NOT GENESIS"].includes(item.classification))?'<span class="news-affiliation-label">NOT GENESIS</span>':"";
   const newBadge=(!project&&!challenge&&!source&&isNewNewsItem(item))?'<span class="news-new-label" title="Added to Genesis Intel within the past 48 hours">NEW</span>':"";
   return '<article class="compact-item">'+head+'<div class="compact-meta"><span class="article-source">'+safe(sourceName)+'</span><span class="article-date">'+safe(detail)+'</span>'+tags+editorialLabel+newBadge+'</div>'+(challenge&&item.description?'<p class="challenge-description">'+safe(item.description)+'</p>':'')+'</article>';
  }).join("")||'<p class="empty">No records match this view. Try All, clear search, or choose another category.</p>';
