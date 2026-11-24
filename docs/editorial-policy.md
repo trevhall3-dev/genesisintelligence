@@ -9,7 +9,7 @@ Research each item's Genesis relationship from official sources, mission/project
 
 ## Display
 - Confirmed Genesis connection: no visible affiliation badge.
-- Relevant article lacking documented Genesis connection: display exactly **GENESIS LINK NOT CONFIRMED**.
+- Relevant article lacking documented Genesis connection: display exactly **NOT GENESIS**.
 - Never imply an unverified connection is verified.
 - Reassess classification if later evidence emerges.
 
@@ -26,7 +26,7 @@ Suppress only substantially identical article content, including minor headline 
 Sandia National Laboratories, 2026-11-05: “Building computer models that stay current as conditions change” (AIGM Lite).
 Source: https://www.sandia.gov/labnews/2026/11/05/building-computer-models-that-stay-current-as-conditions-change/
 Status: APPROVED for Genesis News.
-Visible label: GENESIS LINK NOT CONFIRMED.
+Visible label: NOT GENESIS.
 Do not re-request editorial approval.
 
 ## Publisher source classification (approved November 12, 2026)
