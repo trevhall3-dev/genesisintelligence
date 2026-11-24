@@ -21,11 +21,11 @@
       "gih_added_date": "2026-11-23",
       "date": "2026-11-23",
       "date_basis": "First repository review-queue addition; America/New_York. Preserve if later published.",
-      "classification": "Genesis link not confirmed",
-      "suggested_visible_label": "GENESIS LINK NOT CONFIRMED",
-      "editorial_status": "pending_user_approval",
-      "publication_approved": false,
-      "feed_published": false,
+      "classification": "NOT GENESIS",
+      "suggested_visible_label": "NOT GENESIS",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
       "group": "Labs",
       "category": "AI models",
       "what_changed": "PNNL posted a study coupling an LLM with LAMMPS simulations to propose alloy compositions and adapt searches using simulated defects.",
@@ -37,7 +37,11 @@
         "https://www.pnnl.gov/news-media/genesis-mission-draws-pnnl-expertise-five-new-si-driven-projects",
         "https://www.energy.gov/documents/genesis-mission-rfa-awards-list"
       ],
-      "deduplication_note": "Absent from 52-item repository/live feed; distinct from Sandia VASt."
+      "deduplication_note": "Absent from 52-item repository/live feed; distinct from Sandia VASt.",
+      "kind": "discovery",
+      "project_ids": [],
+      "source_method": "editorially-reviewed-primary-source",
+      "summary": "PNNL posted a study coupling an LLM with LAMMPS simulations to propose alloy compositions and adapt searches using simulated defects. Potentially reduces manual iteration in radiation-resistant materials discovery; experimental validation is not established by the abstract."
     }
   ],
   "implementation_audit": {
@@ -59,5 +63,6 @@
   },
   "feed_write_performed": false,
   "approved_exception": "AIGM Lite remains approved; no approval requested again.",
-  "official_news_index": "https://www.energy.gov/undersecretaryforscience/genesis-mission/listings/genesis-mission-news"
+  "official_news_index": "https://www.energy.gov/undersecretaryforscience/genesis-mission/listings/genesis-mission-news",
+  "approval_note": "Publisher approved addition November 24, 2026 with exact descriptor NOT GENESIS."
 }
