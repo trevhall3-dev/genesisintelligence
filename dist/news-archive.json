@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24T12:22:18.688Z",
-  "count": 56,
+  "updated_at": "2026-11-24T12:58:41.823Z",
+  "count": 57,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -127,6 +127,29 @@
     }
   ],
   "items": [
+    {
+      "id": "weekly-genesis-intelligence-issue-003-2026-11-24",
+      "title": "Weekly Genesis Intelligence Briefing — Issue 003 (Nov 15–21, 2026)",
+      "summary": "Genesis Begins Delivering: new Lux computing capacity, FemtoMind's reported scientific simulation gains, Berkeley's future research computing, Harvard–Cornell quantum collaboration, and Georgetown CSET's data-readiness analysis.",
+      "source": "Genesis Intel",
+      "url": "https://genesisintelhub.com/briefings/2026-11-24.html",
+      "source_published_at": "2026-11-24",
+      "gih_added_at": "2026-11-24T12:58:41.823Z",
+      "gih_added_date": "2026-11-24",
+      "date": "2026-11-24",
+      "group": "Partners",
+      "category": "Infrastructure",
+      "kind": "weekly-briefing",
+      "source_method": "editorial-synthesis-of-linked-original-sources",
+      "classification": "Independent editorial briefing",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "briefing_issue": "003",
+      "briefing_period": "November 15–21, 2026",
+      "briefing_teaser": "Genesis Begins Delivering: Oak Ridge Lux computing, Fermilab FemtoMind gains, Berkeley AI infrastructure, Harvard–Cornell quantum research, and scientific data quality.",
+      "briefing_path": "/briefings/2026-11-24"
+    },
     {
       "gih_added_at": "2026-11-24T12:04:03Z",
       "gih_added_date": "2026-11-24",
