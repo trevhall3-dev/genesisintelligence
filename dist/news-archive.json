@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T12:09:17.825Z",
+  "updated_at": "2026-11-25T12:10:30.000551+00:00",
   "count": 62,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -128,6 +128,44 @@
   ],
   "items": [
     {
+      "source_published_at": "2026-11-05",
+      "gih_added_at": "2026-11-25T12:09:17.825Z",
+      "gih_added_date": "2026-11-25",
+      "date": "2026-11-25",
+      "date_basis": "Actual first repository addition; America/New_York. Source publication date retained separately.",
+      "classification": "confirmed Genesis",
+      "suggested_visible_label": "",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "kind": "discovery",
+      "source_method": "editorially-verified-primary-source",
+      "project_ids": [],
+      "id": "ornl-ibm-amd-qec-platform-2026-11-05",
+      "title": "ORNL, IBM and AMD detail Quantum Genesis error-correction co-design platform",
+      "source": "Oak Ridge National Laboratory",
+      "url": "https://www.ornl.gov/news/ornl-ibm-and-amd-launch-new-co-design-platform-for-quantum-error-correction/",
+      "source_date_note": "Older primary announcement newly verified November 25; November 24 coverage is retrospective.",
+      "group": "Labs",
+      "category": "Infrastructure",
+      "project": "Quantum Genesis / QSC error-correction co-design platform",
+      "participants": [
+        "ORNL Quantum Science Center",
+        "IBM",
+        "AMD"
+      ],
+      "summary": "ORNL's November 5 announcement describes co-locating IBM quantum processors with the AMD-powered Umbra system for error-correction research. The November 24 ORNL retrospective explicitly calls the collaboration part of Quantum Genesis.",
+      "what_changed": "Resolved the earlier review lead using original announcement and explicit mission attribution; newly added source, not a new November 24 launch.",
+      "significance": "Details quantum/classical testing infrastructure; fault-tolerance milestones remain goals.",
+      "affiliation_evidence": "Original ORNL report documents mission alignment; November 24 official retrospective explicitly identifies the collaboration as part of Quantum Genesis.",
+      "deduplication_note": "Absent from archive and science queue. Quantum Zeitgeist anniversary recap is not another launch report.",
+      "official_source": "https://www.ornl.gov/news/ornl-ibm-and-amd-launch-new-co-design-platform-for-quantum-error-correction/",
+      "evidence_urls": [
+        "https://www.ornl.gov/news/ornl-ibm-and-amd-launch-new-co-design-platform-for-quantum-error-correction/",
+        "https://www.ornl.gov/news/one-year-of-progress-10-ways-ornl-advanced-the-genesis-mission/"
+      ]
+    },
+    {
       "source_published_at": "2026-11-24",
       "gih_added_at": "2026-11-25T12:09:17.825Z",
       "gih_added_date": "2026-11-25",
@@ -177,42 +215,6 @@
       "kind": "discovery",
       "source_method": "editorially-verified-primary-source",
       "project_ids": [],
-      "id": "anl-genesis-autonomy-year-one-2026-11-24",
-      "title": "Argonne details natural-language X-ray experiments and agentic research infrastructure",
-      "source": "Argonne National Laboratory",
-      "url": "https://www.anl.gov/article/argonne-puts-the-genesis-mission-to-work-in-its-first-year",
-      "group": "Labs",
-      "category": "AI models",
-      "project": "SYNAPS-I; ModCon Core Agentic Framework; ALCF Inference Service",
-      "participants": [
-        "Argonne / Advanced Photon Source / ALCF",
-        "Berkeley Lab (SYNAPS-I lead)",
-        "DOE"
-      ],
-      "summary": "Argonne describes a SYNAPS-I demonstration using natural-language instructions to locate features during an X-ray experiment, alongside Core Agentic Framework development and research on robots learning laboratory tasks.",
-      "what_changed": "Argonne-specific experimental and integration perspective, not a new Tara/Minerva deployment.",
-      "significance": "Documents movement toward experimental control during data collection.",
-      "affiliation_evidence": "Official report explicitly identifies the X-ray work as Genesis and Berkeley-led SYNAPS-I, already verified in Brookhaven/ALS records, and the framework as a ModCon contribution.",
-      "deduplication_note": "Distinct from archived Brookhaven reconstruction, ALS segmentation and ALCF hardware stories.",
-      "official_source": "https://www.anl.gov/article/argonne-puts-the-genesis-mission-to-work-in-its-first-year",
-      "evidence_urls": [
-        "https://www.anl.gov/article/argonne-puts-the-genesis-mission-to-work-in-its-first-year"
-      ]
-    },
-    {
-      "source_published_at": "2026-11-24",
-      "gih_added_at": "2026-11-25T12:09:17.825Z",
-      "gih_added_date": "2026-11-25",
-      "date": "2026-11-25",
-      "date_basis": "Actual first repository addition; America/New_York. Source publication date retained separately.",
-      "classification": "confirmed Genesis",
-      "suggested_visible_label": "",
-      "editorial_status": "approved",
-      "publication_approved": true,
-      "feed_published": true,
-      "kind": "discovery",
-      "source_method": "editorially-verified-primary-source",
-      "project_ids": [],
       "id": "doe-genesis-anniversary-facts-2026-11-24",
       "title": "DOE anniversary fact sheet details Genesis data repositories and research infrastructure",
       "source": "U.S. Department of Energy",
@@ -237,7 +239,7 @@
       ]
     },
     {
-      "source_published_at": "2026-11-05",
+      "source_published_at": "2026-11-24",
       "gih_added_at": "2026-11-25T12:09:17.825Z",
       "gih_added_date": "2026-11-25",
       "date": "2026-11-25",
@@ -250,28 +252,26 @@
       "kind": "discovery",
       "source_method": "editorially-verified-primary-source",
       "project_ids": [],
-      "id": "ornl-ibm-amd-qec-platform-2026-11-05",
-      "title": "ORNL, IBM and AMD detail Quantum Genesis error-correction co-design platform",
-      "source": "Oak Ridge National Laboratory",
-      "url": "https://www.ornl.gov/news/ornl-ibm-and-amd-launch-new-co-design-platform-for-quantum-error-correction/",
-      "source_date_note": "Older primary announcement newly verified November 25; November 24 coverage is retrospective.",
+      "id": "anl-genesis-autonomy-year-one-2026-11-24",
+      "title": "Argonne details natural-language X-ray experiments and agentic research infrastructure",
+      "source": "Argonne National Laboratory",
+      "url": "https://www.anl.gov/article/argonne-puts-the-genesis-mission-to-work-in-its-first-year",
       "group": "Labs",
-      "category": "Infrastructure",
-      "project": "Quantum Genesis / QSC error-correction co-design platform",
+      "category": "AI models",
+      "project": "SYNAPS-I; ModCon Core Agentic Framework; ALCF Inference Service",
       "participants": [
-        "ORNL Quantum Science Center",
-        "IBM",
-        "AMD"
+        "Argonne / Advanced Photon Source / ALCF",
+        "Berkeley Lab (SYNAPS-I lead)",
+        "DOE"
       ],
-      "summary": "ORNL's November 5 announcement describes co-locating IBM quantum processors with the AMD-powered Umbra system for error-correction research. The November 24 ORNL retrospective explicitly calls the collaboration part of Quantum Genesis.",
-      "what_changed": "Resolved the earlier review lead using original announcement and explicit mission attribution; newly added source, not a new November 24 launch.",
-      "significance": "Details quantum/classical testing infrastructure; fault-tolerance milestones remain goals.",
-      "affiliation_evidence": "Original ORNL report documents mission alignment; November 24 official retrospective explicitly identifies the collaboration as part of Quantum Genesis.",
-      "deduplication_note": "Absent from archive and science queue. Quantum Zeitgeist anniversary recap is not another launch report.",
-      "official_source": "https://www.ornl.gov/news/ornl-ibm-and-amd-launch-new-co-design-platform-for-quantum-error-correction/",
+      "summary": "Argonne describes a SYNAPS-I demonstration using natural-language instructions to locate features during an X-ray experiment, alongside Core Agentic Framework development and research on robots learning laboratory tasks.",
+      "what_changed": "Argonne-specific experimental and integration perspective, not a new Tara/Minerva deployment.",
+      "significance": "Documents movement toward experimental control during data collection.",
+      "affiliation_evidence": "Official report explicitly identifies the X-ray work as Genesis and Berkeley-led SYNAPS-I, already verified in Brookhaven/ALS records, and the framework as a ModCon contribution.",
+      "deduplication_note": "Distinct from archived Brookhaven reconstruction, ALS segmentation and ALCF hardware stories.",
+      "official_source": "https://www.anl.gov/article/argonne-puts-the-genesis-mission-to-work-in-its-first-year",
       "evidence_urls": [
-        "https://www.ornl.gov/news/ornl-ibm-and-amd-launch-new-co-design-platform-for-quantum-error-correction/",
-        "https://www.ornl.gov/news/one-year-of-progress-10-ways-ornl-advanced-the-genesis-mission/"
+        "https://www.anl.gov/article/argonne-puts-the-genesis-mission-to-work-in-its-first-year"
       ]
     },
     {
