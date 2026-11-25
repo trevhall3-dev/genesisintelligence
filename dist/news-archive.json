@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T12:11:00.116882+00:00",
+  "updated_at": "2026-11-25T14:25:24.313577+00:00",
   "count": 62,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -1099,7 +1099,8 @@
       "category": "National challenges",
       "kind": "discovery",
       "source_method": "publisher-direct",
-      "project_ids": []
+      "project_ids": [],
+      "source_published_at": "2026-11-12"
     },
     {
       "title": "Two Genesis projects target faster electric-grid planning",
@@ -1478,7 +1479,8 @@
       "category": "National challenges",
       "kind": "discovery",
       "source_method": "publisher-direct",
-      "project_ids": []
+      "project_ids": [],
+      "source_published_at": "2026-10-21"
     },
     {
       "id": "25304f730042877d5fb7",
@@ -1491,7 +1493,8 @@
       "category": "National challenges",
       "kind": "discovery",
       "source_method": "publisher-direct",
-      "project_ids": []
+      "project_ids": [],
+      "source_published_at": "2026-10-15"
     },
     {
       "id": "171d476f823b76b9a8a9",
@@ -1532,7 +1535,8 @@
       "category": "National challenges",
       "kind": "discovery",
       "source_method": "publisher-direct",
-      "project_ids": []
+      "project_ids": [],
+      "source_published_at": "2026-10-09"
     },
     {
       "id": "010d0f6c5bb84ce4451c",
@@ -1545,7 +1549,8 @@
       "category": "National challenges",
       "kind": "discovery",
       "source_method": "publisher-direct",
-      "project_ids": []
+      "project_ids": [],
+      "source_published_at": "2026-10-08"
     },
     {
       "id": "202605c0623aa2fe5232",
@@ -1558,7 +1563,8 @@
       "category": "National challenges",
       "kind": "discovery",
       "source_method": "publisher-direct",
-      "project_ids": []
+      "project_ids": [],
+      "source_published_at": "2026-10-08"
     },
     {
       "id": "d6c7dea6b0b258abeae8",
@@ -1571,7 +1577,8 @@
       "category": "National challenges",
       "kind": "discovery",
       "source_method": "publisher-direct",
-      "project_ids": []
+      "project_ids": [],
+      "source_published_at": "2026-10-08"
     },
     {
       "title": "DOE, NIH and Biohub partner on Genesis-aligned predictive biology data",
@@ -1608,7 +1615,8 @@
       "category": "National challenges",
       "kind": "discovery",
       "source_method": "publisher-direct",
-      "project_ids": []
+      "project_ids": [],
+      "source_published_at": "2026-09-17"
     },
     {
       "id": "f803094f66824c3c83ee",
@@ -1648,7 +1656,8 @@
       "category": "National challenges",
       "kind": "discovery",
       "source_method": "publisher-direct",
-      "project_ids": []
+      "project_ids": [],
+      "source_published_at": "2026-08-07"
     },
     {
       "id": "eb9177a6d33b54dbfde5",
@@ -1661,7 +1670,8 @@
       "category": "National challenges",
       "kind": "discovery",
       "source_method": "publisher-direct",
-      "project_ids": []
+      "project_ids": [],
+      "source_published_at": "2026-07-22"
     },
     {
       "id": "1dfb3064a725804ed09d",
@@ -1674,7 +1684,8 @@
       "category": "National challenges",
       "kind": "discovery",
       "source_method": "publisher-direct",
-      "project_ids": []
+      "project_ids": [],
+      "source_published_at": "2026-06-04"
     },
     {
       "id": "97c00b2d64e082ce0aee",
@@ -1687,7 +1698,8 @@
       "category": "National challenges",
       "kind": "discovery",
       "source_method": "publisher-direct",
-      "project_ids": []
+      "project_ids": [],
+      "source_published_at": "2026-03-17"
     },
     {
       "id": "ef2fc23ecba442f2d6b8",
@@ -1700,7 +1712,8 @@
       "category": "National challenges",
       "kind": "discovery",
       "source_method": "publisher-direct",
-      "project_ids": []
+      "project_ids": [],
+      "source_published_at": "2026-02-12"
     },
     {
       "id": "cf1037959afe49f85aac",
@@ -1713,7 +1726,8 @@
       "category": "National challenges",
       "kind": "discovery",
       "source_method": "publisher-direct",
-      "project_ids": []
+      "project_ids": [],
+      "source_published_at": "2025-11-24"
     },
     {
       "id": "8d5dc16bfc0c8bbcaf9c",
