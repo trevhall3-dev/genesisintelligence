@@ -12,6 +12,7 @@ import sys
 import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from urllib.parse import urljoin, urlparse, urlunparse
 import requests
@@ -301,6 +302,7 @@ def merge(channel,found,source_status):
         u=d.get("url","")
         if not u.startswith("https://") or urlparse(u).hostname in ("news.google.com","www.google.com"):continue
         records[normurl(u)]=d
+    added_at=datetime.now(timezone.utc)
     for d in found:
         key=normurl(d["url"])
         previous=records.get(key)
@@ -309,8 +311,26 @@ def merge(channel,found,source_status):
         # A restored source must not overwrite reviewed summaries or affiliation labels.
         if previous and (previous.get("classification") or previous.get("editorial_status")):
             d={**d,**previous,"project_ids":list(dict.fromkeys(previous.get("project_ids",[])+d.get("project_ids",[])))}
+        # Stamp only actual first additions; a refresh is never an addition.
+        # Legacy first-addition times must be recovered from repository history.
+        if previous:
+            for field in ("gih_added_at","gih_added_date","date_basis"):
+                if field in previous:
+                    d[field]=previous[field]
+            d["source_published_at"]=previous.get("source_published_at") or d.get("source_published_at") or d.get("date") or "unknown"
+            if previous.get("gih_added_at"):
+                instant=datetime.fromisoformat(previous["gih_added_at"].replace("Z","+00:00"))
+                d["gih_added_date"]=instant.astimezone(ZoneInfo("America/New_York")).date().isoformat()
+            if d.get("gih_added_date"):
+                d["date"]=d["gih_added_date"]
+        else:
+            d["source_published_at"]=d.get("source_published_at") or d.get("date") or "unknown"
+            d["gih_added_at"]=added_at.isoformat()
+            d["gih_added_date"]=added_at.astimezone(ZoneInfo("America/New_York")).date().isoformat()
+            d["date"]=d["gih_added_date"]
+            d["date_basis"]="Actual first repository addition; America/New_York. Source publication date retained separately."
         records[key]=d
-    rows=sorted(records.values(),key=lambda x:(x.get("date") or "",x.get("title") or ""),reverse=True)[:4000]
+    rows=sorted(records.values(),key=lambda x:(x.get("gih_added_at") or x.get("gih_added_date") or x.get("date") or "",x.get("title") or ""),reverse=True)[:4000]
     for item in rows:item["group"]=publisher_group(item.get("url",""),item.get("group","Partners"))
     old_states={(("DOE Genesis Mission News" if x["name"]=="DOE Genesis Mission" else x["name"])):{**x,"name":("DOE Genesis Mission News" if x["name"]=="DOE Genesis Mission" else x["name"])} for x in old.get("sources",[])}
     for x in source_status:old_states[x["name"]]=x

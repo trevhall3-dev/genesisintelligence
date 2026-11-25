@@ -9,7 +9,7 @@ Research each item's Genesis relationship from official sources, mission/project
 
 ## Display
 - Confirmed Genesis connection: no visible affiliation badge.
-- Relevant article lacking documented Genesis connection: display exactly **NOT GENESIS**.
+- Relevant article lacking documented Genesis connection: display exactly **GENESIS LINK NOT CONFIRMED**.
 - Never imply an unverified connection is verified.
 - Reassess classification if later evidence emerges.
 
@@ -26,8 +26,11 @@ Suppress only substantially identical article content, including minor headline 
 Sandia National Laboratories, 2026-11-05: “Building computer models that stay current as conditions change” (AIGM Lite).
 Source: https://www.sandia.gov/labnews/2026/11/05/building-computer-models-that-stay-current-as-conditions-change/
 Status: APPROVED for Genesis News.
-Visible label: NOT GENESIS.
+Visible label: GENESIS LINK NOT CONFIRMED.
 Do not re-request editorial approval.
 
 ## Publisher source classification (approved November 12, 2026)
 News tiers use the **original article publisher** rather than a laboratory, company, or university merely mentioned in a headline. DOE-published pages belong to DOE; official national laboratory publisher sites belong to Labs; other university, industry, media, and independently published stories belong to Partners. These are mutually exclusive publisher labels, not claims of official Genesis partnership or affiliation. All News combines the three categories without repeating a URL. Apply the rules to archived news, fresh collection, D1 reads, and frontend filters. The separate private partnership candidate collector is paused (underlying records and code retained); the general third-party news collector continues.
+
+## Addition-date provenance
+New records receive persistent gih_added_at at first repository addition, with gih_added_date derived in America/New_York. Feed sorting uses this timestamp, and source_published_at remains separately labeled. Refreshes preserve these fields. Missing legacy timestamps require repository-history recovery; never use a refresh time as a historical addition.

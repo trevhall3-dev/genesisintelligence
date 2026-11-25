@@ -4,6 +4,10 @@ const $=id=>document.getElementById(id);
 const safe=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl=value=>{try{let u=new URL(value,location.origin);return u.protocol==="https:"?u.href:"#"}catch{return"#"}};
 const dateLabel=value=>value&&Number.isFinite(Date.parse(value))?new Date(value).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric",timeZone:"UTC"}):"Date unavailable";
+const newsAddedDate=item=>{
+ const timestamp=Date.parse(item.gih_added_at||"");
+ return Number.isFinite(timestamp)?new Intl.DateTimeFormat("en-CA",{timeZone:"America/New_York",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date(timestamp)):item.gih_added_date||"";
+};
 const newsDate=item=>item.gih_added_at||item.gih_added_date||item.date||item.selection_date||"";
 const isNewNewsItem=item=>{
  const timestamp=Date.parse(item.gih_added_at||"");
@@ -82,7 +86,7 @@ function records(){
  ?String(a.title||"").localeCompare(String(b.title||""))
  :order==="old"?String(newsDate(a)).localeCompare(String(newsDate(b)))
  :String(newsDate(b)).localeCompare(String(newsDate(a))));
- return order==="new"?applyEditorialNewsOrder(list):list;
+ return list;
 }
 function sectionTitle(){const title=state.area==="National challenges"?"OFFICIAL NATIONAL CHALLENGES":(state.section==="All"&&state.activeQuery)?"GENESIS SEARCH RESULTS":state.section==="Projects"?"GENESIS PROJECT REGISTRY":state.section==="Archive"?"GENESIS INTELLIGENCE ARCHIVE":state.section==="Sources"?"OFFICIAL SOURCES":state.section==="Labs"?"GENESIS LABORATORY NEWS":"GENESIS NEWS";$("feedTitle").textContent=title}
 function render(){
@@ -104,9 +108,9 @@ function render(){
    '<span class="article-glyph"><i data-lucide="'+(challenge?"target":project?"files":source?"link":"newspaper")+'"></i></span>'+
    '<span class="headline">'+safe(item.title)+'</span><i data-lucide="external-link" class="item-arrow"></i></a>';
   const sourceName=challenge?item.group:project?(item.institution||"Lead institution not listed"):source?item.source||"Official source":item.source||filterType(item);
-  const detail=challenge?"Official DOE challenge · not a project award":project?([item.principal_investigator?"PI: "+item.principal_investigator:"",item.source_phase||"DOE project selection"].filter(Boolean).join(" · ")):source?"Official Genesis reference":item.gih_added_date?"Added to Genesis Intel "+dateLabel(item.gih_added_date)+" · Published "+dateLabel(item.source_published_at||item.date):dateLabel(item.date);
+  const detail=challenge?"Official DOE challenge · not a project award":project?([item.principal_investigator?"PI: "+item.principal_investigator:"",item.source_phase||"DOE project selection"].filter(Boolean).join(" · ")):source?"Official Genesis reference":newsAddedDate(item)?"Added to Genesis Intel "+dateLabel(newsAddedDate(item))+" · Published "+dateLabel(item.source_published_at):dateLabel(item.date);
   const tags=project?'<span class="record-tag">'+safe((item.categories||[item.category]).filter(t=>areas.includes(t)).slice(0,2).map(t=>areaLabels[t]).join(" · "))+'</span>':"";
-  const editorialLabel=(!project&&!challenge&&!source&&["GENESIS LINK NOT CONFIRMED","NOT GENESIS"].includes(item.classification))?'<span class="news-affiliation-label">NOT GENESIS</span>':"";
+  const editorialLabel=(!project&&!challenge&&!source&&["GENESIS LINK NOT CONFIRMED","NOT GENESIS","Genesis link not confirmed"].includes(item.classification))?'<span class="news-affiliation-label">GENESIS LINK NOT CONFIRMED</span>':"";
   const newBadge=(!project&&!challenge&&!source&&isNewNewsItem(item))?'<span class="news-new-label" title="Added to Genesis Intel within the past 48 hours">NEW</span>':"";
   return '<article class="compact-item">'+head+'<div class="compact-meta"><span class="article-source">'+safe(sourceName)+'</span><span class="article-date">'+safe(detail)+'</span>'+tags+editorialLabel+newBadge+'</div>'+(challenge&&item.description?'<p class="challenge-description">'+safe(item.description)+'</p>':'')+'</article>';
  }).join("")||'<p class="empty">No records match this view. Try All, clear search, or choose another category.</p>';

@@ -1,0 +1,202 @@
+{
+  "checked_at": "2026-11-25T12:09:17.825Z",
+  "approved_added_ids": [
+    "llnl-genesis-agent-workflows-2026-11-24",
+    "anl-genesis-autonomy-year-one-2026-11-24",
+    "doe-genesis-anniversary-facts-2026-11-24",
+    "ornl-ibm-amd-qec-platform-2026-11-05"
+  ],
+  "new_pending_items": [],
+  "enriched_existing_id": "c5c55939918a1f776669",
+  "enriched_first_addition_commit": "f3188d91c4efce288abdb14d15b4422aed13ce9d",
+  "approved_exception": "Sandia AIGM Lite remains approved. No approval requested again. Display label corrected to GENESIS LINK NOT CONFIRMED.",
+  "verification": "All four additions verified through official DOE/laboratory articles. Detailed publication dates, participants, projects, significance, affiliation evidence and source URLs are retained in their news-archive.json records.",
+  "deduplication": {
+    "compared_against": "58-item repository archive; live 58-item dashboard; November 24 watch results; November 25 discovery results; current science-discoveries queue",
+    "preserved": "Distinct DOE overview/fact sheet, Argonne/Brookhaven/ALS perspectives and LLNL project coverage.",
+    "suppressed": [
+      {
+        "url": "https://computing.llnl.gov/about/newsroom/national-security-scientific-discovery-llnl-advances-genesis-mission-its-first-year",
+        "reason": "Teaser for same LLNL report."
+      },
+      {
+        "url": "https://quantumzeitgeist.com/ibm-partnership-quantum-mark-one-genesis/",
+        "reason": "November 24 recap resolved to November 5 ORNL primary source. No new launch established."
+      },
+      {
+        "url": "https://www.sandia.gov/labnews/2026/11/05/building-computer-models-that-stay-current-as-conditions-change/",
+        "reason": "Already approved and archived; preserve approval."
+      }
+    ]
+  },
+  "other_reviewed": [
+    {
+      "url": "https://www.bnl.gov/newsroom/news.php?a=223238",
+      "classification": "irrelevant",
+      "decision": "Skip: student/EIC training; no qualifying new Genesis or AI/SI technical finding verified."
+    },
+    {
+      "url": "https://news.fnal.gov/2026/11/fermilab-scientist-steve-nahn-named-2026-aps-fellow/",
+      "classification": "irrelevant",
+      "decision": "Skip: routine professional recognition."
+    }
+  ],
+  "implementation_audit": {
+    "live_before_count": 58,
+    "repository_after_count": 62,
+    "live_before_findings": [
+      "Added/published dates distinct for timestamped records; STITCH/MAGGIE displays November 10 added / November 4 published.",
+      "Manual editorial placement overrides chronological order for TEM Agent.",
+      "Unconfirmed records render NOT GENESIS instead of required exact label."
+    ],
+    "changes": [
+      "Frontend uses America/New_York to derive added calendar date from persistent timestamp.",
+      "Removed manual placement override from chronological sorting.",
+      "Rendered unconfirmed label is exactly GENESIS LINK NOT CONFIRMED; unified feed preserved.",
+      "Collector stamps only genuinely new URLs, preserves existing timestamps and source publication dates, and sorts by added-at.",
+      "Recovered ORNL retrospective first-addition timestamp from commit history."
+    ],
+    "tests": "Five merge regression tests passed using unchanged production merge code with unused HTTP/parser imports stubbed locally; frontend syntax, timezone-boundary, label and ordering assertions passed.",
+    "remaining_gap": "33 legacy records still lack recoverable added-at timestamps in archive. They were not assigned today's date. Full historical compliance is not claimed.",
+    "legacy_missing_added_at": [
+      {
+        "id": "99b7a49f6d1ee7498699",
+        "url": "https://www.energy.gov/undersecretaryforscience/articles/under-secretary-gils-letter-community-one-year"
+      },
+      {
+        "id": "gih-weekly-2026-11-07",
+        "url": "https://genesisintelligence.trevhall3.workers.dev/briefings/2026-11-07.html"
+      },
+      {
+        "id": "38ec666710042c50cc29",
+        "url": "https://news.fnal.gov/2026/11/genesis-agent-skills-release-to-support-innovation-across-the-genesis-mission/"
+      },
+      {
+        "id": "sandia-aigm-lite-2026-11-05",
+        "url": "https://www.sandia.gov/labnews/2026/11/05/building-computer-models-that-stay-current-as-conditions-change/"
+      },
+      {
+        "id": "a1c89f3385110400f467",
+        "url": "https://www.emsl.pnnl.gov/proposals/call-systems-biology-modeling-campaign-fy-2027"
+      },
+      {
+        "id": "a4c2d0b9994174084cf7",
+        "url": "https://www.emsl.pnnl.gov/proposals/call-quantum-computing-metallophores-campaign-fy-2027"
+      },
+      {
+        "id": "b701c5994025227540a5",
+        "url": "https://www.emsl.pnnl.gov/proposals/call-nextgen-molecular-workflows-campaign-fy-2027"
+      },
+      {
+        "id": "94453b9e61550de43188",
+        "url": "https://www.emsl.pnnl.gov/proposals/call-assured-si-autonomous-biology-campaign-fy-2027"
+      },
+      {
+        "id": "03c6ff877e4a668487a7",
+        "url": "https://www.alcf.anl.gov/news/new-systems-boost-capabilities-alcf-inference-service"
+      },
+      {
+        "id": null,
+        "url": "https://ou.edu/news/articles/2026/november/us-energy-secretary-ou-genesis-mission-research"
+      },
+      {
+        "id": null,
+        "url": "https://www.prnewswire.com/news-releases/aclara-and-argonne-national-laboratory-complete-the-first-phase-of-developing-a-digital-twin-for-heavy-rare-earths-separation-302925848.html"
+      },
+      {
+        "id": null,
+        "url": "https://newsroom.cadence.com/press-releases/press-release-details/2026/Cadence-Joins-the-Genesis-Mission-Consortium-to-Advance-AI-Driven-Scientific-Discovery-and-Microelectronics-Innovation/default.aspx"
+      },
+      {
+        "id": "cb8488f2f24e7f251808",
+        "url": "https://www.pnnl.gov/news-media/new-doe-consortium-advances-si-driven-battery-manufacturing-strengthen-us"
+      },
+      {
+        "id": "a3a522f786c7db71faa3",
+        "url": "https://www.pnnl.gov/news-media/pnnl-breaks-ground-first-its-kind-autonomous-laboratory-biosciences"
+      },
+      {
+        "id": "c324109fda3509b52f80",
+        "url": "https://www.energy.gov/undersecretaryforscience/genesis-mission/articles/genesis-mission-hackathon-brings-research"
+      },
+      {
+        "id": "25304f730042877d5fb7",
+        "url": "https://www.energy.gov/science/articles/genesis-agent-skills-release-support-innovation-across-genesis-mission"
+      },
+      {
+        "id": "171d476f823b76b9a8a9",
+        "url": "https://www.pnnl.gov/news-media/pnnl-and-berkeley-lab-lead-genesis-mission-skills-release"
+      },
+      {
+        "id": "51d52bc9b5f3271d66b7",
+        "url": "https://www.pnnl.gov/news-media/genesis-mission-draws-pnnl-expertise-five-new-si-driven-projects"
+      },
+      {
+        "id": "f5f24a10da6c61e5099d",
+        "url": "https://www.energy.gov/articles/fact-sheet-energy-department-ushering-golden-age-american-science"
+      },
+      {
+        "id": "010d0f6c5bb84ce4451c",
+        "url": "https://www.energy.gov/articles/energy-department-launches-genesis-mission-graduate-fellowship-advance-american-scientific"
+      },
+      {
+        "id": "202605c0623aa2fe5232",
+        "url": "https://www.energy.gov/articles/energy-department-announces-new-genesis-mission-awards-advance-super-intelligence-science"
+      },
+      {
+        "id": "d6c7dea6b0b258abeae8",
+        "url": "https://www.energy.gov/science/articles/doe-announces-science-applications-quantum-computing"
+      },
+      {
+        "id": null,
+        "url": "https://www.energy.gov/science/articles/doe-nih-and-biohub-partner-build-foundational-data-predictive-biological-super"
+      },
+      {
+        "id": "5a1200fb4d5982f4158f",
+        "url": "https://www.energy.gov/science/articles/doe-launches-competition-accelerate-development-worlds-first-fault-tolerant"
+      },
+      {
+        "id": "f803094f66824c3c83ee",
+        "url": "https://www.energy.gov/oe/articles/does-office-electricity-announces-115m-genesis-mission-project-meet-growing-electricity"
+      },
+      {
+        "id": "0dd2fb07095ac1dc41f1",
+        "url": "https://www.bnl.gov/newsroom/news.php?a=223136"
+      },
+      {
+        "id": "7689790f6ce9167907bb",
+        "url": "https://www.energy.gov/undersecretaryforscience/articles/us-department-energy-launches-genesis-open-models-initiative"
+      },
+      {
+        "id": "eb9177a6d33b54dbfde5",
+        "url": "https://www.energy.gov/articles/secretary-energy-chris-wright-announces-first-genesis-mission-projects-selected-accelerate"
+      },
+      {
+        "id": "1dfb3064a725804ed09d",
+        "url": "https://www.energy.gov/articles/united-states-and-japan-announce-historic-1-billion-partnership-under-president-trumps"
+      },
+      {
+        "id": "97c00b2d64e082ce0aee",
+        "url": "https://www.energy.gov/articles/energy-department-announces-293-million-funding-support-genesis-mission-national-science"
+      },
+      {
+        "id": "ef2fc23ecba442f2d6b8",
+        "url": "https://www.energy.gov/undersecretaryforscience/articles/energy-department-announces-26-genesis-mission-science-and"
+      },
+      {
+        "id": "cf1037959afe49f85aac",
+        "url": "https://www.energy.gov/articles/energy-department-launches-genesis-mission-transform-american-science-and-innovation"
+      },
+      {
+        "id": "8d5dc16bfc0c8bbcaf9c",
+        "url": "https://www.ornl.gov/news/ornl-selected-for-six-phase-ii-genesis-mission-awards/"
+      }
+    ],
+    "stitch_maggie": {
+      "gih_added_date": "2026-11-10",
+      "source_published_at": "2026-11-04",
+      "live_before_verified": true
+    },
+    "publication_verification": "Repository and live readback to be checked after commit; no deployment success asserted by this staging record."
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25T03:43:47.647998+00:00",
-  "count": 58,
+  "updated_at": "2026-11-25T12:09:17.825Z",
+  "count": 62,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -127,6 +127,193 @@
     }
   ],
   "items": [
+    {
+      "source_published_at": "2026-11-24",
+      "gih_added_at": "2026-11-25T12:09:17.825Z",
+      "gih_added_date": "2026-11-25",
+      "date": "2026-11-25",
+      "date_basis": "Actual first repository addition; America/New_York. Source publication date retained separately.",
+      "classification": "confirmed Genesis",
+      "suggested_visible_label": "",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "kind": "discovery",
+      "source_method": "editorially-verified-primary-source",
+      "project_ids": [],
+      "id": "llnl-genesis-agent-workflows-2026-11-24",
+      "title": "LLNL details Genesis agent workflows for simulations, chemistry and manufacturing",
+      "source": "Lawrence Livermore National Laboratory",
+      "url": "https://www.llnl.gov/article/55306/national-security-scientific-discovery-llnl-advances-genesis-mission-its-first-year",
+      "group": "Labs",
+      "category": "AI models",
+      "project": "MADA; FLASK Copilot; Wormhole; Model Access Gateway; Genesis data workflows",
+      "participants": [
+        "LLNL",
+        "DOE Genesis Mission",
+        "NNSA"
+      ],
+      "summary": "LLNL reports simulation-input preparation falling from about 30 minutes to one second in a MADA demonstration, and a FLASK-proposed synthesis route followed by laboratory synthesis of the molecule's monomer. These are specific demonstrations, not general speedup guarantees.",
+      "what_changed": "Technical account of agent demonstrations and deployment infrastructure beyond archived STITCH/MAGGIE and ElMerFold coverage.",
+      "significance": "Shows how scientific agents connect models, computing access and experimental validation.",
+      "affiliation_evidence": "LLNL explicitly ties MADA/Wormhole/MAG to Genesis infrastructure and states Genesis funding supported FLASK access to Wormhole. FLASK originated in LDRD; its entire history is not attributed to Genesis.",
+      "deduplication_note": "Distinct results absent from 58-record feed; LLNL Computing teaser is a duplicate of this report.",
+      "official_source": "https://www.llnl.gov/article/55306/national-security-scientific-discovery-llnl-advances-genesis-mission-its-first-year",
+      "evidence_urls": [
+        "https://www.llnl.gov/article/55306/national-security-scientific-discovery-llnl-advances-genesis-mission-its-first-year"
+      ]
+    },
+    {
+      "source_published_at": "2026-11-24",
+      "gih_added_at": "2026-11-25T12:09:17.825Z",
+      "gih_added_date": "2026-11-25",
+      "date": "2026-11-25",
+      "date_basis": "Actual first repository addition; America/New_York. Source publication date retained separately.",
+      "classification": "confirmed Genesis",
+      "suggested_visible_label": "",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "kind": "discovery",
+      "source_method": "editorially-verified-primary-source",
+      "project_ids": [],
+      "id": "anl-genesis-autonomy-year-one-2026-11-24",
+      "title": "Argonne details natural-language X-ray experiments and agentic research infrastructure",
+      "source": "Argonne National Laboratory",
+      "url": "https://www.anl.gov/article/argonne-puts-the-genesis-mission-to-work-in-its-first-year",
+      "group": "Labs",
+      "category": "AI models",
+      "project": "SYNAPS-I; ModCon Core Agentic Framework; ALCF Inference Service",
+      "participants": [
+        "Argonne / Advanced Photon Source / ALCF",
+        "Berkeley Lab (SYNAPS-I lead)",
+        "DOE"
+      ],
+      "summary": "Argonne describes a SYNAPS-I demonstration using natural-language instructions to locate features during an X-ray experiment, alongside Core Agentic Framework development and research on robots learning laboratory tasks.",
+      "what_changed": "Argonne-specific experimental and integration perspective, not a new Tara/Minerva deployment.",
+      "significance": "Documents movement toward experimental control during data collection.",
+      "affiliation_evidence": "Official report explicitly identifies the X-ray work as Genesis and Berkeley-led SYNAPS-I, already verified in Brookhaven/ALS records, and the framework as a ModCon contribution.",
+      "deduplication_note": "Distinct from archived Brookhaven reconstruction, ALS segmentation and ALCF hardware stories.",
+      "official_source": "https://www.anl.gov/article/argonne-puts-the-genesis-mission-to-work-in-its-first-year",
+      "evidence_urls": [
+        "https://www.anl.gov/article/argonne-puts-the-genesis-mission-to-work-in-its-first-year"
+      ]
+    },
+    {
+      "source_published_at": "2026-11-24",
+      "gih_added_at": "2026-11-25T12:09:17.825Z",
+      "gih_added_date": "2026-11-25",
+      "date": "2026-11-25",
+      "date_basis": "Actual first repository addition; America/New_York. Source publication date retained separately.",
+      "classification": "confirmed Genesis",
+      "suggested_visible_label": "",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "kind": "discovery",
+      "source_method": "editorially-verified-primary-source",
+      "project_ids": [],
+      "id": "doe-genesis-anniversary-facts-2026-11-24",
+      "title": "DOE anniversary fact sheet details Genesis data repositories and research infrastructure",
+      "source": "U.S. Department of Energy",
+      "url": "https://www.energy.gov/articles/fact-sheet-energy-department-delivering-president-trumps-genesis-mission",
+      "group": "DOE",
+      "category": "Data",
+      "project": "Genesis Mission / American Science and Security Platform",
+      "participants": [
+        "DOE",
+        "14 federal agencies contributing priority dataset repositories",
+        "National laboratories and Genesis research teams"
+      ],
+      "summary": "DOE's November 24 fact sheet documents 190 priority dataset repositories across 14 agencies and summarizes shared identity, model access and autonomous-science infrastructure. It is an implementation retrospective, not a new funding award.",
+      "what_changed": "Separate fact sheet adds data-inventory and testbed detail beyond the archived anniversary timeline.",
+      "significance": "Provides benchmarks for following platform implementation.",
+      "affiliation_evidence": "DOE explicitly presents these activities as Genesis Mission implementation.",
+      "editorial_caution": "The fact sheet cites $2.5B total consortium resources and separately $2.4B in October commitments. Do not infer a new $100M award; scope/timing not reconciled.",
+      "deduplication_note": "Substantively different detail from DOE's year-one overview; retain both.",
+      "official_source": "https://www.energy.gov/articles/fact-sheet-energy-department-delivering-president-trumps-genesis-mission",
+      "evidence_urls": [
+        "https://www.energy.gov/articles/fact-sheet-energy-department-delivering-president-trumps-genesis-mission"
+      ]
+    },
+    {
+      "source_published_at": "2026-11-05",
+      "gih_added_at": "2026-11-25T12:09:17.825Z",
+      "gih_added_date": "2026-11-25",
+      "date": "2026-11-25",
+      "date_basis": "Actual first repository addition; America/New_York. Source publication date retained separately.",
+      "classification": "confirmed Genesis",
+      "suggested_visible_label": "",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "kind": "discovery",
+      "source_method": "editorially-verified-primary-source",
+      "project_ids": [],
+      "id": "ornl-ibm-amd-qec-platform-2026-11-05",
+      "title": "ORNL, IBM and AMD detail Quantum Genesis error-correction co-design platform",
+      "source": "Oak Ridge National Laboratory",
+      "url": "https://www.ornl.gov/news/ornl-ibm-and-amd-launch-new-co-design-platform-for-quantum-error-correction/",
+      "source_date_note": "Older primary announcement newly verified November 25; November 24 coverage is retrospective.",
+      "group": "Labs",
+      "category": "Infrastructure",
+      "project": "Quantum Genesis / QSC error-correction co-design platform",
+      "participants": [
+        "ORNL Quantum Science Center",
+        "IBM",
+        "AMD"
+      ],
+      "summary": "ORNL's November 5 announcement describes co-locating IBM quantum processors with the AMD-powered Umbra system for error-correction research. The November 24 ORNL retrospective explicitly calls the collaboration part of Quantum Genesis.",
+      "what_changed": "Resolved the earlier review lead using original announcement and explicit mission attribution; newly added source, not a new November 24 launch.",
+      "significance": "Details quantum/classical testing infrastructure; fault-tolerance milestones remain goals.",
+      "affiliation_evidence": "Original ORNL report documents mission alignment; November 24 official retrospective explicitly identifies the collaboration as part of Quantum Genesis.",
+      "deduplication_note": "Absent from archive and science queue. Quantum Zeitgeist anniversary recap is not another launch report.",
+      "official_source": "https://www.ornl.gov/news/ornl-ibm-and-amd-launch-new-co-design-platform-for-quantum-error-correction/",
+      "evidence_urls": [
+        "https://www.ornl.gov/news/ornl-ibm-and-amd-launch-new-co-design-platform-for-quantum-error-correction/",
+        "https://www.ornl.gov/news/one-year-of-progress-10-ways-ornl-advanced-the-genesis-mission/"
+      ]
+    },
+    {
+      "id": "c5c55939918a1f776669",
+      "title": "One year of progress: 10 ways ORNL advanced the Genesis Mission",
+      "summary": "ORNL reports a working American Science Cloud federation available to at least 827 science users, Lux supporting 11 Genesis projects with seven being processed, and OPAL plant-trait analysis reduced from hundreds of manual hours to minutes of agent interaction.",
+      "source": "Oak Ridge National Laboratory",
+      "url": "https://www.ornl.gov/news/one-year-of-progress-10-ways-ornl-advanced-the-genesis-mission/",
+      "date": "2026-11-24",
+      "group": "Labs",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "editorially-verified-primary-source",
+      "project_ids": [
+        "genesis-5ee9917971a3bbf82e46"
+      ],
+      "gih_added_at": "2026-11-24T14:58:29Z",
+      "gih_added_date": "2026-11-24",
+      "source_published_at": "2026-11-24",
+      "date_basis": "First repository addition recovered from commit f3188d91c4efce288abdb14d15b4422aed13ce9d; America/New_York. Not bumped by review.",
+      "classification": "confirmed Genesis",
+      "suggested_visible_label": "",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "project": "American Science Cloud; Lux; OPAL; Quantum Genesis",
+      "participants": [
+        "ORNL",
+        "DOE laboratory partners",
+        "AMD",
+        "IBM",
+        "IQM"
+      ],
+      "official_source": "https://www.ornl.gov/news/one-year-of-progress-10-ways-ornl-advanced-the-genesis-mission/",
+      "evidence_urls": [
+        "https://www.ornl.gov/news/one-year-of-progress-10-ways-ornl-advanced-the-genesis-mission/"
+      ],
+      "what_changed": "Anniversary report supplies operational metrics and project demonstrations; existing record now has verified metadata.",
+      "significance": "Adds evidence of platform usage beyond hardware deployment.",
+      "affiliation_evidence": "Official ORNL Genesis retrospective directly attributes these capabilities to the mission.",
+      "deduplication_note": "Already added November 24; enriched same record without bumping its added date."
+    },
     {
       "id": "weekly-genesis-intelligence-issue-003-2026-11-24",
       "title": "Weekly Genesis Intelligence Briefing — Issue 003 (Nov 15–21, 2026)",
@@ -391,36 +578,6 @@
       "deduplication_note": "Distinct technical detail from Harvard article; Cornell Chronicle teaser suppressed in favor of full original."
     },
     {
-      "id": "harvard-asqc-genesis-2026-11-20",
-      "title": "Harvard-led Genesis team details $12 million AI quantum error-correction project",
-      "source": "Harvard Gazette",
-      "url": "https://news.harvard.edu/gazette/story/2026/11/harvard-led-team-receives-12-million-in-federal-funds-to-advance-quantum-computing-with-ai/",
-      "date": "2026-11-21",
-      "source_published_at": "2026-11-20",
-      "gih_added_at": "2026-11-21T11:01:50Z",
-      "gih_added_date": "2026-11-21",
-      "date_basis": "Genesis Intel repository addition date America/New_York; original source published November 20",
-      "group": "Partners",
-      "category": "AI models",
-      "categories": [
-        "AI models",
-        "Infrastructure"
-      ],
-      "kind": "discovery",
-      "source_method": "editorially-verified-primary-source",
-      "classification": "confirmed Genesis",
-      "editorial_status": "approved",
-      "publication_approved": true,
-      "feed_published": true,
-      "project_ids": [],
-      "summary": "Harvard describes the $12 million Application-Aware Error Correction Codesign for Scientific Quantum Computing (ASQC) project, part of DOE's previously announced October Phase II Genesis awards. Led by Mikhail Lukin with MIT, Cornell, three DOE laboratories and industry partners, the project aims to use AI to design and test quantum error-correction codes adapted to scientific applications. The November 20 feature provides new technical and collaboration details, not a newly awarded grant.",
-      "affiliation_evidence": "Harvard Gazette explicitly identifies ASQC as one of the 12 Phase II Genesis Mission awards announced in October; Cornell independently confirms participation.",
-      "evidence_urls": [
-        "https://news.harvard.edu/gazette/story/2026/11/harvard-led-team-receives-12-million-in-federal-funds-to-advance-quantum-computing-with-ai/",
-        "https://as.cornell.edu/news/cornell-collaborate-genesis-mission-project-advance-quantum-computing-ai"
-      ]
-    },
-    {
       "id": "lbl-bsaip-schmidt-2026-11-16",
       "title": "Berkeley Science AI Platform expands planned computing access for Genesis research",
       "source": "Lawrence Berkeley National Laboratory",
@@ -461,6 +618,36 @@
         "https://www.nersc.gov/news-and-events/news/uc-berkeley-berkeley-lab-collaboration-with-schmidt-science-computing-network-will-provide-high-performance-computing-for-cutting-edge-research"
       ],
       "deduplication_note": "Absent from 49-item repository and live feed. NERSC and UC Berkeley versions contain substantially identical reporting and are evidence mirrors, not separate additions."
+    },
+    {
+      "id": "harvard-asqc-genesis-2026-11-20",
+      "title": "Harvard-led Genesis team details $12 million AI quantum error-correction project",
+      "source": "Harvard Gazette",
+      "url": "https://news.harvard.edu/gazette/story/2026/11/harvard-led-team-receives-12-million-in-federal-funds-to-advance-quantum-computing-with-ai/",
+      "date": "2026-11-21",
+      "source_published_at": "2026-11-20",
+      "gih_added_at": "2026-11-21T11:01:50Z",
+      "gih_added_date": "2026-11-21",
+      "date_basis": "Genesis Intel repository addition date America/New_York; original source published November 20",
+      "group": "Partners",
+      "category": "AI models",
+      "categories": [
+        "AI models",
+        "Infrastructure"
+      ],
+      "kind": "discovery",
+      "source_method": "editorially-verified-primary-source",
+      "classification": "confirmed Genesis",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "project_ids": [],
+      "summary": "Harvard describes the $12 million Application-Aware Error Correction Codesign for Scientific Quantum Computing (ASQC) project, part of DOE's previously announced October Phase II Genesis awards. Led by Mikhail Lukin with MIT, Cornell, three DOE laboratories and industry partners, the project aims to use AI to design and test quantum error-correction codes adapted to scientific applications. The November 20 feature provides new technical and collaboration details, not a newly awarded grant.",
+      "affiliation_evidence": "Harvard Gazette explicitly identifies ASQC as one of the 12 Phase II Genesis Mission awards announced in October; Cornell independently confirms participation.",
+      "evidence_urls": [
+        "https://news.harvard.edu/gazette/story/2026/11/harvard-led-team-receives-12-million-in-federal-funds-to-advance-quantum-computing-with-ai/",
+        "https://as.cornell.edu/news/cornell-collaborate-genesis-mission-project-advance-quantum-computing-ai"
+      ]
     },
     {
       "id": "cset-biodata-genesis-2026-11-19",
@@ -861,19 +1048,6 @@
       "date_basis": "GIH first repository addition; America/New_York"
     },
     {
-      "id": "99b7a49f6d1ee7498699",
-      "title": "Under Secretary Gil’s Letter to the Community: One Year In",
-      "summary": "November 12, 2026 DOE’s Under Secretary for Science reflects on his first year, accomplishments across the Office of Science and Genesis Mission, and what lies ahead.",
-      "source": "DOE Genesis Mission News",
-      "url": "https://www.energy.gov/undersecretaryforscience/articles/under-secretary-gils-letter-community-one-year",
-      "date": "2026-11-12",
-      "group": "DOE",
-      "category": "National challenges",
-      "kind": "discovery",
-      "source_method": "publisher-direct",
-      "project_ids": []
-    },
-    {
       "id": "lbnl-synaps-i-segmentation-2026-11-10",
       "title": "SYNAPS-I accelerates tomography segmentation from months to minutes",
       "summary": "Berkeley Lab reports a grapevine drought case study reducing image segmentation from months to 15 minutes. Two AI models are running on NERSC and ALCF inference servers; an open-source interface lets tomography users annotate data and train custom models.",
@@ -913,6 +1087,19 @@
       "feed_published": true,
       "source_method": "editorially-verified-official-source",
       "deduplication_note": "Absent from the 35-record archive. Distinct from Brookhaven's November 4 reconstruction/autonomous-imaging report: adds segmentation case-study timing, inference deployment and user-workflow details."
+    },
+    {
+      "id": "99b7a49f6d1ee7498699",
+      "title": "Under Secretary Gil’s Letter to the Community: One Year In",
+      "summary": "November 12, 2026 DOE’s Under Secretary for Science reflects on his first year, accomplishments across the Office of Science and Genesis Mission, and what lies ahead.",
+      "source": "DOE Genesis Mission News",
+      "url": "https://www.energy.gov/undersecretaryforscience/articles/under-secretary-gils-letter-community-one-year",
+      "date": "2026-11-12",
+      "group": "DOE",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": []
     },
     {
       "title": "Two Genesis projects target faster electric-grid planning",
@@ -1525,21 +1712,6 @@
       "kind": "discovery",
       "source_method": "publisher-direct",
       "project_ids": []
-    },
-    {
-      "id": "c5c55939918a1f776669",
-      "title": "One year of progress: 10 ways ORNL advanced the Genesis Mission",
-      "summary": "al Laboratory (ORNL) is helping advance a nationwide effort to accelerate scientific discovery through Super Intelligence (SI), formerly known as artificial intelligence, advanced computing and collaboration. Launched in November 2025, the Genesis Mi",
-      "source": "Oak Ridge National Laboratory",
-      "url": "https://www.ornl.gov/news/one-year-of-progress-10-ways-ornl-advanced-the-genesis-mission/",
-      "date": "",
-      "group": "Labs",
-      "category": "National challenges",
-      "kind": "discovery",
-      "source_method": "publisher-direct",
-      "project_ids": [
-        "genesis-5ee9917971a3bbf82e46"
-      ]
     },
     {
       "id": "8d5dc16bfc0c8bbcaf9c",
