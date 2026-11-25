@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T12:10:30.000551+00:00",
+  "updated_at": "2026-11-25T12:11:00.116882+00:00",
   "count": 62,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
@@ -1256,7 +1256,8 @@
       "source_method": "publisher-direct",
       "project_ids": [
         "genesis-5ee9917971a3bbf82e46"
-      ]
+      ],
+      "source_published_at": "2026-11-06"
     },
     {
       "title": "Sandia demonstrates continual-learning improvements in AIGM Lite",
@@ -1633,7 +1634,8 @@
       "source_method": "publisher-direct",
       "project_ids": [
         "genesis-5ee9917971a3bbf82e46"
-      ]
+      ],
+      "source_published_at": "2026-09-01"
     },
     {
       "id": "7689790f6ce9167907bb",
@@ -1726,7 +1728,8 @@
       "source_method": "publisher-direct",
       "project_ids": [
         "genesis-d17da7d94333c69277a3"
-      ]
+      ],
+      "source_published_at": "unknown"
     }
   ]
 }
