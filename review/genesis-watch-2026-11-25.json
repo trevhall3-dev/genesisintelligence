@@ -54,7 +54,8 @@
       "Removed manual placement override from chronological sorting.",
       "Rendered unconfirmed label is exactly GENESIS LINK NOT CONFIRMED; unified feed preserved.",
       "Collector stamps only genuinely new URLs, preserves existing timestamps and source publication dates, and sorts by added-at.",
-      "Recovered ORNL retrospective first-addition timestamp from commit history."
+      "Recovered ORNL retrospective first-addition timestamp from commit history.",
+      "Removed the same manual-placement override from the Worker news API, keeping API and frontend chronological ordering consistent."
     ],
     "tests": "Five merge regression tests passed using unchanged production merge code with unused HTTP/parser imports stubbed locally; frontend syntax, timezone-boundary, label and ordering assertions passed.",
     "remaining_gap": "33 legacy records still lack recoverable added-at timestamps in archive. They were not assigned today's date. Full historical compliance is not claimed.",
@@ -197,6 +198,9 @@
       "source_published_at": "2026-11-04",
       "live_before_verified": true
     },
-    "publication_verification": "Repository and live readback to be checked after commit; no deployment success asserted by this staging record."
-  }
+    "publication_verification": "Verified in live rendered dashboard: 62 articles, four additions first with Added Nov 25 and separate original publication dates; ORNL retrospective Added Nov 24; STITCH/MAGGIE Added Nov 10 / Published Nov 4; exact GENESIS LINK NOT CONFIRMED labels. No confirmed-item badge. Rechecked repository after successful collector refresh: all four timestamps and source dates unchanged.",
+    "ci": "Validation workflow and national-laboratory/partner collector workflows succeeded. DOE/project concurrent runs were cancelled; no claim that those runs completed.",
+    "database": "Live health widget still reports 58 D1 articles while rendered merged feed has 62. Database synchronization of new items is not yet verified; Worker imports run on the existing hourly schedule."
+  },
+  "archive_commit": "9921ea4d120d83c88e3c9976db6c9edc5d9debfb"
 }
