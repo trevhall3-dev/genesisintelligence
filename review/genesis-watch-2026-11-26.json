@@ -1,0 +1,159 @@
+{
+  "checked_at": "2026-11-26T12:07:30Z",
+  "check_date": "2026-11-26",
+  "display_timezone": "America/New_York",
+  "result": "No new substantive qualifying finding verified.",
+  "approved_added_ids": [],
+  "new_pending_items": [],
+  "feed_writes": 0,
+  "approved_exception": "Sandia AIGM Lite remains editorially approved as GENESIS LINK NOT CONFIRMED. No approval requested again.",
+  "compared_against": {
+    "repository": "trevhall3-dev/genesisintelligence",
+    "archive_path": "dist/news-archive.json",
+    "archive_blob_sha": "38d37d77e1e8bddbf40c7657e670ce5af684d45d",
+    "archive_count": 62,
+    "archive_updated_at": "2026-11-25T14:34:55.303808+00:00",
+    "prior_review": "review/genesis-watch-2026-11-25.json",
+    "prior_discovery_run": "Genesis Google News Discovery, November 26, 2026, 6 a.m. America/New_York",
+    "live_dashboard": "https://genesisintelhub.com/",
+    "live_count": 62
+  },
+  "reviewed": [
+    {
+      "title": "Genesis Mission assembles Avengers to accelerate American science",
+      "source_published_at": "2026-11-25",
+      "original_source_published_at": "2026-11-23",
+      "publication_date_evidence": "Fermilab newsroom lists the republication on November 25; Argonne's Genesis/news index dates the original MeriTalk article November 23.",
+      "project": "Genesis Mission cross-laboratory strategy",
+      "participants": [
+        "DOE",
+        "Fermilab",
+        "Argonne",
+        "MeriTalk",
+        "Dell Technologies",
+        "HPE",
+        "Google",
+        "IQM"
+      ],
+      "official_source": "https://news.fnal.gov/2026/11/energy-genesis-assembles-avengers-to-accelerate-american-science/",
+      "additional_sources": [
+        "https://www.anl.gov/topic/genesis-mission",
+        "https://www.meritalk.com/articles/energy-genesis-assembles-avengers-to-accelerate-american-science/"
+      ],
+      "what_changed": "Fermilab republished reporting on a Genesis discussion during SC26, with laboratory-director and industry perspectives.",
+      "significance": "Strategic commentary on shared computing and collaboration; no material new award, research result, implementation milestone or resource commitment verified beyond the existing anniversary coverage.",
+      "classification": "confirmed Genesis",
+      "affiliation_evidence": "Fermilab's editorial note explicitly identifies this as a DOE Genesis Mission event and names the participating DOE and laboratory leaders.",
+      "suggested_label": "",
+      "editorial_status": "reviewed_skip_quality_threshold",
+      "deduplication_note": "This is distinct reporting, not suppressed as a duplicate of the AIP or FedScoop interviews. The Fermilab republication and Argonne link refer to the same MeriTalk article."
+    },
+    {
+      "title": "Jefferson Lab Genesis Mission portal",
+      "source_published_at": null,
+      "project": "Jefferson Lab Genesis portfolio",
+      "participants": [
+        "Jefferson Lab",
+        "DOE"
+      ],
+      "official_source": "https://www.jlab.org/AI/genesis",
+      "what_changed": "Search results exposed year-one wording; the opened official page did not establish a dated, substantive new project accomplishment.",
+      "significance": "No new qualifying technical or organizational change verified.",
+      "classification": "confirmed Genesis",
+      "affiliation_evidence": "Official laboratory page explicitly presents the Genesis portfolio.",
+      "suggested_label": "",
+      "editorial_status": "reviewed_skip_no_verified_new_development"
+    },
+    {
+      "title": "Big Ideas Lab: Autonomous Labs",
+      "source_published_at": null,
+      "project": "Autonomous laboratory research; specific project unverified",
+      "participants": [
+        "Lawrence Livermore National Laboratory"
+      ],
+      "official_source": "https://www.llnl.gov/news/podcasts",
+      "what_changed": "Podcast landing-page introduction describes scientific intelligence and robotics for laboratory workflows; no dated new research result was verified.",
+      "significance": "Relevance alone does not meet the threshold for a significant new finding.",
+      "classification": "Genesis link not confirmed",
+      "affiliation_evidence": "No mission/project record linking this particular undated episode to a verified Genesis project was established. Laboratory participation alone was not used.",
+      "suggested_label": "GENESIS LINK NOT CONFIRMED",
+      "editorial_status": "reviewed_skip_insufficient_substantive_evidence"
+    },
+    {
+      "official_source": "https://www6.slac.stanford.edu/news/2026-11-24-remembering-accelerator-physicist-herman-winick-94-who-championed-synchrotron",
+      "source_published_at": "2026-11-24",
+      "classification": "irrelevant",
+      "editorial_status": "skip",
+      "reason": "Obituary; no qualifying new Genesis or AI/SI research development."
+    },
+    {
+      "official_source": "https://www.bnl.gov/newsroom/news.php?a=223238",
+      "source_published_at": "2026-11-24",
+      "classification": "irrelevant",
+      "editorial_status": "skip_previously_reviewed",
+      "reason": "Student/EIC training; no qualifying new Genesis or AI/SI technical finding verified."
+    }
+  ],
+  "duplicate_checks": {
+    "already_archived": [
+      "DOE November 24 anniversary fact sheet",
+      "LLNL November 24 Genesis project report",
+      "Argonne November 24 Genesis report",
+      "ORNL November 24 retrospective",
+      "ORNL/IBM/AMD November 5 quantum co-design announcement"
+    ],
+    "policy": "Preserve distinct substantive reports on the same topic; suppress only substantially identical content. Do not re-add unchanged archived records."
+  },
+  "implementation_audit": {
+    "observed_live_sort": "Newest first",
+    "observed_live_order": [
+      "ornl-ibm-amd-qec-platform-2026-11-05",
+      "llnl-genesis-agent-workflows-2026-11-24",
+      "doe-genesis-anniversary-facts-2026-11-24",
+      "anl-genesis-autonomy-year-one-2026-11-24"
+    ],
+    "retained_recent_records": [
+      {
+        "id": "ornl-ibm-amd-qec-platform-2026-11-05",
+        "gih_added_at": "2026-11-25T12:09:17.825Z",
+        "gih_added_date": "2026-11-25",
+        "source_published_at": "2026-11-05"
+      },
+      {
+        "id": "llnl-genesis-agent-workflows-2026-11-24",
+        "gih_added_at": "2026-11-25T12:09:17.825Z",
+        "gih_added_date": "2026-11-25",
+        "source_published_at": "2026-11-24"
+      },
+      {
+        "id": "doe-genesis-anniversary-facts-2026-11-24",
+        "gih_added_at": "2026-11-25T12:09:17.825Z",
+        "gih_added_date": "2026-11-25",
+        "source_published_at": "2026-11-24"
+      },
+      {
+        "id": "anl-genesis-autonomy-year-one-2026-11-24",
+        "gih_added_at": "2026-11-25T12:09:17.825Z",
+        "gih_added_date": "2026-11-25",
+        "source_published_at": "2026-11-24"
+      }
+    ],
+    "displayed_dates": "All four latest additions display Added to Genesis Intel Nov 25, 2026, followed separately by Published Nov 24, 2026, or Published Nov 5, 2026 for the ORNL/IBM/AMD article.",
+    "stitch_maggie": {
+      "gih_added_at": "2026-11-10T13:37:21Z",
+      "gih_added_date": "2026-11-10",
+      "source_published_at": "2026-11-04",
+      "live_display_verified": true
+    },
+    "unconfirmed_label": "GENESIS LINK NOT CONFIRMED",
+    "label_verified_live": true,
+    "unified_feed_verified_live": true,
+    "known_gap": {
+      "legacy_records_without_added_at": 33,
+      "note": "Historical added-at data remains missing for 33 legacy records. No invented timestamps or routine-check date bumps were applied. Full historical date compliance is not claimed."
+    },
+    "database_verification": "Live collection-health widget now reports 62 archived articles and D1 synchronized. Direct API reads returned HTTP 403 in the command environment. This run made no database writes and does not claim direct verification of individual database rows.",
+    "no_news_timestamp_mutations": true
+  },
+  "notification": "No alert: no meaningful new qualifying finding."
+}
