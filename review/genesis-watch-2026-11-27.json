@@ -1,0 +1,192 @@
+{
+  "checked_at": "2026-11-27T12:08:16Z",
+  "check_date": "2026-11-27",
+  "display_timezone": "America/New_York",
+  "result": "One confirmed Genesis article added and verified live; one significant unconfirmed-affiliation article queued for user approval.",
+  "approved_added_ids": [
+    "inl-arco-genesis-nuclear-computing-2026-11-18"
+  ],
+  "new_pending_items": [
+    {
+      "id": "sandia-staisys-grid-ai-testing-2026-10-19",
+      "title": "Sandia details STAISYS testbed for evaluating grid AI security",
+      "url": "https://energy.sandia.gov/news/doe-ceser-and-sandia-advance-scaled-ai-testing-for-critical-infrastructure-security/",
+      "official_source": "https://energy.sandia.gov/news/doe-ceser-and-sandia-advance-scaled-ai-testing-for-critical-infrastructure-security/",
+      "source": "Sandia National Laboratories",
+      "source_published_at": "2026-10-19",
+      "published_at_source": "2026-10-19",
+      "source_date_note": "Sandia published the detailed report October 19; DOE CESER published a shorter follow-up November 16. Newly reviewed November 27, not a new November 27 testbed launch.",
+      "gih_added_at": "2026-11-27T12:06:21Z",
+      "gih_added_date": "2026-11-27",
+      "date": "2026-11-27",
+      "date_basis": "Actual first repository addition to editorial review queue; America/New_York. Preserve on later feed promotion; source publication date retained separately.",
+      "discovered_at": "2026-11-27T12:06:21Z",
+      "last_seen": "2026-11-27T12:06:21Z",
+      "discovery_query": "Official DOE/laboratory daily watch; independently investigated AI-FORTS and STAISYS affiliation",
+      "source_method": "editorially-verified-primary-source",
+      "group": "Labs",
+      "category": "Infrastructure",
+      "project": "STAISYS — Scaled Testing for AI Systems / AI-FORTS",
+      "project_ids": [],
+      "participants": [
+        "DOE Office of Cybersecurity, Energy Security, and Emergency Response",
+        "Sandia National Laboratories"
+      ],
+      "summary": "Sandia describes repeatable cyber-physical test environments for grid AI and reports an existing proof-of-concept evaluating an AI-enabled industrial-control intrusion detector. STAISYS combines emulation, threat modeling and statistical testing across operating configurations.",
+      "what_changed": "Provides implementation and proof-of-concept details beyond the earlier AI-FORTS funding announcement; DOE's November 16 follow-up highlights the grid-resilience use case.",
+      "significance": "Tests AI as part of an operational energy system, helping identify vulnerabilities and readiness limits before deployment. No quantitative security-performance gain is established in these reports.",
+      "classification": "Genesis link not confirmed",
+      "verified_genesis_affiliation": false,
+      "affiliation_evidence": "STAISYS is explicitly an AI-FORTS-funded project. CESER's AI-FORTS page states alignment with executive actions including Genesis, but does not establish STAISYS as a Genesis project. No project-specific connection was found in the official reports or the 297-project registry; thematic overlap and Sandia participation were not treated as affiliation.",
+      "evidence_urls": [
+        "https://energy.sandia.gov/news/doe-ceser-and-sandia-advance-scaled-ai-testing-for-critical-infrastructure-security/",
+        "https://www.energy.gov/ceser/articles/ceser-and-sandia-national-laboratory-test-super-intelligence-systems-support-grid",
+        "https://www.energy.gov/ceser/artificial-intelligence-operationally-resilient-technologies-and-systems",
+        "https://energy.sandia.gov/news/multiple-teams-receive-funding-to-protect-energy-infrastructure-against-ai-enabled-threats/"
+      ],
+      "suggested_visible_label": "GENESIS LINK NOT CONFIRMED",
+      "review_status": "pending",
+      "editorial_status": "pending_user_approval",
+      "publication_approved": false,
+      "feed_published": false,
+      "deduplication_note": "Absent from archive and review queue. Preserve the detailed Sandia article as the candidate; DOE's shorter restatement is linked as supporting evidence. No existing AIGM Lite approval is changed."
+    }
+  ],
+  "published_items": [
+    {
+      "id": "inl-arco-genesis-nuclear-computing-2026-11-18",
+      "title": "INL launches Arco GPU supercomputer to support Genesis nuclear research",
+      "source": "Idaho National Laboratory",
+      "url": "https://inl.gov/news-release/arco-supercomputer-launches-as-part-of-nations-doe-designated-computing-facility-for-nuclear-energy/",
+      "official_source": "https://inl.gov/news-release/arco-supercomputer-launches-as-part-of-nations-doe-designated-computing-facility-for-nuclear-energy/",
+      "source_published_at": "2026-11-18",
+      "gih_added_at": "2026-11-27T12:05:57Z",
+      "gih_added_date": "2026-11-27",
+      "date": "2026-11-27",
+      "date_basis": "Actual first repository addition; America/New_York. Source publication date retained separately.",
+      "source_date_note": "November 18 announcement newly verified and added November 27; not a new November 27 launch.",
+      "group": "Labs",
+      "category": "Infrastructure",
+      "kind": "discovery",
+      "source_method": "editorially-verified-primary-source",
+      "project": "Arco / Idaho National Laboratory Computing Facility / Prometheus",
+      "project_ids": [
+        "genesis-eff73d017d6abbdc4ce6"
+      ],
+      "participants": [
+        "Idaho National Laboratory",
+        "DOE Office of Nuclear Energy",
+        "Nuclear Science User Facilities program",
+        "Prometheus collaboration"
+      ],
+      "summary": "INL deployed the NVIDIA H200-based Arco system alongside Teton and gained a DOE Office of Nuclear Energy user-facility designation. The computing resources support Genesis Mission work, including the Prometheus nuclear-energy collaboration.",
+      "what_changed": "Arco adds GPU capacity for nuclear modeling, simulation and AI research; INLCF's designation expands access for external researchers.",
+      "significance": "Adds computing infrastructure for nuclear AI workflows and a user-facility access route. This is an infrastructure announcement, not proof of achieved reactor-development speedups.",
+      "classification": "confirmed Genesis",
+      "verified_genesis_affiliation": true,
+      "affiliation_evidence": "DOE explicitly identifies Arco and Teton as supporting Genesis and Prometheus. INL's Prometheus documentation independently identifies the project as Genesis Phase II.",
+      "evidence_urls": [
+        "https://inl.gov/news-release/arco-supercomputer-launches-as-part-of-nations-doe-designated-computing-facility-for-nuclear-energy/",
+        "https://www.energy.gov/ne/articles/new-supercomputer-boosts-nuclear-energy-research-idaho-national-laboratory",
+        "https://inl.gov/super-intelligence/prometheus/"
+      ],
+      "suggested_visible_label": "",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "deduplication_note": "No Arco article exists in the 62-item archive or current review queue. DOE's November 18 companion repeats the same launch, facility designation, core specifications and quotations; retained as corroboration. Existing broad Prometheus mentions do not replace this infrastructure announcement.",
+      "live_publication_verified": true,
+      "live_verified_at": "2026-11-27T12:08:16Z"
+    }
+  ],
+  "publication_commit": "5570527cb5d985b79e7af33ae581ae1743932aa3",
+  "queue_commit": "0b82a9599d09183e3bb936354d8e472c86c7278b",
+  "approved_exception": "AIGM Lite remains approved and published as GENESIS LINK NOT CONFIRMED; no approval requested again.",
+  "comparison": {
+    "prior_review": "review/genesis-watch-2026-11-26.json",
+    "discovery_result": "November 27 Genesis Google News Discovery reported no new substantive candidate; this watch independently found and verified previously unarchived Arco and STAISYS primary reports.",
+    "before_archive_count": 62,
+    "after_archive_count": 63,
+    "before_queue_count": 77,
+    "after_queue_count": 78,
+    "project_registry_count": 297,
+    "archive_blob_before": "c0dfbfab8a09747ddc93009dd57ddfbef1c7ec1a",
+    "archive_blob_after": "61151bb42e5272ec6bbaeb4ab1e9dc2589ce9f2e",
+    "existing_archive_records_unchanged": true
+  },
+  "research_scope": "Fresh official DOE and national-laboratory search, plus targeted project/program and funding provenance checks. Search-indexing and retrieval limits mean coverage is not exhaustive.",
+  "affiliation_investigation": {
+    "arco": "DOE November 18 announcement explicitly links Arco/Teton to Genesis and the 32-partner Prometheus collaboration. INL announcement, official Prometheus project documentation and existing registry corroborate that relationship.",
+    "staisys": "Read Sandia's detailed October 19 report, CESER's November 16 report, Sandia's August 18 funding announcement and the official AI-FORTS program page. Broad alignment with Genesis-related executive actions is documented, but specific STAISYS affiliation is not. No matching STAISYS/AI-FORTS entry was found in the 297-project registry.",
+    "strategic_plan_access": "CESER FY2026–2030 strategy search excerpt lists AI-FORTS and Genesis separately. Full document retrieval failed because the file exceeded the web tool size limit; that excerpt was not treated as proof of a project affiliation.",
+    "strategic_plan_url": "https://www.energy.gov/documents/ceser-strategic-plan2026-2030"
+  },
+  "related_article_handling": [
+    {
+      "url": "https://www.energy.gov/ne/articles/new-supercomputer-boosts-nuclear-energy-research-idaho-national-laboratory",
+      "source_published_at": "2026-11-18",
+      "classification": "confirmed Genesis",
+      "editorial_status": "supporting_source",
+      "reason": "Substantially overlapping companion to the INL announcement: same launch, facility designation, core hardware and quotations. Retained as corroboration, not a second launch entry."
+    },
+    {
+      "url": "https://www.energy.gov/ceser/articles/ceser-and-sandia-national-laboratory-test-super-intelligence-systems-support-grid",
+      "source_published_at": "2026-11-16",
+      "classification": "Genesis link not confirmed",
+      "suggested_visible_label": "GENESIS LINK NOT CONFIRMED",
+      "editorial_status": "supporting_source_for_pending_candidate",
+      "reason": "Condensed restatement of STAISYS capabilities; preserve the more detailed Sandia report including its earlier proof-of-concept evidence and link this DOE follow-up."
+    }
+  ],
+  "other_reviewed": [
+    {
+      "url": "https://news.famu.edu/2026/famu-renews-sandia-partnership-to-expand-research-and-student-opportunities.php",
+      "source_published_at": "2026-11-19",
+      "classification": "Genesis link not confirmed",
+      "editorial_status": "skip_quality_threshold",
+      "reason": "Partnership renewal outlines potential AI/quantum research and student opportunities but independently commits no funding and reports no specific new technical result. Laboratory participation does not establish Genesis affiliation."
+    },
+    {
+      "url": "https://www6.slac.stanford.edu/news/2026-11-24-remembering-accelerator-physicist-herman-winick-94-who-championed-synchrotron",
+      "classification": "irrelevant",
+      "editorial_status": "skip_previously_reviewed",
+      "reason": "Obituary; no qualifying new Genesis or AI/SI research finding."
+    },
+    {
+      "url": "https://www.energy.gov/articles/fact-sheet-energy-department-delivering-president-trumps-genesis-mission",
+      "classification": "confirmed Genesis",
+      "editorial_status": "already_archived",
+      "reason": "Existing November 24 fact sheet; no substantive new revision established."
+    }
+  ],
+  "implementation_audit": {
+    "archive_readback_exact": true,
+    "queue_readback_exact": true,
+    "live_url": "https://genesisintelhub.com/",
+    "live_count": 63,
+    "live_default_sort": "Newest first",
+    "live_first_title": "INL launches Arco GPU supercomputer to support Genesis nuclear research",
+    "live_first_date_display": "Added to Genesis Intel Nov 27, 2026 · Published Nov 18, 2026",
+    "live_first_no_affiliation_label": true,
+    "prior_nov25_timestamps_preserved": true,
+    "pending_first_repository_addition": "2026-11-27T12:06:21Z",
+    "pending_promotion_rule": "Preserve the November 27 queue addition timestamp on any later publication; do not replace it with an approval or refresh date.",
+    "stitch_maggie": {
+      "gih_added_at": "2026-11-10T13:37:21Z",
+      "gih_added_date": "2026-11-10",
+      "source_published_at": "2026-11-04",
+      "live_display_verified": true
+    },
+    "unconfirmed_label": "GENESIS LINK NOT CONFIRMED",
+    "unified_feed_retained": true,
+    "collector_review": "Current merge preserves reviewed metadata, source publication date and existing added-at; newly discovered URLs are stamped once. Current science collector preserves existing queued objects by URL.",
+    "database_import_review": "Worker persists first added-at in news_editorial with ON CONFLICT DO NOTHING, and stores source publication date separately in news.",
+    "known_gap": {
+      "legacy_records_without_added_at": 33,
+      "note": "33 historical records remain without added-at. No fabricated times or routine-check bumps applied; full historical compliance is not claimed."
+    },
+    "database": "Live health still reports 62 archived D1 articles while the merged live feed shows 63. Arco is verified in the repository and rendered site; its D1 synchronization is not yet verified. No direct D1 write performed.",
+    "code_changes": [],
+    "validation": "JSON readback matched both writes; all 62 pre-existing archive records retained identical content; new first-addition dates and newest-first ordering checked; live display inspected."
+  }
+}
