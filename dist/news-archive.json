@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-27T09:01:41.048770+00:00",
-  "count": 62,
+  "updated_at": "2026-11-27T12:05:57Z",
+  "count": 63,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -127,6 +127,49 @@
     }
   ],
   "items": [
+    {
+      "id": "inl-arco-genesis-nuclear-computing-2026-11-18",
+      "title": "INL launches Arco GPU supercomputer to support Genesis nuclear research",
+      "source": "Idaho National Laboratory",
+      "url": "https://inl.gov/news-release/arco-supercomputer-launches-as-part-of-nations-doe-designated-computing-facility-for-nuclear-energy/",
+      "official_source": "https://inl.gov/news-release/arco-supercomputer-launches-as-part-of-nations-doe-designated-computing-facility-for-nuclear-energy/",
+      "source_published_at": "2026-11-18",
+      "gih_added_at": "2026-11-27T12:05:57Z",
+      "gih_added_date": "2026-11-27",
+      "date": "2026-11-27",
+      "date_basis": "Actual first repository addition; America/New_York. Source publication date retained separately.",
+      "source_date_note": "November 18 announcement newly verified and added November 27; not a new November 27 launch.",
+      "group": "Labs",
+      "category": "Infrastructure",
+      "kind": "discovery",
+      "source_method": "editorially-verified-primary-source",
+      "project": "Arco / Idaho National Laboratory Computing Facility / Prometheus",
+      "project_ids": [
+        "genesis-eff73d017d6abbdc4ce6"
+      ],
+      "participants": [
+        "Idaho National Laboratory",
+        "DOE Office of Nuclear Energy",
+        "Nuclear Science User Facilities program",
+        "Prometheus collaboration"
+      ],
+      "summary": "INL deployed the NVIDIA H200-based Arco system alongside Teton and gained a DOE Office of Nuclear Energy user-facility designation. The computing resources support Genesis Mission work, including the Prometheus nuclear-energy collaboration.",
+      "what_changed": "Arco adds GPU capacity for nuclear modeling, simulation and AI research; INLCF's designation expands access for external researchers.",
+      "significance": "Adds computing infrastructure for nuclear AI workflows and a user-facility access route. This is an infrastructure announcement, not proof of achieved reactor-development speedups.",
+      "classification": "confirmed Genesis",
+      "verified_genesis_affiliation": true,
+      "affiliation_evidence": "DOE explicitly identifies Arco and Teton as supporting Genesis and Prometheus. INL's Prometheus documentation independently identifies the project as Genesis Phase II.",
+      "evidence_urls": [
+        "https://inl.gov/news-release/arco-supercomputer-launches-as-part-of-nations-doe-designated-computing-facility-for-nuclear-energy/",
+        "https://www.energy.gov/ne/articles/new-supercomputer-boosts-nuclear-energy-research-idaho-national-laboratory",
+        "https://inl.gov/super-intelligence/prometheus/"
+      ],
+      "suggested_visible_label": "",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "deduplication_note": "No Arco article exists in the 62-item archive or current review queue. DOE's November 18 companion repeats the same launch, facility designation, core specifications and quotations; retained as corroboration. Existing broad Prometheus mentions do not replace this infrastructure announcement."
+    },
     {
       "source_published_at": "2026-11-05",
       "gih_added_at": "2026-11-25T12:09:17.825Z",
@@ -694,19 +737,19 @@
       "gih_added_date": "2026-11-19",
       "date": "2026-11-19",
       "date_basis": "First Genesis News publication; displayed calendar date America/New_York",
-      "id": "sandia-dakota-7-0-2026-11-17",
-      "title": "Sandia releases Dakota 7.0 with Python API for automated scientific workflows",
-      "url": "https://dakota.sandia.gov/2026/11/17/dakota-7-0/",
-      "source_published_at": "2026-11-17",
-      "category": "Infrastructure",
+      "id": "sandia-vast-alloys-2026-11-18",
+      "title": "Sandia VASt model predicts advanced-alloy properties with limited training data",
+      "url": "https://newsreleases.sandia.gov/before-the-forge/",
+      "source_published_at": "2026-11-18",
+      "category": "AI models",
       "categories": [
-        "Infrastructure",
-        "AI models"
+        "AI models",
+        "Data"
       ],
-      "summary": "Dakota 7.0 adds a Python API for building and running uncertainty quantification, calibration and optimization studies within larger applications, automation pipelines and agentic SI workflows. The release also updates tutorials. No project-specific Genesis Mission affiliation has been verified.",
-      "affiliation_evidence": "The official Dakota release announcement documents the Python API and agentic AI workflow support without identifying a Genesis Mission affiliation.",
+      "summary": "Sandia's VASt machine-learning model uses electron-distribution fingerprints to predict properties of complex metal alloys from tens of training samples. Researchers are testing its limits and validating predictions experimentally. No project-specific Genesis Mission affiliation has been verified.",
+      "affiliation_evidence": "Sandia's official announcement describes collaboration with Georgia Tech and NASA and partial Laboratory Directed Research and Development support; it does not identify this work as a Genesis Mission project.",
       "evidence_urls": [
-        "https://dakota.sandia.gov/2026/11/17/dakota-7-0/"
+        "https://newsreleases.sandia.gov/before-the-forge/"
       ]
     },
     {
@@ -724,19 +767,19 @@
       "gih_added_date": "2026-11-19",
       "date": "2026-11-19",
       "date_basis": "First Genesis News publication; displayed calendar date America/New_York",
-      "id": "sandia-vast-alloys-2026-11-18",
-      "title": "Sandia VASt model predicts advanced-alloy properties with limited training data",
-      "url": "https://newsreleases.sandia.gov/before-the-forge/",
-      "source_published_at": "2026-11-18",
-      "category": "AI models",
+      "id": "sandia-dakota-7-0-2026-11-17",
+      "title": "Sandia releases Dakota 7.0 with Python API for automated scientific workflows",
+      "url": "https://dakota.sandia.gov/2026/11/17/dakota-7-0/",
+      "source_published_at": "2026-11-17",
+      "category": "Infrastructure",
       "categories": [
-        "AI models",
-        "Data"
+        "Infrastructure",
+        "AI models"
       ],
-      "summary": "Sandia's VASt machine-learning model uses electron-distribution fingerprints to predict properties of complex metal alloys from tens of training samples. Researchers are testing its limits and validating predictions experimentally. No project-specific Genesis Mission affiliation has been verified.",
-      "affiliation_evidence": "Sandia's official announcement describes collaboration with Georgia Tech and NASA and partial Laboratory Directed Research and Development support; it does not identify this work as a Genesis Mission project.",
+      "summary": "Dakota 7.0 adds a Python API for building and running uncertainty quantification, calibration and optimization studies within larger applications, automation pipelines and agentic SI workflows. The release also updates tutorials. No project-specific Genesis Mission affiliation has been verified.",
+      "affiliation_evidence": "The official Dakota release announcement documents the Python API and agentic AI workflow support without identifying a Genesis Mission affiliation.",
       "evidence_urls": [
-        "https://newsreleases.sandia.gov/before-the-forge/"
+        "https://dakota.sandia.gov/2026/11/17/dakota-7-0/"
       ]
     },
     {
@@ -1483,6 +1526,19 @@
       "source_published_at": "2026-10-21"
     },
     {
+      "id": "171d476f823b76b9a8a9",
+      "title": "October 15, 2026 PNNL and Berkeley Lab Lead Genesis Mission Skills Release",
+      "summary": "nt Skills’ release to support innovation across the Genesis Mission Karyn Hede, PNNL Open Contributors to the Genesis Agent Skills package represent many national laboratories across the nation. (Image by Derek Munson | Pacific Northwest National Lab",
+      "source": "Pacific Northwest National Laboratory",
+      "url": "https://www.pnnl.gov/news-media/pnnl-and-berkeley-lab-lead-genesis-mission-skills-release",
+      "date": "2026-10-15",
+      "group": "Labs",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": []
+    },
+    {
       "id": "25304f730042877d5fb7",
       "title": "‘Genesis Agent Skills’ Release to Support Innovation Across the Genesis Mission",
       "summary": "October 15, 2026 New public software release gives researchers plain-language access to reusable guidance and tools for building, evaluating, and improving Super Intelligence (SI) enabled systems",
@@ -1495,19 +1551,6 @@
       "source_method": "publisher-direct",
       "project_ids": [],
       "source_published_at": "2026-10-15"
-    },
-    {
-      "id": "171d476f823b76b9a8a9",
-      "title": "October 15, 2026 PNNL and Berkeley Lab Lead Genesis Mission Skills Release",
-      "summary": "nt Skills’ release to support innovation across the Genesis Mission Karyn Hede, PNNL Open Contributors to the Genesis Agent Skills package represent many national laboratories across the nation. (Image by Derek Munson | Pacific Northwest National Lab",
-      "source": "Pacific Northwest National Laboratory",
-      "url": "https://www.pnnl.gov/news-media/pnnl-and-berkeley-lab-lead-genesis-mission-skills-release",
-      "date": "2026-10-15",
-      "group": "Labs",
-      "category": "National challenges",
-      "kind": "discovery",
-      "source_method": "publisher-direct",
-      "project_ids": []
     },
     {
       "id": "51d52bc9b5f3271d66b7",
