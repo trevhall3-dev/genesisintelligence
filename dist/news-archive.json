@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-27T13:59:05.362741+00:00",
-  "count": 63,
+  "updated_at": "2026-11-28T12:05:42Z",
+  "count": 64,
   "method": "Publisher-direct Genesis Mission collection; project links are provisional, partnership claims never public",
   "sources": [
     {
@@ -127,6 +127,51 @@
     }
   ],
   "items": [
+    {
+      "id": "gmc-platform-rd-partnerships-preview",
+      "title": "Genesis consortium previews approximately $20 million for platform R&D partnerships",
+      "source": "Genesis Mission Consortium — RTI International / TechWerx",
+      "url": "https://genesismissionconsortium.org/",
+      "official_source": "https://genesismissionconsortium.org/",
+      "source_published_at": "unknown",
+      "source_date_note": "The program preview is undated. First verified and added to GIH November 28, 2026; this is not a November 28 announcement date.",
+      "gih_added_at": "2026-11-28T12:05:42Z",
+      "gih_added_date": "2026-11-28",
+      "date": "2026-11-28",
+      "date_basis": "Actual first repository addition; America/New_York. Source publication date unavailable and retained separately.",
+      "group": "Partners",
+      "category": "Infrastructure",
+      "kind": "discovery",
+      "source_method": "editorially-verified-primary-source",
+      "project_ids": [],
+      "project": "Genesis Mission Platform R&D Partnerships Program",
+      "participants": [
+        "U.S. Department of Energy",
+        "Genesis Mission Consortium",
+        "RTI International / TechWerx"
+      ],
+      "summary": "The consortium previews approximately $20 million for Genesis platform R&D spanning scientific SI models, frameworks, data tools and computational modeling. Release is anticipated in Q1 FY27; the notice remains marked coming soon.",
+      "what_changed": "Newly verified program-specific preview absent from the feed. No new release date, open application window or award announcement was established.",
+      "significance": "Identifies a prospective route for non-federal organizations to contribute platform capabilities. Funding and application details remain prospective.",
+      "funding_status": "anticipated_coming_soon",
+      "anticipated_funding_usd": 20000000,
+      "anticipated_release": "Q1 FY27",
+      "applicant_scope": "The preview names domestic businesses, academic institutions and other non-federally-affiliated organizations, and supports open and proprietary work. Final solicitation terms are not yet available in the notice.",
+      "classification": "confirmed Genesis",
+      "verified_genesis_affiliation": true,
+      "affiliation_evidence": "The notice explicitly names the Genesis Mission Platform program. DOE's February 9 consortium launch identifies TechWerx/RTI as its administrator, and DOE's mission collaboration page directly links the consortium.",
+      "evidence_urls": [
+        "https://genesismissionconsortium.org/",
+        "https://www.techwerx.org/opportunities",
+        "https://www.energy.gov/articles/energy-department-launches-genesis-mission-consortium-accelerate-ai-driven-scientific",
+        "https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission-collaboration"
+      ],
+      "suggested_visible_label": "",
+      "editorial_status": "approved",
+      "publication_approved": true,
+      "feed_published": true,
+      "deduplication_note": "No matching program notice exists in the 63-item archive or 78-item review queue. TechWerx and consortium preview text are substantially identical; one record retains both sources. This is separate from the Graduate Fellowship Pilot."
+    },
     {
       "id": "inl-arco-genesis-nuclear-computing-2026-11-18",
       "title": "INL launches Arco GPU supercomputer to support Genesis nuclear research",
@@ -737,19 +782,19 @@
       "gih_added_date": "2026-11-19",
       "date": "2026-11-19",
       "date_basis": "First Genesis News publication; displayed calendar date America/New_York",
-      "id": "sandia-dakota-7-0-2026-11-17",
-      "title": "Sandia releases Dakota 7.0 with Python API for automated scientific workflows",
-      "url": "https://dakota.sandia.gov/2026/11/17/dakota-7-0/",
-      "source_published_at": "2026-11-17",
-      "category": "Infrastructure",
+      "id": "sandia-vast-alloys-2026-11-18",
+      "title": "Sandia VASt model predicts advanced-alloy properties with limited training data",
+      "url": "https://newsreleases.sandia.gov/before-the-forge/",
+      "source_published_at": "2026-11-18",
+      "category": "AI models",
       "categories": [
-        "Infrastructure",
-        "AI models"
+        "AI models",
+        "Data"
       ],
-      "summary": "Dakota 7.0 adds a Python API for building and running uncertainty quantification, calibration and optimization studies within larger applications, automation pipelines and agentic SI workflows. The release also updates tutorials. No project-specific Genesis Mission affiliation has been verified.",
-      "affiliation_evidence": "The official Dakota release announcement documents the Python API and agentic AI workflow support without identifying a Genesis Mission affiliation.",
+      "summary": "Sandia's VASt machine-learning model uses electron-distribution fingerprints to predict properties of complex metal alloys from tens of training samples. Researchers are testing its limits and validating predictions experimentally. No project-specific Genesis Mission affiliation has been verified.",
+      "affiliation_evidence": "Sandia's official announcement describes collaboration with Georgia Tech and NASA and partial Laboratory Directed Research and Development support; it does not identify this work as a Genesis Mission project.",
       "evidence_urls": [
-        "https://dakota.sandia.gov/2026/11/17/dakota-7-0/"
+        "https://newsreleases.sandia.gov/before-the-forge/"
       ]
     },
     {
@@ -767,19 +812,19 @@
       "gih_added_date": "2026-11-19",
       "date": "2026-11-19",
       "date_basis": "First Genesis News publication; displayed calendar date America/New_York",
-      "id": "sandia-vast-alloys-2026-11-18",
-      "title": "Sandia VASt model predicts advanced-alloy properties with limited training data",
-      "url": "https://newsreleases.sandia.gov/before-the-forge/",
-      "source_published_at": "2026-11-18",
-      "category": "AI models",
+      "id": "sandia-dakota-7-0-2026-11-17",
+      "title": "Sandia releases Dakota 7.0 with Python API for automated scientific workflows",
+      "url": "https://dakota.sandia.gov/2026/11/17/dakota-7-0/",
+      "source_published_at": "2026-11-17",
+      "category": "Infrastructure",
       "categories": [
-        "AI models",
-        "Data"
+        "Infrastructure",
+        "AI models"
       ],
-      "summary": "Sandia's VASt machine-learning model uses electron-distribution fingerprints to predict properties of complex metal alloys from tens of training samples. Researchers are testing its limits and validating predictions experimentally. No project-specific Genesis Mission affiliation has been verified.",
-      "affiliation_evidence": "Sandia's official announcement describes collaboration with Georgia Tech and NASA and partial Laboratory Directed Research and Development support; it does not identify this work as a Genesis Mission project.",
+      "summary": "Dakota 7.0 adds a Python API for building and running uncertainty quantification, calibration and optimization studies within larger applications, automation pipelines and agentic SI workflows. The release also updates tutorials. No project-specific Genesis Mission affiliation has been verified.",
+      "affiliation_evidence": "The official Dakota release announcement documents the Python API and agentic AI workflow support without identifying a Genesis Mission affiliation.",
       "evidence_urls": [
-        "https://newsreleases.sandia.gov/before-the-forge/"
+        "https://dakota.sandia.gov/2026/11/17/dakota-7-0/"
       ]
     },
     {
@@ -1526,6 +1571,19 @@
       "source_published_at": "2026-10-21"
     },
     {
+      "id": "171d476f823b76b9a8a9",
+      "title": "October 15, 2026 PNNL and Berkeley Lab Lead Genesis Mission Skills Release",
+      "summary": "nt Skills’ release to support innovation across the Genesis Mission Karyn Hede, PNNL Open Contributors to the Genesis Agent Skills package represent many national laboratories across the nation. (Image by Derek Munson | Pacific Northwest National Lab",
+      "source": "Pacific Northwest National Laboratory",
+      "url": "https://www.pnnl.gov/news-media/pnnl-and-berkeley-lab-lead-genesis-mission-skills-release",
+      "date": "2026-10-15",
+      "group": "Labs",
+      "category": "National challenges",
+      "kind": "discovery",
+      "source_method": "publisher-direct",
+      "project_ids": []
+    },
+    {
       "id": "25304f730042877d5fb7",
       "title": "‘Genesis Agent Skills’ Release to Support Innovation Across the Genesis Mission",
       "summary": "October 15, 2026 New public software release gives researchers plain-language access to reusable guidance and tools for building, evaluating, and improving Super Intelligence (SI) enabled systems",
@@ -1538,19 +1596,6 @@
       "source_method": "publisher-direct",
       "project_ids": [],
       "source_published_at": "2026-10-15"
-    },
-    {
-      "id": "171d476f823b76b9a8a9",
-      "title": "October 15, 2026 PNNL and Berkeley Lab Lead Genesis Mission Skills Release",
-      "summary": "nt Skills’ release to support innovation across the Genesis Mission Karyn Hede, PNNL Open Contributors to the Genesis Agent Skills package represent many national laboratories across the nation. (Image by Derek Munson | Pacific Northwest National Lab",
-      "source": "Pacific Northwest National Laboratory",
-      "url": "https://www.pnnl.gov/news-media/pnnl-and-berkeley-lab-lead-genesis-mission-skills-release",
-      "date": "2026-10-15",
-      "group": "Labs",
-      "category": "National challenges",
-      "kind": "discovery",
-      "source_method": "publisher-direct",
-      "project_ids": []
     },
     {
       "id": "51d52bc9b5f3271d66b7",
