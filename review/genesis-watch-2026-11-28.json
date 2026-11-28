@@ -1,0 +1,125 @@
+{
+  "checked_at": "2026-11-28T12:09:51Z",
+  "check_date": "2026-11-28",
+  "display_timezone": "America/New_York",
+  "result": "One newly verified confirmed Genesis program preview added to the repository and verified live. No new significant unconfirmed item qualified for the approval queue.",
+  "approved_added_ids": [
+    "gmc-platform-rd-partnerships-preview"
+  ],
+  "published_items": [
+    {
+      "id": "gmc-platform-rd-partnerships-preview",
+      "record_path": "dist/news-archive.json",
+      "official_source": "https://genesismissionconsortium.org/",
+      "source_published_at": "unknown",
+      "source_date_note": "Undated program preview, newly found and added today; no claim of a November 28 announcement.",
+      "gih_added_at": "2026-11-28T12:05:42Z",
+      "gih_added_date": "2026-11-28",
+      "classification": "confirmed Genesis",
+      "suggested_visible_label": "",
+      "editorial_status": "approved",
+      "live_publication_verified": true,
+      "live_verified_at": "2026-11-28T12:09:51Z"
+    }
+  ],
+  "publication_commit": "f4435bd518bf04c2e5acd64706914d4e4ab1148d",
+  "new_pending_items": [],
+  "existing_pending_items": [
+    {
+      "id": "sandia-staisys-grid-ai-testing-2026-10-19",
+      "editorial_status": "pending_user_approval",
+      "gih_added_at": "2026-11-27T12:06:21Z",
+      "suggested_visible_label": "GENESIS LINK NOT CONFIRMED",
+      "action": "Unchanged; no new approval or feed promotion."
+    }
+  ],
+  "approved_exception": "Sandia AIGM Lite remains approved as GENESIS LINK NOT CONFIRMED; no repeated approval request.",
+  "comparison": {
+    "prior_review": "review/genesis-watch-2026-11-27.json",
+    "discovery_result": "November 28 discovery result reported no new substantive candidate; independent primary-source research found a previously unarchived program preview.",
+    "before_archive_count": 63,
+    "after_archive_count": 64,
+    "queue_count": 78,
+    "queue_modified": false,
+    "project_registry_count": 297,
+    "archive_blob_before": "35b6cc75488ee4d4e23fcd11e460ac3379d60fa1",
+    "archive_blob_after": "827ed5612a54e8b15a32af6790c79b5cac839931",
+    "existing_archive_records_unchanged": true,
+    "deduplication": "Consortium and TechWerx notices contain substantially identical program text. One feed record retains both URLs. This is distinct from the Graduate Fellowship Pilot and existing consortium announcements."
+  },
+  "research_scope": {
+    "method": "Recent official-source searches across DOE and the 17 national laboratory domains; targeted mission, program, organizational and project documentation checks; comparison with archive, review queue and prior watch result.",
+    "limitation": "Search-indexing and retrieval limits prevent a claim of exhaustive coverage. No new dated November 27–28 milestone was independently verified; the qualifying addition is undated and new to this feed."
+  },
+  "affiliation_investigation": {
+    "conclusion": "Confirmed through the program's explicit Genesis purpose and DOE's identification of TechWerx/RTI as the consortium administrator; not inferred from laboratory participation.",
+    "evidence_urls": [
+      "https://genesismissionconsortium.org/",
+      "https://www.techwerx.org/opportunities",
+      "https://www.energy.gov/articles/energy-department-launches-genesis-mission-consortium-accelerate-ai-driven-scientific",
+      "https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission-collaboration"
+    ],
+    "publication_caution": "The prospective approximately $20 million program remains marked Coming Soon with anticipated release Q1 FY27. No open application window, deadline, selected awardees, award or newly dated release is established."
+  },
+  "other_reviewed": [
+    {
+      "url": "https://research-hub.nlr.gov/en/publications/nlr-capabilities-to-streamline-permitting-and-accelerate-new-ener/",
+      "document_url": "https://docs.nlr.gov/docs/fy26osti/102143.pdf",
+      "source_published_at": "2026",
+      "classification": "Genesis link not confirmed",
+      "suggested_visible_label": "GENESIS LINK NOT CONFIRMED",
+      "editorial_status": "skip_quality_threshold",
+      "reason": "RE+ permitting-capabilities poster describes established and prospective tools. No sufficiently new, substantive AI/SI research result or project-specific Genesis linkage was established. Performance aspirations were not treated as validated new results."
+    },
+    {
+      "url": "https://news.fnal.gov/2026/11/fermilabs-sam-zeller-awarded-w-k-h-panofsky-prize/",
+      "classification": "irrelevant",
+      "editorial_status": "skip_scope",
+      "reason": "Professional recognition without a qualifying new Genesis or AI/SI research finding."
+    },
+    {
+      "url": "https://jobs.ornl.gov/job/Oak-Ridge-Research-Scientist%2C-Agentic-Workflows-TN-37830/1422626200/",
+      "source_published_at": "2026-11-19",
+      "classification": "confirmed Genesis",
+      "editorial_status": "skip_quality_threshold",
+      "reason": "Routine recruitment for Genesis-related agentic workflow work; no substantive research or program milestone."
+    },
+    {
+      "url": "https://www.energy.gov/articles/fact-sheet-energy-department-delivering-president-trumps-genesis-mission",
+      "classification": "confirmed Genesis",
+      "editorial_status": "already_archived",
+      "reason": "Existing anniversary fact sheet; no independently verified substantive revision."
+    }
+  ],
+  "implementation_audit": {
+    "archive_readback_exact": true,
+    "live_url": "https://genesisintelhub.com/",
+    "live_count": 64,
+    "live_default_sort": "Newest first",
+    "live_first_title": "Genesis consortium previews approximately $20 million for platform R&D partnerships",
+    "live_first_date_display": "Added to Genesis Intel Nov 28, 2026 · Published Date unavailable",
+    "live_first_no_affiliation_label": true,
+    "live_second_title": "INL launches Arco GPU supercomputer to support Genesis nuclear research",
+    "live_second_date_display": "Added to Genesis Intel Nov 27, 2026 · Published Nov 18, 2026",
+    "all_prior_archive_items_unchanged": true,
+    "stitch_maggie": {
+      "gih_added_at": "2026-11-10T13:37:21Z",
+      "gih_added_date": "2026-11-10",
+      "source_published_at": "2026-11-04",
+      "live_display": "Added to Genesis Intel Nov 10, 2026 · Published Nov 4, 2026",
+      "live_display_verified": true
+    },
+    "unconfirmed_label": "GENESIS LINK NOT CONFIRMED",
+    "exact_unconfirmed_label_present": true,
+    "unified_feed_retained": true,
+    "source_date_handling": "Unknown source date is stored as the explicit string unknown to prevent fallback to the GIH date during database import.",
+    "collector_and_import_review": "Existing preservation logic remains in place: collector retains original added-at and reviewed metadata; database import stores source date separately and retains editorial timestamps. No implementation change today.",
+    "known_gap": {
+      "legacy_records_without_added_at": 33,
+      "note": "33 historical records still require first-addition recovery from repository history. No fabricated dates or routine-check bumps applied; full historical compliance is not claimed."
+    },
+    "database": "Live collection health reports 63 archived D1 articles while the merged live feed shows 64. This addition is verified in the repository and live UI; its D1 synchronization is not verified. No direct D1 write performed.",
+    "code_changes": [],
+    "validation": "Repository readback exact; all 63 existing records unchanged; new first-addition date and live top position verified; separate publication date unavailable; STITCH/MAGGIE dates and exact unconfirmed label checked."
+  }
+}
